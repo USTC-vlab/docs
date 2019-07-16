@@ -27,6 +27,7 @@ build() {
 
 deploy() {
   lftp -c "
+  set ftp:list-options -a
   open $HOST
   user $USER $PASS
   mirror --reverse --delete --verbose $SOURCE $TARGET
