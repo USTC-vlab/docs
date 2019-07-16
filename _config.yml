@@ -1,0 +1,22 @@
+title: Vlab Documentation
+description: ""
+url: "https://vlab.ustc.edu.cn"
+baseurl: "/docs"
+theme: "just-the-docs" # https://pmarsceill.github.io/just-the-docs/
+permalink: pretty
+ga_tracking: UA-115907213-3
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+#search_enabled: true
+
+# Aux links for the upper right navigation
+aux_links:
+  "Vlab Home":
+    - "//vlab.ustc.edu.cn"
+
+# Color scheme currently only supports "dark" or nil (default)
+color_scheme: nil
