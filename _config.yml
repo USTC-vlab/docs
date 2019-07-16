@@ -7,6 +7,8 @@ permalink: pretty
 ga_tracking: UA-115907213-3
 
 exclude:
+  - Dockerfile
+  - entrypoint.sh
   - Gemfile
   - Gemfile.lock
   - README.md
