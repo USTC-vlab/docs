@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "https://mirrors.ustc.edu.cn/rubygems/"
 
 gem "jekyll", '~> 3.8.6'
 gem "just-the-docs"
