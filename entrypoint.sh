@@ -5,7 +5,7 @@
 cd "$(dirname "$0")"
 
 check_env() {
-  : ${SOURCE:=_site}
+  : ${SOURCE:=_site/}
   for key in HOST USER PASS TARGET; do
     if [ -z "${!key}" ]; then
       echo "Missing variable ${key}!" >&2
