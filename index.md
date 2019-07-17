@@ -1,5 +1,7 @@
 ---
-title: Index Page
+title: 文档首页
 ---
 
-Placeholder
+欢迎来到 Vlab 实验平台使用文档。
+
+请在左侧目录查找你需要的内容。
