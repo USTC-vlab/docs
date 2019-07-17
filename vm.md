@@ -8,7 +8,7 @@ title: 如何使用虚拟机管理界面
 
 在登录界面，可以使用你的学号登录，或者使用统一身份认证登录。
 
-![login](assets/1.png)
+![login](images/1.png)
 
 请注意，如果你使用统一身份认证登录，请使用你的学号。使用 GID 会导致你在管理界面的登录被拒绝。
 
@@ -16,7 +16,7 @@ title: 如何使用虚拟机管理界面
 
 登录后，你可以查看你账号下拥有的容器。
 
-![vms](assets/2.png)
+![vms](images/2.png)
 
 下方四个按钮分别为：
 
@@ -30,14 +30,14 @@ title: 如何使用虚拟机管理界面
 
 下载 RealVNC 或 TigerVNC **客户端**（Client）。以下以 RealVNC 客户端为例。
 
-![vnc](assets/3.png)
+![vnc](images/3.png)
 
 选择 [文件] -> [新建连接]。在 VNC Server 这里输入 `IP 地址:5901` （注意冒号为半角的）。双击新建的连接登录。
 
-![login](assets/4.png)
+![login](images/4.png)
 
 输入你的密码，点击 OK 登录。
 
-![final](assets/5.png)
+![final](images/5.png)
 
 注意：请不要关闭 "VNC config" 窗口，否则复制粘贴功能可能会不正常。
