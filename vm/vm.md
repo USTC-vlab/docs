@@ -5,7 +5,13 @@ parent: null # must override
 permalink: /vm/
 ---
 
-<https://vlab.ustc.edu.cn/vm/>
+# 目录
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+管理页面：<https://vlab.ustc.edu.cn/vm/>
 
 ## 登录
 
