@@ -1,8 +1,6 @@
 ---
-title: 虚拟机管理界面
-has_children: true
-parent: null # must override
-permalink: /vm/
+title: 管理界面
+nav_order: 1
 ---
 
 # 目录
@@ -10,8 +8,6 @@ permalink: /vm/
 
 1. TOC
 {:toc}
-
-管理页面：<https://vlab.ustc.edu.cn/vm/>
 
 ## 登录
 

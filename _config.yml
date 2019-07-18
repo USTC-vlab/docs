@@ -27,4 +27,4 @@ defaults:
   - scope:
       path: /vm/
     values:
-      parent: "虚拟机管理界面"
+      parent: "虚拟机"
