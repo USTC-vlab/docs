@@ -25,6 +25,6 @@ color_scheme: nil
 
 defaults:
   - scope:
-      path: /vm/
+      path: vm
     values:
       parent: "虚拟机"
