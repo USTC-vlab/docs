@@ -1,5 +1,8 @@
 ---
-title: 如何使用虚拟机管理界面
+title: 虚拟机管理界面
+has_children: true
+parent: null # must override
+permalink: /vm/
 ---
 
 <https://vlab.ustc.edu.cn/vm/>

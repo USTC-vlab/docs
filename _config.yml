@@ -22,3 +22,9 @@ aux_links:
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
+
+defaults:
+  - scope:
+      path: /vm/
+    values:
+      parent: "虚拟机管理界面"
