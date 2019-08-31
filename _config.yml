@@ -7,11 +7,15 @@ permalink: pretty
 ga_tracking: UA-115907213-3
 
 exclude:
+  - "*.yml"
+  - .bundle
+  - .jekyll-assets-cache
   - Dockerfile
   - entrypoint.sh
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor
 
 #search_enabled: true
 
