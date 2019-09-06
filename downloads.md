@@ -5,6 +5,9 @@ has_children: false
 permalink: /downloads/
 ---
 
+# 资源下载
+{: .no-toc }
+
 - Logisim (v2.7.1, 需要 Java):
   [Windows](https://vlab.ustc.edu.cn/downloads/logisim-win-2.7.1.exe),
   [macOS 10.12+](https://vlab.ustc.edu.cn/downloads/logisim-macosx-2.7.1.tar.gz),
