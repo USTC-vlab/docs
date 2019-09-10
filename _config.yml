@@ -21,8 +21,7 @@ exclude:
 
 # Aux links for the upper right navigation
 aux_links:
-  "Vlab 首页":
-    - "//vlab.ustc.edu.cn"
+  "Vlab 首页": "//vlab.ustc.edu.cn"
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
