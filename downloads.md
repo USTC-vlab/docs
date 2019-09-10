@@ -18,6 +18,8 @@ permalink: /downloads/
 - RealVNC 客户端 (v6.19.715):
   [Windows](https://vlab.ustc.edu.cn/downloads/VNC-Viewer-6.19.715-Windows.exe) /
   [macOS 10.12+](https://vlab.ustc.edu.cn/downloads/VNC-Viewer-6.19.715-MacOSX-x86_64.dmg)
+- Vivado HLx Webpack Edition 2019.1:
+  [全平台 (tar.gz 压缩包，大小 21 GB)](https://vlab.ustc.edu.cn/downloadsi/Xilinx_Vivado_SDK_2019.1_0524_1430.tar.gz) /
 - Wireshark (v3.0.3):
   [Windows 64 位](https://vlab.ustc.edu.cn/downloads/Wireshark-win64-3.0.3.exe) /
   [macOS 10.12+](https://vlab.ustc.edu.cn/downloads/Wireshark%203.0.3%20Intel%2064.dmg)
