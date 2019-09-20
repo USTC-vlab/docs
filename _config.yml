@@ -31,3 +31,7 @@ defaults:
       path: vm
     values:
       parent: "虚拟机"
+  - scope:
+      path: fpgaol
+    values:
+      parent: "FPGA 在线"
