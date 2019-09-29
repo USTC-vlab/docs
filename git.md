@@ -95,7 +95,7 @@ $ less readme.txt
 
 按 Q 可以退出 less 查看器。
 
-### 撤销修改：
+### 撤销修改
 
 `git checkout -- readme.txt` 可以让文件回到上一次提交时状态
 
