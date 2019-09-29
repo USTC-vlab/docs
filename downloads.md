@@ -8,6 +8,7 @@ permalink: /downloads/
 # 资源下载
 {: .no-toc }
 
+- Git for Windows (v2.23.0): [Windows 64 位](https://vlab.ustc.edu.cn/downloads/Git-2.23.0-64-bit.exe)
 - Java 8 运行环境：
   [Windows 64 位](https://vlab.ustc.edu.cn/downloads/jre-8u221-windows-x64.exe) /
   [Mac OS X 10.7.3+](https://vlab.ustc.edu.cn/downloads/jre-8u221-macosx-x64.dmg)
