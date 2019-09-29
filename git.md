@@ -6,7 +6,7 @@ permalink: /git/
 ---
 
 #### 目录
-{: .no-toc text-delta }
+{: .no_toc text-delta }
 
 1. TOC
 {:toc}
