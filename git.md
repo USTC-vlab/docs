@@ -155,4 +155,7 @@ $ git remote add origin git@github.com:username/learngit.git
 
 至此，Git 基本用法已经简单介绍完了，深入学习请看以下链接
 
-<https://www.liaoxuefeng.com/wiki/896043488029600>
+## 更多阅读
+
+- <https://www.liaoxuefeng.com/wiki/896043488029600>
+- [Git for beginners: The definitive practical guide (Stack Overflow)](https://stackoverflow.com/q/315911/5958455)
