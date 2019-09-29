@@ -13,9 +13,12 @@ permalink: /git/
 
 ## 安装
 
-- Windows 系统：从 <https://git-scm.com/downloads> 下载 Git for Windows，按默认选项安装即可
+- Windows 系统：从 <https://git-scm.com/downloads> 或本站的下载页面获取 Git for Windows，按默认选项安装即可
 - macOS 系统：从 Homebrew 安装
 - Linux：从默认软件源安装即可（CentOS 7 建议从 EPEL 安装）
+  - Debian / Ubuntu: `sudo apt-get install git`
+  - CentOS 7: `sudo yum install epel-repo; sudo yum install git`
+  - CentOS 8 / Fedora: `sudo dnf install git`
 
 ## Git 初步使用
 
@@ -23,7 +26,7 @@ permalink: /git/
 
 ### 初步配置
 
-Windows 从开始菜单找到 Git Bash 打开，可以进入 Git 命令行。首先配置 Git 的名称和邮箱（必须）：
+Windows 从开始菜单找到 Git Bash 打开，可以进入 Git 命令行，其他系统直接打开终端。首先配置 Git 的名称和邮箱（必须）：
 
 ```shell
 $ git config --global user.name "Jon Doe"
