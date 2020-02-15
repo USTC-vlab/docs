@@ -15,8 +15,8 @@ theme:
   name: 'material'
   language: 'zh'
   palette:
-    primary: 'teal'
-    accent: 'teal'
+    primary: 'light blue'
+    accent: 'light blue'
 
 # Customization
 extra:
@@ -28,10 +28,6 @@ extra:
 
 extra_javascript:
   - assets/js/extra.js
-
-theme:
-    name: 'material'
-    language: 'zh'
 
 markdown_extensions:
     - admonition
