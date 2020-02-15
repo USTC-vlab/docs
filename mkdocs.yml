@@ -4,8 +4,8 @@ site_author: 'USTC Vlab'
 site_url: 'https://vlab.ustc.edu.cn/docs/'
 
 # Repository
-repo_name: 'USTC-vlab/documentations'
-repo_url: 'https://github.com/USTC-vlab/documentations'
+repo_name: 'USTC-vlab/docs'
+repo_url: 'https://github.com/USTC-vlab/docs'
 
 # Copyright
 copyright: 'Copyright &copy; 2020 USTC Virtualization Laboratory'
