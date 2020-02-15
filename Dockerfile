@@ -1,7 +1,7 @@
-FROM ruby:2.6
+FROM squidfunk/mkdocs-material:latest
 
-RUN git clone https://git.lug.ustc.edu.cn/vlab/docs.git /srv/build && \
-cd /srv/build && bundle install
+RUN git clone https://github.com/USTC-vlab/docs.git /docs
 
 ENV LC_ALL C.UTF-8
-CMD ["/srv/build/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh"]
+CMD ["/docs/entrypoint.sh"]
