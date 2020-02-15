@@ -1,15 +1,4 @@
----
-title: "Git 简明教程"
-nav_order: 3
-has_children: false
-permalink: /git/
----
-
-#### 目录
-{: .no_toc text-delta }
-
-1. TOC
-{:toc}
+# Git 简明教程
 
 ## 安装
 
@@ -129,9 +118,9 @@ $ git commit -m "remove test.txt"
 
   登陆 GitHub，打开 Account settings → SSH Keys 页面
 
-  点 Add SSH Key，填上任意 Title（方便自己辨认），在 Key 文本框里粘贴 id_rsa.pub 文件的内容即可
+  点 Add SSH Key，填上任意 Title（方便自己辨认），在 Key 文本框里粘贴 `id_rsa.pub` 文件的内容即可
 
-  ![image](images/github-add-ssh-key.png)
+  ![image](../images/github-add-ssh-key.png)
 
 确认 SSH 密钥添加成功：`ssh -T git@github.com`，如果看到你的用户名提示认证成功，那么这一步就配置完成了。
 

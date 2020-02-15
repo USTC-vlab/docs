@@ -1,12 +1,4 @@
----
-title: "资源下载"
-nav_order: 9999
-has_children: false
-permalink: /downloads/
----
-
 # 资源下载
-{: .no-toc }
 
 - Git for Windows (v2.23.0): [Windows 64 位](https://vlab.ustc.edu.cn/downloads/Git-2.23.0-64-bit.exe)
 - Java 8 运行环境：

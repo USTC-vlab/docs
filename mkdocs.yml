@@ -1,0 +1,53 @@
+site_name: "Vlab @ USTC"
+site_description: "Vlab 实验平台使用文档"
+site_author: 'USTC Linux User Group'
+site_url: 'https://vlab.ustc.edu.cn/docs/'
+
+# Repository
+repo_name: 'USTC-vlab/documentations'
+repo_url: 'https://github.com/USTC-vlab/documentations'
+
+# Copyright
+copyright: 'Copyright &copy; 2020 USTC Virtualization Laboratory'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'zh'
+  palette:
+    primary: 'teal'
+    accent: 'teal'
+
+# Customization
+extra:
+  social:
+    - type: 'globe'
+      link: 'https://vlab.ustc.edu.cn/'
+    - type: 'github'
+      link: 'https://github.com/USTC-vlab'
+
+extra_javascript:
+  - assets/js/extra.js
+
+theme:
+    name: 'material'
+    language: 'zh'
+
+markdown_extensions:
+    - admonition
+    - attr_list
+    - codehilite
+    - footnotes
+    - pymdownx.details
+    - pymdownx.superfences
+    - markdown.extensions.def_list
+
+nav:
+  - 首页: index.md
+  - 虚拟机管理平台: vm/manage.md
+  - FPGA 在线平台:
+    - 简介: fpgaol/index.md
+    - 使用说明: fpgaol/usage.md
+  - 教程:
+    - Git 简明教程: tutorial/git.md
+  - 资源下载: downloads.md

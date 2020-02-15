@@ -1,13 +1,4 @@
----
-title: 管理界面
-nav_order: 1
----
-
-# 目录
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
+# 管理界面
 
 ## 登录
 
