@@ -2,23 +2,36 @@
 
 ## 命令行：使用 SSH 登录
 
-### 安装 SSH 客户端
+Windows 需要安装 SSH 客户端，有各种选择：
 
-* Ubuntu 和 Debian：`sudo apt-get install ssh`
-* CentOS, Fedora 和 RHEL：`sudo yum install ssh-clients`
-* Arch Linux 和 Manjaro：`sudo pacman -S openssh`
+- PuTTY ([官方下载](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
+- XShell ([NetSarang 官方下载](https://www.netsarang.com/zh/free-for-home-school/))
+- Termius ([官方下载](https://termius.com/windows)，另有 [Windows 10 应用商店版](https://www.microsoft.com/store/productId/9NK1GDVPX09V))
+- Git Bash (MSYS2) (请参考 [Linux 系统的登录方式](../login-linux/))
+- Cygwin (请参考 [Linux 系统的登录方式](../login-linux/))
 
-### 登录
+下面以免费开源的 PuTTY 为例在 Windows 上连接 Vlab 虚拟机。安装过程很简单，直接 \[下一步\] 到底即可。安装完成后，找到并打开 PuTTY，如图
 
-* 根据虚拟机登录 IP 地址和端口（例如，下图中地址为 `202.38.75.252`，端口为 `10003`），输入命令：
+### PuTTY 登录方式
 
-    ```shell
-    ssh root@202.38.75.252 -p 10003
-    ```
+![PuTTY in Windows 10 Start Menu](../images/putty-win10-tile.png){: .img-center }
 
-* 如果遇到 Warning，请输入 `yes`，然后输入之前设置的 root 密码，即可登录虚拟机
+在 Host name 一栏填入 `202.38.75.252`，端口号填写网页管理界面给出的端口号（在 `ssh -p` 后面的一个 10001 ~ 29999 之间的数字），点击连接，如图：
 
-    ![](../images/ssh_4.png){: .img-center }
+![PuTTY configuration](../images/putty-config.png){: .img-center }
+
+第一次连接时会提示你选择信任虚拟机，点 Yes 即可：
+
+![PuTTY host key prompt](../images/putty-host-key.png){: .img-center }
+
+然后 PuTTY 会要求你输入用户名和密码，用户名输入 root，密码输入你在创建虚拟机时设定的 root 用户密码，按回车即可：
+
+![PuTTY screen](../images/putty-login.png){: .img-center }
+
+PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信息，以后可以更方便地连接虚拟机。这里有两篇不错的使用教程：
+
+- <https://www.hostarr.com/putty-tutorial/>
+- <https://www.cnblogs.com/yuwentao/archive/2013/01/06/2846953.html>
 
 ## 图形界面：使用 VNC 登录
 
