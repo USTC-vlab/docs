@@ -8,7 +8,7 @@ repo_name: 'USTC-vlab/docs'
 repo_url: 'https://github.com/USTC-vlab/docs'
 
 # Copyright
-copyright: 'Copyright &copy; 2020 USTC Virtualization Laboratory'
+copyright: 'Brought to you by Vlab and USTCLUG'
 
 # Configuration
 theme:
