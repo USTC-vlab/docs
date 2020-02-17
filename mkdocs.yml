@@ -48,7 +48,7 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - 虚拟机管理平台:
-    - 简介: vm/manage.md
+    - 简介: vm/index.md
     - Windows 系统登录: vm/login-windows.md
     - macOS 系统登录: vm/login-macos.md
     - Linux 系统登录: vm/login-linux.md
