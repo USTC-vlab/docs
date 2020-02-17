@@ -33,3 +33,21 @@
 * 如果遇到 Warning，请输入 `yes`，然后输入之前设置的 root 密码，即可登录虚拟机
 
     ![](../images/ssh_4.png)
+
+## 使用 VNC 登录
+
+### 安装 VNC 客户端
+
+!!! info "注意"
+
+    该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像。由于 TigerVNC 有已知的兼容性问题，我们只建议使用 RealVNC 客户端。
+
+在 [RealVNC 官网的下载页面](https://www.realvnc.com/en/connect/download/viewer/linux/) 下载适合你的系统的安装包
+
+* Ubuntu 和 Debian：选择DEB x64，下载后安装：`sudo apt install ./文件名`
+
+* CentOS, Fedora 和 RHEL：选择RPM x64，下载后安装：`sudo yum localinstall 文件名`
+
+* 其他系统：选择 Standalone x64，加上执行权限后直接运行
+
+后续操作与 Windows 下使用 RealVNC 连接相同。
