@@ -17,6 +17,8 @@ theme:
   palette:
     primary: 'light blue'
     accent: 'light blue'
+  feature:
+    tabs: null # true
 
 # Customization
 extra:
@@ -30,17 +32,21 @@ extra_javascript:
   - assets/js/extra.js
 
 markdown_extensions:
-    - admonition
-    - attr_list
-    - codehilite
-    - footnotes
-    - pymdownx.details
-    - pymdownx.superfences
-    - markdown.extensions.def_list
+  - admonition
+  - attr_list
+  - codehilite
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - markdown.extensions.def_list
+  - toc:
+      permalink: true
 
 nav:
   - 首页: index.md
-  - 虚拟机管理平台: vm/manage.md
+  - 虚拟机管理平台:
+    - 简介: vm/manage.md
+    - Linux 系统登录: vm/login-linux.md
   - FPGA 在线平台:
     - 简介: fpgaol/index.md
     - 使用说明: fpgaol/usage.md
