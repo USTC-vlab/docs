@@ -20,7 +20,7 @@
 
 * Ubuntu 和 Debian：`sudo apt-get install ssh`
 * CentOS, Fedora 和 RHEL：`sudo yum install ssh-clients`
-* Arch Linux 和 Manjaro：`sudo pacman -Sy ssh`
+* Arch Linux 和 Manjaro：`sudo pacman -S openssh`
 
 ### 登录
 
