@@ -44,10 +44,10 @@
 
 在 [RealVNC 官网的下载页面](https://www.realvnc.com/en/connect/download/viewer/linux/) 下载适合你的系统的安装包
 
-* Ubuntu 和 Debian：选择DEB x64，下载后安装：`sudo apt install ./文件名`
+* Ubuntu 和 Debian：选择 DEB x64，下载后安装：`sudo apt install ./文件名`
 
-* CentOS, Fedora 和 RHEL：选择RPM x64，下载后安装：`sudo yum localinstall 文件名`
+* CentOS, Fedora 和 RHEL：选择 RPM x64，下载后安装：`sudo yum localinstall 文件名`
 
 * 其他系统：选择 Standalone x64，加上执行权限后直接运行
 
-后续操作与 Windows 下使用 RealVNC 连接相同。
+后续操作与 Windows 和 macOS 下使用 RealVNC 连接相同，可以在 [这里](../login-macos/#vnc) 继续阅读。
