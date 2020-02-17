@@ -10,9 +10,11 @@ Windows 需要安装 SSH 客户端，有各种选择：
 - Git Bash (MSYS2) (请参考 [Linux 系统的登录方式](../login-linux/))
 - Cygwin (请参考 [Linux 系统的登录方式](../login-linux/))
 
-下面以免费开源的 PuTTY 为例在 Windows 上连接 Vlab 虚拟机。安装过程很简单，直接 \[下一步\] 到底即可。安装完成后，找到并打开 PuTTY，如图
+下面以免费开源的 PuTTY 为例在 Windows 上连接 Vlab 虚拟机。
 
 ### PuTTY 登录方式
+
+安装过程很简单，直接 \[下一步\] 到底即可。安装完成后，找到并打开 PuTTY，如图
 
 ![PuTTY in Windows 10 Start Menu](../images/putty-win10-tile.png){: .img-center }
 
