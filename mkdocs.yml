@@ -46,7 +46,7 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - 首页: index.md
+  - 文档首页: index.md
   - 虚拟机管理平台:
     - 简介: vm/index.md
     - Windows 系统登录: vm/login-windows.md
