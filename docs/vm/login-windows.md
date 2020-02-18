@@ -7,8 +7,14 @@ Windows 需要安装 SSH 客户端，有各种选择：
 - PuTTY ([官方下载](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
 - XShell ([NetSarang 官方下载](https://www.netsarang.com/zh/free-for-home-school/))
 - Termius ([官方下载](https://termius.com/windows)，另有 [Windows 10 应用商店版](https://www.microsoft.com/store/productId/9NK1GDVPX09V))
-- Git Bash (MSYS2) (请参考 [Linux 系统的登录方式](../login-linux/))
-- Cygwin (请参考 [Linux 系统的登录方式](../login-linux/))
+
+另外，Windows 平台有各种 Linux / Unix 环境模拟软件，例如
+
+- Git Bash (MSYS2)
+- Cygwin
+- Windows Subsystem for Linux
+
+对于以上平台，请参考 [Linux 系统的登录方式](../login-linux/)
 
 下面以免费开源的 PuTTY 为例在 Windows 上连接 Vlab 虚拟机。
 
@@ -26,7 +32,7 @@ Windows 需要安装 SSH 客户端，有各种选择：
 
 ![PuTTY host key prompt](../images/putty-host-key.png){: .img-center }
 
-然后 PuTTY 会要求你输入用户名和密码，用户名输入 root，密码输入你在创建虚拟机时设定的 root 用户密码，按回车即可：
+然后 PuTTY 会要求你输入用户名和密码，用户名输入 root，密码输入你在创建虚拟机时设定的 root 用户密码（输入的密码没有回显），按回车即可：
 
 ![PuTTY screen](../images/putty-login.png){: .img-center }
 
