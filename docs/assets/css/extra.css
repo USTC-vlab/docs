@@ -3,3 +3,7 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.red-important {
+	color: red !important;
+}
