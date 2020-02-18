@@ -1,6 +1,6 @@
 # Windows 系统登录虚拟机
 
-## 命令行：使用 SSH 登录
+## 命令行：使用 SSH 登录 {#ssh}
 
 Windows 需要安装 SSH 客户端，有各种选择：
 
@@ -12,7 +12,7 @@ Windows 需要安装 SSH 客户端，有各种选择：
 
 下面以免费开源的 PuTTY 为例在 Windows 上连接 Vlab 虚拟机。
 
-### PuTTY 登录方式
+### PuTTY 登录方式 {#putty}
 
 安装过程很简单，直接 \[下一步\] 到底即可。安装完成后，找到并打开 PuTTY，如图
 
@@ -35,7 +35,7 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 - <https://www.hostarr.com/putty-tutorial/>
 - <https://www.cnblogs.com/yuwentao/archive/2013/01/06/2846953.html>
 
-## 图形界面：使用 VNC 登录
+## 图形界面：使用 VNC 登录 {#vnc}
 
 !!! info "注意"
 
@@ -57,7 +57,7 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 
 ![Xfce4 first login](../images/realvnc-first-start-win10.png){: .img-center }
 
-### 设置中文输入法
+### 设置中文输入法 {#chinese-ime}
 
 系统自带的输入法为 IBus，可以手动启用中文输入。在左上角找到 Applications → Settings → IBus Preferences 设置：
 

@@ -1,10 +1,10 @@
 # macOS 系统登录虚拟机
 
-## 命令行：使用 SSH 登录
+## 命令行：使用 SSH 登录 {#ssh}
 
 macOS 自带命令行 SSH 客户端。
 
-### 登录
+### 登录 {#ssh-login}
 
 * 根据虚拟机登录 IP 地址和端口（例如，下图中地址为 `202.38.75.252`，端口为 `10004`），输入命令：
 
@@ -18,7 +18,7 @@ macOS 自带命令行 SSH 客户端。
 
     ![](../images/ssh_5.png){: .img-center }
 
-## 图形界面：使用 VNC 登录
+## 图形界面：使用 VNC 登录 {#vnc}
 
 !!! info "注意"
 
@@ -42,7 +42,7 @@ macOS 自带命令行 SSH 客户端。
 
 ![Xfce4 first login](../images/realvnc-first-start-macos.png){: .img-center }
 
-### 设置中文输入法
+### 设置中文输入法 {#chinese-ime}
 
 系统自带的输入法为 IBus，可以手动启用中文输入。在左上角找到 Applications → Settings → IBus Preferences 设置：
 
