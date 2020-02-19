@@ -8,7 +8,7 @@ repo_name: 'USTC-vlab/docs'
 repo_url: 'https://github.com/USTC-vlab/docs'
 
 # Copyright
-copyright: 'Brought to you by Vlab and USTCLUG'
+copyright: 'Brought to you by Vlab and <a href="https://lug.ustc.edu.cn/">USTCLUG</a>'
 
 # Configuration
 theme:
@@ -60,3 +60,4 @@ nav:
   - 教程:
     - Git 简明教程: tutorial/git.md
   - 资源下载: downloads.md
+  - 致谢: credits.md
