@@ -46,6 +46,10 @@ markdown_extensions:
   - toc:
       permalink: true
 
+google_analytics:
+  - 'UA-115907213-3'
+  - 'auto'
+
 nav:
   - 文档首页: index.md
   - 虚拟机管理平台:
