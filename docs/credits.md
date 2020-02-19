@@ -9,7 +9,7 @@
 
 指导老师
 
-: [邢凯](mailto:kxing@ustc.edu.cn)，[卢建良](mailto:lujl@ustc.edu.cn)
+: [卢建良](mailto:lujl@ustc.edu.cn)，[邢凯](mailto:kxing@ustc.edu.cn)
 
 系统平台搭建
 
@@ -23,7 +23,7 @@
 
 指导老师
 
-: [邢凯](mailto:kxing@ustc.edu.cn)，[卢建良](mailto:lujl@ustc.edu.cn)
+: [卢建良](mailto:lujl@ustc.edu.cn)，[邢凯](mailto:kxing@ustc.edu.cn)
 
 平台搭建及运维
 
