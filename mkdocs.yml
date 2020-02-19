@@ -54,6 +54,7 @@ nav:
     - Windows 系统登录: vm/login-windows.md
     - macOS 系统登录: vm/login-macos.md
     - Linux 系统登录: vm/login-linux.md
+    - 常见问题: vm/faq.md
   - FPGA 在线平台:
     - 简介: fpgaol/index.md
     - 使用说明: fpgaol/usage.md
