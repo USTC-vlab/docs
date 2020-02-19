@@ -63,14 +63,11 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 
 ![Xfce4 first login](../images/realvnc-first-start-win10.png){: .img-center }
 
-### 设置中文输入法 {#chinese-ime}
+### 桌面设置
 
-系统自带的输入法为 IBus，可以手动启用中文输入。在左上角找到 Applications → Settings → IBus Preferences 设置：
+关于一些常用的桌面设置，如
 
-![Menu - IBus Preferences](../images/menu-ibus-settings.png){: .img-center }
+- 修改 VNC 分辨率
+- 中文输入法
 
-在 Input Method 选项卡点 Add，然后在 Chinese 里找到 Pinyin，再次点击右下角的 Add 即可：
-
-![IBus Preferences - Add Chinese Pinyin](../images/ibus-add-pinyin.png){: .img-center }
-
-添加成功后可以在右上角切换中文与英文输入法，也可以按 <kbd>Shift</kbd> 键在中文输入法中切换中英文输入。
+等，请参阅[桌面设置](../desktop-settings)页面。
