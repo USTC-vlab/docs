@@ -5,9 +5,9 @@
 - Windows 系统：从 <https://git-scm.com/downloads> 或本站的下载页面获取 Git for Windows，按默认选项安装即可
 - macOS 系统：从 Homebrew 安装
 - Linux：从默认软件源安装即可（CentOS 7 建议从 EPEL 安装）
-  - Debian / Ubuntu: `sudo apt-get install git`
-  - CentOS 7: `sudo yum install epel-repo; sudo yum install git`
-  - CentOS 8 / Fedora: `sudo dnf install git`
+    - Debian / Ubuntu: `sudo apt-get install git`
+    - CentOS 7: `sudo yum install epel-repo; sudo yum install git`
+    - CentOS 8 / Fedora: `sudo dnf install git`
 
 ## Git 初步使用
 
