@@ -55,9 +55,9 @@ nav:
   - 虚拟机管理平台:
     - 简介: vm/index.md
     - 浏览器直接登录: vm/login-browser.md
-    - Windows 系统: vm/login-windows.md
-    - macOS 系统: vm/login-macos.md
-    - Linux 系统: vm/login-linux.md
+    - Windows 系统登录: vm/login-windows.md
+    - macOS 系统登录: vm/login-macos.md
+    - Linux 系统登录: vm/login-linux.md
     - 桌面设置: vm/desktop-settings.md
     - 常见问题: vm/faq.md
   - FPGA 在线平台:
