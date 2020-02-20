@@ -14,7 +14,7 @@
 
 虚拟机管理页面的右上角提供设置密码与退出登录的功能，如图：
 
-![Toolbar](../images/web-settings.png){: .img-center }
+![Toolbar](../images/web-settings.png){: .img-center .img-border }
 
 该密码既用于登录平台管理页面（不使用统一身份认证的时候），也用于通过 VNC 方式登录虚拟机。
 

@@ -4,6 +4,10 @@
 	margin-right: auto;
 }
 
+.img-border {
+	border: 1px solid black;
+}
+
 .red-important {
 	color: red !important;
 }
