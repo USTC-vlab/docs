@@ -47,7 +47,7 @@
 
 ![noVNC Combo Keys](../images/novnc-combo-keys.png){: .img-center }
 
-从上到下的 6 个按键分别为 ==Ctrl==, ==Alt==, ==Super==, ==Tab==, ==Esc== 和 ==Ctrl+Alt+Del= 组合键。点击它们中的一个或多个，再按键盘上的字母数字键，即可向虚拟机发送组合键。
+从上到下的 6 个按键分别为 ==Ctrl==, ==Alt==, ==Super==, ==Tab==, ==Esc== 和 ==Ctrl+Alt+Del== 组合键。点击它们中的一个或多个，再按键盘上的字母数字键，即可向虚拟机发送组合键。
 
 ## 使用剪贴板 {#clipboard}
 
