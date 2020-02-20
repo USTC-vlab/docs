@@ -53,11 +53,13 @@
 
 <!--使用剪贴板时请确保虚拟机中的 VNC config 对话框是开启状态。-->
 
-在虚拟机中复制文字后，点击展开左侧工具栏的第二个按钮即可查看虚拟机剪贴板中的内容。由于软件限制，复制的中文会被 [Unicode 编码](https://zh.wikipedia.org/wiki/Unicode)，可以使用一些在线工具如[这个](https://tool.chinaz.com/tools/unicode.aspx)进行转换（使用 ==Unicode 转 中文== 和 ==中文 转 Unicode== 两个按钮）。
+在虚拟机中复制文字后，点击展开左侧工具栏的第二个按钮即可查看虚拟机剪贴板中的内容。
 
-![noVNC Clipboard Utility](../images/novnc-clipboard.png){: .img-center }
+![noVNC Clipboard Utility](../images/novnc-clipboard.png){: .img-center .img-border }
 
 如果想从主机中复制文字进虚拟机，可以将文字粘贴进左侧工具栏弹出的文本框中，即可在虚拟机中粘贴。
+
+由于技术限制，从浏览器复制进虚拟机的中文会变成乱码，从虚拟机复制出来的文字不受影响。
 
 ## 左侧工具栏说明 {#novnc-toolbar}
 
