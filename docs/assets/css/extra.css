@@ -7,3 +7,9 @@
 .red-important {
 	color: red !important;
 }
+
+.md-content article h2,
+.md-content article h3 {
+	padding-bottom: 0.2em;
+	border-bottom: 1px solid #d3d3d3;
+}
