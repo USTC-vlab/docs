@@ -102,7 +102,7 @@ $ git commit -m "remove test.txt"
 
 ## 远程仓库
 
-首先你要有个远程仓库，可以选择注册 [GitHub](https://github.com) 账号。
+首先你要有个远程仓库，如果你还没有，可以选择在 [GitHub](https://github.com) 或者[科大超算中心 GitLab](https://git.ustc.edu.cn) 上注册账号。
 
 ### 关联到本地
 
@@ -116,7 +116,7 @@ $ git commit -m "remove test.txt"
 
 - 第二步：在用户主目录下找到 `.ssh` 文件夹，打开里面的 `id_rsa.pub` 文件（可以用记事本打开），复制里面内容，以 `ssh-rsa` 开头的一行字
 
-  登陆 GitHub，打开 Account settings → SSH Keys 页面
+  登陆 GitHub 或 GitLab，点击右上角头像，选择 Settings → SSH Keys 页面
 
   点 Add SSH Key，填上任意 Title（方便自己辨认），在 Key 文本框里粘贴 `id_rsa.pub` 文件的内容即可
 
@@ -126,7 +126,7 @@ $ git commit -m "remove test.txt"
 
 ### 添加远程库
 
-登陆 GitHub，左上角点 New repository，仓库名填 `learngit`（也可以自己重新起，后面保持同步），其他默认，点击创建完成。
+登陆 GitHub，左上角 Repositories 处点击绿色的 New 按钮，仓库名填 `learngit`（也可以自己重新起，后面保持同步），其他默认，点击创建完成。
 
 输入以下命令（`username` 换成你自己的用户名）：
 
