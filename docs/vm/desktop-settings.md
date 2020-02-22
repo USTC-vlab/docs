@@ -16,17 +16,19 @@
 
 ![Set VNC resolution](../images/vnc-change-resolution.png){: .img-center }
 
-??? tip "2020 年 2 月 23 日更新"
+??? tip "2020 年 2 月 22 日以前的虚拟机"
 
-    本说明适用于 2020 年 2 月 23 日及以后创建的虚拟机（虚拟机 ID 大于等于 1095）。旧虚拟机（ID 小于等于 1090）修改分辨率的方法如下：
-
-    如果你需要修改分辨率，可以使用系统内提供的 `vlab-vnc` 命令行工具。
+    2020 年 2 月 22 日及以前创建的虚拟机（ID 小于等于 1080），修改 VNC 分辨率可以使用系统内提供的 `vlab-vnc` 命令行工具。
 
     打开终端，输入 `vlab-vnc` 即可查看支持的命令与分辨率选项。输入 `vlab-vnc set-res 1024x768` 即可将分辨率修改为 1024\*768。由于分辨率的修改需要重启 VNC 服务，可以使用 `vlab-vnc restart` 命令重启。**这会关闭已打开所有桌面程序**，请注意保存未完成的工作，以免丢失。
 
     ![Set VNC resolution from terminal](../images/vnc-change-resolution-old.png){: .img-center }
 
 ## 设置中文输入法 {#chinese-ime}
+
+???+ tip "新虚拟机已默认启用中文输入法"
+
+    以下内容只有 2020 年 2 月 22 日及以前创建的虚拟机（ID 小于等于 1080）需要设置。2 月 23 日以后创建的新虚拟机（ID 大于等于 1095）已默认启用中文输入法。
 
 系统自带的输入法为 IBus，可以手动启用中文输入。在左上角找到 Applications → Settings → IBus Preferences 设置：
 
