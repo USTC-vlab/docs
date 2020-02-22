@@ -42,9 +42,7 @@ macOS 自带命令行 SSH 客户端。
 
     VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../#change-password)
 
-登录后即可看到桌面。初次登录时会提示初始化配置，选择 `Default config` 即可：
-
-![Xfce4 first login](../images/realvnc-first-start-macos.png){: .img-center }
+登录后即可看到桌面并开始使用。
 
 ## 桌面设置
 
