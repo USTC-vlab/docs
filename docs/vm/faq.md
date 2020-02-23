@@ -10,7 +10,7 @@
 
     名称中带有 `desktop` 的镜像包含了桌面环境，可以使用我们提供的 VNC 登录方式；名称中不含 `desktop` 的镜像则无法使用 VNC 方式登录，我们会提供一个端口用于 SSH 命令行登录。具体登录方式请在左侧根据你的环境查看相应的文档。
 
-    名称中的 `ubuntu`，`debian`, `centos` 等表示该镜像构建时基于的 [Linux 发行版](https://zh.wikipedia.org/zh-hans/Linux%E5%8F%91%E8%A1%8C%E7%89%88)。如果你对 Linux 不熟悉的话，可以参考校 Linux 用户协会的 [Linux 101 课程讲义](https://101.ustclug.org/)或网上的其他教程。
+    名称中的 `ubuntu`, `debian`, `centos` 等表示该镜像构建时基于的 [Linux 发行版](https://zh.wikipedia.org/zh-hans/Linux%E5%8F%91%E8%A1%8C%E7%89%88)。如果你对 Linux 不熟悉的话，可以参考校 Linux 用户协会的 [Linux 101 课程讲义](https://101.ustclug.org/)或网上的其他教程。
 
     也许有朝一日，我们会提供一种在不带桌面环境的系统中安装桌面环境并与我们的 VNC 登录方式密切结合的安装方法，供你安装自己喜欢的桌面环境。由于兼容性是一项挑战，我们目前暂未实现这个任务，因此有使用桌面环境需求的同学应当选择带有 `desktop` 的镜像。
 
