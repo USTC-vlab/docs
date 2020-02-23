@@ -3,7 +3,7 @@
 !!! warning "注意"
     本节内容只适用于熟悉 Linux 操作系统的用户，否则建议使用已配置好的桌面环境。
 
-Vlab 默认提供的桌面环境为 Xfce4，如果你想安装 Mate, LXDE 等其他桌面环境，可以按照如下指示操作。以下将以在 Debian 10 上安装 Mate 桌面环境为例。
+Vlab 默认提供的桌面环境为 Xfce4，如果你想安装 MATE, LXDE 等其他桌面环境，可以按照如下指示操作。以下将以在 Debian 10 上安装 MATE 桌面环境为例。
 
 ## 安装 LightDM 和 VNC
 
