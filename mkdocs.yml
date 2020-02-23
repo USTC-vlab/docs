@@ -54,7 +54,7 @@ nav:
   - 文档首页: index.md
   - 虚拟机管理平台:
     - 简介: vm/index.md
-    - 虚拟机管理页面: vm/web.md
+    - 虚拟机管理: vm/web.md
     - 浏览器直接登录: vm/login-browser.md
     - Windows 系统登录: vm/login-windows.md
     - macOS 系统登录: vm/login-macos.md
