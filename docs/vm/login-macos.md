@@ -40,7 +40,7 @@ macOS 自带命令行 SSH 客户端。
 
 !!! question "密码是什么？"
 
-    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](index.md#change-password)
+    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
 
 登录后即可看到桌面并开始使用。
 
