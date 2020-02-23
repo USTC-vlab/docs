@@ -23,13 +23,13 @@
 
 !!! question "密码是什么？"
 
-    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../#change-password)
+    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](index.md#change-password)
 
 ## 设置中文输入法 {#chinese-ime}
 
 ???+ success "新虚拟机已默认启用中文输入法"
 
-    2 月 23 日以后创建的新虚拟机（ID 大于等于 1095）已默认启用中文输入法。旧虚拟机请参阅[桌面设置](../desktop-settings/#chinese-ime)相关章节。
+    2 月 23 日以后创建的新虚拟机（ID 大于等于 1095）已默认启用中文输入法。旧虚拟机请参阅[桌面设置](desktop-settings.md#chinese-ime)相关章节。
 
 ## 使用组合键 {#combo-keys}
 
@@ -76,4 +76,4 @@
 - 修改 VNC 分辨率
 - 中文输入法
 
-等，请参阅[桌面设置](../desktop-settings)页面。
+等，请参阅[桌面设置](desktop-settings.md)页面。

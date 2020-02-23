@@ -32,4 +32,4 @@
 
 * 其他系统：选择 Standalone x64，加上执行权限 (`chmod a+x`) 后直接运行
 
-后续操作与 Windows 和 macOS 下使用 RealVNC 连接相同，可以在 [这里](../login-macos/#vnc) 继续阅读。
+后续操作与 Windows 和 macOS 下使用 RealVNC 连接相同，可以在 [这里](login-macos.md#vnc) 继续阅读。

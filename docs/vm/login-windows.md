@@ -14,7 +14,7 @@ Windows 需要安装 SSH 客户端，有各种选择：
 - Cygwin
 - Windows Subsystem for Linux
 
-对于以上平台，请参考 [Linux 系统的登录方式](../login-linux/)
+对于以上平台，请参考 [Linux 系统的登录方式](login-linux.md)
 
 下面以免费开源的 PuTTY 为例在 Windows 上连接 Vlab 虚拟机。
 
@@ -61,7 +61,7 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 
 !!! question "密码是什么？"
 
-    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../#change-password)
+    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](index.md#change-password)
 
 登录后即可看到桌面并开始使用。
 
@@ -72,4 +72,4 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 - 修改 VNC 分辨率
 - 中文输入法
 
-等，请参阅[桌面设置](../desktop-settings)页面。
+等，请参阅[桌面设置](desktop-settings.md)页面。
