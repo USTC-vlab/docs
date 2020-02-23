@@ -58,9 +58,10 @@ nav:
     - Windows 系统登录: vm/login-windows.md
     - macOS 系统登录: vm/login-macos.md
     - Linux 系统登录: vm/login-linux.md
-    - 手动安装桌面环境: vm/install-desktop.md
     - 桌面设置: vm/desktop-settings.md
     - 常见问题: vm/faq.md
+    - 高级操作:
+      - 手动安装桌面环境: vm/install-desktop.md
   - FPGA 在线平台:
     - 简介: fpgaol/index.md
     - 使用说明: fpgaol/usage.md
