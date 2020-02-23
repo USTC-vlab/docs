@@ -10,6 +10,10 @@
 
     名称中带有 `desktop` 的镜像包含了桌面环境，可以使用我们提供的 VNC 登录方式；名称中不含 `desktop` 的镜像则无法使用 VNC 方式登录，我们会提供一个端口用于 SSH 命令行登录。具体登录方式请在左侧根据你的环境查看相应的文档。
 
+    !!! info ""
+
+        预装桌面环境的镜像默认用户为 ubuntu（无密码），而不带桌面环境的镜像只有初始的 root 用户，可以通过 SSH 登录后自行添加更多用户。
+
     名称中的 `ubuntu`, `debian`, `centos` 等表示该镜像构建时基于的 [Linux 发行版](https://zh.wikipedia.org/zh-hans/Linux%E5%8F%91%E8%A1%8C%E7%89%88)。如果你对 Linux 不熟悉的话，可以参考校 Linux 用户协会的 [Linux 101 课程讲义](https://101.ustclug.org/)或网上的其他教程。
 
     如果你对默认的桌面环境不满意，且熟悉 Linux 系统，可以在无桌面环境的系统中参照 [手动安装桌面环境](install-desktop.md) 安装你喜欢的桌面环境。目前只有 Debian 与 Ubuntu 支持这样的做法。
