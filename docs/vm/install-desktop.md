@@ -39,4 +39,4 @@ tasksel
 安装完成后重启系统便可以使用浏览器的在线登录或使用 RealVNC 客户端登录你的虚拟机，具体做法可参考左侧文档。进一步的配置，如建立新用户，安装中文环境与输入法等请参考网络上的 Linux 教程。
 
 !!! info "注意"
-    必须使用 LightDM 桌面管理器。若安装桌面环境时自动安装了其他桌面管理器，请使用命令 `dpkg-reconfigure lightdm` 切换回 LightDM 桌面管理器。
+    必须使用 LightDM 桌面管理器。若安装桌面环境时自动安装了其他桌面管理器，请使用命令 `dpkg-reconfigure lightdm` 切换回 LightDM 桌面管理器。若安装了 `network-manager` 软件包请务必卸载，否则可能导致无法连接网络。
