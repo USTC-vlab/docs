@@ -16,7 +16,7 @@
 
 * 如果遇到 Warning，请输入 `yes`，然后输入之前设置的 root 密码，即可登录虚拟机
 
-    ![](../images/ssh_4.png)
+    ![](../images/ssh_1.png)
 
 ## 使用 VNC 登录 {#vnc}
 

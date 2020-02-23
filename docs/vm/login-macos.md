@@ -16,7 +16,7 @@ macOS 自带命令行 SSH 客户端。
 
 * 如果遇到 Warning，请输入 `yes`，然后输入之前设置的 root 密码，即可登录虚拟机
 
-    ![](../images/ssh_5.png){: .img-center }
+    ![](../images/ssh_2.png){: .img-center }
 
 ## 图形界面：使用 VNC 登录 {#vnc}
 
