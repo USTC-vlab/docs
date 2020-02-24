@@ -12,7 +12,7 @@
 
     !!! info ""
 
-        预装桌面环境的镜像默认用户为 ubuntu（无密码），而不带桌面环境的镜像只有初始的 root 用户，可以通过 SSH 登录后自行添加更多用户。
+        预装桌面环境的镜像默认用户为 ubuntu 或 vlab（无密码，见下方表格），而不带桌面环境的镜像只有初始的 root 用户，可以通过 SSH 登录后自行添加更多用户。
 
     名称中的 `ubuntu`, `debian`, `centos` 等表示该镜像构建时基于的 [Linux 发行版](https://zh.wikipedia.org/zh-hans/Linux%E5%8F%91%E8%A1%8C%E7%89%88)。如果你对 Linux 不熟悉的话，可以参考校 Linux 用户协会的 [Linux 101 课程讲义](https://101.ustclug.org/)或网上的其他教程。
 
@@ -28,15 +28,15 @@
 
 ## 镜像一览 {#image-content}
 
-| 镜像编号 | 系统版本 | 桌面环境 | 额外软件 |
-| :------: | :------: | :------: | :------: |
-| 01 | Ubuntu 18.04 | Xfce4 | Vivado 2019.1 |
-| 02 | Ubuntu 18.04 | Xfce4 | 无 |
-| 03 | Debian 10 | MATE | 无 |
-| 11 | Ubuntu 18.04 | 无 | 无 |
-| 12 | Debian 10 | 无 | 无 |
-| 13 | CentOS 8.1 | 无 | 无 |
-| 14 | CentOS 7.7 | 无 | 无 |
+| 镜像编号 | 系统版本 | 默认用户 | 桌面环境 | 额外软件 |
+| :------: | :------: | :------: | :------: | :------: |
+| 01 | Ubuntu 18.04 | root/ubuntu | Xfce4 | Vivado 2019.1 |
+| 02 | Ubuntu 18.04 | root/ubuntu | Xfce4 | 无 |
+| 03 | Debian 10 | root/vlab | MATE | 无 |
+| 11 | Ubuntu 18.04 | root | 无 | 无 |
+| 12 | Debian 10 | root | 无 | 无 |
+| 13 | CentOS 8.1 | root | 无 | 无 |
+| 14 | CentOS 7.7 | root | 无 | 无 |
 
 ## 使用限制 {#limits}
 
