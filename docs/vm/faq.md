@@ -37,3 +37,7 @@
 | 12 | Debian 10 | 无 | 无 |
 | 13 | CentOS 8.1 | 无 | 无 |
 | 14 | CentOS 7.7 | 无 | 无 |
+
+## 使用限制 {#limits}
+
+由于虚拟化平台限制，Vlab 提供的虚拟机无法使用容器（Docker, Kubernetes 等）和 Snapcraft 软件包，我们也没有支持这类软件的计划。如果需要使用容器，请考虑使用其他平台提供的云服务器（例如 Amazon Web Services 或 Microsoft Azure）。
