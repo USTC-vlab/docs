@@ -61,9 +61,12 @@ nav:
     - macOS 系统登录: vm/login-macos.md
     - Linux 系统登录: vm/login-linux.md
     - 桌面设置: vm/desktop-settings.md
-    - 常见问题: vm/faq.md
     - 高级操作:
       - 手动安装桌面环境: vm/install-desktop.md
+    - 常见问题: vm/faq.md
+    - 条款:
+      - 服务条款: vm/terms/terms-of-service.md
+      - 可接受的使用方式: vm/terms/acceptable-use-policy.md
   - FPGA 在线平台:
     - 简介: fpgaol/index.md
     - 使用说明: fpgaol/usage.md
