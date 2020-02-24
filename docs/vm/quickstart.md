@@ -8,7 +8,7 @@
 
 ![login](../images/1.png){: .img-center }
 
-登录后页面显示你还没有虚拟机，点击绿色的==新建虚拟机==按钮。
+登录后页面显示你还没有虚拟机，点击绿色的 ==新建虚拟机== 按钮。
 
 ![Create new VM](../images/vm-create.png){: .img-center }
 

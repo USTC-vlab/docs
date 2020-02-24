@@ -22,7 +22,7 @@
 
 !!! info "注意"
 
-    该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像。由于 TigerVNC 有已知的兼容性问题，我们只建议使用 RealVNC 客户端。
+    该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像。由于 TigerVNC 有已知的 Bug，只能以非加密方式连接服务器，因此我们建议使用 RealVNC 客户端。
 
 在 [RealVNC 官网的下载页面](https://www.realvnc.com/en/connect/download/viewer/linux/) 下载适合你的系统的安装包
 
