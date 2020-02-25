@@ -22,7 +22,11 @@
 
 !!! info "注意"
 
-    该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像。由于 TigerVNC 有已知的 Bug，只能以非加密方式连接服务器，因此我们建议使用 RealVNC 客户端。
+    该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像。
+
+可以使用 RealVNC 或 TigerVNC 登录：
+
+### 使用 RealVNC 登录
 
 在 [RealVNC 官网的下载页面](https://www.realvnc.com/en/connect/download/viewer/linux/) 下载适合你的系统的安装包
 
@@ -33,3 +37,21 @@
 * 其他系统：选择 Standalone x64，加上执行权限 (`chmod a+x`) 后直接运行
 
 后续操作与 Windows 和 macOS 下使用 RealVNC 连接相同，可以在 [这里](login-macos.md#vnc) 继续阅读。
+
+### 使用 TigerVNC 登录
+
+安装 TigerVNC 客户端：
+
+* Ubuntu 和 Debian：`sudo apt install tigervnc-viewer`
+
+* CentOS, Fedora 和 RHEL：`sudo yum install tigervnc`
+
+* Arch Linux 和 Manjaro：`sudo pacman -S tigervnc-viewer`
+
+打开 TigerVNC 客户端，如图所示输入 `vlab.ustc.edu.cn`，点击 `Connect`。
+
+![TigerVNC Main Screen](../images/tigervnc1.png){: .img-center }
+
+这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
+
+![TigerVNC Authentication Dialog](../images/tigervnc2.png){: .img-center }
