@@ -6,7 +6,7 @@
 
 在登录界面，可以使用你的学号登录，或者通过统一身份认证使用**学号**登录。
 
-![login](../images/1.png){: .img-center }
+![login](../images/1.png)
 
 ## 界面 {#interface}
 
@@ -16,7 +16,7 @@
 
 虚拟机管理页面的右上角提供设置密码与退出登录的功能，如图：
 
-![Toolbar](../images/web-settings.png){: .img-center .img-border }
+![Toolbar](../images/web-settings.png){: .img-border }
 
 该密码既用于登录平台管理页面（不使用统一身份认证的时候），也用于通过 VNC 方式登录虚拟机。
 
@@ -24,7 +24,7 @@
 
 点击「新虚拟机」按钮，可以创建虚拟机。在创建页面中，需要输入虚拟机名称、选择镜像以及输入 root 密码。
 
-![create](../images/vm-create.png){: .img-center }
+![create](../images/vm-create.png)
 
 其中：
 
@@ -47,7 +47,7 @@
 
 ### 管理虚拟机 {#manage-vm}
 
-![vms](../images/2.png){: .img-center }
+![vms](../images/2.png)
 
 下方的功能按钮分别为：
 

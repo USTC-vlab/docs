@@ -16,7 +16,7 @@ macOS 自带命令行 SSH 客户端。
 
 * 如果遇到 Warning，请输入 `yes`，然后输入之前设置的 root 密码，即可登录虚拟机
 
-    ![](../images/ssh_2.png){: .img-center }
+    ![](../images/ssh_2.png)
 
 ## 图形界面：使用 VNC 登录 {#vnc}
 
@@ -28,7 +28,7 @@ macOS 自带命令行 SSH 客户端。
 
 打开 VNC Viewer，打开后的主界面如图所示，在地址栏输入 `vlab.ustc.edu.cn`，按回车连接：
 
-![RealVNC Main Screen](../images/realvnc-main-screen-macos.png){: .img-center }
+![RealVNC Main Screen](../images/realvnc-main-screen-macos.png)
 
 如果出现以下画面，continue 即可。
 
@@ -36,7 +36,7 @@ macOS 自带命令行 SSH 客户端。
 
 这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
 
-![RealVNC Authentication Dialog](../images/realvnc-auth-screen-macos.png){: .img-center }
+![RealVNC Authentication Dialog](../images/realvnc-auth-screen-macos.png)
 
 !!! question "密码是什么？"
 

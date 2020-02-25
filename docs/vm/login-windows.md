@@ -22,19 +22,19 @@ Windows 需要安装 SSH 客户端，有各种选择：
 
 安装过程很简单，直接 \[下一步\] 到底即可。安装完成后，找到并打开 PuTTY，如图
 
-![PuTTY in Windows 10 Start Menu](../images/putty-win10-tile.png){: .img-center }
+![PuTTY in Windows 10 Start Menu](../images/putty-win10-tile.png)
 
 在 Host name 一栏填入 `202.38.75.252`，端口号填写网页管理界面给出的端口号（在 `ssh -p` 后面的一个 10001 ~ 29999 之间的数字），点击连接，如图：
 
-![PuTTY configuration](../images/putty-config.png){: .img-center }
+![PuTTY configuration](../images/putty-config.png)
 
 第一次连接时会提示你选择信任虚拟机，点 Yes 即可：
 
-![PuTTY host key prompt](../images/putty-host-key.png){: .img-center }
+![PuTTY host key prompt](../images/putty-host-key.png)
 
 然后 PuTTY 会要求你输入用户名和密码，用户名输入 root，密码输入你在创建虚拟机时设定的 root 用户密码（输入的密码没有回显），按回车即可：
 
-![PuTTY screen](../images/putty-login.png){: .img-center }
+![PuTTY screen](../images/putty-login.png)
 
 PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信息，以后可以更方便地连接虚拟机。这里有两篇不错的使用教程：
 
@@ -53,15 +53,15 @@ Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
 
 以 Windows 10 系统为例，[下载 RealVNC 客户端](https://www.realvnc.com/en/connect/download/viewer/windows/)并安装。安装好后在开始菜单中找到 RealVNC 的图标，如下图所示：
 
-![RealVNC in Windows 10 Start Menu](../images/realvnc-win10-tile.png){: .img-center }
+![RealVNC in Windows 10 Start Menu](../images/realvnc-win10-tile.png)
 
 打开后的主界面如图所示，在地址栏输入 `vlab.ustc.edu.cn`，按回车连接：
 
-![RealVNC Main Screen](../images/realvnc-main-screen-win10.png){: .img-center }
+![RealVNC Main Screen](../images/realvnc-main-screen-win10.png)
 
 这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
 
-![RealVNC Authentication Dialog](../images/realvnc-auth-screen-win10.png){: .img-center }
+![RealVNC Authentication Dialog](../images/realvnc-auth-screen-win10.png)
 
 !!! question "密码是什么？"
 
@@ -73,15 +73,15 @@ Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
 
 以 Windows 10 系统为例，从 [TigerVNC 官方下载页面](https://bintray.com/tigervnc/stable/tigervnc)下载 `vncviewer.exe` 或 `vncviewer64.exe`（64 位系统），如图：
 
-![TigerVNC Viewer Icon](../images/tigervnc-win-icon.png){: .img-center .img-border }
+![TigerVNC Viewer Icon](../images/tigervnc-win-icon.png){: .img-border }
 
 双击打开，在服务器地址处填入 `vlab.ustc.edu.cn`，如图：
 
-![TigerVNC Connection Info](../images/tigervnc-connection-win10.png){: .img-center }
+![TigerVNC Connection Info](../images/tigervnc-connection-win10.png)
 
 这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
 
-![TigerVNC Authentication Dialog](../images/tigervnc-authentication-win10.png){: .img-center }
+![TigerVNC Authentication Dialog](../images/tigervnc-authentication-win10.png)
 
 ### 桌面设置
 

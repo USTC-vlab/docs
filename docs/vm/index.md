@@ -2,7 +2,7 @@
 
 远程教学云桌面项目（Vlab 项目）是由科大计算机实验教学中心提供的、基于互联网的 7x24 远程进行硬件、系统和软件教学实验平台，可校外登录使用，支持 SSH、浏览器和 VNC 远程桌面方式使用。
 
-![Vlab in Browser](../images/vlab-in-browser.jpg){: .img-center }
+![Vlab in Browser](../images/vlab-in-browser.jpg)
 
 本平台通过虚拟机的方式进行软件和系统方面的实验，基于 Linux 容器的方式使得线上体验和线下机房一致，还能够远程操作已部署好的 FPGA 集群进行硬件实验。
 

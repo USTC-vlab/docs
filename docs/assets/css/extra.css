@@ -1,7 +1,12 @@
-.img-center {
+.md-typeset img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.md-typeset img.img-inline {
+	display: initial;
+	margin: initial;
 }
 
 .img-border {

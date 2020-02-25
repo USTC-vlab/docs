@@ -4,6 +4,6 @@
 
 请在左侧目录查找你需要的内容。
 
-[![Home page](images/home.png){: .img-center }](https://vlab.ustc.edu.cn)
+[![Home page](images/home.png)](https://vlab.ustc.edu.cn)
 
 如果你对本平台有任何问题，请邮件联系 [vlab@ustc.edu.cn](mailto:vlab@ustc.edu.cn)。

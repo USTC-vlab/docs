@@ -34,7 +34,7 @@ tasksel
 
 进入交互式页面，选择你需要的桌面环境后输入回车即可安装，这里以 MATE 为例。
 
-![Tasksel](../images/install-desktop-tasksel.png){: .img-center }
+![Tasksel](../images/install-desktop-tasksel.png)
 
 安装完成后重启系统便可以使用浏览器的在线登录或使用 RealVNC 客户端登录你的虚拟机，具体做法可参考左侧文档。进一步的配置，如建立新用户，安装中文环境与输入法等请参考网络上的 Linux 教程。
 

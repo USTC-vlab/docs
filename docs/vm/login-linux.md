@@ -50,8 +50,8 @@
 
 打开 TigerVNC 客户端，如图所示输入 `vlab.ustc.edu.cn`，点击 `Connect`。
 
-![TigerVNC Main Screen](../images/tigervnc-startup-macos.png){: .img-center }
+![TigerVNC Main Screen](../images/tigervnc-startup-macos.png)
 
 这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
 
-![TigerVNC Authentication Dialog](../images/tigervnc-authentication-macos.png){: .img-center }
+![TigerVNC Authentication Dialog](../images/tigervnc-authentication-macos.png)

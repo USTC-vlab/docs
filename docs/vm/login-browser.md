@@ -19,7 +19,7 @@
 
 浏览器登录非常简单，只需要打开 [在线登录页面](https://vlab.ustc.edu.cn/vm-vnc)，输入学号（工号）和虚拟机管理页面的登录密码，确认即可：
 
-![noVNC Authentication Dialog](../images/novnc-auth.png){: .img-center }
+![noVNC Authentication Dialog](../images/novnc-auth.png)
 
 !!! question "密码是什么？"
 
@@ -39,7 +39,7 @@
 
 在浏览器中使用组合键会受到一定限制，例如你的浏览器很可能会将 <kbd>Ctrl</kbd>+<kbd>W</kbd> 理解为“关闭当前标签”，或将 <kbd>Ctrl</kbd>+<kbd>T</kbd> 理解为“打开一个新标签”。为了能将这些组合键正确发送至虚拟机，你可以使用侧边栏提供的组合键功能，如图：
 
-![noVNC Combo Keys](../images/novnc-combo-keys.png){: .img-center }
+![noVNC Combo Keys](../images/novnc-combo-keys.png)
 
 从上到下的 6 个按键分别为 ==Ctrl==, ==Alt==, ==Super==, ==Tab==, ==Esc== 和 ==Ctrl+Alt+Del== 组合键。点击它们中的一个或多个，再按键盘上的字母数字键，即可向虚拟机发送组合键。
 
@@ -49,7 +49,7 @@
 
 在虚拟机中复制文字后，点击展开左侧工具栏的第二个按钮即可查看虚拟机剪贴板中的内容。
 
-![noVNC Clipboard Utility](../images/novnc-clipboard.png){: .img-center .img-border }
+![noVNC Clipboard Utility](../images/novnc-clipboard.png){: .img-border }
 
 如果想从主机中复制文字进虚拟机，可以将文字粘贴进左侧工具栏弹出的文本框中，即可在虚拟机中粘贴。
 
@@ -59,7 +59,7 @@
 
 左侧工具栏一共有 5 个按钮，如图：
 
-![noVNC Toolbar](../images/novnc-toolbar.png){: .img-center }
+![noVNC Toolbar](../images/novnc-toolbar.png)
 
 从上往下功能依次为：
 
