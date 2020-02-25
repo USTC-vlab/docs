@@ -46,7 +46,7 @@ macOS 自带命令行 SSH 客户端。
 
 登录后即可看到桌面并开始使用。
 
-###  使用 TigerVNC 登录 {#tigervnc}
+### 使用 TigerVNC 登录 {#tigervnc}
 
 [下载 macOS 下的 TigerVNC 客户端](https://vlab.ustc.edu.cn/downloads/TigerVNC-1.10.1.dmg)并安装（与安装其他的应用一样，打开 dmg 文件并将应用拖动到 Application 目录即可）。
 

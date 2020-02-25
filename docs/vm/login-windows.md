@@ -71,7 +71,7 @@ Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
 
 ### 使用 TigerVNC 登录 {#tigervnc}
 
-以 Windows 10 系统为例，从 [TigerVNC 官方下载页面](https://bintray.com/tigervnc/stable/tigervnc)下载 `vncviewer.exe` 或 `vncviewer64.exe`（64 位系统），如图：
+以 Windows 10 系统为例，[下载 TigerVNC 客户端](https://vlab.ustc.edu.cn/downloads/vncviewer64-1.10.1.exe)，如图：
 
 ![TigerVNC Viewer Icon](../images/tigervnc-win-icon.png){: .img-border }
 
