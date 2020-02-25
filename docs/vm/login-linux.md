@@ -26,7 +26,7 @@
 
 可以使用 RealVNC 或 TigerVNC 登录：
 
-### 使用 RealVNC 登录
+### 使用 RealVNC 登录 {#realvnc}
 
 在 [RealVNC 官网的下载页面](https://www.realvnc.com/en/connect/download/viewer/linux/) 下载适合你的系统的安装包
 
@@ -38,7 +38,7 @@
 
 后续操作与 Windows 和 macOS 下使用 RealVNC 连接相同，可以在 [这里](login-macos.md#vnc) 继续阅读。
 
-### 使用 TigerVNC 登录
+### 使用 TigerVNC 登录 {#tigervnc}
 
 安装 TigerVNC 客户端：
 
@@ -50,8 +50,8 @@
 
 打开 TigerVNC 客户端，如图所示输入 `vlab.ustc.edu.cn`，点击 `Connect`。
 
-![TigerVNC Main Screen](../images/tigervnc1.png){: .img-center }
+![TigerVNC Main Screen](../images/tigervnc-startup-macos.png){: .img-center }
 
 这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
 
-![TigerVNC Authentication Dialog](../images/tigervnc2.png){: .img-center }
+![TigerVNC Authentication Dialog](../images/tigervnc-authentication-macos.png){: .img-center }
