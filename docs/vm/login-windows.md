@@ -83,7 +83,7 @@ Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
 
 ![TigerVNC Authentication Dialog](../images/tigervnc-authentication-win10.png)
 
-### 桌面设置
+### 桌面设置 {#desktop-settings}
 
 关于一些常用的桌面设置，如
 

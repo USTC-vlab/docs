@@ -58,7 +58,7 @@ macOS 自带命令行 SSH 客户端。
 
 ![TigerVNC Authentication Dialog](../images/tigervnc-authentication-macos.png)
 
-### 桌面设置
+### 桌面设置 {#desktop-settings}
 
 关于一些常用的桌面设置，如
 
