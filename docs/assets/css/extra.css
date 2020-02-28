@@ -23,6 +23,15 @@
 	border-bottom: 1px solid #d3d3d3;
 }
 
+.md-content article h1,
+.md-content article h2,
+.md-content article h3,
+.md-content article h4,
+.md-content article h5,
+.md-content article h6 {
+	font-weight: bold;
+}
+
 .md-typeset .md-typeset__table {
 	display: block;
 	margin-left: auto;
