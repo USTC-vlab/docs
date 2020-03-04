@@ -17,6 +17,12 @@
 
     远程桌面连接方式使用 [Vlab 平台的登录密码](web.md#change-password)，而不是虚拟机内的 root 密码。
 
+## 软件限制 {#limits}
+
+由于虚拟化平台限制，Vlab 提供的虚拟机默认无法使用容器（Docker, Kubernetes 等）和 [Snapcraft 软件包](https://snapcraft.io/)。
+
+如有需要使用 Docker 或 K8s，请联系管理员手动开启（开启后重启生效），但 Snapcraft 软件包暂时超出了我们的能力范围。
+
 ## 镜像选择 {#image-selection}
 
 - **镜像是什么？**
@@ -54,9 +60,3 @@
 | 12 | Debian 10 | root | 无 | 无 |
 | 13 | CentOS 8.1 | root | 无 | 无 |
 | 14 | CentOS 7.7 | root | 无 | 无 |
-
-## 使用限制 {#limits}
-
-由于虚拟化平台限制，Vlab 提供的虚拟机默认无法使用容器（Docker, Kubernetes 等）和 [Snapcraft 软件包](https://snapcraft.io/)。
-
-如有需要使用 Docker 或 K8s，请联系管理员手动开启，但 Snapcraft 软件包暂时超出了我们的能力范围。
