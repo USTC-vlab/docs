@@ -39,3 +39,7 @@
 ![IBus Preferences - Add Chinese Pinyin](../images/ibus-add-pinyin.png)
 
 添加成功后可以在右上角切换中文与英文输入法，也可以按 <kbd>Shift</kbd> 键在中文输入法中切换中英文输入。
+
+## 修改系统语言 {#change-language}
+
+未完待续
