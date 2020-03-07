@@ -49,7 +49,7 @@
 
     如果你对 Linux 有一定经验，能够使用纯命令行的环境，那么你可以选择 11-13 号镜像，这些镜像不包含桌面环境（因此也无法使用 VNC 登录），可以将更多的资源用于你的实验工作。
 
-## 镜像一览 {#image-content}
+### 镜像一览 {#image-content}
 
 | 镜像编号 | 系统版本 | 默认用户 | 桌面环境 | 额外软件 |
 | :------: | :------: | :------: | :------: | :------: |
@@ -60,3 +60,18 @@
 | 12 | Debian 10 | root | 无 | 无 |
 | 13 | CentOS 8.1 | root | 无 | 无 |
 | 14 | CentOS 7.7 | root | 无 | 无 |
+
+## 虚拟机安全 {#vm-security}
+
+由于虚拟机的 SSH 端口是暴露在公网上的，因此如果你的 root 密码设置太弱，会有安全隐患。**任何以 root 登录虚拟机的人都拥有虚拟机的全部权限。**
+
+我们建议，如果你不需要使用密码以 root 用户登录虚拟机，请关闭 root 用户的远程密码登录，你仍然可以使用 SSH 公钥登录你的虚拟机，并且这不影响你使用 `su` 命令和 `sudo` 命令。
+
+关闭 root 密码登录的方式很简单，以 root 用户（或使用 `sudo`）打开文件 `/etc/ssh/sshd_config`，找到 `PermitRootLogin yes` 一行，修改为 `PermitRootLogin prohibit-password` 保存退出，然后执行 `systemctl reload ssh` 命令即可。
+
+你也可以直接使用下面两条命令来完成这一步骤：
+
+```shell
+sudo sed -Ei '/^#?PermitRootLogin/c\PermitRootLogin prohibit-password' /etc/ssh/sshd_config
+sudo systemctl reload ssh
+```
