@@ -12,7 +12,7 @@
 
 ![Create new VM](../images/vm-create.png)
 
-在创建新虚拟机的页面选择一个镜像（如果你需要使用 Xilinx Vivado，请选择 01 号镜像，否则可以选择 02 号镜像），输入一个虚拟机名称，并设置 root 密码。
+在创建新虚拟机的页面选择一个镜像（推荐新手选择基于 Ubuntu 的 01 号镜像），输入一个虚拟机名称，并设置 root 密码。
 
 ??? question "root 密码是什么？"
 
