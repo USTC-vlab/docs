@@ -56,11 +56,13 @@ nav:
     - 简介: vm/index.md
     - 快速开始: vm/quickstart.md
     - 虚拟机管理: vm/web.md
-    - 浏览器直接登录: vm/login-browser.md
-    - Windows 系统登录: vm/login-windows.md
-    - macOS 系统登录: vm/login-macos.md
-    - Linux 系统登录: vm/login-linux.md
+    - 虚拟机登录:
+      - 浏览器直接登录: vm/login-browser.md
+      - Windows 系统登录: vm/login-windows.md
+      - macOS 系统登录: vm/login-macos.md
+      - Linux 系统登录: vm/login-linux.md
     - 桌面设置: vm/desktop-settings.md
+    - 系统资源: vm/resources.md
     - 高级操作:
       - 手动安装桌面环境: vm/install-desktop.md
     - 常见问题: vm/faq.md
