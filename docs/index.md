@@ -18,7 +18,7 @@
 
     > This project is accomplished with the help of Vlab Platform of University of Science and Technology of China.
 
-![Vlab in Browser](../images/vlab-in-browser.jpg)
+![Vlab in Browser](images/vlab-in-browser.jpg)
 
 本平台通过虚拟机的方式进行软件和系统方面的实验，基于 Linux 容器的方式使得线上体验和线下机房一致，还能够远程操作已部署好的 FPGA 集群进行硬件实验。
 
