@@ -63,8 +63,8 @@ nav:
       - macOS 系统登录: vm/login-macos.md
       - Linux 系统登录: vm/login-linux.md
     - 桌面设置: vm/desktop-settings.md
-    - 系统资源: vm/resources.md
     - 高级信息:
+      - 系统资源: vm/resources.md
       - 虚拟机镜像: vm/images.md
       - 手动安装桌面环境: vm/install-desktop.md
     - 常见问题: vm/faq.md
