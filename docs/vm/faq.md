@@ -41,3 +41,7 @@
 sudo sed -Ei '/^#?PermitRootLogin/c\PermitRootLogin prohibit-password' /etc/ssh/sshd_config
 sudo systemctl reload ssh
 ```
+
+!!! warning "注意"
+
+    请不要直接禁止 root 用户的登录（不要将 `PermitRootLogin` 设置为 no），否则修改密码和文件传输等功能将无法使用。
