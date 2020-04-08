@@ -17,15 +17,18 @@ theme:
   palette:
     primary: 'light blue'
     accent: 'light blue'
-  feature:
-    tabs: true
+  icon:
+    logo: fontawesome/solid/desktop
+    repo: octicons/mark-github
+  features:
+    - tabs
 
 # Customization
 extra:
   social:
-    - type: 'globe'
+    - icon: octicons/globe
       link: 'https://vlab.ustc.edu.cn/'
-    - type: 'github'
+    - icon: octicons/mark-github
       link: 'https://github.com/USTC-vlab'
 
 extra_javascript:
