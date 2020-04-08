@@ -33,3 +33,7 @@
 	width: auto;
 	margin: 0 auto;
 }
+
+.md-typeset kbd {
+	box-shadow: 0 0 0 .05rem var(--md-default-fg-color--lighter), 0 .1rem 0 var(--md-default-fg-color--lighter), inset 0 -0.1rem .2rem var(--md-default-bg-color);
+}
