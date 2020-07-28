@@ -19,16 +19,16 @@ theme:
     accent: 'light blue'
   icon:
     logo: fontawesome/solid/desktop
-    repo: octicons/mark-github
+    repo: octicons/mark-github-16
   features:
     - tabs
 
 # Customization
 extra:
   social:
-    - icon: octicons/globe
+    - icon: octicons/globe-16
       link: 'https://vlab.ustc.edu.cn/'
-    - icon: octicons/mark-github
+    - icon: octicons/mark-github-16
       link: 'https://github.com/USTC-vlab'
 
 extra_javascript:
