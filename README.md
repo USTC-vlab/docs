@@ -8,6 +8,10 @@ Markdown 源文件位于 [docs](docs) 目录中，左侧目录可以修改 [`mkd
 
 如果对本文档有任何意见或建议，欢迎在 Issues 中讨论，或直接提交修改到 Pull Requests 中。如果对本平台有任何疑问，请邮件联系 [vlab@ustc.edu.cn](mailto:v%6c%61b@ustc.edu.cn)。
 
+## 许可
+
+本文档以 [CC BY-NC-ND 4.0 协议](https://creativecommons.org/licenses/by-nc-nd/4.0/)共享。
+
 
   [mkdocs]: https://www.mkdocs.org/
   [mkdocs-material]: https://squidfunk.github.io/mkdocs-material/

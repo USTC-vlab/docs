@@ -1,5 +1,7 @@
 # 平台支持
 
+本平台由**中国科学技术大学计算机科学与技术学院**主办并全权负责。另外，以下团体提供了非常重要的支持：
+
 - **计算机实验教学中心**提供服务器、机房、校园网接入以及 `vlab.ustc.edu.cn` 域名
 - **[校 Linux 用户协会](https://lug.ustc.edu.cn/)**提供技术支持与指导
 
@@ -9,7 +11,7 @@
 
 指导老师
 
-: [卢建良](mailto:lujl@ustc.edu.cn)，[邢凯](mailto:kxing@ustc.edu.cn)
+: 卢建良，邢凯
 
 系统平台搭建
 
@@ -23,8 +25,19 @@
 
 指导老师
 
-: [卢建良](mailto:lujl@ustc.edu.cn)，[邢凯](mailto:kxing@ustc.edu.cn)
+: 卢建良，邢凯
 
 平台搭建及运维
 
 : 付佳伟，陶柯宇，彭定澜 
+
+## 开源软件致谢 {#open-source}
+
+- [The Linux Kernel](https://www.kernel.org/) - GNU General Public License v2.0
+- [Debian](https://www.debian.org/) - Mixed licenses
+- [Proxmox Virtual Environment](https://www.proxmox.com/en/proxmox-ve) - GNU Affero General Public License v3.0
+- [QEMU](https://www.qemu.org/) - GNU General Public License v2.0
+- [Linux Containers](https://linuxcontainers.org/) - GNU General Public License v2.0 and GNU Lesser General Public License v2.1
+- [Django Web framework](https://www.djangoproject.com/) - The 3-Clause BSD License
+- [noVNC](https://novnc.com/) - Mixed licenses
+- [MkDocs](https://www.mkdocs.org/) (The 2-Clause BSD License) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) (MIT License)
