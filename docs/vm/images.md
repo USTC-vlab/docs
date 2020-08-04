@@ -27,6 +27,7 @@
 | 01 | Ubuntu 18.04 | root/ubuntu | Xfce4 | Vivado 2019.1 |
 | 02 | Ubuntu 18.04 | root/ubuntu | Xfce4 | 无 |
 | 03 | Debian 10 | root/vlab | MATE | 无 |
+| 04 | Ubuntu 20.04 | root/ubuntu | Xfce4 | 无 |
 | 11 | Ubuntu 18.04 | root | 无 | 无 |
 | 12 | Debian 10 | root | 无 | 无 |
 | 13 | CentOS 8.1 | root | 无 | 无 |
