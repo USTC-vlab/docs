@@ -17,7 +17,13 @@
 
     我们推荐最新版本的 [Google Chrome](https://www.google.cn/chrome/) 和 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)，它们能提供最完整的功能和最好的使用体验。
 
-浏览器登录非常简单，只需要打开 [在线登录页面](https://vlab.ustc.edu.cn/vm-vnc)，输入学号（工号）和虚拟机管理页面的登录密码，确认即可：
+浏览器登录非常简单，只需要打开 [在线登录页面](https://vlab.ustc.edu.cn/vm-vnc)，可以选择一键登录或者学号密码登录：
+
+![noVNC Authentication Dialog](../images/novnc-choose.png)
+
+如果已经登录过vlab，那么点击一键登录即可成功进入虚拟机页面
+
+当然也可以选择学号密码登录：
 
 ![noVNC Authentication Dialog](../images/novnc-auth.png)
 
