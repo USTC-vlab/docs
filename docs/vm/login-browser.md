@@ -21,9 +21,9 @@
 
 ![noVNC Authentication Dialog](../images/novnc-choose.png)
 
-如果已经登录过vlab，那么点击一键登录即可成功进入虚拟机页面
+如果已经登录过 vlab，那么点击一键登录即可成功进入虚拟机页面
 
-当然也可以选择学号密码登录：
+同时你也可以选择使用学号密码登录：
 
 ![noVNC Authentication Dialog](../images/novnc-auth.png)
 
