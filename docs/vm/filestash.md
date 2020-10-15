@@ -1,26 +1,26 @@
 # 文件传输功能
 
-vlab 支持虚拟机与本机之间的文件传输，在 [vlab 主页](https://vlab.ustc.edu.cn/) 上可以看到有 `文件传输` 选项：
+vlab 支持虚拟机与本机之间的文件传输，在 [vlab 主页](https://vlab.ustc.edu.cn/) 上可以看到有「文件传输」选项：
 
 ![file transmission entry1](../images/file-transmission-entry1.png)
 
-同时也可以在 `虚拟机管理` 界面里找到入口：
+同时也可以在「虚拟机管理」界面里找到入口：
 
 ![file transmission entry2](../images/file-transmission-entry2.png)
 
 ## 登录
 
-登录需要输入学号、vlab平台密码、Linux用户名以及Linux密码：
+登录需要输入学号、vlab 平台密码、Linux 用户名以及 Linux 密码：
 
 ![file transmission login](../images/file-transmission-login.png)
 
-如果勾选 `Remember me` 会弹出设置主密码的窗口，设置好后登录就只需要输入主密码：
+如果勾选 **Remember me** 会弹出设置主密码的窗口，设置好后登录就只需要输入主密码：
 
 ![file transmission login remember me](../images/file-transmission-login-rememberme.png)
 
 ## 文件管理器操作
 
-文件管理器提供新建文件、新建文件夹、更改目录、修改文件名，删除文件、快速访问、文件上传、文件下载、文件编辑等功能：
+文件管理器提供新建文件、新建文件夹、更改目录、修改文件名、删除文件、快速访问、文件上传、文件下载、文件编辑等功能：
 
 ![file transmission login remember me](../images/file-transmission-operations.png)
 
@@ -30,7 +30,7 @@ vlab 支持虚拟机与本机之间的文件传输，在 [vlab 主页](https://v
 
 ![file transmission login remember me](../images/file-transmission-upload.png)
 
-当需要下载文件到本机时，点击需要下载的文件，进入文件的编辑页面，点击右上角的 `下载图标` 完成文件下载：
+当需要下载文件到本机时，点击需要下载的文件，进入文件的编辑页面，点击右上角的「下载」图标完成文件下载：
 
 ![file transmission login remember me](../images/file-transmission-download.png)
 
