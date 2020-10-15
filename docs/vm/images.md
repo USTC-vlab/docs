@@ -26,7 +26,7 @@
 | :------: | :------: | :------: | :------: | :------: |
 | 01 | Ubuntu 20.04 | root/ubuntu | MATE | Vlab 实验软件套装 |
 | 03 | Debian 10 | root/vlab | MATE | Vlab 实验软件套装 |
-| 04 | Ubuntu 20.04 | root/ubuntu | Xfce4 | Vlab 实验软件套装 |
+| 04 | Ubuntu 18.04 | root/ubuntu | Xfce4 | Vlab 实验软件套装 |
 | 11 | Ubuntu 18.04 | root | 无 | 无 |
 | 12 | Debian 10 | root | 无 | 无 |
 | 13 | CentOS 8.1 | root | 无 | 无 |
