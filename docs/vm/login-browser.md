@@ -14,6 +14,7 @@
     - Opera 36 或以上
     - Internet Explorer 11
     - Microsoft Edge 12 或以上
+    - Microsoft Edge Chromium 版
 
     我们推荐最新版本的 [Google Chrome](https://www.google.cn/chrome/) 和 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)，它们能提供最完整的功能和最好的使用体验。
 

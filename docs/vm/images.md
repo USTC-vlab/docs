@@ -24,11 +24,17 @@
 
 | 镜像编号 | 系统版本 | 默认用户 | 桌面环境 | 额外软件 |
 | :------: | :------: | :------: | :------: | :------: |
-| 01 | Ubuntu 18.04 | root/ubuntu | Xfce4 | Vivado 2019.1 |
-| 02 | Ubuntu 18.04 | root/ubuntu | Xfce4 | 无 |
-| 03 | Debian 10 | root/vlab | MATE | 无 |
-| 04 | Ubuntu 20.04 | root/ubuntu | Xfce4 | 无 |
+| 01 | Ubuntu 20.04 | root/ubuntu | MATE | Vlab 实验软件套装 |
+| 03 | Debian 10 | root/vlab | MATE | Vlab 实验软件套装 |
+| 04 | Ubuntu 20.04 | root/ubuntu | Xfce4 | Vlab 实验软件套装 |
 | 11 | Ubuntu 18.04 | root | 无 | 无 |
 | 12 | Debian 10 | root | 无 | 无 |
 | 13 | CentOS 8.1 | root | 无 | 无 |
 | 14 | CentOS 7.7 | root | 无 | 无 |
+| 99 | 测试版本，请勿使用 | root | 无 | 无 |
+
+其中【Vlab 实验软件套装】包含了以下软件，并会随时增加或更新（不占用虚拟机存储空间）：
+
+- Vivado 2019.1
+- MATLAB R2019a
+- Wolfram Mathematica 12.1
