@@ -2,7 +2,7 @@
 
 !!! info "注意"
 
-    该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像。
+    该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像，通常为 01 到 09 号镜像。
 
 ???+ success "浏览器支持"
 
@@ -88,3 +88,13 @@
 - 中文输入法
 
 等，请参阅[桌面设置](desktop-settings.md)页面。
+
+## 命令行登录
+
+Vlab 支持在浏览器中通过命令行 SSH 登录虚拟机，登录地址为 <https://vlab.ustc.edu.cn/wetty>。
+
+!!! question "密码是什么？"
+
+    `Vlab password` 指的是 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
+
+TBD
