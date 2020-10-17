@@ -767,15 +767,18 @@
 <p>Arch Linux 和 Manjaro：<code>sudo pacman -S openssh</code></p>
 </li>
 <li>
-<p>根据虚拟机登录 IP 地址和端口（例如，下图中地址为 <code>202.38.75.252</code>，端口为 <code>10003</code>），输入命令：</p>
-<div class="highlight"><pre><span></span><code>ssh root@202.38.75.252 -p <span class="m">10003</span>
+<p>从 Vlab SSH 统一认证方式登录：</p>
+<div class="highlight"><pre><span></span><code>ssh root@vlab.ustc.edu.cn
 </code></pre></div>
 </li>
 <li>
-<p>如果遇到 Warning，请输入 <code>yes</code>，然后输入之前设置的 root 密码，即可登录虚拟机</p>
+<p>如果遇到 Warning，请输入 <code>yes</code>，然后根据提示，即可登录虚拟机</p>
+<!-- TODO: TBD: 替换图片，展示新的 SSH 统一认证登录界面 -->
 <p><img alt="" src="../../images/ssh_1.png" /></p>
 </li>
 </ul>
+<!-- TODO: TBD: 增加一个 bullet point，说明如何选择虚拟机内的用户名 (root/ubuntu/vlab) -->
+
 <h2 id="vnc">使用 VNC 登录<a class="headerlink" href="#vnc" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">注意</p>
@@ -813,6 +816,10 @@
 <p><img alt="TigerVNC Main Screen" src="../../images/tigervnc-startup-macos.png" /></p>
 <p>这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：</p>
 <p><img alt="TigerVNC Authentication Dialog" src="../../images/tigervnc-authentication-macos.png" /></p>
+<div class="admonition question">
+<p class="admonition-title">密码是什么？</p>
+<p>VNC 登录方式使用 Vlab 平台的登录密码。<a href="../web/#change-password">还没设置？</a></p>
+</div>
                 
               
               
