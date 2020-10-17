@@ -8,15 +8,19 @@
 * CentOS, Fedora 和 RHEL：`sudo yum install ssh-clients`
 * Arch Linux 和 Manjaro：`sudo pacman -S openssh`
 
-* 根据虚拟机登录 IP 地址和端口（例如，下图中地址为 `202.38.75.252`，端口为 `10003`），输入命令：
+* 从 Vlab SSH 统一认证方式登录：
 
     ```shell
-    ssh root@202.38.75.252 -p 10003
+    ssh root@vlab.ustc.edu.cn
     ```
 
-* 如果遇到 Warning，请输入 `yes`，然后输入之前设置的 root 密码，即可登录虚拟机
+* 如果遇到 Warning，请输入 `yes`，然后根据提示，即可登录虚拟机
+
+    <!-- TODO: TBD: 替换图片，展示新的 SSH 统一认证登录界面 -->
 
     ![](../images/ssh_1.png)
+
+<!-- TODO: TBD: 增加一个 bullet point，说明如何选择虚拟机内的用户名 (root/ubuntu/vlab) -->
 
 ## 使用 VNC 登录 {#vnc}
 
@@ -55,3 +59,7 @@
 这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
 
 ![TigerVNC Authentication Dialog](../images/tigervnc-authentication-macos.png)
+
+!!! question "密码是什么？"
+
+    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
