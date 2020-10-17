@@ -51,6 +51,10 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 - <https://www.hostarr.com/putty-tutorial/>
 - <https://www.cnblogs.com/yuwentao/archive/2013/01/06/2846953.html>
 
+### XShell 登录方式 {#xshell}
+
+TBD
+
 ## 图形界面：使用 VNC 登录 {#vnc}
 
 !!! info "注意"
