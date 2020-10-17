@@ -21,6 +21,7 @@
     ![](../images/ssh_1.png)
 
 <!-- TODO: TBD: 增加一个 bullet point，说明如何选择虚拟机内的用户名 (root/ubuntu/vlab) -->
+<!-- TODO: TBD: 增加一个 bullet point，说明如何使用公钥登录 -->
 
 ## 使用 VNC 登录 {#vnc}
 

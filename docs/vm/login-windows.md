@@ -18,7 +18,7 @@ Windows 需要安装 SSH 客户端，有各种选择：
 
 下面以免费开源的 PuTTY 为例在 Windows 上连接 Vlab 虚拟机。
 
-### PuTTY 登录方式 {#putty}
+### PuTTY 登录 {#putty}
 
 安装过程很简单，直接 \[下一步\] 到底即可。安装完成后，找到并打开 PuTTY，如图
 
@@ -51,9 +51,32 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 - <https://www.hostarr.com/putty-tutorial/>
 - <https://www.cnblogs.com/yuwentao/archive/2013/01/06/2846953.html>
 
-### XShell 登录方式 {#xshell}
+#### 使用公钥登录虚拟机 {#putty-pubkey}
+
+使用公钥登录虚拟机可以免除每次输入密码的麻烦。
 
 TBD
+
+<!--
+Content:
+
+- How to retrieve the public key
+- Convert the public key to PuTTY format (.ppk)
+- Set the public key and save session information
+-->
+
+### XShell 方式 {#xshell}
+
+TBD
+
+<!--
+Content:
+
+- Where to download (hint: [下载页面](../downloads.md) )
+- Follow the styles of the PuTTY section to complete this part
+
+Similar to that of the PuTTY part, a section (start with H4) for pubkey login would be good.
+-->
 
 ## 图形界面：使用 VNC 登录 {#vnc}
 
