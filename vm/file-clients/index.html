@@ -9,7 +9,7 @@
         <meta name="description" content="Vlab 实验平台使用文档">
       
       
-        <link rel="canonical" href="https://vlab.ustc.edu.cn/vm/install-desktop/">
+        <link rel="canonical" href="https://vlab.ustc.edu.cn/vm/file-clients/">
       
       
         <meta name="author" content="USTC Vlab">
@@ -19,7 +19,7 @@
     
     
       
-        <title>手动安装桌面环境 - Vlab @ USTC</title>
+        <title>使用客户端软件进行文件传输 - Vlab @ USTC</title>
       
     
     
@@ -100,7 +100,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              手动安装桌面环境
+              使用客户端软件进行文件传输
             
           </span>
         </div>
@@ -196,12 +196,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
     
     <label class="md-nav__link" for="nav-1">
       Vlab
@@ -379,12 +377,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-7" type="checkbox" id="nav-1-7" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-7" type="checkbox" id="nav-1-7">
     
     <label class="md-nav__link" for="nav-1-7">
       高级信息
@@ -426,56 +422,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        手动安装桌面环境
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../install-desktop/" class="md-nav__link">
       手动安装桌面环境
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lightdm-vnc" class="md-nav__link">
-    安装 LightDM 和 VNC
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    安装桌面环境
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -687,15 +638,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lightdm-vnc" class="md-nav__link">
-    安装 LightDM 和 VNC
+  <a href="#filezilla" class="md-nav__link">
+    FileZilla
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    安装桌面环境
+  <a href="#winscp" class="md-nav__link">
+    WinSCP
   </a>
   
 </li>
@@ -712,38 +663,17 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/USTC-vlab/docs/edit/master/docs/vm/install-desktop.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/USTC-vlab/docs/edit/master/docs/vm/file-clients.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="_1">手动安装桌面环境<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">注意</p>
-<p>本节内容只适用于熟悉 Linux 操作系统的用户，否则建议使用已配置好的桌面环境。</p>
-</div>
-<p>Vlab 默认提供的桌面环境为 Xfce4，如果你想安装 MATE, LXDE 等其他桌面环境，可以按照如下指示操作。以下将以在 Debian 10 上安装 MATE 桌面环境为例。</p>
-<h2 id="lightdm-vnc">安装 LightDM 和 VNC<a class="headerlink" href="#lightdm-vnc" title="Permanent link">&para;</a></h2>
-<p>为了与 Vlab 的 VNC 后端连接，需要安装我们提供的 vlab-vnc 软件包（限 Debian / Ubuntu，暂无 RPM 安装包）。</p>
-<p>先下载软件包</p>
-<div class="highlight"><pre><span></span><code>wget https://vlab.ustc.edu.cn/repo/vlab-vnc.deb
-</code></pre></div>
-<p>安装 vlab-vnc</p>
-<div class="highlight"><pre><span></span><code>apt update
-apt install ./vlab-vnc.deb
-</code></pre></div>
-<p>在安装过程中会询问键盘布局，选择 English (US) 即可。</p>
-<h2 id="_2">安装桌面环境<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>使用 tasksel 安装桌面环境。</p>
-<div class="highlight"><pre><span></span><code>tasksel
-</code></pre></div>
-<p>进入交互式页面，选择你需要的桌面环境后输入回车即可安装，这里以 MATE 为例。</p>
-<p><img alt="Tasksel" src="../../images/install-desktop-tasksel.png" /></p>
-<p>安装完成后重启系统便可以使用浏览器的在线登录或使用 RealVNC 客户端登录你的虚拟机，具体做法可参考左侧文档。进一步的配置，如建立新用户，安装中文环境与输入法等请参考网络上的 Linux 教程。</p>
-<div class="admonition info">
-<p class="admonition-title">注意</p>
-<p>必须使用 LightDM 桌面管理器。若安装桌面环境时自动安装了其他桌面管理器，请使用命令 <code>dpkg-reconfigure lightdm</code> 切换回 LightDM 桌面管理器。若安装了 <code>network-manager</code> 软件包请务必卸载，否则可能导致无法连接网络。</p>
-</div>
+                <h1 id="_1">使用客户端软件进行文件传输<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>Vlab 支持使用 SFTP 客户端软件进行虚拟机与本机之间的文件传输。下面介绍 FileZilla 等常见软件的使用方式。</p>
+<h2 id="filezilla">FileZilla<a class="headerlink" href="#filezilla" title="Permanent link">&para;</a></h2>
+<p>TBD</p>
+<h2 id="winscp">WinSCP<a class="headerlink" href="#winscp" title="Permanent link">&para;</a></h2>
+<p>TBD</p>
                 
               
               
@@ -758,41 +688,6 @@ apt install ./vlab-vnc.deb
       
         
 <footer class="md-footer">
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../images/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  上一页
-                </span>
-                虚拟机镜像
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../faq/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  下一页
-                </span>
-                常见问题
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
