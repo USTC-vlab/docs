@@ -5,7 +5,7 @@
 Windows 需要安装 SSH 客户端，有各种选择：
 
 - PuTTY ([官方下载](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html))
-- XShell ([NetSarang 官方下载](https://www.netsarang.com/zh/free-for-home-school/))
+- XShell ([官方下载](https://www.netsarang.com/zh/free-for-home-school/))
 - Termius ([官方下载](https://termius.com/windows)，另有 [Windows 10 应用商店版](https://www.microsoft.com/store/productId/9NK1GDVPX09V))
 
 另外，Windows 平台有各种 Linux / Unix 环境模拟软件，例如
@@ -24,7 +24,7 @@ Windows 需要安装 SSH 客户端，有各种选择：
 
 ![PuTTY in Windows 10 Start Menu](../images/putty-win10-tile.png)
 
-在 Host name 一栏填入 `vlab.ustc.edu.cn`，端口号填写 22（这桑默认值），点击连接，如图：
+在 Host name 一栏填入 `vlab.ustc.edu.cn`，端口号填写 22（这是默认值），点击连接，如图：
 
 ![PuTTY configuration](../images/putty-config.png)
 
@@ -32,7 +32,7 @@ Windows 需要安装 SSH 客户端，有各种选择：
 
 ![PuTTY host key prompt](../images/putty-host-key.png)
 
-然后 PuTTY 会要求你输入用户名和密码，用户名输入 root 或 ubuntu，然后根据提示输入你的 Vlab 用户名和密码（输入的密码没有回显），按回车即可：
+然后 PuTTY 会要求你输入用户名和密码，用户名输入 root 或 ubuntu 或 vlab（参见[镜像配置](images.md#image-content)），然后根据提示输入你的 Vlab 用户名和密码（输入的密码没有回显），按回车即可：
 
 ![PuTTY screen](../images/putty-login.png)
 
@@ -41,6 +41,10 @@ Windows 需要安装 SSH 客户端，有各种选择：
     `Vlab username` 是你的学号（或工号），在登录虚拟机管理页面后可以在右上角看到。
 
     `Vlab password` 是 Vlab 平台的登录密码，不是虚拟机的 root 密码。[还没设置？](web.md#change-password)
+
+登录成功后即可使用虚拟机，如图：
+
+![PuTTY shell](../images/putty-login-success.png)
 
 PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信息，以后可以更方便地连接虚拟机。这里有两篇不错的使用教程：
 
