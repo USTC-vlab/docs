@@ -15,7 +15,7 @@
         <meta name="author" content="USTC Vlab">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.2">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bc7e593a.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab28b872.min.css">
         
           
           
@@ -81,7 +81,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://vlab.ustc.edu.cn/" title="Vlab @ USTC" class="md-header-nav__button md-logo" aria-label="Vlab @ USTC">
       
@@ -166,7 +168,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://vlab.ustc.edu.cn/" title="Vlab @ USTC" class="md-nav__button md-logo" aria-label="Vlab @ USTC">
       
@@ -342,6 +346,33 @@
   <a href="#putty-pubkey" class="md-nav__link">
     使用公钥登录虚拟机
   </a>
+  
+    <nav class="md-nav" aria-label="使用公钥登录虚拟机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh_1" class="md-nav__link">
+    生成 SSH 密钥对并下载到本地
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pem-ppk" class="md-nav__link">
+    将私钥 .pem 格式转换为 .ppk 格式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#putty_1" class="md-nav__link">
+    在 PuTTY 中设置私钥并保存会话信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -767,6 +798,33 @@
     使用公钥登录虚拟机
   </a>
   
+    <nav class="md-nav" aria-label="使用公钥登录虚拟机">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ssh_1" class="md-nav__link">
+    生成 SSH 密钥对并下载到本地
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pem-ppk" class="md-nav__link">
+    将私钥 .pem 格式转换为 .ppk 格式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#putty_1" class="md-nav__link">
+    在 PuTTY 中设置私钥并保存会话信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -876,7 +934,27 @@
 </ul>
 <h4 id="putty-pubkey">使用公钥登录虚拟机<a class="headerlink" href="#putty-pubkey" title="Permanent link">&para;</a></h4>
 <p>使用公钥登录虚拟机可以免除每次输入密码的麻烦。</p>
-<p>TBD</p>
+<h5 id="ssh_1">生成 SSH 密钥对并下载到本地<a class="headerlink" href="#ssh_1" title="Permanent link">&para;</a></h5>
+<p>进入虚拟机管理界面，可以在自己虚拟机下方找到 SSH 密钥管理入口：</p>
+<p><img alt="PuTTY pubkey entry" src="../../images/putty-pubkey-entrypoint.png" /></p>
+<p>点击进入，即可通过点击 [生成新的 SSH 密钥对] 生成 SSH 密钥对：</p>
+<p><img alt="PuTTY pubkey generate" src="../../images/putty-pubkey-generate.png" /></p>
+<p>此时公钥已经存储到自己的虚拟机上，只需要下载私钥并做一些配置就能免密登录。</p>
+<p>点击 [下载私钥] 就能在下载文件中找到一个以 <code>.pem</code> 结尾的文件，这就是对应的 SSH 私钥</p>
+<h5 id="pem-ppk">将私钥 <code>.pem</code> 格式转换为 <code>.ppk</code> 格式<a class="headerlink" href="#pem-ppk" title="Permanent link">&para;</a></h5>
+<p>由于 PuTTY 需要的私钥格式为 <code>.ppk</code>，所以我们还要进行一步转换。</p>
+<p>转换格式需要用到 <code>PuTTYgen</code>，一般来说安装了 PuTTY 后会自带有 <code>PuTTYgen</code>，如果您的系统未安装，请下载并安装 <a href="https://www.ssh.com/ssh/putty/windows/puttygen/">PuTTYgen</a>。</p>
+<p>在 <code>PuTTY</code> 的安装目录下就能找到 <code>PuTTYgen</code>，打开后可以看到：</p>
+<p><img alt="PuTTY pubkey formate transfer" src="../../images/putty-pubkey-format-transfer.png" /></p>
+<p>点击 [Load] 找到刚刚下载的 <code>.pem</code> 文件打开，然后点击 [Save private key]，选择一个目录保存生成的 <code>.ppk</code> 文件。</p>
+<h5 id="putty_1">在 PuTTY 中设置私钥并保存会话信息<a class="headerlink" href="#putty_1" title="Permanent link">&para;</a></h5>
+<p>先到 Connection-Data 项设置自己的登陆用户名（这里以 root 为例），如图：</p>
+<p><img alt="PuTTY pubkey config1" src="../../images/putty-pubkey-config1.png" /></p>
+<p>再点 SSH 项下面的 Auth ，添加上一步转换得到的 <code>.ppk</code> 格式的私钥：</p>
+<p><img alt="PuTTY pubkey config1" src="../../images/putty-pubkey-config2.png" /></p>
+<p>然后最重要的是要回去 <code>Session</code> 项里保存，不然下次又得重新添加一遍。</p>
+<p><img alt="PuTTY pubkey save session" src="../../images/putty-pubkey-savesession.png" /></p>
+<p>保存后每次登陆时只需要点击 [Load] 就能加载之前保存的 Session 信息，点击 [Open] 就能免密登录虚拟机。</p>
 <!--
 Content:
 
@@ -1020,8 +1098,8 @@ Similar to that of the PuTTY part, a section (start with H4) for pubkey login wo
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.9554a270.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
