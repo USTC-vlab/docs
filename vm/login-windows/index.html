@@ -351,7 +351,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ssh_1" class="md-nav__link">
+  <a href="#pubkey-retrieve" class="md-nav__link">
     生成 SSH 密钥对并下载到本地
   </a>
   
@@ -359,7 +359,7 @@
         
           <li class="md-nav__item">
   <a href="#pem-ppk" class="md-nav__link">
-    将私钥 .pem 格式转换为 .ppk 格式
+    将 .pem 格式的私钥转换为 .ppk 格式 {}
   </a>
   
 </li>
@@ -802,7 +802,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ssh_1" class="md-nav__link">
+  <a href="#pubkey-retrieve" class="md-nav__link">
     生成 SSH 密钥对并下载到本地
   </a>
   
@@ -810,7 +810,7 @@
         
           <li class="md-nav__item">
   <a href="#pem-ppk" class="md-nav__link">
-    将私钥 .pem 格式转换为 .ppk 格式
+    将 .pem 格式的私钥转换为 .ppk 格式 {}
   </a>
   
 </li>
@@ -934,35 +934,28 @@
 </ul>
 <h4 id="putty-pubkey">使用公钥登录虚拟机<a class="headerlink" href="#putty-pubkey" title="Permanent link">&para;</a></h4>
 <p>使用公钥登录虚拟机可以免除每次输入密码的麻烦。</p>
-<h5 id="ssh_1">生成 SSH 密钥对并下载到本地<a class="headerlink" href="#ssh_1" title="Permanent link">&para;</a></h5>
+<h5 id="pubkey-retrieve">生成 SSH 密钥对并下载到本地<a class="headerlink" href="#pubkey-retrieve" title="Permanent link">&para;</a></h5>
 <p>进入虚拟机管理界面，可以在自己虚拟机下方找到 SSH 密钥管理入口：</p>
 <p><img alt="PuTTY pubkey entry" src="../../images/putty-pubkey-entrypoint.png" /></p>
 <p>点击进入，即可通过点击 [生成新的 SSH 密钥对] 生成 SSH 密钥对：</p>
 <p><img alt="PuTTY pubkey generate" src="../../images/putty-pubkey-generate.png" /></p>
-<p>此时公钥已经存储到自己的虚拟机上，只需要下载私钥并做一些配置就能免密登录。</p>
-<p>点击 [下载私钥] 就能在下载文件中找到一个以 <code>.pem</code> 结尾的文件，这就是对应的 SSH 私钥</p>
-<h5 id="pem-ppk">将私钥 <code>.pem</code> 格式转换为 <code>.ppk</code> 格式<a class="headerlink" href="#pem-ppk" title="Permanent link">&para;</a></h5>
-<p>由于 PuTTY 需要的私钥格式为 <code>.ppk</code>，所以我们还要进行一步转换。</p>
-<p>转换格式需要用到 <code>PuTTYgen</code>，一般来说安装了 PuTTY 后会自带有 <code>PuTTYgen</code>，如果您的系统未安装，请下载并安装 <a href="https://www.ssh.com/ssh/putty/windows/puttygen/">PuTTYgen</a>。</p>
-<p>在 <code>PuTTY</code> 的安装目录下就能找到 <code>PuTTYgen</code>，打开后可以看到：</p>
-<p><img alt="PuTTY pubkey formate transfer" src="../../images/putty-pubkey-format-transfer.png" /></p>
-<p>点击 [Load] 找到刚刚下载的 <code>.pem</code> 文件打开，然后点击 [Save private key]，选择一个目录保存生成的 <code>.ppk</code> 文件。</p>
+<p>此时公钥已经存储到自己的虚拟机上，只需要下载私钥并做一些配置就能利用密钥对进行免密登录。</p>
+<p>点击 <strong>下载私钥</strong> 就能在下载文件中找到一个以 <code>.pem</code> 结尾的文件，这就是对应的 SSH 私钥。请妥善保管它，因为<strong>任何获得这个文件的人都能够登录你的虚拟机</strong>。</p>
+<p>由于技术限制，每个虚拟机的私钥都是独立的。若你删除并重新创建了虚拟机，你需要重新生成密钥对才能使用密钥登录新的虚拟机。</p>
+<h5 id="pem-ppk">将 .pem 格式的私钥转换为 .ppk 格式 {}<a class="headerlink" href="#pem-ppk" title="Permanent link">&para;</a></h5>
+<p>由于 PuTTY 使用的私钥格式为其专用的 <code>.ppk</code> 格式，而不是更为通用的 PEM 格式，所以我们还要进行一步转换。</p>
+<p>转换私钥格式需要用到 PuTTYgen，即 PuTTY 的密钥生成与转换工具。一般在安装 PuTTY 时已包含它，如果你安装的 PuTTY 中未包含这个工具，请在<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">这个页面</a>直接下载 <code>puttygen.exe</code>。</p>
+<p>在开始菜单的 PuTTY 文件夹下，或者 PuTTY 的安装目录下就能找到 PuTTYgen，打开后可以看到如下界面：</p>
+<p><img alt="PuTTY pubkey format convert" src="../../images/putty-pubkey-format-convert.png" /></p>
+<p>点击 <strong>Load</strong> 找到刚刚下载的 <code>.pem</code> 文件打开，然后点击 <strong>Save private key</strong>，选择一个合适目录保存生成的 <code>.ppk</code> 文件。同样地，请妥善保管这个私钥文件。</p>
 <h5 id="putty_1">在 PuTTY 中设置私钥并保存会话信息<a class="headerlink" href="#putty_1" title="Permanent link">&para;</a></h5>
-<p>先到 Connection-Data 项设置自己的登陆用户名（这里以 root 为例），如图：</p>
-<p><img alt="PuTTY pubkey config1" src="../../images/putty-pubkey-config1.png" /></p>
-<p>再点 SSH 项下面的 Auth ，添加上一步转换得到的 <code>.ppk</code> 格式的私钥：</p>
-<p><img alt="PuTTY pubkey config1" src="../../images/putty-pubkey-config2.png" /></p>
-<p>然后最重要的是要回去 <code>Session</code> 项里保存，不然下次又得重新添加一遍。</p>
+<p>先到 Connection - Data 项设置自己的登录用户名（这里以 root 为例，你也可以使用 ubuntu 或 vlab，详情参见<a href="../images/#image-content">镜像配置</a>），如图：</p>
+<p><img alt="PuTTY pubkey config 1" src="../../images/putty-pubkey-config1.png" /></p>
+<p>再点 SSH 项下面的 Auth，添加上一步转换得到的 <code>.ppk</code> 格式的私钥：</p>
+<p><img alt="PuTTY pubkey config 2" src="../../images/putty-pubkey-config2.png" /></p>
+<p>然后最重要的是回到最上面的 Session 项里保存，不然下次又得重新添加一遍。你可以为这个配置取一个容易辨别的名字，例如 <code>vlab</code>。</p>
 <p><img alt="PuTTY pubkey save session" src="../../images/putty-pubkey-savesession.png" /></p>
-<p>保存后每次登陆时只需要点击 [Load] 就能加载之前保存的 Session 信息，点击 [Open] 就能免密登录虚拟机。</p>
-<!--
-Content:
-
-- How to retrieve the public key
-- Convert the public key to PuTTY format (.ppk)
-- Set the public key and save session information
--->
-
+<p>保存后每次登录时只需要双击之前保存的连接信息，就能免密登录你的虚拟机。</p>
 <h3 id="xshell">XShell 方式<a class="headerlink" href="#xshell" title="Permanent link">&para;</a></h3>
 <p>TBD</p>
 <!--
