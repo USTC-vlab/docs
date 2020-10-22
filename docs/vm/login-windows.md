@@ -120,7 +120,7 @@ Similar to that of the PuTTY part, a section (start with H4) for pubkey login wo
 
 Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
 
-### 使用 RealVNC 登录
+### 使用 RealVNC 登录 {#realvnc}
 
 以 Windows 10 系统为例，[下载 RealVNC 客户端](https://www.realvnc.com/en/connect/download/viewer/windows/)并安装。安装好后在开始菜单中找到 RealVNC 的图标，如下图所示：
 
