@@ -71,7 +71,7 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 
 由于技术限制，每个虚拟机的私钥都是独立的。若你删除并重新创建了虚拟机，你需要重新生成密钥对才能使用密钥登录新的虚拟机。
 
-##### 将 .pem 格式的私钥转换为 .ppk 格式 {}
+##### 将 .pem 格式的私钥转换为 .ppk 格式 {#pubkey-convert}
 
 由于 PuTTY 使用的私钥格式为其专用的 `.ppk` 格式，而不是更为通用的 PEM 格式，所以我们还要进行一步转换。
 
@@ -83,7 +83,7 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 
 点击 **Load** 找到刚刚下载的 `.pem` 文件打开，然后点击 **Save private key**，选择一个合适目录保存生成的 `.ppk` 文件。同样地，请妥善保管这个私钥文件。
 
-##### 在 PuTTY 中设置私钥并保存会话信息
+##### 在 PuTTY 中设置私钥并保存会话信息 {#pubkey-save-session}
 
 先到 Connection - Data 项设置自己的登录用户名（这里以 root 为例，你也可以使用 ubuntu 或 vlab，详情参见[镜像配置](images.md#image-content)），如图：
 
@@ -120,7 +120,7 @@ Similar to that of the PuTTY part, a section (start with H4) for pubkey login wo
 
 Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
 
-### 使用 RealVNC 登录
+### 使用 RealVNC 登录 {#realvnc}
 
 以 Windows 10 系统为例，[下载 RealVNC 客户端](https://www.realvnc.com/en/connect/download/viewer/windows/)并安装。安装好后在开始菜单中找到 RealVNC 的图标，如下图所示：
 
