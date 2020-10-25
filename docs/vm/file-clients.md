@@ -31,7 +31,7 @@ FileZilla 可以从其[官方网站](https://filezilla-project.org/download.php?
 
 ![FileZilla-inputpasswd](../images/FileZilla-inputpasswd.png)
 
-按照提示依次输入 `Vlab Username`, `Vlab password` 和 `UNIX password` 即可登录（注意：输入一项要点击一次确定）
+按照提示依次输入 `Vlab Username`, `Vlab password` 和 `UNIX password` 即可登录（注意：输入一项要点击一次确定）。
 
 然后可看到如下界面：
 
@@ -39,7 +39,7 @@ FileZilla 可以从其[官方网站](https://filezilla-project.org/download.php?
 
 ### 公钥认证登录 {#filezilla-pubkey}
 
-除了使用交互式登录，你还可以将下载到的私钥配置到 FileZilla 实现公钥免密登录。如果你还没有下载私钥，请参考[生成 SSH 密钥对并下载到本地](login-windows.md#pubkey-retrieve)
+除了使用交互式登录，你还可以将下载到的私钥配置到 FileZilla 实现公钥免密登录。如果你还没有下载私钥，请参考[生成 SSH 密钥对并下载到本地](login-windows.md#pubkey-retrieve)。
 
 首先打开设置：
 
