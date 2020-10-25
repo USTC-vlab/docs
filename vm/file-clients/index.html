@@ -650,28 +650,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#filezilla-interactive" class="md-nav__link">
     交互式登录
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#filezilla-pubkey" class="md-nav__link">
     公钥认证登录
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#filezilla-upload" class="md-nav__link">
     上传本地文件到虚拟机
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#filezilla-download" class="md-nav__link">
     下载虚拟机文件到本地
   </a>
   
@@ -709,36 +709,40 @@
                 <h1 id="_1">使用客户端软件进行文件传输<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>Vlab 支持使用 SFTP 客户端软件进行虚拟机与本机之间的文件传输。下面介绍 FileZilla 等常见软件的使用方式。</p>
 <h2 id="filezilla">FileZilla<a class="headerlink" href="#filezilla" title="Permanent link">&para;</a></h2>
-<p>如果没有安装 FileZilla，先去 FileZilla 的<a href="https://filezilla-project.org/download.php?show_all=1">官方网站</a>下载。</p>
-<p>根据你使用的系统来选择对应的下载版本，下载好后安装一路点击 [下一步] 即可。</p>
+<p>FileZilla 可以从其<a href="https://filezilla-project.org/download.php?show_all=1">官方网站</a>获取，根据你使用的系统选择对应的下载版本，下载后的安装过程种一路点击 [下一步] 即可。</p>
 <p>安装完成后找到并打开 FileZilla，可以看到如下界面：</p>
 <p><img alt="FileZilla-interface" src="../../images/FileZilla-interface.png" /></p>
-<h3 id="_2">交互式登录<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="filezilla-interactive">交互式登录<a class="headerlink" href="#filezilla-interactive" title="Permanent link">&para;</a></h3>
 <p>首先新建一个 SFTP 配置，先进入站点管理器：</p>
 <p><img alt="FileZilla-setup" src="../../images/FileZilla-setup.png" /></p>
 <p>在站点管理器中点击 [New site] 新建一个站点，你可以为这个配置取一个容易辨别的名字，例如 <code>vlab</code>。然后是右边常规选项卡中的配置了：</p>
-<p>协议选择 SFTP，主机、端口如下图，登录类型选择交互式，用户可以填 root，也可以使用 ubuntu 或 vlab，详情参见<a href="https://vlab.ustc.edu.cn/docs/vm/images/#image-content">镜像配置</a></p>
-<p>点击 [连接] 按钮的话，将会立即链接该SFTP站点；点击 [确定] 按钮的话，则保存并关闭 [站点管理器] 窗口。</p>
+<ul>
+<li>协议选择 <strong>SFTP</strong></li>
+<li>主机为 <strong>vlab.ustc.edu.cn</strong>，端口为 <strong>22</strong>，如下图所示</li>
+<li>登录类型选择<strong>交互式</strong></li>
+<li>用户可以填 <strong>root</strong>，也可以使用 <strong>ubuntu</strong> 或 <strong>vlab</strong>，详情参见<a href="../images/#image-content">镜像配置</a></li>
+</ul>
+<p>点击 [连接] 按钮的话，将会立即连接该 SFTP 站点；点击 [确定] 按钮的话，则保存并关闭 [站点管理器] 窗口。</p>
 <p><img alt="FileZilla-configs" src="../../images/FileZilla-configs.png" /></p>
 <p>点击 [连接] 按钮后，会出现如下界面：</p>
 <p><img alt="FileZilla-inputpasswd" src="../../images/FileZilla-inputpasswd.png" /></p>
-<p>按照提示依次输入 <code>Vlab Username</code> <code>Vlab password</code> <code>UNIX password</code> 即可登录（注意：输入一项要点击一次确定）</p>
+<p>按照提示依次输入 <code>Vlab Username</code>, <code>Vlab password</code> 和 <code>UNIX password</code> 即可登录（注意：输入一项要点击一次确定）</p>
 <p>然后可看到如下界面：</p>
 <p><img alt="FileZilla-login-sucess" src="../../images/FileZilla-login-sucess.png" /></p>
-<h3 id="_3">公钥认证登录<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>除了使用交互式登录，你还可以将下载到的私钥配置到 FileZilla 实现公钥免密登录。如果不了解在哪下载私钥请看<a href="https://vlab.ustc.edu.cn/docs/vm/login-windows/#pubkey-retrieve">生成 SSH 密钥对并下载到本地</a></p>
+<h3 id="filezilla-pubkey">公钥认证登录<a class="headerlink" href="#filezilla-pubkey" title="Permanent link">&para;</a></h3>
+<p>除了使用交互式登录，你还可以将下载到的私钥配置到 FileZilla 实现公钥免密登录。如果你还没有下载私钥，请参考<a href="../login-windows/#pubkey-retrieve">生成 SSH 密钥对并下载到本地</a></p>
 <p>首先打开设置：</p>
 <p><img alt="FileZilla-pubkey-config1" src="../../images/FileZilla-pubkey-config1.png" /></p>
 <p>然后找到 SFTP 并添加密钥文件：</p>
 <p><img alt="FileZilla-pubkey-config2" src="../../images/FileZilla-pubkey-config2.png" /></p>
-<p>点击 [确定] 后，再找到原来保存的站点连接即可免密登录。</p>
-<h3 id="_4">上传本地文件到虚拟机<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>首先在 <code>本地站点（就是本地电脑）</code> 中找到并选择你要上传到虚拟机的 文件/文件夹。</p>
-<p>然后在 <code>远程站点（就是虚拟机）</code> 中找到并进入你要上传 文件/文件夹 到的目录。</p>
-<p>在要上传的 文件/文件夹 上右键，选择上传选项即可，或者也可以直接把 文件/文件夹 拖拽到右边远程站点目录：</p>
+<p>点击 [确定] 后，再找到原来保存的站点连接，即可免密登录。</p>
+<h3 id="filezilla-upload">上传本地文件到虚拟机<a class="headerlink" href="#filezilla-upload" title="Permanent link">&para;</a></h3>
+<p>首先在【本地站点】（也就是本地电脑）中找到并选择你要上传到虚拟机的文件或文件夹。</p>
+<p>然后在【远程站点】（也就是虚拟机）中找到并进入你要上传文件或文件夹到的目录（即目标目录）。</p>
+<p>在要上传的文件或文件夹上点击右键，选择【上传】即可；也可以直接把要上传的内容拖拽到右边远程站点的目录下：</p>
 <p><img alt="FileZilla-file-upload" src="../../images/FileZilla-file-upload.png" /></p>
-<h3 id="_5">下载虚拟机文件到本地<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<p>下载虚拟机文件到本地和上传本地到虚拟机类似，在右边远程站点选中 文件/文件夹 右键点击 [下载] 即可，你也可以直接拖拽到左边本地站点目录下。</p>
+<h3 id="filezilla-download">下载虚拟机文件到本地<a class="headerlink" href="#filezilla-download" title="Permanent link">&para;</a></h3>
+<p>下载虚拟机文件到本地和上传本地文件到虚拟机的操作类似，在右边远程站点选中你要下载的内容，右键点击 [下载] 即可，也可以直接拖拽到左边本地站点的目录下。</p>
 <h2 id="winscp">WinSCP<a class="headerlink" href="#winscp" title="Permanent link">&para;</a></h2>
 <p>TBD</p>
                 
