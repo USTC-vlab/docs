@@ -1,87 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://vlab.ustc.edu.cn/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/quickstart/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/web/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/login-browser/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/login-windows/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/login-macos/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/login-linux/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/file-filestash/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/file-clients/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/desktop-settings/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://vlab.ustc.edu.cn/vm/apps/vscode/</loc>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/resources/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/images/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/install-desktop/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/faq/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/terms/terms-of-service/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/vm/terms/acceptable-use-policy/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/downloads/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/credits/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/fpgaol/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/fpgaol/usage/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://vlab.ustc.edu.cn/tutorial/git/</loc>
-     <lastmod>2020-11-12</lastmod>
+     <lastmod>2020-11-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
