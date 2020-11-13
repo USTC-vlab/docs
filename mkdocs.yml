@@ -68,6 +68,8 @@ nav:
       - 浏览器文件传输: vm/file-filestash.md
       - 使用文件客户端: vm/file-clients.md
     - 桌面设置: vm/desktop-settings.md
+    - 应用程序:
+      - 在线 VSCode: vm/apps/vscode.md
     - 高级信息:
       - 系统资源: vm/resources.md
       - 虚拟机镜像: vm/images.md
