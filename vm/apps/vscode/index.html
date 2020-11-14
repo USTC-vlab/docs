@@ -465,6 +465,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#change-language" class="md-nav__link">
+    修改显示语言
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -755,6 +762,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#change-language" class="md-nav__link">
+    修改显示语言
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -791,6 +805,13 @@
 <h2 id="usage">使用 VSCode<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>在启用 VSCode 服务后，在虚拟机管理页面点击对应虚拟机的 <strong>VSCode</strong> 按钮即可跳转进入使用，如图所示：</p>
 <p><img alt="Use VSCode for this VM" src="../../../images/apps-vscode-entry.png" /></p>
+<h2 id="change-language">修改显示语言<a class="headerlink" href="#change-language" title="Permanent link">&para;</a></h2>
+<p>VSCode 默认语言为英语，若要使用中文语言，请在左侧扩展市场（Extension Market）搜索 Language，并安装中文语言包（ID 为 <code>ms-ceintl.vscode-language-pack-zh-hans</code>）</p>
+<p><img alt="Change display language for VSCode" class="img-border" src="../../../images/apps-vscode-locale.png" /></p>
+<p>然后，打开终端，向 <code>~/.config/Code/User/locale.json</code> 中写入 <code>{"locale":"zh-cn"}</code>，如图所示：</p>
+<p><img alt="Change display language for VSCode" class="img-border" src="../../../images/apps-vscode-locale-2.png" /></p>
+<p>刷新浏览器即可看到 VSCode 已切换至中文。</p>
+<p>若要换回英语，删除刚才创建的 <code>locale.json</code> 文件，再刷新即可。</p>
                 
               
               
