@@ -12,7 +12,7 @@ Vlab 提供了可以直接在浏览器里使用的 Visual Studio Code。
 
     若提示找不到 `vscode` 命令，请尝试使用完整路径 `/opt/vlab/bin/vscode`。
     
-    若完整路径也不存在，请联系我们以获得支持。
+    若完整路径也不存在，或你的虚拟机里没有 `/opt/vlab`，请联系我们以获得支持。
 
 若你想要停止 VSCode 服务，请使用 `vscode stop`，同时这会取消 VSCode 服务的开机自动启动。
 
