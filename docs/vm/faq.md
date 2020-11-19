@@ -17,6 +17,31 @@
 
     远程桌面连接方式使用 [Vlab 平台的登录密码](web.md#change-password)，而不是虚拟机内的 root 密码。
 
+## 软件问题 {#software}
+
+### Vivado 仿真报错 {#s-vivado-xsim-error}
+
+表现症状
+
+:   尝试使用 Vivado 仿真时很快出现以下错误信息：
+
+    ```text
+    ERROR: [XSIM 43-3409] Failed to compile generated C file xsim.dir/test_behav/obj/xsim_1.c.
+    ```
+
+解决方法
+
+:   打开终端，按顺序输入如下两条命令
+
+    ```shell
+    sudo apt update
+    sudo apt install build-essential libncurses5
+    ```
+
+!!! info "新虚拟机不会出现此问题"
+
+    在收到反馈后，我们已更新 01 号镜像。若你的虚拟机编号大于 2267，那么你不需要进行处理。
+
 ## 软件限制 {#limits}
 
 由于虚拟化平台限制，Vlab 提供的虚拟机默认无法使用容器（Docker, Kubernetes 等）和 [Snapcraft 软件包](https://snapcraft.io/)。
