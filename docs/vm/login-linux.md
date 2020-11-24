@@ -16,12 +16,21 @@
 
 * 如果遇到 Warning，请输入 `yes`，然后根据提示，即可登录虚拟机
 
-    <!-- TODO: TBD: 替换图片，展示新的 SSH 统一认证登录界面 -->
-
     ![](../images/ssh_1.png)
 
-<!-- TODO: TBD: 增加一个 bullet point，说明如何选择虚拟机内的用户名 (root/ubuntu/vlab) -->
+<!-- TODO: TBD: 增加一个 bullet point，说明如何选择虚拟机内的用户名 (root/ubuntu/vlab) -->\
+
+!!! info "提示"
+
+    想要以虚拟机内的用户名登录只需要修改登录命令，如换成 ubuntu 用户：
+
+    ```shell
+    ssh ubuntu@vlab.ustc.edu.cn
+    ```
+
 <!-- TODO: TBD: 增加一个 bullet point，说明如何使用公钥登录 -->
+
+
 
 ## 使用 VNC 登录 {#vnc}
 
