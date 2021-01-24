@@ -21,7 +21,7 @@ theme:
     logo: fontawesome/solid/desktop
     repo: octicons/mark-github-16
   features:
-    - tabs
+    - navigation.sections
 
 # Customization
 extra:
