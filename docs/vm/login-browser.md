@@ -32,7 +32,7 @@
 
     VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
 
-??? warning "关闭 VNC 通知"
+??? info "关闭 VNC 通知"
 
     使用 VNC 登录时会看到加入 QQ 群的通知，**我们会在该 QQ 群中发布如停机维护等重要通知**。
 
