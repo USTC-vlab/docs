@@ -32,6 +32,12 @@
 
     VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
 
+??? warning "关闭 VNC 通知"
+
+    使用 VNC 登录时会看到加入 QQ 群的通知，**我们会在该 QQ 群中发布如停机维护等重要通知**。
+
+    若你想要选择关闭 VNC 通知，可以在 [此处](https://vlab.ustc.edu.cn/vm/notif) 设置。
+
 ## 设置中文输入法 {#chinese-ime}
 
 ??? success "新虚拟机已默认启用中文输入法"
