@@ -70,6 +70,7 @@ nav:
     - 桌面设置: vm/desktop-settings.md
     - 应用程序:
       - 在线 VSCode: vm/apps/vscode.md
+      - RISC-V 工具链: vm/apps/riscv.md
     - 高级信息:
       - 系统资源: vm/resources.md
       - 虚拟机镜像: vm/images.md
