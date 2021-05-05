@@ -60,7 +60,7 @@
 
 * CentOS, Fedora 和 RHEL：`sudo yum install tigervnc`
 
-* Arch Linux 和 Manjaro：`sudo pacman -S tigervnc-viewer`
+* Arch Linux 和 Manjaro：`sudo pacman -S tigervnc`
 
 打开 TigerVNC 客户端，如图所示输入 `vlab.ustc.edu.cn`，点击 `Connect`。
 
