@@ -31,6 +31,10 @@
 
 : 付佳伟，陶柯宇，彭定澜 
 
+其他参与开发及维护的人员
+
+: 明宇龙，胡宗升，袁一玮，闫超美
+
 ## 开源软件致谢 {#open-source}
 
 - [The Linux Kernel](https://www.kernel.org/) - GNU General Public License v2.0
