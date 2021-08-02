@@ -1,6 +1,6 @@
 # 资源下载
 
-- Git for Windows: [最新版本](https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/)
+- Git for Windows 最新版本：[GitHub Releases](https://github.com/git-for-windows/git/releases/latest) / [清华大学 TUNA 镜像站](https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/)
 - Java 8 运行环境：
   [Windows 64 位](https://vlab.ustc.edu.cn/downloads/jre-8u221-windows-x64.exe) /
   [Mac OS X 10.7.3+](https://vlab.ustc.edu.cn/downloads/jre-8u221-macosx-x64.dmg)
