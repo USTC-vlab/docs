@@ -28,6 +28,9 @@ extra:
       link: 'https://vlab.ustc.edu.cn/'
     - icon: octicons/mark-github-16
       link: 'https://github.com/USTC-vlab'
+  analytics:
+    provider: google
+    property: 'UA-115907213-3'
 
 extra_javascript:
   - assets/js/extra.js
@@ -46,10 +49,6 @@ markdown_extensions:
   - markdown.extensions.def_list
   - toc:
       permalink: true
-
-google_analytics:
-  - 'UA-115907213-3'
-  - 'auto'
 
 nav:
   - 简介: index.md
