@@ -21,7 +21,7 @@ theme:
     logo: fontawesome/solid/desktop
     repo: octicons/mark-github-16
   features:
-    - navigation.expand
+    - navigation.sections
 
 # Customization
 extra:
@@ -62,10 +62,10 @@ nav:
     - Windows 系统登录: vm/login-windows.md
     - macOS 系统登录: vm/login-macos.md
     - Linux 系统登录: vm/login-linux.md
+    - 桌面设置: vm/desktop-settings.md
   - 文件传输:
     - 浏览器文件传输: vm/file-filestash.md
     - 使用文件客户端: vm/file-clients.md
-  - 桌面设置: vm/desktop-settings.md
   - 应用程序:
     - 在线 VSCode: vm/apps/vscode.md
     - RISC-V 工具链: vm/apps/riscv.md
@@ -73,11 +73,11 @@ nav:
     - 系统资源: vm/resources.md
     - 虚拟机镜像: vm/images.md
     - 手动安装桌面环境: vm/install-desktop.md
-  - 常见问题: vm/faq.md
-  - 条款:
-    - 服务条款: vm/terms/terms-of-service.md
-    - 可接受的使用方式: vm/terms/acceptable-use-policy.md
-  - 资源下载: downloads.md
-  - 致谢: credits.md
-  - 教程:
+  - 其他:
+    - 常见问题: vm/faq.md
+    - 条款:
+      - 服务条款: vm/terms/terms-of-service.md
+      - 可接受的使用方式: vm/terms/acceptable-use-policy.md
+    - 资源下载: downloads.md
+    - 致谢: credits.md
     - Git 简明教程: tutorial/git.md
