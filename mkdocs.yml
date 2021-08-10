@@ -15,11 +15,13 @@ theme:
   name: 'material'
   language: 'zh'
   palette:
-    primary: 'light blue'
-    accent: 'light blue'
+    primary: blue
+    accent: blue
   icon:
     logo: fontawesome/solid/desktop
     repo: octicons/mark-github-16
+  features:
+    - navigation.expand
 
 # Customization
 extra:
@@ -31,9 +33,6 @@ extra:
   analytics:
     provider: google
     property: 'UA-115907213-3'
-
-extra_javascript:
-  - assets/js/extra.js
 
 extra_css:
   - assets/css/extra.css
