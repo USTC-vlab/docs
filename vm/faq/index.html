@@ -685,13 +685,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#vm-security" class="md-nav__link">
-    虚拟机安全
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -859,13 +852,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#vm-security" class="md-nav__link">
-    虚拟机安全
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -935,18 +921,6 @@ sudo apt install build-essential libncurses5
 <p>如有需要使用 Docker 或 K8s，请联系管理员手动开启（开启后重启生效），但 Snapcraft 软件包暂时超出了我们的能力范围。</p>
 <h2 id="image-selection">镜像选择<a class="headerlink" href="#image-selection" title="Permanent link">&para;</a></h2>
 <p>这一部分内容已移至 <a href="../images/">虚拟机镜像</a> 一页。</p>
-<h2 id="vm-security">虚拟机安全<a class="headerlink" href="#vm-security" title="Permanent link">&para;</a></h2>
-<p>由于虚拟机的 SSH 端口是暴露在公网上的，因此如果你的 root 密码设置太弱，会有安全隐患。<strong>任何以 root 登录虚拟机的人都拥有虚拟机的全部权限。</strong></p>
-<p>我们建议，如果你不需要使用密码以 root 用户登录虚拟机，请关闭 root 用户的远程密码登录，你仍然可以使用 SSH 公钥登录你的虚拟机，并且这不影响你使用 <code>su</code> 命令和 <code>sudo</code> 命令。</p>
-<p>关闭 root 密码登录的方式很简单，以 root 用户（或使用 <code>sudo</code>）打开文件 <code>/etc/ssh/sshd_config</code>，找到 <code>PermitRootLogin yes</code> 一行，修改为 <code>PermitRootLogin prohibit-password</code> 保存退出，然后执行 <code>systemctl reload ssh</code> 命令即可。</p>
-<p>你也可以直接使用下面两条命令来完成这一步骤：</p>
-<div class="highlight"><pre><span></span><code>sudo sed -Ei <span class="s1">&#39;/^#?PermitRootLogin/c\PermitRootLogin prohibit-password&#39;</span> /etc/ssh/sshd_config
-sudo systemctl reload ssh
-</code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">注意</p>
-<p>请不要直接禁止 root 用户的登录（不要将 <code>PermitRootLogin</code> 设置为 no），否则修改密码和文件传输等功能将无法使用。</p>
-</div>
                 
               
               
