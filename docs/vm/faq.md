@@ -52,10 +52,10 @@
 
 ## 软件限制 {#limits}
 
-由于虚拟化平台限制，Vlab 提供的虚拟机默认无法使用容器（Docker, Kubernetes 等）和 [Snapcraft 软件包](https://snapcraft.io/)。
+由于虚拟化平台限制，Vlab 虚拟机无法使用 [Snapcraft 软件包](https://snapcraft.io/)和 KVM 虚拟化。
 
-如有需要使用 Docker 或 K8s，请联系管理员手动开启（开启后重启生效），但 Snapcraft 软件包暂时超出了我们的能力范围。
+由于技术更迭，较早的虚拟机（编号在大约 1800 以前）无法使用 Docker 容器，如果有需要，请联系我们开通。
 
-## 镜像选择 {#image-selection}
+## 虚拟机镜像选择 {#image-selection}
 
-这一部分内容已移至 [虚拟机镜像](images.md) 一页。
+请参考 [虚拟机镜像](images.md) 一页。
