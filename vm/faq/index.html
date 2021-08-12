@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://vlab.ustc.edu.cn/vm/faq/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.3">
+      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
     
     
       
@@ -902,6 +902,12 @@
 <p><strong>虚拟机连接时提示密码错误</strong></p>
 <p>远程桌面连接方式使用 <a href="../web/#change-password">Vlab 平台的登录密码</a>，而不是虚拟机内的 root 密码。</p>
 </li>
+<li>
+<p><strong>使用网络信息中心的 Web VPN 访问桌面登录页面 noVNC 时显示 noVNC encoutnered an error</strong></p>
+<div class="highlight"><pre><span></span><code><span class="nt">SyntaxError</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">import declarations may only appear at top level of a module</span>
+</code></pre></div>
+<p>请直接访问 <a href="https://vlab.ustc.edu.cn/">vlab.ustc.edu.cn</a>，网页版桌面登录不兼容 Web VPN。</p>
+</li>
 </ul>
 <h2 id="software">软件问题<a class="headerlink" href="#software" title="Permanent link">&para;</a></h2>
 <h3 id="s-vivado-xsim-error">Vivado 仿真报错<a class="headerlink" href="#s-vivado-xsim-error" title="Permanent link">&para;</a></h3>
@@ -1040,7 +1046,7 @@ sudo systemctl reload ssh
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.29db7785.min.js"></script>
+      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
       
     
   </body>
