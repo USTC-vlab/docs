@@ -17,6 +17,14 @@
 
     远程桌面连接方式使用 [Vlab 平台的登录密码](web.md#change-password)，而不是虚拟机内的 root 密码。
 
+- **使用网络信息中心的 Web VPN 访问桌面登录页面 noVNC 时显示 noVNC encoutnered an error**
+
+    ```yaml
+    SyntaxError: import declarations may only appear at top level of a module
+    ```
+
+    请直接访问 [vlab.ustc.edu.cn](https://vlab.ustc.edu.cn/)，网页版桌面登录不兼容 Web VPN。
+
 ## 软件问题 {#software}
 
 ### Vivado 仿真报错 {#s-vivado-xsim-error}
