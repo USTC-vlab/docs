@@ -44,4 +44,6 @@
 - [Linux Containers](https://linuxcontainers.org/) - GNU General Public License v2.0 and GNU Lesser General Public License v2.1
 - [Django Web framework](https://www.djangoproject.com/) - The 3-Clause BSD License
 - [noVNC](https://novnc.com/) - Mixed licenses
+- [SSH Piper](https://github.com/tg123/sshpiper) - MIT License
+- [code-server](https://github.com/cdr/code-server) - MIT License
 - [MkDocs](https://www.mkdocs.org/) (The 2-Clause BSD License) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) (MIT License)

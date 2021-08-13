@@ -27,12 +27,15 @@
 | 04 | Ubuntu 18.04 | root/ubuntu | Xfce4 | Vlab 实验软件套装 |
 | 11 | Ubuntu 18.04 | root | 无 | 无 |
 | 12 | Debian 10 | root | 无 | 无 |
-| 13 | CentOS 8.1 | root | 无 | 无 |
-| 14 | CentOS 7.7 | root | 无 | 无 |
 | 99 | 测试版本，请勿使用 | root | 无 | 无 |
 
 其中【Vlab 实验软件套装】包含了以下软件，并会随时增加或更新（不占用虚拟机存储空间）：
 
-- Vivado 2019.1
+- Xilinx Vivado 2019.1
+- Xilinx Vivado 2016.3
 - MATLAB R2019a
-- Wolfram Mathematica 12.1
+- Wolfram Mathematica 12.3
+- [网页版 Visual Studio Code](../apps/vscode.md)
+- TeX Live 2020
+- [Logisim](http://www.cburch.com/logisim/)
+- Typora
