@@ -13,21 +13,21 @@
         <meta name="author" content="USTC Vlab">
       
       
-        <link rel="canonical" href="https://vlab.ustc.edu.cn/desktop-settings/">
+        <link rel="canonical" href="https://vlab.ustc.edu.cn/login/vnc/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
     
     
       
-        <title>桌面设置 - Vlab @ USTC</title>
+        <title>VNC 远程桌面登录 - Vlab @ USTC</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.f7f47774.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -42,7 +42,7 @@
     
     
     
-      <link rel="stylesheet" href="../assets/css/extra.css">
+      <link rel="stylesheet" href="../../assets/css/extra.css">
     
     
       
@@ -74,7 +74,7 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
   
     
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
       <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#vnc" class="md-skip">
           跳转至
         </a>
       
@@ -95,7 +95,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Vlab @ USTC" class="md-header__button md-logo" aria-label="Vlab @ USTC" data-md-component="logo">
+    <a href="../.." title="Vlab @ USTC" class="md-header__button md-logo" aria-label="Vlab @ USTC" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"/></svg>
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              桌面设置
+              VNC 远程桌面登录
             
           </span>
         </div>
@@ -214,7 +214,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Vlab @ USTC" class="md-nav__button md-logo" aria-label="Vlab @ USTC" data-md-component="logo">
+    <a href="../.." title="Vlab @ USTC" class="md-nav__button md-logo" aria-label="Vlab @ USTC" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528 0H48C21.5 0 0 21.5 0 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zm-16 352H64V64h448v288z"/></svg>
@@ -246,7 +246,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         简介
       </a>
     </li>
@@ -261,7 +261,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../quickstart/" class="md-nav__link">
+      <a href="../../quickstart/" class="md-nav__link">
         快速开始
       </a>
     </li>
@@ -301,7 +301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../web/" class="md-nav__link">
+      <a href="../../web/" class="md-nav__link">
         虚拟机管理
       </a>
     </li>
@@ -311,12 +311,14 @@
             
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
       
       <label class="md-nav__link" for="__nav_3_2">
         虚拟机登录
@@ -334,51 +336,9 @@
   
   
     <li class="md-nav__item">
-      <a href="../login/browser/" class="md-nav__link">
+      <a href="../browser/" class="md-nav__link">
         浏览器直接登录
       </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../login/windows/" class="md-nav__link">
-        Windows 客户端登录
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../login/macos/" class="md-nav__link">
-        macOS 客户端登录
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../login/linux/" class="md-nav__link">
-        Linux 客户端登录
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -398,12 +358,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          桌面设置
+          VNC 远程桌面登录
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        桌面设置
+        VNC 远程桌面登录
       </a>
       
         
@@ -421,23 +381,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#browser" class="md-nav__link">
+    在浏览器中直接登录
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tigervnc" class="md-nav__link">
+    使用 TigerVNC 登录（推荐）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realvnc" class="md-nav__link">
+    使用 RealVNC 客户端登录
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desktop-settings" class="md-nav__link">
+    桌面设置
+  </a>
+  
+    <nav class="md-nav" aria-label="桌面设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#change-resolution" class="md-nav__link">
     修改分辨率
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#chinese-ime" class="md-nav__link">
     设置中文输入法
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#change-language" class="md-nav__link">
-    修改系统语言
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -445,6 +432,36 @@
   
 </nav>
       
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssh/" class="md-nav__link">
+        SSH 命令行登录
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rdp/" class="md-nav__link">
+        RDP 远程桌面登录
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -486,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../file/filestash/" class="md-nav__link">
+      <a href="../../file/filestash/" class="md-nav__link">
         浏览器文件传输
       </a>
     </li>
@@ -498,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../file/clients/" class="md-nav__link">
+      <a href="../../file/clients/" class="md-nav__link">
         使用文件客户端
       </a>
     </li>
@@ -542,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apps/vscode/" class="md-nav__link">
+      <a href="../../apps/vscode/" class="md-nav__link">
         在线 VSCode
       </a>
     </li>
@@ -554,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../apps/riscv/" class="md-nav__link">
+      <a href="../../apps/riscv/" class="md-nav__link">
         RISC-V 工具链
       </a>
     </li>
@@ -598,7 +615,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         常见问题
       </a>
     </li>
@@ -631,7 +648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/resources/" class="md-nav__link">
+      <a href="../../advanced/resources/" class="md-nav__link">
         系统资源
       </a>
     </li>
@@ -643,7 +660,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/images/" class="md-nav__link">
+      <a href="../../advanced/images/" class="md-nav__link">
         虚拟机镜像
       </a>
     </li>
@@ -655,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced/install-desktop/" class="md-nav__link">
+      <a href="../../advanced/install-desktop/" class="md-nav__link">
         手动安装桌面环境
       </a>
     </li>
@@ -694,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terms/terms-of-service/" class="md-nav__link">
+      <a href="../../terms/terms-of-service/" class="md-nav__link">
         服务条款
       </a>
     </li>
@@ -706,7 +723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terms/acceptable-use-policy/" class="md-nav__link">
+      <a href="../../terms/acceptable-use-policy/" class="md-nav__link">
         可接受的使用方式
       </a>
     </li>
@@ -724,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../downloads/" class="md-nav__link">
+      <a href="../../downloads/" class="md-nav__link">
         资源下载
       </a>
     </li>
@@ -736,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../credits/" class="md-nav__link">
+      <a href="../../credits/" class="md-nav__link">
         致谢
       </a>
     </li>
@@ -748,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../tutorial/git/" class="md-nav__link">
+      <a href="../../tutorial/git/" class="md-nav__link">
         Git 简明教程
       </a>
     </li>
@@ -787,23 +804,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#browser" class="md-nav__link">
+    在浏览器中直接登录
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tigervnc" class="md-nav__link">
+    使用 TigerVNC 登录（推荐）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#realvnc" class="md-nav__link">
+    使用 RealVNC 客户端登录
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desktop-settings" class="md-nav__link">
+    桌面设置
+  </a>
+  
+    <nav class="md-nav" aria-label="桌面设置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#change-resolution" class="md-nav__link">
     修改分辨率
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#chinese-ime" class="md-nav__link">
     设置中文输入法
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#change-language" class="md-nav__link">
-    修改系统语言
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -819,38 +863,135 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/USTC-vlab/docs/edit/master/docs/desktop-settings.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/USTC-vlab/docs/edit/master/docs/login/vnc.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="_1">桌面设置<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+                <h1 id="vnc">通过 VNC 远程桌面登录虚拟机<a class="headerlink" href="#vnc" title="Permanent link">&para;</a></h1>
+<div class="admonition example">
+<p class="admonition-title">支持的虚拟机和客户端</p>
+<p>VNC 登录方式仅支持 Linux LXC 虚拟机，这也是 Vlab 提供的默认虚拟机类型。</p>
+<p>VNC 登录方式支持从<a href="../browser/">浏览器直接登录</a>，也支持包括 Windows, macOS, Linux, iOS 和 Android 在内的客户端系统。</p>
+</div>
 <div class="admonition info">
 <p class="admonition-title">注意</p>
-<p>本文章是关于桌面环境设置的，因此只适用于名称中带有 <code>desktop</code> 的虚拟机镜像。</p>
+<p>该登录方式只适用于名称中带有 <code>desktop</code> 的虚拟机镜像。</p>
 </div>
-<h2 id="change-resolution">修改分辨率<a class="headerlink" href="#change-resolution" title="Permanent link">&para;</a></h2>
+<h2 id="browser">在浏览器中直接登录<a class="headerlink" href="#browser" title="Permanent link">&para;</a></h2>
+<p>请移步至<a href="../browser/">浏览器直接登录</a>一页。</p>
+<h2 id="tigervnc">使用 TigerVNC 登录（推荐）<a class="headerlink" href="#tigervnc" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>客户端下载</summary><ul>
+<li>
+<p>Windows，macOS 和 Linux：<a href="https://github.com/TigerVNC/tigervnc/releases/latest">GitHub</a></p>
+</li>
+<li>
+<p>Ubuntu 和 Debian：<code>sudo apt-get install tigervnc-viewer</code></p>
+</li>
+<li>
+<p>CentOS, Fedora 和 RHEL：<code>sudo yum install tigervnc</code></p>
+</li>
+<li>
+<p>Arch Linux 和 Manjaro：<code>sudo pacman -S tigervnc</code></p>
+</li>
+</ul>
+</details>
+<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Windows</label><div class="tabbed-content">
+<p>以 Windows 10 系统为例，<a href="https://vlab.ustc.edu.cn/downloads/vncviewer64-1.11.0.exe">下载 TigerVNC 客户端</a>，如图：</p>
+<p><img alt="TigerVNC Viewer Icon" class="img-border" src="../../images/tigervnc-win-icon.png" /></p>
+<p>在服务器地址处填入 <code>vlab.ustc.edu.cn</code>，并点击 <strong>Connect</strong>：</p>
+<p><img alt="TigerVNC Connection Info" src="../../images/tigervnc-connection-win10.png" /></p>
+<p>这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码：</p>
+<p><img alt="TigerVNC Authentication Dialog" src="../../images/tigervnc-authentication-win10.png" /></p>
+<p>登录后即可看到桌面并开始使用。</p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">macOS</label><div class="tabbed-content">
+<p><a href="https://vlab.ustc.edu.cn/downloads/TigerVNC-1.11.0.dmg">下载 macOS 下的 TigerVNC 客户端</a>并安装（与安装其他的应用一样，打开 dmg 文件并将应用拖动到 Application 目录即可）。</p>
+<p>打开 TigerVNC 客户端，如图所示输入 <code>vlab.ustc.edu.cn</code>，点击 <code>Connect</code>。</p>
+<p><img alt="TigerVNC Main Screen" src="../../images/tigervnc-startup-macos.png" /></p>
+<p>这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：</p>
+<p><img alt="TigerVNC Authentication Dialog" src="../../images/tigervnc-authentication-macos.png" /></p>
+<p>登录后即可看到桌面并开始使用。</p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Linux</label><div class="tabbed-content">
+<p>Linux 系统可以从 GitHub 下载通用型客户端（格式为 <code>.tar.gz</code>），也可以从各大发行版的软件源直接获取。</p>
+<ul>
+<li>
+<p>Ubuntu 和 Debian：<code>sudo apt-get install tigervnc-viewer</code></p>
+</li>
+<li>
+<p>CentOS 和 Fedora：<code>sudo yum install tigervnc</code></p>
+</li>
+<li>
+<p>Arch Linux 和 Manjaro：<code>sudo pacman -S tigervnc</code></p>
+</li>
+</ul>
+<p>其界面和操作与 macOS 相同，请参考 macOS 的使用说明。</p>
+</div>
+</div>
+<div class="admonition question">
+<p class="admonition-title">拥有多个虚拟机？</p>
+<p>如果你拥有多个虚拟机，登录时请输入 <code>学号:虚拟机编号</code> 的形式，例如 <code>PB17000000:1234</code>。</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">密码是什么？</p>
+<p>VNC 登录方式使用 Vlab 平台的登录密码。<a href="../../web/#change-password">还没设置？</a></p>
+</div>
+<h2 id="realvnc">使用 RealVNC 客户端登录<a class="headerlink" href="#realvnc" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>客户端下载</summary><p>在 <a href="https://www.realvnc.com/en/connect/download/viewer/">RealVNC 官网</a>选择你的系统平台，点击 <strong>Download VNC Viewer</strong> 即可下载，如图：</p>
+<p><img alt="RealVNC Download Page" class="img-border" src="../../images/realvnc-download.png" /></p>
+<p>另外，iOS 设备可以从 <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">App Store</a> 获取 VNC Viewer，Android 设备可以从 <a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android">Google Play</a> 或其他应用商店获取 VNC Viewer。</p>
+</details>
+<div class="tabbed-set" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Windows</label><div class="tabbed-content">
+<p>以 Windows 10 系统为例，<a href="https://www.realvnc.com/en/connect/download/viewer/windows/">下载 RealVNC 客户端</a>并安装。安装好后在开始菜单中找到 RealVNC 的图标，如下图所示：</p>
+<p><img alt="RealVNC in Windows 10 Start Menu" src="../../images/realvnc-win10-tile.png" /></p>
+<p>打开后的主界面如图所示，在地址栏输入 <code>vlab.ustc.edu.cn</code>，按回车连接：</p>
+<p><img alt="RealVNC Main Screen" src="../../images/realvnc-main-screen-win10.png" /></p>
+<p>与 TigerVNC 相同，输入学号（或工号）和网页平台的登录密码即可登录：</p>
+<p><img alt="RealVNC Authentication Dialog" src="../../images/realvnc-auth-screen-win10.png" /></p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">macOS</label><div class="tabbed-content">
+<p>下载 macOS 下的 <a href="https://www.realvnc.com/en/connect/download/viewer/macos/">RealVNC 客户端</a>并安装（与安装其他的应用一样，打开 dmg 文件并将应用拖动到 Application 目录即可）。</p>
+<p>打开 VNC Viewer，打开后的主界面如图所示，在地址栏输入 <code>vlab.ustc.edu.cn</code>，按回车连接：</p>
+<p><img alt="RealVNC Main Screen" src="../../images/realvnc-main-screen-macos.png" /></p>
+<p>如果出现以下画面，选择 <strong>Continue</strong>。</p>
+<p><img alt="RealVNC Server not recognized" src="../../images/realvnc-auth-warning-macos.png" /></p>
+<p>与 TigerVNC 相同，输入学号（或工号）和网页平台的登录密码即可登录：</p>
+<p><img alt="RealVNC Authentication Dialog" src="../../images/realvnc-auth-screen-macos.png" /></p>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Linux</label><div class="tabbed-content">
+<p>根据发行版的不同，选择 DEB，RPM 格式或 Standalone 版的 <a href="https://www.realvnc.com/en/connect/download/viewer/linux/">RealVNC 客户端</a>，并使用操作系统的包管理器安装（Standalone 版不需要安装）。</p>
+<p>Linux 客户端的界面和操作与 macOS 相同，请参考 macOS 的使用说明。</p>
+</div>
+<input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><label for="__tabbed_2_4">iOS / Android</label><div class="tabbed-content">
+<p>从 <a href="https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548">App Store</a>、<a href="https://play.google.com/store/apps/details?id=com.realvnc.viewer.android">Google Play</a> 或其他应用商店获取 VNC Viewer。</p>
+<p>打开 VNC Viewer 应用，添加服务器，在 Address 处输入 <code>vlab.ustc.edu.cn</code>，并填写一个可以辨认的名称（如 Vlab），然后点击刚刚新建的项目即可连接。</p>
+<p>登录信息和提示等请参考 macOS 的使用说明。</p>
+</div>
+</div>
+<h2 id="desktop-settings">桌面设置<a class="headerlink" href="#desktop-settings" title="Permanent link">&para;</a></h2>
+<h3 id="change-resolution">修改分辨率<a class="headerlink" href="#change-resolution" title="Permanent link">&para;</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">提示</p>
 <p>更高的分辨率需要更快的网速，若网速不够，VNC 会自动降低显示质量（分辨率不变，颜色深度降低），可能会影响显示效果。建议根据自己的使用环境选择合适的分辨率。</p>
 <p>默认的桌面分辨率为 1024*768，适合大多数人使用。</p>
 </div>
 <p>如果你需要修改分辨率，可以在左上角找到 <strong>设置 → 显示</strong>，如图：</p>
-<p><img alt="Set VNC resolution" src="../images/vnc-change-resolution.png" /></p>
+<p><img alt="Set VNC resolution" src="../../images/vnc-change-resolution.png" /></p>
 <details class="info"><summary>2020 年 2 月 22 日以前的虚拟机</summary><p>2020 年 2 月 22 日及以前创建的虚拟机（ID 小于等于 1080），修改 VNC 分辨率可以使用系统内提供的 <code>vlab-vnc</code> 命令行工具。</p>
 <p>打开终端，输入 <code>vlab-vnc</code> 即可查看支持的命令与分辨率选项。输入 <code>vlab-vnc set-res 1024x768</code> 即可将分辨率修改为 1024*768。由于分辨率的修改需要重启 VNC 服务，可以使用 <code>vlab-vnc restart</code> 命令重启。<strong>这会关闭已打开所有桌面程序</strong>，请注意保存未完成的工作，以免丢失。</p>
-<p><img alt="Set VNC resolution from terminal" src="../images/vnc-change-resolution-old.png" /></p>
+<p><img alt="Set VNC resolution from terminal" src="../../images/vnc-change-resolution-old.png" /></p>
 </details>
-<h2 id="chinese-ime">设置中文输入法<a class="headerlink" href="#chinese-ime" title="Permanent link">&para;</a></h2>
-<details class="success" open="open"><summary>新虚拟机已默认启用中文输入法</summary><p>以下内容只有 2020 年 2 月 22 日及以前创建的虚拟机（ID 小于等于 1080）需要设置。2 月 23 日以后创建的新虚拟机（ID 大于等于 1095）已默认启用中文输入法。</p>
-</details>
+<h3 id="chinese-ime">设置中文输入法<a class="headerlink" href="#chinese-ime" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">新虚拟机已默认启用中文输入法</p>
+<p>以下内容只有 2020 年 2 月 22 日及以前创建的虚拟机（ID 小于等于 1080）需要设置。2 月 23 日以后创建的新虚拟机（ID 大于等于 1095）已默认启用中文输入法。</p>
+</div>
 <p>系统自带的输入法为 IBus，可以手动启用中文输入。在左上角找到 Applications → Settings → IBus Preferences 设置：</p>
-<p><img alt="Menu - IBus Preferences" src="../images/menu-ibus-settings.png" /></p>
+<p><img alt="Menu - IBus Preferences" src="../../images/menu-ibus-settings.png" /></p>
 <p>在 Input Method 选项卡点 Add，然后在 Chinese 里找到 Pinyin，再次点击右下角的 Add 即可：</p>
-<p><img alt="IBus Preferences - Add Chinese Pinyin" src="../images/ibus-add-pinyin.png" /></p>
+<p><img alt="IBus Preferences - Add Chinese Pinyin" src="../../images/ibus-add-pinyin.png" /></p>
 <p>添加成功后可以在右上角切换中文与英文输入法，也可以按 <kbd>Shift</kbd> 键在中文输入法中切换中英文输入。</p>
-<h2 id="change-language">修改系统语言<a class="headerlink" href="#change-language" title="Permanent link">&para;</a></h2>
-<p>未完待续</p>
                 
               
               
@@ -870,7 +1011,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../login/linux/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Linux 客户端登录" rel="prev">
+        <a href="../browser/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 浏览器直接登录" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -879,20 +1020,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              Linux 客户端登录
+              浏览器直接登录
             </div>
           </div>
         </a>
       
       
         
-        <a href="../file/filestash/" class="md-footer__link md-footer__link--next" aria-label="下一页: 浏览器文件传输" rel="next">
+        <a href="../ssh/" class="md-footer__link md-footer__link--next" aria-label="下一页: SSH 命令行登录" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              浏览器文件传输
+              SSH 命令行登录
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -947,10 +1088,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.febc23d1.min.js"></script>
+      <script src="../../assets/javascripts/bundle.febc23d1.min.js"></script>
       
     
   </body>

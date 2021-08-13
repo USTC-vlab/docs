@@ -13,14 +13,14 @@
         <meta name="author" content="USTC Vlab">
       
       
-        <link rel="canonical" href="https://vlab.ustc.edu.cn/login/linux/">
+        <link rel="canonical" href="https://vlab.ustc.edu.cn/login/rdp/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.4">
     
     
       
-        <title>Linux 客户端登录 - Vlab @ USTC</title>
+        <title>RDP 远程桌面登录 - Vlab @ USTC</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#linux" class="md-skip">
+        <a href="#rdp" class="md-skip">
           跳转至
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Linux 客户端登录
+              RDP 远程桌面登录
             
           </span>
         </div>
@@ -348,8 +348,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../windows/" class="md-nav__link">
-        Windows 客户端登录
+      <a href="../vnc/" class="md-nav__link">
+        VNC 远程桌面登录
       </a>
     </li>
   
@@ -360,8 +360,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../macos/" class="md-nav__link">
-        macOS 客户端登录
+      <a href="../ssh/" class="md-nav__link">
+        SSH 命令行登录
       </a>
     </li>
   
@@ -381,66 +381,9 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Linux 客户端登录
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Linux 客户端登录
+        RDP 远程桌面登录
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
-    使用 SSH 登录
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vnc" class="md-nav__link">
-    使用 VNC 登录
-  </a>
-  
-    <nav class="md-nav" aria-label="使用 VNC 登录">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tigervnc" class="md-nav__link">
-    使用 TigerVNC 登录（推荐）
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#realvnc" class="md-nav__link">
-    使用 RealVNC 登录
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -448,18 +391,6 @@
           
         </ul>
       </nav>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../desktop-settings/" class="md-nav__link">
-        桌面设置
-      </a>
     </li>
   
 
@@ -795,48 +726,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
-    使用 SSH 登录
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vnc" class="md-nav__link">
-    使用 VNC 登录
-  </a>
-  
-    <nav class="md-nav" aria-label="使用 VNC 登录">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tigervnc" class="md-nav__link">
-    使用 TigerVNC 登录（推荐）
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#realvnc" class="md-nav__link">
-    使用 RealVNC 登录
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -847,85 +736,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/USTC-vlab/docs/edit/master/docs/login/linux.md" title="编辑此页" class="md-content__button md-icon">
+                  <a href="https://github.com/USTC-vlab/docs/edit/master/docs/login/rdp.md" title="编辑此页" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="linux">Linux 系统登录虚拟机<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h1>
-<h2 id="ssh">使用 SSH 登录<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h2>
-<p>打开终端，安装 SSH 客户端：</p>
-<ul>
-<li>Ubuntu 和 Debian：<code>sudo apt-get install ssh</code></li>
-<li>CentOS, Fedora 和 RHEL：<code>sudo yum install ssh-clients</code></li>
-<li>
-<p>Arch Linux 和 Manjaro：<code>sudo pacman -S openssh</code></p>
-</li>
-<li>
-<p>从 Vlab SSH 统一认证方式登录：</p>
-<div class="highlight"><pre><span></span><code>ssh root@vlab.ustc.edu.cn
-</code></pre></div>
-</li>
-<li>
-<p>如果遇到 Warning，请输入 <code>yes</code>，然后根据提示，即可登录虚拟机</p>
-<p><img alt="" src="../../images/ssh_1.png" /></p>
-</li>
-</ul>
-<!-- TODO: TBD: 增加一个 bullet point，说明如何选择虚拟机内的用户名 (root/ubuntu/vlab) -->
-<p>\</p>
-<div class="admonition info">
-<p class="admonition-title">提示</p>
-<p>想要以虚拟机内的用户名登录只需要修改登录命令，如换成 ubuntu 用户：</p>
-<div class="highlight"><pre><span></span><code>ssh ubuntu@vlab.ustc.edu.cn
-</code></pre></div>
+                <h1 id="rdp">通过 RDP 远程桌面登录虚拟机<a class="headerlink" href="#rdp" title="Permanent link">&para;</a></h1>
+<div class="admonition failure">
+<p class="admonition-title">尚未完成</p>
+<p>目前相关服务或功能尚未开放，本页面所述的内容仅供参考。</p>
 </div>
-<!-- TODO: TBD: 增加一个 bullet point，说明如何使用公钥登录 -->
-
-<h2 id="vnc">使用 VNC 登录<a class="headerlink" href="#vnc" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">注意</p>
-<p>该登录方式只适用于名称中带有 <code>desktop</code> 的虚拟机镜像。</p>
+<div class="admonition example">
+<p class="admonition-title">支持的虚拟机和客户端</p>
+<p>RDP 登录方式仅支持 Windows KVM 虚拟机。</p>
+<p>RDP 登录方式支持包括 Windows, macOS, Linux, iOS 和 Android 在内的客户端系统。</p>
 </div>
-<p>可以使用 RealVNC 或 TigerVNC 登录：</p>
-<h3 id="tigervnc">使用 TigerVNC 登录（推荐）<a class="headerlink" href="#tigervnc" title="Permanent link">&para;</a></h3>
-<p>安装 TigerVNC 客户端：</p>
-<ul>
-<li>
-<p>Ubuntu 和 Debian：<code>sudo apt install tigervnc-viewer</code></p>
-</li>
-<li>
-<p>CentOS, Fedora 和 RHEL：<code>sudo yum install tigervnc</code></p>
-</li>
-<li>
-<p>Arch Linux 和 Manjaro：<code>sudo pacman -S tigervnc</code></p>
-</li>
-</ul>
-<p>打开 TigerVNC 客户端，如图所示输入 <code>vlab.ustc.edu.cn</code>，点击 <code>Connect</code>。</p>
-<p><img alt="TigerVNC Main Screen" src="../../images/tigervnc-startup-macos.png" /></p>
-<p>这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：</p>
-<p><img alt="TigerVNC Authentication Dialog" src="../../images/tigervnc-authentication-macos.png" /></p>
-<div class="admonition question">
-<p class="admonition-title">拥有多个虚拟机？</p>
-<p>如果你拥有多个虚拟机，使用 VNC 登录时请输入 <code>学号:虚拟机编号</code> 的形式，例如 <code>PB17000000:1234</code>。</p>
-</div>
-<div class="admonition question">
-<p class="admonition-title">密码是什么？</p>
-<p>VNC 登录方式使用 Vlab 平台的登录密码。<a href="../../web/#change-password">还没设置？</a></p>
-</div>
-<h3 id="realvnc">使用 RealVNC 登录<a class="headerlink" href="#realvnc" title="Permanent link">&para;</a></h3>
-<p>在 <a href="https://www.realvnc.com/en/connect/download/viewer/linux/">RealVNC 官网的下载页面</a> 下载适合你的系统的安装包</p>
-<ul>
-<li>
-<p>Ubuntu 和 Debian：选择 DEB x64，下载后安装：<code>sudo apt install ./文件名</code></p>
-</li>
-<li>
-<p>CentOS, Fedora 和 RHEL：选择 RPM x64，下载后安装：<code>sudo yum localinstall 文件名</code></p>
-</li>
-<li>
-<p>其他系统：选择 Standalone x64，加上执行权限 (<code>chmod a+x</code>) 后直接运行</p>
-</li>
-</ul>
-<p>后续操作与 Windows 和 macOS 下使用 RealVNC 连接相同，可以在 <a href="../macos/#vnc">这里</a> 继续阅读。</p>
                 
               
               
@@ -945,7 +770,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../macos/" class="md-footer__link md-footer__link--prev" aria-label="上一页: macOS 客户端登录" rel="prev">
+        <a href="../ssh/" class="md-footer__link md-footer__link--prev" aria-label="上一页: SSH 命令行登录" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -954,20 +779,20 @@
               <span class="md-footer__direction">
                 上一页
               </span>
-              macOS 客户端登录
+              SSH 命令行登录
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../desktop-settings/" class="md-footer__link md-footer__link--next" aria-label="下一页: 桌面设置" rel="next">
+        <a href="../../file/filestash/" class="md-footer__link md-footer__link--next" aria-label="下一页: 浏览器文件传输" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 下一页
               </span>
-              桌面设置
+              浏览器文件传输
             </div>
           </div>
           <div class="md-footer__button md-icon">
