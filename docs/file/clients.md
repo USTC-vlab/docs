@@ -64,7 +64,3 @@ FileZilla 可以从其[官方网站](https://filezilla-project.org/download.php?
 ### 下载虚拟机文件到本地 {#filezilla-download}
 
 下载虚拟机文件到本地和上传本地文件到虚拟机的操作类似，在右边远程站点选中你要下载的内容，右键点击 \[下载\] 即可，也可以直接拖拽到左边本地站点的目录下。
-
-## WinSCP {#winscp}
-
-TBD
