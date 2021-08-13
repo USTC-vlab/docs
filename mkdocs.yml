@@ -72,9 +72,9 @@ nav:
     - 虚拟机管理: web.md
     - 虚拟机登录:
       - 浏览器直接登录: login/browser.md
-      - Windows 系统登录: login/windows.md
-      - macOS 系统登录: login/macos.md
-      - Linux 系统登录: login/linux.md
+      - Windows 客户端登录: login/windows.md
+      - macOS 客户端登录: login/macos.md
+      - Linux 客户端登录: login/linux.md
     - 桌面设置: desktop-settings.md
   - 文件传输:
     - 浏览器文件传输: file/filestash.md
@@ -82,12 +82,12 @@ nav:
   - 应用程序:
     - 在线 VSCode: apps/vscode.md
     - RISC-V 工具链: apps/riscv.md
-  - 高级信息:
-    - 系统资源: advanced/resources.md
-    - 虚拟机镜像: advanced/images.md
-    - 手动安装桌面环境: advanced/install-desktop.md
   - 其他:
     - 常见问题: faq.md
+    - 高级信息:
+      - 系统资源: advanced/resources.md
+      - 虚拟机镜像: advanced/images.md
+      - 手动安装桌面环境: advanced/install-desktop.md
     - 条款:
       - 服务条款: terms/terms-of-service.md
       - 可接受的使用方式: terms/acceptable-use-policy.md
