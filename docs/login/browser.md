@@ -12,11 +12,9 @@
     - Mozilla Firefox 44 或以上
     - Safari 11 或以上
     - Opera 36 或以上
-    - Internet Explorer 11
-    - Microsoft Edge 12 或以上
-    - Microsoft Edge Chromium 版
+    - Microsoft Edge 79 或以上
 
-    我们推荐最新版本的 [Google Chrome](https://www.google.cn/chrome/) 和 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)，它们能提供最完整的功能和最好的使用体验。
+    我们推荐最新版本的 [Microsoft Edge](https://www.microsoft.com/zh-cn/edge), [Google Chrome](https://www.google.cn/chrome/) 和 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)，它们能提供最完整的功能和最好的使用体验。
 
     由于技术原因，浏览器 VNC 登录与网络信息中心提供的 Web VPN 服务（wvpn.ustc.edu.cn）不兼容，尝试通过 Web VPN 登录会收到各种错误信息。请直接访问 [vlab.ustc.edu.cn](https://vlab.ustc.edu.cn/) 登录。
 
