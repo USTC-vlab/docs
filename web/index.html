@@ -895,7 +895,7 @@
 <p><img alt="Toolbar" class="img-border" src="../images/web-settings.png" /></p>
 <p>该密码既用于登录平台管理页面（不使用统一身份认证的时候），也用于通过 VNC 方式登录虚拟机。</p>
 <h3 id="create-vm">创建虚拟机<a class="headerlink" href="#create-vm" title="Permanent link">&para;</a></h3>
-<p>点击「新虚拟机」按钮，可以创建虚拟机。在创建页面中，需要输入虚拟机名称、选择镜像以及输入 root 密码。</p>
+<p>点击「新虚拟机」按钮，可以创建虚拟机。在创建页面中，需要输入虚拟机名称并选择镜像。</p>
 <p><img alt="create" src="../images/vm-create.png" /></p>
 <p>其中：</p>
 <ul>
@@ -906,13 +906,6 @@
 <p class="admonition-title">不知道选择哪个镜像？</p>
 <p>你可以参考<a href="../advanced/images/">《虚拟机镜像》一页</a>。</p>
 <p>对于大多数计算机系同学，我们推荐使用默认镜像（名称以 <code>vlab01</code> 开头）。</p>
-</div>
-</li>
-<li>
-<p>为了保证安全，您输入的 root 密码需要大于等于 8 位，不能为纯数字，且不能为极其常见的密码。</p>
-<div class="admonition warning">
-<p class="admonition-title">注意</p>
-<p>请牢记 root 密码，否则将无法通过命令行登录虚拟机。<strong>VNC 登录方式不使用此密码</strong>。</p>
 </div>
 </li>
 </ul>
@@ -937,7 +930,7 @@
 <p>VNC 登录方式的具体操作请在左侧目录查阅各个操作系统的配置说明。</p>
 <div class="admonition info">
 <p class="admonition-title">提示</p>
-<p>SSH 方式的登录用户为 root，密码为创建虚拟机时所设置的 root 密码。</p>
+<p>SSH 方式的登录用户为 root / ubuntu / vlab，具体请参见<a href="../advanced/images/">虚拟机镜像</a>。</p>
 <p>VNC 登录使用 Vlab 专有的服务，使用学号或工号与上面所述的平台密码登录。</p>
 </div>
                 
