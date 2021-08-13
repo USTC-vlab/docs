@@ -8,7 +8,7 @@ FileZilla 可以从其[官方网站](https://filezilla-project.org/download.php?
 
 安装完成后找到并打开 FileZilla，可以看到如下界面：
 
-![FileZilla-interface](./../images/FileZilla-interface.png)
+![FileZilla-interface](../images/FileZilla-interface.png)
 
 ### 交互式登录 {#filezilla-interactive}
 
@@ -21,7 +21,7 @@ FileZilla 可以从其[官方网站](https://filezilla-project.org/download.php?
 - 协议选择 **SFTP**
 - 主机为 **vlab.ustc.edu.cn**，端口为 **22**，如下图所示
 - 登录类型选择**交互式**
-- 用户可以填 **root**，也可以使用 **ubuntu** 或 **vlab**，详情参见[镜像配置](images.md#image-content)
+- 用户可以填 **root**，也可以使用 **ubuntu** 或 **vlab**，详情参见[镜像配置](../advanced/images.md#image-content)
 
 点击 \[连接\] 按钮的话，将会立即连接该 SFTP 站点；点击 \[确定\] 按钮的话，则保存并关闭 \[站点管理器\] 窗口。
 
@@ -39,7 +39,7 @@ FileZilla 可以从其[官方网站](https://filezilla-project.org/download.php?
 
 ### 公钥认证登录 {#filezilla-pubkey}
 
-除了使用交互式登录，你还可以将下载到的私钥配置到 FileZilla 实现公钥免密登录。如果你还没有下载私钥，请参考[生成 SSH 密钥对并下载到本地](login-windows.md#pubkey-retrieve)。
+除了使用交互式登录，你还可以将下载到的私钥配置到 FileZilla 实现公钥免密登录。如果你还没有下载私钥，请参考[生成 SSH 密钥对并下载到本地](../login/windows.md#pubkey-retrieve)。
 
 首先打开设置：
 

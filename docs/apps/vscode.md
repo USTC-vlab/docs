@@ -25,17 +25,17 @@ Vlab 提供了可以直接在浏览器里使用的 Visual Studio Code。
 
 在启用 VSCode 服务后，在虚拟机管理页面点击对应虚拟机的 **VSCode** 按钮即可跳转进入使用，如图所示：
 
-![Use VSCode for this VM](../../images/apps-vscode-entry.png)
+![Use VSCode for this VM](../images/apps-vscode-entry.png)
 
 ## 修改显示语言 {#change-language}
 
 VSCode 默认语言为英语，若要使用中文语言，请在左侧扩展市场（Extension Market）搜索 Language，并安装中文语言包（ID 为 `ms-ceintl.vscode-language-pack-zh-hans`）
 
-![Change display language for VSCode](../../images/apps-vscode-locale.png){: .img-border}
+![Change display language for VSCode](../images/apps-vscode-locale.png){: .img-border}
 
 然后，打开终端，向 `~/.config/Code/User/locale.json` 中写入 `{"locale":"zh-cn"}`，如图所示：
 
-![Change display language for VSCode](../../images/apps-vscode-locale-2.png){: .img-border}
+![Change display language for VSCode](../images/apps-vscode-locale-2.png){: .img-border}
 
 刷新浏览器即可看到 VSCode 已切换至中文。
 

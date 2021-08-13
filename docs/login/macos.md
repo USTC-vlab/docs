@@ -32,7 +32,7 @@ SSH 登录方式与 Linux 系统登录虚拟机相同。
 
 !!! question "密码是什么？"
 
-    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
+    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
 
 登录后即可看到桌面并开始使用。
 
@@ -55,4 +55,4 @@ SSH 登录方式与 Linux 系统登录虚拟机相同。
 - 修改 VNC 分辨率
 - 中文输入法
 
-等，请参阅[桌面设置](desktop-settings.md)页面。
+等，请参阅[桌面设置](../desktop-settings.md)页面。

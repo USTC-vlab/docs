@@ -58,4 +58,4 @@
 
 ## 虚拟机镜像选择 {#image-selection}
 
-请参考 [虚拟机镜像](images.md) 一页。
+请参考 [虚拟机镜像](advanced/images.md) 一页。

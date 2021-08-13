@@ -40,19 +40,7 @@
 
 可以使用 RealVNC 或 TigerVNC 登录：
 
-### 使用 RealVNC 登录 {#realvnc}
-
-在 [RealVNC 官网的下载页面](https://www.realvnc.com/en/connect/download/viewer/linux/) 下载适合你的系统的安装包
-
-* Ubuntu 和 Debian：选择 DEB x64，下载后安装：`sudo apt install ./文件名`
-
-* CentOS, Fedora 和 RHEL：选择 RPM x64，下载后安装：`sudo yum localinstall 文件名`
-
-* 其他系统：选择 Standalone x64，加上执行权限 (`chmod a+x`) 后直接运行
-
-后续操作与 Windows 和 macOS 下使用 RealVNC 连接相同，可以在 [这里](login-macos.md#vnc) 继续阅读。
-
-### 使用 TigerVNC 登录 {#tigervnc}
+### 使用 TigerVNC 登录（推荐） {#tigervnc}
 
 安装 TigerVNC 客户端：
 
@@ -72,4 +60,16 @@
 
 !!! question "密码是什么？"
 
-    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
+    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
+
+### 使用 RealVNC 登录 {#realvnc}
+
+在 [RealVNC 官网的下载页面](https://www.realvnc.com/en/connect/download/viewer/linux/) 下载适合你的系统的安装包
+
+* Ubuntu 和 Debian：选择 DEB x64，下载后安装：`sudo apt install ./文件名`
+
+* CentOS, Fedora 和 RHEL：选择 RPM x64，下载后安装：`sudo yum localinstall 文件名`
+
+* 其他系统：选择 Standalone x64，加上执行权限 (`chmod a+x`) 后直接运行
+
+后续操作与 Windows 和 macOS 下使用 RealVNC 连接相同，可以在 [这里](macos.md#vnc) 继续阅读。

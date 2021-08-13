@@ -6,7 +6,7 @@
 
 在登录界面，可以使用你的学号登录，或者通过统一身份认证使用**学号**登录。
 
-![login](../images/1.png)
+![login](images/1.png)
 
 ## 界面 {#interface}
 
@@ -16,7 +16,7 @@
 
 虚拟机管理页面的右上角提供设置密码与退出登录的功能，如图：
 
-![Toolbar](../images/web-settings.png){: .img-border }
+![Toolbar](images/web-settings.png){: .img-border }
 
 该密码既用于登录平台管理页面（不使用统一身份认证的时候），也用于通过 VNC 方式登录虚拟机。
 
@@ -24,7 +24,7 @@
 
 点击「新虚拟机」按钮，可以创建虚拟机。在创建页面中，需要输入虚拟机名称、选择镜像以及输入 root 密码。
 
-![create](../images/vm-create.png)
+![create](images/vm-create.png)
 
 其中：
 
@@ -33,7 +33,7 @@
 
     !!! question "不知道选择哪个镜像？"
 
-        你可以参考[《虚拟机镜像》一页](images.md)。
+        你可以参考[《虚拟机镜像》一页](advanced/images.md)。
 
         对于大多数计算机系同学，我们推荐使用默认镜像（名称以 `vlab01` 开头）。
 
@@ -47,14 +47,14 @@
 
 ### 管理虚拟机 {#manage-vm}
 
-![vms](../images/2.png)
+![vms](images/2.png)
 
 下方的功能按钮分别为：
 
 - 开机：启动虚拟机（如果虚拟机处于关闭状态）
 - 关机：停止虚拟机运行
 - 重启：重启虚拟机（请注意在停止/重启前保存你的状态）
-- 桌面连接：跳转至浏览器 VNC 登录页面，见[浏览器登录](login-browser.md)页面。
+- 桌面连接：跳转至浏览器 VNC 登录页面，见[浏览器登录](login/browser.md)页面。
 - 更改 root 密码：如其所述
 - 销毁：删除这个虚拟机。**注意这是不可逆的，所有数据都会被删除。**
 

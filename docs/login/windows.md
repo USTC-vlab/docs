@@ -14,7 +14,7 @@ Windows 需要安装 SSH 客户端，有各种选择：
 - Cygwin
 - Windows Subsystem for Linux
 
-对于以上平台，请参考 [Linux 系统的登录方式](login-linux.md)
+对于以上平台，请参考 [Linux 系统的登录方式](linux.md)
 
 下面以免费开源的 PuTTY 为例在 Windows 上连接 Vlab 虚拟机。
 
@@ -32,7 +32,7 @@ Windows 需要安装 SSH 客户端，有各种选择：
 
 ![PuTTY host key prompt](../images/putty-host-key.png)
 
-然后 PuTTY 会要求你输入用户名和密码，用户名输入 root 或 ubuntu 或 vlab（参见[镜像配置](images.md#image-content)），然后根据提示输入你的 Vlab 用户名和密码（输入的密码没有回显），按回车即可：
+然后 PuTTY 会要求你输入用户名和密码，用户名输入 root 或 ubuntu 或 vlab（参见[镜像配置](../advanced/images.md#image-content)），然后根据提示输入你的 Vlab 用户名和密码（输入的密码没有回显），按回车即可：
 
 ![PuTTY screen](../images/putty-login.png)
 
@@ -40,7 +40,7 @@ Windows 需要安装 SSH 客户端，有各种选择：
 
     `Vlab username` 是你的学号（或工号），在登录虚拟机管理页面后可以在右上角看到。
 
-    `Vlab password` 是 Vlab 平台的登录密码，不是虚拟机的 root 密码。[还没设置？](web.md#change-password)
+    `Vlab password` 是 Vlab 平台的登录密码，不是虚拟机的 root 密码。[还没设置？](../web.md#change-password)
 
 登录成功后即可使用虚拟机，如图：
 
@@ -85,7 +85,7 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 
 ##### 在 PuTTY 中设置私钥并保存会话信息 {#pubkey-save-session}
 
-先到 Connection - Data 项设置自己的登录用户名（这里以 root 为例，你也可以使用 ubuntu 或 vlab，详情参见[镜像配置](images.md#image-content)），如图：
+先到 Connection - Data 项设置自己的登录用户名（这里以 root 为例，你也可以使用 ubuntu 或 vlab，详情参见[镜像配置](../advanced/images.md#image-content)），如图：
 
 ![PuTTY pubkey config 1](../images/putty-pubkey-config1.png)
 
@@ -136,7 +136,7 @@ Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
 
 !!! question "密码是什么？"
 
-    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
+    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
 
 登录后即可看到桌面并开始使用。
 
@@ -161,4 +161,4 @@ Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
 - 修改 VNC 分辨率
 - 中文输入法
 
-等，请参阅[桌面设置](desktop-settings.md)页面。
+等，请参阅[桌面设置](../desktop-settings.md)页面。

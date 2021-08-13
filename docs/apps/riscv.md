@@ -20,4 +20,4 @@ Vlab 为虚拟机提供了 RISC-V 的 GCC 工具链和 [RARS 模拟器][rars]。
 
 RARS 可以从桌面左上角的应用程序菜单中打开。
 
-![Applications Menu](../../images/apps-menu-rars.png)
+![Applications Menu](../images/apps-menu-rars.png)
