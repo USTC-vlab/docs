@@ -1,5 +1,60 @@
 # Windows 系统登录虚拟机
 
+## 图形界面：使用 VNC 登录 {#vnc}
+
+!!! info "注意"
+
+    该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像。
+
+Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
+
+### 使用 RealVNC 登录 {#realvnc}
+
+以 Windows 10 系统为例，[下载 RealVNC 客户端](https://www.realvnc.com/en/connect/download/viewer/windows/)并安装。安装好后在开始菜单中找到 RealVNC 的图标，如下图所示：
+
+![RealVNC in Windows 10 Start Menu](../images/realvnc-win10-tile.png)
+
+打开后的主界面如图所示，在地址栏输入 `vlab.ustc.edu.cn`，按回车连接：
+
+![RealVNC Main Screen](../images/realvnc-main-screen-win10.png)
+
+这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
+
+![RealVNC Authentication Dialog](../images/realvnc-auth-screen-win10.png)
+
+!!! question "拥有多个虚拟机？"
+
+    如果你拥有多个虚拟机，使用 VNC 登录时请输入 `学号:虚拟机编号` 的形式，例如 `PB17000000:1234`。
+
+!!! question "密码是什么？"
+
+    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
+
+登录后即可看到桌面并开始使用。
+
+### 使用 TigerVNC 登录 {#tigervnc}
+
+以 Windows 10 系统为例，[下载 TigerVNC 客户端](https://vlab.ustc.edu.cn/downloads/vncviewer64-1.10.1.exe)，如图：
+
+![TigerVNC Viewer Icon](../images/tigervnc-win-icon.png){: .img-border }
+
+双击打开，在服务器地址处填入 `vlab.ustc.edu.cn`，如图：
+
+![TigerVNC Connection Info](../images/tigervnc-connection-win10.png)
+
+这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
+
+![TigerVNC Authentication Dialog](../images/tigervnc-authentication-win10.png)
+
+### 桌面设置 {#desktop-settings}
+
+关于一些常用的桌面设置，如
+
+- 修改 VNC 分辨率
+- 中文输入法
+
+等，请参阅[桌面设置](../desktop-settings.md)页面。
+
 ## 命令行：使用 SSH 登录 {#ssh}
 
 Windows 需要安装 SSH 客户端，有各种选择：
@@ -31,6 +86,8 @@ Windows 需要安装 SSH 客户端，有各种选择：
 第一次连接时会提示你选择信任 Vlab 统一登录平台，点 Yes 即可：
 
 ![PuTTY host key prompt](../images/putty-host-key.png)
+
+#### 使用密码登录虚拟机 {#putty-password}
 
 然后 PuTTY 会要求你输入用户名和密码，用户名输入 root 或 ubuntu 或 vlab（参见[镜像配置](../advanced/images.md#image-content)），然后根据提示输入你的 Vlab 用户名和密码（输入的密码没有回显），按回车即可：
 
@@ -67,7 +124,7 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 
 此时公钥已经存储到自己的虚拟机上，只需要下载私钥并做一些配置就能利用密钥对进行免密登录。
 
-点击 **下载私钥** 就能在下载文件中找到一个以 `.pem` 结尾的文件，这就是对应的 SSH 私钥。请妥善保管它，因为**任何获得这个文件的人都能够登录你的虚拟机**。
+点击 \[下载私钥\] 就能在下载文件中找到一个以 `.pem` 结尾的文件，这就是对应的 SSH 私钥。请妥善保管它，因为**任何获得这个文件的人都能够登录你的虚拟机**。
 
 由于技术限制，每个虚拟机的私钥都是独立的。若你删除并重新创建了虚拟机，你需要重新生成密钥对才能使用密钥登录新的虚拟机。
 
@@ -99,66 +156,15 @@ PuTTY 还有一些高级的使用方法，例如你可以保存这些连接信�
 
 保存后每次登录时只需要双击之前保存的连接信息，就能免密登录你的虚拟机。
 
+<!--
+Content:
+
 ### XShell 方式 {#xshell}
 
 TBD
-
-<!--
-Content:
 
 - Where to download (hint: [下载页面](../downloads.md) )
 - Follow the styles of the PuTTY section to complete this part
 
 Similar to that of the PuTTY part, a section (start with H4) for pubkey login would be good.
 -->
-
-## 图形界面：使用 VNC 登录 {#vnc}
-
-!!! info "注意"
-
-    该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像。
-
-Vlab 平台目前支持 RealVNC 和 TigerVNC 两种客户端。
-
-### 使用 RealVNC 登录 {#realvnc}
-
-以 Windows 10 系统为例，[下载 RealVNC 客户端](https://www.realvnc.com/en/connect/download/viewer/windows/)并安装。安装好后在开始菜单中找到 RealVNC 的图标，如下图所示：
-
-![RealVNC in Windows 10 Start Menu](../images/realvnc-win10-tile.png)
-
-打开后的主界面如图所示，在地址栏输入 `vlab.ustc.edu.cn`，按回车连接：
-
-![RealVNC Main Screen](../images/realvnc-main-screen-win10.png)
-
-这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
-
-![RealVNC Authentication Dialog](../images/realvnc-auth-screen-win10.png)
-
-!!! question "密码是什么？"
-
-    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
-
-登录后即可看到桌面并开始使用。
-
-### 使用 TigerVNC 登录 {#tigervnc}
-
-以 Windows 10 系统为例，[下载 TigerVNC 客户端](https://vlab.ustc.edu.cn/downloads/vncviewer64-1.10.1.exe)，如图：
-
-![TigerVNC Viewer Icon](../images/tigervnc-win-icon.png){: .img-border }
-
-双击打开，在服务器地址处填入 `vlab.ustc.edu.cn`，如图：
-
-![TigerVNC Connection Info](../images/tigervnc-connection-win10.png)
-
-这里提示要输入用户名和密码，输入学号（或工号）和网页平台的登录密码即可登录：
-
-![TigerVNC Authentication Dialog](../images/tigervnc-authentication-win10.png)
-
-### 桌面设置 {#desktop-settings}
-
-关于一些常用的桌面设置，如
-
-- 修改 VNC 分辨率
-- 中文输入法
-
-等，请参阅[桌面设置](../desktop-settings.md)页面。

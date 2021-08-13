@@ -58,6 +58,10 @@
 
 ![TigerVNC Authentication Dialog](../images/tigervnc-authentication-macos.png)
 
+!!! question "拥有多个虚拟机？"
+
+    如果你拥有多个虚拟机，使用 VNC 登录时请输入 `学号:虚拟机编号` 的形式，例如 `PB17000000:1234`。
+
 !!! question "密码是什么？"
 
     VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
