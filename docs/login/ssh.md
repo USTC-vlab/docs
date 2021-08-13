@@ -18,13 +18,13 @@
     ssh ubuntu@vlab.ustc.edu.cn
     ```
 
-    如果遇到 Warning，请输入 `yes`，然后根据提示输入 Vlab 平台的用户名和密码，即可登录虚拟机。
+    如果遇到 Warning，请输入 `yes`，然后根据提示输入 Vlab 平台的用户名和密码，即可登录虚拟机。出于安全考虑，输入密码的时候没有回显。
 
     ![SSH console login](../images/ssh_1.png)
 
 === "Windows"
 
-    Windows 10 可以在系统设置中启用 SSH 客户端，请参考[微软的说明文档](https://docs.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_install_firstuse)安装。
+    Windows 10 可以在系统设置中启用 OpenSSH 客户端，请参考[微软的说明文档](https://docs.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_install_firstuse)安装。
 
     同时 Windows 平台也有各种 Linux / Unix 环境模拟软件，例如
 
@@ -38,11 +38,17 @@
 
     Android 系统可以从 [Google Play](https://play.google.com/store/apps/details?id=com.termux) 或者 [F-Droid](https://f-droid.org/en/packages/com.termux/) 获取 Termux 应用程序，然后使用 `pkg install ssh` 命令安装 SSH 客户端，然后参考“macOS 和 Linux”的使用说明。
 
+!!! question "拥有多个虚拟机？"
+
+    如果你拥有多个虚拟机，我们建议[使用公钥登录](#pubkey)。
+    
+    除了公钥登录之外，你也可以提示 Vlab username 时请输入 `学号:虚拟机编号` 的形式，例如 `PB17000000:1234`。
+
 !!! question "用户名密码是什么？"
 
     `Vlab username` 是你的学号（或工号），在登录虚拟机管理页面后可以在右上角看到。
 
-    `Vlab password` 是 Vlab 平台的登录密码，不是虚拟机的 root 密码。[还没设置？](../web.md#change-password)
+    `Vlab password` 是 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
 
 ### 使用公钥登录虚拟机 {#pubkey}
 
