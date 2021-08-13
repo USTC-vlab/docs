@@ -18,19 +18,9 @@
 
     我们推荐最新版本的 [Google Chrome](https://www.google.cn/chrome/) 和 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)，它们能提供最完整的功能和最好的使用体验。
 
-浏览器登录非常简单，只需要打开 [在线登录页面](https://vlab.ustc.edu.cn/vm-vnc)，可以选择一键登录或者学号密码登录：
+    由于技术原因，浏览器 VNC 登录与网络信息中心提供的 Web VPN 服务（wvpn.ustc.edu.cn）不兼容，尝试通过 Web VPN 登录会收到各种错误信息。请直接访问 [vlab.ustc.edu.cn](https://vlab.ustc.edu.cn/) 登录。
 
-![noVNC Authentication Dialog](../images/novnc-choose.png)
-
-如果已经登录过 vlab 虚拟机管理页面，那么点击「一键登录」即可成功进入虚拟机页面
-
-同时你也可以选择使用学号密码登录：
-
-![noVNC Authentication Dialog](../images/novnc-auth.png)
-
-!!! question "密码是什么？"
-
-    VNC 登录方式使用 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
+浏览器登录非常简单，只需要打开[虚拟机管理页面](https://vlab.ustc.edu.cn/vm/)，点击相应虚拟机的 \[桌面连接\] 按钮即可。
 
 ??? info "关闭 VNC 通知"
 
@@ -42,7 +32,7 @@
 
 ??? success "新虚拟机已默认启用中文输入法"
 
-    2 月 23 日以后创建的新虚拟机（ID 大于等于 1095）已默认启用中文输入法。旧虚拟机请参阅[桌面设置](../desktop-settings.md#chinese-ime)相关章节。
+    2020 年 2 月 23 日以后创建的新虚拟机（ID 大于等于 1095）已默认启用中文输入法。旧虚拟机请参阅[桌面设置](../desktop-settings.md#chinese-ime)相关章节。
 
 ## 使用组合键 {#combo-keys}
 
