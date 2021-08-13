@@ -68,6 +68,10 @@
 
     其界面和操作与 macOS 相同，请参考 macOS 的使用说明。
 
+=== "iOS / Android"
+
+    TigerVNC 没有 iOS 和 Android 的客户端，请移步至下方 [RealVNC](#realvnc) 的使用说明。
+
 !!! question "拥有多个虚拟机？"
 
     如果你拥有多个虚拟机，登录时请输入 `学号:虚拟机编号` 的形式，例如 `PB17000000:1234`。
