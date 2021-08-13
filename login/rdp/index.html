@@ -381,9 +381,46 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          RDP 远程桌面登录
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         RDP 远程桌面登录
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rdp_1" class="md-nav__link">
+    获取 RDP 客户端
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rdp_2" class="md-nav__link">
+    获取 RDP 登录信息
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -726,6 +763,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rdp_1" class="md-nav__link">
+    获取 RDP 客户端
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rdp_2" class="md-nav__link">
+    获取 RDP 登录信息
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -750,6 +809,32 @@
 <p class="admonition-title">支持的虚拟机和客户端</p>
 <p>RDP 登录方式仅支持 Windows KVM 虚拟机。</p>
 <p>RDP 登录方式支持包括 Windows, macOS, Linux, iOS 和 Android 在内的客户端系统。</p>
+</div>
+<h2 id="rdp_1">获取 RDP 客户端<a class="headerlink" href="#rdp_1" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Windows</label><div class="tabbed-content">
+<p>Windows 操作系统自带了 RDP 客户端，你可以直接在 <strong>开始菜单 → Windows 附件 → 远程桌面连接</strong> 中找到它。</p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">macOS</label><div class="tabbed-content">
+<p>从 Mac App Store 获取 <a href="https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466">Microsoft Remote Desktop</a>。</p>
+<p>出于未知的原因，该应用程序不在中国区 Mac App Store 提供。你可能需要一个美国区的 Apple ID 才能下载。</p>
+</div>
+<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Linux</label><div class="tabbed-content">
+<p>Linux 没有微软官方提供的 RDP 客户端，但是经过我们测试，开源软件 Remmina 能够完美使用 Vlab 的 RDP 登录方式。</p>
+<p>通常情况下，直接从操作系统的软件源里安装 <code>remmina-plugin-rdp</code> 即可，其他信息请参考 <a href="https://remmina.org/how-to-install-remmina/">Remmina 的说明</a>。</p>
+</div>
+<input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><label for="__tabbed_1_4">iOS</label><div class="tabbed-content">
+<p>从 App Store 获取 <a href="https://apps.apple.com/in/app/microsoft-remote-desktop/id714464092">Microsoft Remote Desktop</a>。</p>
+<p>出于未知的原因，该应用程序不在中国区 App Store 提供。你可能需要一个美国区的 Apple ID 才能下载。</p>
+</div>
+<input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><label for="__tabbed_1_5">Android</label><div class="tabbed-content">
+<p>对于 Android 7 及以下版本，请从 Google Play 安装 <a href="https://play.google.com/store/apps/details?id=com.microsoft.rdc.android">Remote Desktop 8</a>。</p>
+<p>对于 Android 8 及以上版本，请从 Google Play 安装 <a href="https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx">Remote Desktop</a>。</p>
+</div>
+</div>
+<h2 id="rdp_2">获取 RDP 登录信息<a class="headerlink" href="#rdp_2" title="Permanent link">&para;</a></h2>
+<div class="admonition failure">
+<p class="admonition-title">尚未完成</p>
+<p>目前相关服务或功能尚未开放，因此本节暂时没有内容。</p>
 </div>
                 
               
