@@ -72,10 +72,9 @@ nav:
     - 虚拟机管理: web.md
     - 虚拟机登录:
       - 浏览器直接登录: login/browser.md
-      - Windows 客户端登录: login/windows.md
-      - macOS 客户端登录: login/macos.md
-      - Linux 客户端登录: login/linux.md
-    - 桌面设置: desktop-settings.md
+      - VNC 远程桌面登录: login/vnc.md
+      - SSH 命令行登录: login/ssh.md
+      - RDP 远程桌面登录: login/rdp.md
   - 文件传输:
     - 浏览器文件传输: file/filestash.md
     - 使用文件客户端: file/clients.md
