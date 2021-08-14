@@ -20,7 +20,7 @@
 
     从 Mac App Store 获取 [Microsoft Remote Desktop](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466)。
 
-    出于未知的原因，该应用程序不在中国区 Mac App Store 提供。你可能需要一个美国区的 Apple ID 才能下载。
+    出于未知的原因，该应用程序不在中国区 Mac App Store 提供。可以参考 [Microsoft Docs: Get started with the macOS client](https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac)，下载 Microsoft Remote Desktop Beta。
 
 === "Linux"
 
@@ -31,8 +31,6 @@
 === "iOS"
 
     从 App Store 获取 [Microsoft Remote Desktop](https://apps.apple.com/in/app/microsoft-remote-desktop/id714464092)。
-
-    出于未知的原因，该应用程序不在中国区 App Store 提供。你可能需要一个美国区的 Apple ID 才能下载。
 
 === "Android"
 
