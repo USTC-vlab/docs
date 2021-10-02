@@ -25,14 +25,6 @@
 
     请直接访问 [vlab.ustc.edu.cn](https://vlab.ustc.edu.cn/)，网页版桌面登录不兼容 Web VPN。
 
-**使用 VNC 客户端连接时提示 server certificate 相关错误**
-
-:   例如，TigerVNC 显示的错误对话框如下：
-
-    ![TigerVNC 证书错误](images/tigervnc-certificate-verification.png)
-
-    请使用 Firefox 以外的浏览器访问此页面：<https://valid-isrgrootx1.letsencrypt.org/>
-
 ## 软件问题 {#software}
 
 ### Vivado 仿真报错 {#s-vivado-xsim-error}
