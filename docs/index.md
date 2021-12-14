@@ -8,7 +8,7 @@
 
 !!! note "讨论与通知"
 
-    如果你对本平台有任何疑问，欢迎加入 QQ 群 881039466 讨论或邮件联系 [vlab@ustc.edu.cn](mailto:vlab@ustc.edu.cn)。
+    如果你对本平台有任何疑问，欢迎加入 QQ 群 881039466 讨论或邮件联系 vlab:fontawesome-solid-at:ustc.edu.cn。
 
     我们会通过 QQ 群公告和 [GitHub Issue](https://github.com/USTC-vlab/notifications) 的方式发布有关平台动态的通知，**我们建议你至少关注一个通知渠道，以免错过平台更新或维护通知**。
 
