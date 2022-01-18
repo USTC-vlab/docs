@@ -1,13 +1,9 @@
 .red, .red-important { color: red !important; }
-
 .darkred, .darkred-important { color: darkred !important; }
-
 .orangered, .orangered-important { color: orangered !important; }
-
+.orange, .orange-important { color: orange !important; }
 .green, .green-important { color: green !important; }
-
 .limegreen, .limegreen-important { color: limegreen !important; }
-
 .darkcyan, .darkcyan-important { color: darkcyan !important; }
 
 .md-typeset #references, .md-typeset .no-underline { margin-bottom: 0; padding-bottom: 0; border: none; }
