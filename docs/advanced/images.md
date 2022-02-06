@@ -4,6 +4,10 @@
 
 ## 虚拟机类型选择 {#vm-selection}
 
+!!! warning "注意"
+
+    部分功能尚未完全实现，目前仅支持创建 Linux LXC 虚拟机。
+
 Vlab 提供的默认虚拟机类型为 Linux LXC，基于 Linux 容器技术实现，拥有最好的性能，能够使用 Vlab 实验软件套装进行多种课程实验，也能够使用 Docker，适合大多数同学使用。但是由于虚拟化技术限制，LXC 虚拟机无法使用文件系统挂载、回环设备（loop device）、内核模块等 Linux 高级特性，也无法在其中嵌套运行 KVM 虚拟机。
 
 Linux KVM 是完整的虚拟机，能够根据需要使用任意的 Linux 内核，也能够使用回环设备和运行嵌套 KVM 虚拟机（如 `qemu-system`）等《操作系统》课程必需的 Linux 高级特性。但是由于虚拟化技术限制，KVM 虚拟机没有 Vlab 实验软件套装，你可以自行安装你需要的实验软件，但是它们将会占用硬盘空间。
@@ -35,16 +39,16 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 
 ### 镜像一览 {#image-content}
 
-| 镜像编号 | 系统版本 | 默认用户 | 桌面环境 | 额外软件 |
-| :------: | :------: | :------: | :------: | :------: |
-| 01 | Ubuntu 20.04 | root/ubuntu | MATE | Vlab 实验软件套装 |
-| 03 | Debian 10 | root/vlab | MATE | Vlab 实验软件套装 |
-| 04 | Ubuntu 18.04 | root/ubuntu | Xfce4 | Vlab 实验软件套装 |
-| 11 | Ubuntu 18.04 | root | 无 | 无 |
-| 12 | Debian 10 | root | 无 | 无 |
-| 99 | 测试版本，请勿使用 | root | 无 | 无 |
+| 镜像编号 | 系统版本 | 默认用户 | 桌面环境 |
+| :------: | :------: | :------: | :------: |
+| 01 | Ubuntu 20.04 | root/ubuntu | MATE |
+| 03 | Debian 10 | root/vlab | MATE |
+| 04 | Ubuntu 18.04 | root/ubuntu | Xfce4 |
+| 11 | Ubuntu 18.04 | root | 无 |
+| 12 | Debian 10 | root | 无 |
+| 99 | 测试版本，请勿使用 | root | 无 |
 
-其中【Vlab 实验软件套装】包含了以下软件，并会随时增加或更新：
+对于 LXC 虚拟机，【Vlab 实验软件套装】包含了以下软件，并会随时增加或更新：
 
 - Xilinx Vivado 2019.1
 - Xilinx Vivado 2016.3
