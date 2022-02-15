@@ -54,8 +54,21 @@
 
 由于虚拟化平台限制，Vlab 虚拟机无法使用 [Snapcraft 软件包](https://snapcraft.io/)和 KVM 虚拟化。
 
-由于技术更迭，较早的虚拟机（编号在大约 1800 以前）无法使用 Docker 容器，如果有需要，请联系我们开通。
+由于技术更迭，较早的虚拟机（编号在大约 1800 以前）默认无法使用 Docker 容器，如果有需要，请联系我们开通。
 
 ## 虚拟机镜像选择 {#image-selection}
 
 请参考 [虚拟机镜像](advanced/images.md) 一页。
+
+## 故障排除 {#troubleshooting}
+
+如果你的虚拟机出现问题，你可以[通过 SSH 命令行登录虚拟机](login/ssh.md)尝试进行错误排除。
+
+### 恢复模式 SSH {#recovery-sshd}
+
+如果很不幸，你的虚拟机网络出现的故障导致 SSH 和 VNC 都无法连接，你仍然可以通过 SSH 使用以下登录方式尝试修复：
+
+- `ssh recovery@vlab.ustc.edu.cn` 可以提供虚拟机内的一个 root shell；
+- `ssh console@vlab.ustc.edu.cn` 可以连接至虚拟机的 tty0，此处可以看到虚拟机在开关机过程中的各种日志输出。
+
+该功能由 SSH 统一登录接口提供，因此使用相同的认证方式，即已配置的虚拟机公钥（推荐）或 Vlab 平台用户名和密码。
