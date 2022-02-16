@@ -37,13 +37,10 @@
 
 ## 开源软件致谢 {#open-source}
 
-- [The Linux Kernel](https://www.kernel.org/) - GNU General Public License v2.0
-- [Debian](https://www.debian.org/) - Mixed licenses
 - [Proxmox Virtual Environment](https://www.proxmox.com/en/proxmox-ve) - GNU Affero General Public License v3.0
-- [QEMU](https://www.qemu.org/) - GNU General Public License v2.0
-- [Linux Containers](https://linuxcontainers.org/) - GNU General Public License v2.0 and GNU Lesser General Public License v2.1
 - [Django Web framework](https://www.djangoproject.com/) - The 3-Clause BSD License
 - [noVNC](https://novnc.com/) - Mixed licenses
 - [SSH Piper](https://github.com/tg123/sshpiper) - MIT License
+- [Filestash](https://www.filestash.app/) - GNU Affero General Public License v3.0
 - [code-server](https://github.com/cdr/code-server) - MIT License
 - [MkDocs](https://www.mkdocs.org/) (The 2-Clause BSD License) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) (MIT License)
