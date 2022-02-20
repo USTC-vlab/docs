@@ -8,31 +8,23 @@ Vlab 支持虚拟机与本机之间的文件传输，在 [vlab 主页](https://v
 
 ![Filestash entry 2](../images/filestash-entry2.png)
 
-!!! note "新版浏览器文件传输测试中"
-
-    我们正在 2022 年寒假期间测试新版的浏览器文件传输，相比于原版添加了快速登录的功能，并且修复了一些小问题。
-
-    Vlab 主页的文件传输按钮已经对应新版的浏览器文件传输网站；「虚拟机管理」界面中同时保留了原版和新版的浏览器文件传输。
-
 ## 登录
 
-登录需要输入学号、vlab 平台密码、Linux 用户名以及 Linux 密码：
+新版浏览器文件传输登录时不再需要输入学号、vlab 平台密码、Linux 用户名以及 Linux 密码。
 
-![Filestash login](../images/filestash-login.png)
+如果已经登录管理页面，可以直接进行快速登录。
 
-如果勾选 **Remember me** 会弹出设置主密码的窗口，设置好后登录就只需要输入主密码：
+![Filestash login (fast)](../images/filestash-login-fast.png)
 
-![Filestash login remember me](../images/filestash-login-rememberme.png)
+对于大部分用户，直接点击「连接」（CONNECT）即可登录。
+若您有多个虚拟机，需要额外输入虚拟机 ID；若您的 Linux 用户名不为 ubuntu，需要额外输入登录的用户名。
+默认情况下可以不输入 Linux 密码登录，如果测试无法登录，可以勾选对应选项输入 Linux 密码。
 
-!!! note "新版浏览器文件传输的登录"
+如果未登录管理页面，可以选择使用传统登录方式：
 
-    新版浏览器文件传输不再需要输入以上所述的四项，在登录管理页面的前提下，可以轻松登录。
+![Filestash login (traditional)](../images/filestash-login-traditional.png)
 
-    对于大部分用户，直接点击「连接」（CONNECT）即可登录。
-    若您有多个虚拟机，需要额外输入虚拟机 ID；若您的 Linux 用户名不为 ubuntu，需要额外输入登录的用户名。
-    默认情况下可以不输入 Linux 密码登录，如果测试无法登录，可以勾选对应选项输入 Linux 密码。
-
-    如果使用新版文件管理无法登录，请联系我们。
+如果使用新版文件管理无法登录，请联系我们。
 
 ## 文件管理器操作
 
@@ -56,6 +48,6 @@ Vlab 支持虚拟机与本机之间的文件传输，在 [vlab 主页](https://v
 
 ![Filestash text edit](../images/filestash-edit.png)
 
-!!! note "新版浏览器文件传输的对在线文件编辑的大小限制"
+!!! note "在线文件编辑的大小限制"
 
     若文件大小大于 16 MiB，则会直接显示下载选项。
