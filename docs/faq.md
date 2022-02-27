@@ -2,7 +2,7 @@
 
 ## 连接问题 {#connection}
 
-**虚拟机无法连接**
+虚拟机无法连接
 
 :   请检查以下项目：
 
@@ -13,11 +13,11 @@
 
     - 你所在的网络可能屏蔽了 5900 端口（VNC 协议的标准端口），请尝试使用 449 端口，即在服务器地址处填入 `vlab.ustc.edu.cn:449`。如果很不幸两个端口都被屏蔽了，请使用浏览器登录。
 
-**虚拟机连接时提示密码错误**
+虚拟机连接时提示密码错误
 
 :   远程桌面连接方式使用 [Vlab 平台的登录密码](web.md#change-password)，而不是虚拟机内的密码。
 
-**使用网络信息中心的 Web VPN 访问桌面登录页面 noVNC 时显示 noVNC encoutnered an error**
+使用网络信息中心的 Web VPN 访问桌面登录页面 noVNC 时显示 noVNC encoutnered an error
 
 :   ```yaml
     SyntaxError: import declarations may only appear at top level of a module
