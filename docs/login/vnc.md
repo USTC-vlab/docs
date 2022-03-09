@@ -5,7 +5,7 @@
     VNC 登录方式仅支持 Linux LXC 虚拟机，这也是 Vlab 提供的默认虚拟机类型。
 
     VNC 登录方式支持从[浏览器直接登录](browser.md)，也支持包括 Windows, macOS, Linux, iOS 和 Android 在内的客户端系统。
-    
+
 !!! info "注意"
 
     该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像。
@@ -18,7 +18,7 @@
 
 ??? tip "客户端下载"
 
-    * Windows，macOS 和 Linux：[GitHub](https://github.com/TigerVNC/tigervnc/releases/latest)
+    * Windows，macOS 和 Linux：[:fontawesome-brands-github: GitHub](https://github.com/TigerVNC/tigervnc/releases/latest)
 
     * Ubuntu 和 Debian：`sudo apt-get install tigervnc-viewer`
 
@@ -26,7 +26,7 @@
 
     * Arch Linux 和 Manjaro：`sudo pacman -S tigervnc`
 
-=== "Windows"
+=== ":fontawesome-brands-windows: Windows"
 
     以 Windows 10 系统为例，[下载 TigerVNC 客户端](https://vlab.ustc.edu.cn/downloads/vncviewer64-1.11.0.exe)，如图：
 
@@ -42,7 +42,7 @@
 
     登录后即可看到桌面并开始使用。
 
-=== "macOS"
+=== ":fontawesome-brands-apple: macOS"
 
     [下载 macOS 下的 TigerVNC 客户端](https://vlab.ustc.edu.cn/downloads/TigerVNC-1.11.0.dmg)并安装（与安装其他的应用一样，打开 dmg 文件并将应用拖动到 Application 目录即可）。
 
@@ -56,7 +56,7 @@
 
     登录后即可看到桌面并开始使用。
 
-=== "Linux"
+=== ":fontawesome-brands-linux: Linux"
 
     Linux 系统可以从 GitHub 下载通用型客户端（格式为 `.tar.gz`），也可以从各大发行版的软件源直接获取。
 
@@ -68,7 +68,7 @@
 
     其界面和操作与 macOS 相同，请参考 macOS 的使用说明。
 
-=== "iOS / Android"
+=== ":fontawesome-brands-apple: iOS / :fontawesome-brands-android: Android"
 
     TigerVNC 没有 iOS 和 Android 的客户端，请移步至下方 [RealVNC](#realvnc) 的使用说明。
 
@@ -88,13 +88,13 @@
 
     ![RealVNC Download Page](../images/realvnc-download.png){: .img-border }
 
-    另外，iOS 设备可以从 [App Store][realvnc-ios] 获取 VNC Viewer，Android 设备可以从 [Google Play][realvnc-android] 或其他应用商店获取 VNC Viewer。
+    另外，iOS 设备可以从 [:fontawesome-brands-app-store-ios: App Store][realvnc-ios] 获取 VNC Viewer，Android 设备可以从 [:fontawesome-brands-google-play: Google Play][realvnc-android] 或其他应用商店获取 VNC Viewer。
 
   [realvnc-all]: https://www.realvnc.com/en/connect/download/viewer/
   [realvnc-ios]: https://apps.apple.com/us/app/vnc-viewer-remote-desktop/id352019548
   [realvnc-android]: https://play.google.com/store/apps/details?id=com.realvnc.viewer.android
 
-=== "Windows"
+=== ":fontawesome-brands-windows: Windows"
 
     以 Windows 10 系统为例，[下载 RealVNC 客户端](https://www.realvnc.com/en/connect/download/viewer/windows/)并安装。安装好后在开始菜单中找到 RealVNC 的图标，如下图所示：
 
@@ -108,7 +108,7 @@
 
     ![RealVNC Authentication Dialog](../images/realvnc-auth-screen-win10.png)
 
-=== "macOS"
+=== ":fontawesome-brands-apple: macOS"
 
     下载 macOS 下的 [RealVNC 客户端](https://www.realvnc.com/en/connect/download/viewer/macos/)并安装（与安装其他的应用一样，打开 dmg 文件并将应用拖动到 Application 目录即可）。
 
@@ -124,15 +124,15 @@
 
     ![RealVNC Authentication Dialog](../images/realvnc-auth-screen-macos.png)
 
-=== "Linux"
+=== ":fontawesome-brands-linux: Linux"
 
     根据发行版的不同，选择 DEB，RPM 格式或 Standalone 版的 [RealVNC 客户端](https://www.realvnc.com/en/connect/download/viewer/linux/)，并使用操作系统的包管理器安装（Standalone 版不需要安装）。
 
     Linux 客户端的界面和操作与 macOS 相同，请参考 macOS 的使用说明。
 
-=== "iOS / Android"
+=== ":fontawesome-brands-apple: iOS / :fontawesome-brands-android: Android"
 
-    从 [App Store][realvnc-ios]、[Google Play][realvnc-android] 或其他应用商店获取 VNC Viewer。
+    从 [:fontawesome-brands-app-store-ios: App Store][realvnc-ios]、[:fontawesome-brands-google-play: Google Play][realvnc-android] 或其他应用商店获取 VNC Viewer。
 
     打开 VNC Viewer 应用，添加服务器，在 Address 处输入 `vlab.ustc.edu.cn`，并填写一个可以辨认的名称（如 Vlab），然后点击刚刚新建的项目即可连接。
 
@@ -146,7 +146,7 @@
 
     更高的分辨率需要更快的网速，若网速不够，VNC 会自动降低显示质量（分辨率不变，颜色深度降低），可能会影响显示效果。建议根据自己的使用环境选择合适的分辨率。
 
-    默认的桌面分辨率为 1024\*768，适合大多数人使用。
+    默认的桌面分辨率为 1024×768，适合大多数人使用。
 
 如果你需要修改分辨率，可以在左上角找到 **设置 → 显示**，如图：
 

@@ -8,11 +8,11 @@
 
     此登录方式需要浏览器支持。以下浏览器是受支持的：
 
-    - Google Chrome 49 或以上
-    - Mozilla Firefox 44 或以上
-    - Safari 11 或以上
-    - Opera 36 或以上
-    - Microsoft Edge 79 或以上
+    - :fontawesome-brands-chrome: Google Chrome 49 或以上
+    - :fontawesome-brands-firefox-browser: Mozilla Firefox 44 或以上
+    - :fontawesome-brands-safari: Safari 11 或以上
+    - :fontawesome-brands-opera: Opera 36 或以上
+    - :fontawesome-brands-edge: Microsoft Edge 79 或以上
 
     我们推荐最新版本的 [Microsoft Edge](https://www.microsoft.com/zh-cn/edge), [Google Chrome](https://www.google.cn/chrome/) 和 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)，它们能提供最完整的功能和最好的使用体验。
 

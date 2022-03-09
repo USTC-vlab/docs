@@ -8,7 +8,7 @@
 
 ## 从命令行登录 {#cli}
 
-=== "macOS 和 Linux"
+=== ":fontawesome-brands-apple: macOS 和 :fontawesome-brands-linux: Linux"
 
     macOS 自带命令行 SSH 客户端，同时绝大多数的 Linux 发行版也自带了 SSH 客户端。若你的 Linux 系统中没有 SSH 客户端（`ssh` 命令），请自行搜索资料安装，软件包的名称通常为 `ssh`、`openssh` 或 `openssh-client` 之一。
 
@@ -22,7 +22,7 @@
 
     ![SSH console login](../images/ssh_1.png)
 
-=== "Windows"
+=== ":fontawesome-brands-windows: Windows"
 
     Windows 10 可以在系统设置中启用 OpenSSH 客户端，请参考[微软的说明文档](https://docs.microsoft.com/zh-cn/windows-server/administration/openssh/openssh_install_firstuse)安装。
 
@@ -34,14 +34,14 @@
 
     你可以安装上述软件中的任何一种，然后参考“macOS 和 Linux”的使用说明。我们推荐使用 Git Bash 或者 WSL。
 
-=== "Android"
+=== ":fontawesome-brands-android: Android"
 
     Android 系统可以从 [Google Play](https://play.google.com/store/apps/details?id=com.termux) 或者 [F-Droid](https://f-droid.org/en/packages/com.termux/) 获取 Termux 应用程序，然后使用 `pkg install ssh` 命令安装 SSH 客户端，然后参考“macOS 和 Linux”的使用说明。
 
 !!! question "拥有多个虚拟机？"
 
     如果你拥有多个虚拟机，我们建议[使用公钥登录](#pubkey)。
-    
+
     除了公钥登录之外，你也可以提示 Vlab username 时请输入 `学号:虚拟机编号` 的形式，例如 `PB17000000:1234`。
 
 !!! question "用户名密码是什么？"
@@ -85,7 +85,7 @@ ssh -i ~/.ssh/vlab.pem ubuntu@vlab.ustc.edu.cn
 
 ### 安装 PuTTY
 
-=== "Windows"
+=== ":fontawesome-brands-windows: Windows"
 
     首先[下载 PuTTY 客户端](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)，然后双击打开，安装过程很简单，直接 \[下一步\] 到底即可。安装完成后，找到并打开 PuTTY，如图：
 
@@ -99,7 +99,7 @@ ssh -i ~/.ssh/vlab.pem ubuntu@vlab.ustc.edu.cn
 
     ![PuTTY host key prompt](../images/putty-host-key.png)
 
-=== "Linux"
+=== ":fontawesome-brands-linux: Linux"
 
     部分 Linux 发行版的软件源里提供了 PuTTY 软件，可以直接从软件源安装，例如：
 
