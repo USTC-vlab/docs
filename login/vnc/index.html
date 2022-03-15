@@ -426,7 +426,7 @@
         
           <li class="md-nav__item">
   <a href="#change-resolution" class="md-nav__link">
-    修改分辨率
+    手动修改分辨率
   </a>
   
 </li>
@@ -906,7 +906,7 @@
         
           <li class="md-nav__item">
   <a href="#change-resolution" class="md-nav__link">
-    修改分辨率
+    手动修改分辨率
   </a>
   
 </li>
@@ -1056,14 +1056,19 @@
 </div>
 </div>
 <h2 id="desktop-settings">桌面设置<a class="headerlink" href="#desktop-settings" title="Permanent link">&para;</a></h2>
-<h3 id="change-resolution">修改分辨率<a class="headerlink" href="#change-resolution" title="Permanent link">&para;</a></h3>
+<h3 id="change-resolution">手动修改分辨率<a class="headerlink" href="#change-resolution" title="Permanent link">&para;</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">提示</p>
 <p>更高的分辨率需要更快的网速，若网速不够，VNC 会自动降低显示质量（分辨率不变，颜色深度降低），可能会影响显示效果。建议根据自己的使用环境选择合适的分辨率。</p>
 <p>默认的桌面分辨率为 1024×768，适合大多数人使用。</p>
 </div>
-<p>如果你需要修改分辨率，可以在左上角找到 <strong>设置 → 显示</strong>，如图：</p>
+<div class="admonition tip">
+<p class="admonition-title">提示</p>
+<p>TigerVNC 客户端默认会根据窗口大小自动修改分辨率；使用网页登录的用户可以选择 noVNC 左侧齿轮，设置 Scaling Mode 为 Remote Resizing 以启动自动调整分辨率的功能。</p>
+</div>
+<p>对于 Ubuntu 18.04 Xfce4 老镜像，如果你需要修改分辨率，可以在左上角找到 <strong>设置 → 显示</strong>，如图：</p>
 <p><img alt="Set VNC resolution" src="../../images/vnc-change-resolution.png" /></p>
+<p>对于 Ubuntu 20.04 MATE 镜像，可以在菜单栏找到 <strong>系统 → 硬件 → 显示器</strong> 调整分辨率。调整分辨率后，如果托盘位置显示异常，请在对应位置点击右键，取消「锁定到面板」后再次右键，点击「移动」，将鼠标移动到最右侧后点击确认即可。</p>
 <h3 id="chinese-ime">设置中文输入法<a class="headerlink" href="#chinese-ime" title="Permanent link">&para;</a></h3>
 <div class="admonition success">
 <p class="admonition-title">虚拟机已默认启用中文输入法</p>
