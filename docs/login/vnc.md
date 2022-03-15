@@ -140,7 +140,7 @@
 
 ## 桌面设置 {#desktop-settings}
 
-### 修改分辨率 {#change-resolution}
+### 手动修改分辨率 {#change-resolution}
 
 !!! tip "提示"
 
@@ -148,9 +148,15 @@
 
     默认的桌面分辨率为 1024×768，适合大多数人使用。
 
-如果你需要修改分辨率，可以在左上角找到 **设置 → 显示**，如图：
+!!! tip "提示"
+
+    TigerVNC 客户端默认会根据窗口大小自动修改分辨率；使用网页登录的用户可以选择 noVNC 左侧齿轮，设置 Scaling Mode 为 Remote Resizing 以启动自动调整分辨率的功能。
+
+对于 Ubuntu 18.04 Xfce4 老镜像，如果你需要修改分辨率，可以在左上角找到 **设置 → 显示**，如图：
 
 ![Set VNC resolution](../images/vnc-change-resolution.png)
+
+对于 Ubuntu 20.04 MATE 镜像，可以在菜单栏找到 **系统 → 硬件 → 显示器** 调整分辨率。调整分辨率后，如果托盘位置显示异常，请在对应位置点击右键，取消「锁定到面板」后再次右键，点击「移动」，将鼠标移动到最右侧后点击确认即可。
 
 ### 设置中文输入法 {#chinese-ime}
 
