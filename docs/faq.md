@@ -25,6 +25,10 @@
 
     请直接访问 [vlab.ustc.edu.cn](https://vlab.ustc.edu.cn/)，网页版桌面登录不兼容 Web VPN。
 
+希望关闭/重新打开 VNC 连接时显示的通知
+
+:   [Vlab VNC 通知设置页](https://vlab.ustc.edu.cn/vm/notif) 可以设置是否显示 VNC 通知。关闭前请务必加入我们的聊天群组，以及时获取通知。
+
 ## 软件问题 {#software}
 
 ### Vivado 仿真报错 {#s-vivado-xsim-error}
