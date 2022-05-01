@@ -70,11 +70,27 @@
 
 由于技术限制，每个虚拟机的私钥都是独立的。若你删除并重新创建了虚拟机，你需要重新生成密钥对才能使用密钥登录新的虚拟机。
 
-将私钥移动至一个方便找到的地方，例如 `~/.ssh/vlab.pem`，修改权限后即可使用 SSH 客户端登录：
+将私钥移动至一个方便找到的地方，修改权限后即可用ssh登录。
+
+Linux下操作：
+
+例如私钥放在 `~/.ssh/vlab.pem`
 
 ```shell
 chmod 600 ~/.ssh/vlab.pem
 ssh -i ~/.ssh/vlab.pem ubuntu@vlab.ustc.edu.cn
+```
+
+Windows下操作：
+
+例如私钥放在 `%HOMEPATH%/.ssh/vlab.pem`
+
+Windows下修改权限需右击私钥文件，属性->安全，确保只有你一个账号有对私钥文件的权限。
+
+修改权限后可直接用ssh登录：
+
+```shell
+ssh -i %HOMEPATH%/.ssh/vlab.pem ubuntu@vlab.ustc.edu.cn
 ```
 
 !!! tip "使用公钥"
