@@ -8,6 +8,10 @@
 
 .limegreen, .limegreen-important { color: limegreen !important; }
 
+.cyan, .cyan-important { color: cyan !important; }
+
+.darkcyan, .darkcyan-important { color: darkcyan !important; }
+
 :root { --md-code-font-family: Roboto Mono, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace !important; }
 
 .md-typeset #references, .md-typeset .no-underline { margin-bottom: 0; padding-bottom: 0; border: none; }

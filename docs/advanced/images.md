@@ -18,12 +18,12 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 
     | 功能特性 | Linux LXC | Linux KVM | Windows KVM |
     | :------: | :------: | :------: | :------: |
-    | [使用 VNC 登录](../login/vnc.md) | :fontawesome-solid-circle-check:{: .limegreen } | :fontawesome-solid-circle-xmark:{: .orangered } | :fontawesome-solid-circle-xmark:{: .orangered } |
-    | [使用 SSH 登录](../login/ssh.md) | :fontawesome-solid-circle-check:{: .limegreen } | :fontawesome-solid-circle-check:{: .limegreen } | :fontawesome-solid-circle-xmark:{: .orangered } |
-    | [使用 RDP 登录](../login/rdp.md) | :fontawesome-solid-circle-xmark:{: .orangered } | :fontawesome-solid-circle-xmark:{: .orangered } | :fontawesome-solid-circle-check:{: .limegreen } |
-    | Vlab 实验软件套装 | :fontawesome-solid-circle-check:{: .limegreen } | :fontawesome-solid-circle-xmark:{: .orangered } | :fontawesome-solid-circle-xmark:{: .orangered } |
-    | Linux 高级特性 | :fontawesome-solid-circle-xmark:{: .orangered } | :fontawesome-solid-circle-check:{: .limegreen } | :fontawesome-solid-circle-xmark:{: .orangered } |
-    | 技术支持 | :fontawesome-solid-circle-question:{: .darkcyan } | :fontawesome-solid-circle-question:{: .darkcyan } | :fontawesome-solid-circle-xmark:{: .orangered } |
+    | [使用 VNC 登录](../login/vnc.md) | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-xmark:{: .orangered } | :fontawesome-solid-xmark:{: .orangered } |
+    | [使用 SSH 登录](../login/ssh.md) | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-xmark:{: .orangered } |
+    | [使用 RDP 登录](../login/rdp.md) | :fontawesome-solid-xmark:{: .orangered } | :fontawesome-solid-xmark:{: .orangered } | :fontawesome-solid-check:{: .limegreen } |
+    | Vlab 实验软件套装 | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-xmark:{: .orangered } | :fontawesome-solid-xmark:{: .orangered } |
+    | Linux 高级特性 | :fontawesome-solid-xmark:{: .orangered } | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-xmark:{: .orangered } |
+    | 技术支持 | :fontawesome-solid-question:{: .darkcyan } | :fontawesome-solid-question:{: .darkcyan } | :fontawesome-solid-xmark:{: .orangered } |
 
 ## 镜像选择 {#image-selection}
 
