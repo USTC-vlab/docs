@@ -54,6 +54,20 @@
 
     在收到反馈后，我们已更新 01 号镜像。若你的虚拟机编号大于 2267，那么你不需要进行处理。
 
+### Vscode 启动出现「只读变量」错误
+
+表现症状
+
+:   在终端中执行 `vscode` 时提示以下错误信息：
+
+    ```text
+    /opt/vlab/bin/vscode: 行 4: UID：只读变量
+    ```
+
+解决方法
+
+:    打开终端，输入 `sudo dpkg-reconfigure dash`。在弹出的 "Use dash as the default system shell (/bin/sh)?" 中选择 Yes。
+
 ## 软件限制 {#limits}
 
 由于虚拟化平台限制，Vlab 虚拟机无法使用 [Snapcraft 软件包](https://snapcraft.io/)和 KVM 虚拟化。
