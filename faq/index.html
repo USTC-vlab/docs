@@ -629,6 +629,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    Vscode 启动出现「只读变量」错误
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -929,6 +936,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    Vscode 启动出现「只读变量」错误
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1057,6 +1071,19 @@ sudo apt install build-essential libncurses5
 <p class="admonition-title">新虚拟机不会出现此问题</p>
 <p>在收到反馈后，我们已更新 01 号镜像。若你的虚拟机编号大于 2267，那么你不需要进行处理。</p>
 </div>
+<h3 id="vscode">Vscode 启动出现「只读变量」错误<a class="headerlink" href="#vscode" title="Permanent link">&para;</a></h3>
+<dl>
+<dt>表现症状</dt>
+<dd>
+<p>在终端中执行 <code>vscode</code> 时提示以下错误信息：</p>
+<div class="highlight"><pre><span></span><code>/opt/vlab/bin/vscode: 行 4: UID：只读变量
+</code></pre></div>
+</dd>
+<dt>解决方法</dt>
+<dd>
+<p>打开终端，输入 <code>sudo dpkg-reconfigure dash</code>。在弹出的 "Use dash as the default system shell (/bin/sh)?" 中选择 Yes。</p>
+</dd>
+</dl>
 <h2 id="limits">软件限制<a class="headerlink" href="#limits" title="Permanent link">&para;</a></h2>
 <p>由于虚拟化平台限制，Vlab 虚拟机无法使用 <a href="https://snapcraft.io/">Snapcraft 软件包</a>和 KVM 虚拟化。</p>
 <p>由于技术更迭，较早的虚拟机（编号在大约 1800 以前）默认无法使用 Docker 容器，如果有需要，请联系我们开通。</p>
