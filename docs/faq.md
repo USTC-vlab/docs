@@ -29,6 +29,17 @@
 
 :   [Vlab VNC 通知设置页](https://vlab.ustc.edu.cn/vm/notif) 可以设置是否显示 VNC 通知。关闭前请务必加入我们的聊天群组，以及时获取通知。
 
+SSH 连接提示 `sign_and_send_pubkey: no mutual signature supported`
+
+:   该错误主要在 OpenSSH 8.8 及以上的客户端中出现，原因是 OpenSSH 8.8 默认取消了使用 RSA 公钥连接时的 `ssh-rsa` 签名算法。
+
+    请编辑 `$HOME/.ssh/config` 文件（Windows 用户请编辑 `%UserProfile%\.ssh\config`），添加以下内容恢复 OpenSSH 的选项：
+
+    ```text
+    Host *
+        PubkeyAcceptedKeyTypes +ssh-rsa
+    ````
+
 ## 软件问题 {#software}
 
 ### Vivado 仿真报错 {#s-vivado-xsim-error}
