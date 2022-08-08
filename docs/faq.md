@@ -33,12 +33,18 @@ SSH 连接提示 `sign_and_send_pubkey: no mutual signature supported`
 
 :   该错误主要在 OpenSSH 8.8 及以上的客户端中出现，原因是 OpenSSH 8.8 默认取消了使用 RSA 公钥连接时的 `ssh-rsa` 签名算法。
 
+    !!! info "该问题已于 2022/08/08 完整修复"
+
+        目前 SSH 网关程序已支持更新的 RSA 签名算法。用户无需进行以下操作。
+
+    在收到反馈后，我们已更新 01 号镜像。<del>若你的虚拟机编号大于 2267，那么你不需要进行处理。</del>
+
     请编辑 `$HOME/.ssh/config` 文件（Windows 用户请编辑 `%UserProfile%\.ssh\config`），添加以下内容恢复 OpenSSH 的选项：
 
     ```text
     Host *
         PubkeyAcceptedKeyTypes +ssh-rsa
-    ````
+    ```
 
 ## 软件问题 {#software}
 
