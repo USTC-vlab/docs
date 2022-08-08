@@ -6,6 +6,50 @@
 
     SSH 登录方式支持包括 Windows, macOS, Linux, iOS 和 Android 在内的客户端系统。
 
+## 从浏览器登录 {#web}
+
+2022 年 4 月，我们添加了网页登录 SSH 的功能，在虚拟机管理页面直接点击「网页 SSH 登录」即可。
+
+### 登录用户与救援模式 {#web-username}
+
+默认以 root 用户登录。URL 中可以配置以其他用户登录：在 URL 中添加 `unixusername` 参数即可，例如虚拟机 1234 默认的 URL 为：
+
+```
+https://vlab.ustc.edu.cn/ssh/?username=:1234
+```
+
+如果需要以 `ubuntu` 用户登录，添加 `unixusername` 参数如下：
+
+```
+https://vlab.ustc.edu.cn/ssh/?username=:1234&unixusername=ubuntu
+```
+
+此外，救援模式对应的用户名为 `recovery`，因此可以通过网页版进入救援模式：
+
+```
+https://vlab.ustc.edu.cn/ssh/?username=:1234&unixusername=recovery
+```
+
+### 上传文件与下载文件 {#web-files}
+
+SSH 网页版支持文件拖动上传与文件下载。首先需要在虚拟机内安装 `lrzsz` 软件包：
+
+```
+sudo apt install lrzsz
+```
+
+安装后从本地拖动文件到浏览器窗口中即可上传。如需下载文件，使用 `sz` 命令。例如下载 `yrcamp.jpg` 文件：
+
+```
+sz yrcamp.jpg
+```
+
+输入命令后，浏览器窗口中会出现一个对话框显示文件名与文件大小，点击 Download 即可。
+
+!!! warning "避免使用此功能上传/下载大文件"
+
+    较大的文件请考虑使用网页版文件传输功能，或配置命令行 ssh 登录后，使用 `scp` 或 `rsync` 命令处理。
+
 ## 从命令行登录 {#cli}
 
 === ":fontawesome-brands-apple: macOS 和 :fontawesome-brands-linux: Linux"
