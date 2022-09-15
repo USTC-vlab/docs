@@ -4,7 +4,7 @@
 
     该登录方式只适用于名称中带有 `desktop` 的虚拟机镜像，通常为 01 到 09 号镜像。
 
-??? success "浏览器支持"
+!!! success "浏览器支持"
 
     此登录方式需要浏览器支持。以下浏览器是受支持的：
 
@@ -15,6 +15,8 @@
     - :fontawesome-brands-edge: Microsoft Edge 79 或以上
 
     我们推荐最新版本的 [Microsoft Edge](https://www.microsoft.com/zh-cn/edge), [Google Chrome](https://www.google.cn/chrome/) 和 [Mozilla Firefox](https://www.mozilla.org/zh-CN/firefox/new/)，它们能提供最完整的功能和最好的使用体验。
+
+    **请注意，我们不支持来历不明的杂牌浏览器**。如果你正在使用该类浏览器，并且发现无法使用远程桌面连接，请点击上面其中一个链接下载最新的浏览器。不仅仅在 Vlab 上——它们在几乎所有网站里都能提供相比于你的浏览器更好的使用体验、性能与安全性。
 
     由于技术原因，浏览器 VNC 登录与网络信息中心提供的 Web VPN 服务（wvpn.ustc.edu.cn）不兼容，尝试通过 Web VPN 登录会收到各种错误信息。请直接访问 [vlab.ustc.edu.cn](https://vlab.ustc.edu.cn/) 登录。
 
