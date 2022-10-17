@@ -93,4 +93,5 @@ nav:
       - 可接受的使用方式: terms/acceptable-use-policy.md
     - 资源下载: downloads.md
     - 致谢: credits.md
+    # 招新: recruit.md
     - Git 简明教程: tutorial/git.md
