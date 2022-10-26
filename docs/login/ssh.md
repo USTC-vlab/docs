@@ -6,6 +6,10 @@
 
     SSH 登录方式支持包括 Windows, macOS, Linux, iOS 和 Android 在内的客户端系统。
 
+!!! success "推荐使用公钥方式登录"
+
+    详情请见下方[公钥登录](#pubkey)的段落。
+
 ## 从浏览器登录 {#web}
 
 2022 年 4 月，我们添加了网页登录 SSH 的功能，在虚拟机管理页面直接点击「网页 SSH 登录」即可。
@@ -94,7 +98,7 @@ sz yrcamp.jpg
 
     `Vlab password` 是 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
 
-### 使用公钥登录虚拟机 {#pubkey}
+### 使用公钥登录虚拟机（:fontawesome-solid-star:推荐） {#pubkey}
 
 使用公钥登录虚拟机可以免除每次输入密码的麻烦。
 
