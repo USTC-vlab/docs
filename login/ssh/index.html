@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://vlab.ustc.edu.cn/docs/login/ssh/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
@@ -451,10 +451,10 @@
         
           <li class="md-nav__item">
   <a href="#pubkey" class="md-nav__link">
-    使用公钥登录虚拟机
+    使用公钥登录虚拟机（ 推荐）
   </a>
   
-    <nav class="md-nav" aria-label="使用公钥登录虚拟机">
+    <nav class="md-nav" aria-label="使用公钥登录虚拟机（ 推荐）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1004,10 +1004,10 @@
         
           <li class="md-nav__item">
   <a href="#pubkey" class="md-nav__link">
-    使用公钥登录虚拟机
+    使用公钥登录虚拟机（ 推荐）
   </a>
   
-    <nav class="md-nav" aria-label="使用公钥登录虚拟机">
+    <nav class="md-nav" aria-label="使用公钥登录虚拟机（ 推荐）">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1114,6 +1114,10 @@
 <p>SSH 登录方式支持 Linux LXC 虚拟机和 Linux KVM 虚拟机。</p>
 <p>SSH 登录方式支持包括 Windows, macOS, Linux, iOS 和 Android 在内的客户端系统。</p>
 </div>
+<div class="admonition success">
+<p class="admonition-title">推荐使用公钥方式登录</p>
+<p>详情请见下方<a href="#pubkey">公钥登录</a>的段落。</p>
+</div>
 <h2 id="web">从浏览器登录<a class="headerlink" href="#web" title="Permanent link">&para;</a></h2>
 <p>2022 年 4 月，我们添加了网页登录 SSH 的功能，在虚拟机管理页面直接点击「网页 SSH 登录」即可。</p>
 <h3 id="web-username">登录用户与救援模式<a class="headerlink" href="#web-username" title="Permanent link">&para;</a></h3>
@@ -1174,7 +1178,7 @@
 <p><code>Vlab username</code> 是你的学号（或工号），在登录虚拟机管理页面后可以在右上角看到。</p>
 <p><code>Vlab password</code> 是 Vlab 平台的登录密码。<a href="../../web/#change-password">还没设置？</a></p>
 </div>
-<h3 id="pubkey">使用公钥登录虚拟机<a class="headerlink" href="#pubkey" title="Permanent link">&para;</a></h3>
+<h3 id="pubkey">使用公钥登录虚拟机（<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M316.9 18c-5.3-11-16.5-18-28.8-18s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329l-24.6 145.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329l104.2-103.1c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7l-143.7-21.2L316.9 18z"/></svg></span> 推荐）<a class="headerlink" href="#pubkey" title="Permanent link">&para;</a></h3>
 <p>使用公钥登录虚拟机可以免除每次输入密码的麻烦。</p>
 <h4 id="get-pubkey">生成 SSH 密钥对并下载到本地<a class="headerlink" href="#get-pubkey" title="Permanent link">&para;</a></h4>
 <p>进入虚拟机管理界面，可以在自己虚拟机下方找到 SSH 密钥管理入口：</p>
@@ -1357,10 +1361,10 @@ ssh -i ~/.ssh/vlab.pem ubuntu@vlab.ustc.edu.cn
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.sections"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
     
   </body>
