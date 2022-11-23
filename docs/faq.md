@@ -19,7 +19,9 @@
 
 使用网络信息中心的 Web VPN 访问桌面登录页面 noVNC 时显示 noVNC encoutnered an error
 
-:   ```yaml
+:   报错信息如下：
+
+    ```yaml
     SyntaxError: import declarations may only appear at top level of a module
     ```
 
@@ -33,7 +35,7 @@ SSH 连接提示 `sign_and_send_pubkey: no mutual signature supported`
 
 :   该错误主要在 OpenSSH 8.8 及以上的客户端中出现，原因是 OpenSSH 8.8 默认取消了使用 RSA 公钥连接时的 `ssh-rsa` 签名算法。
 
-    !!! info "该问题已于 2022/08/08 完整修复"
+    !!! info "该问题已于 2022-08-08 完整修复"
 
         目前 SSH 网关程序已支持更新的 RSA 签名算法。用户无需进行以下操作。
 
@@ -79,7 +81,7 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
     在收到反馈后，我们已更新 01 号镜像。若你的虚拟机编号大于 2267，那么你不需要进行处理。
 
-### Vscode 启动出现「只读变量」错误
+### 在线 VSCode 启动出现「只读变量」错误 {#s-vscode-read-only-variable}
 
 表现症状
 
