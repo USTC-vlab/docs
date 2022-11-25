@@ -892,14 +892,23 @@
 <li>需要开启额外的功能（如使用 Docker）</li>
 <li>需要开放网络端口用于从外部访问虚拟机内的服务</li>
 </ul>
-<p>请联系 Vlab 管理员，对于合理的需求，在 Vlab 资源足够的情况下我们都会满足。</p>
+<p>请联系 Vlab 管理员，在条件允许的情况下，我们会尽力满足合理的需求。</p>
 <div class="admonition warning">
 <p class="admonition-title">注意</p>
 <p>大多数的修改配置操作都需要先将虚拟机关机，因此请注意保存好未完成的工作。</p>
 </div>
-<p>由于存储不是动态分配的（全额预留的容量），且调整较为复杂，因此如果你需要超过 64 GB 的总容量，我们建议你先看看<a href="https://git.ustc.edu.cn/">科大超算中心 GitLab</a> 和<a href="https://rec.ustc.edu.cn/">睿客网</a>是否能够满足你的存储需求，再考虑向我们申请额外的存储。</p>
+<div class="admonition info">
+<p class="admonition-title">CPU 和内存</p>
 <p>虚拟机的 CPU 和内存增减较为容易，且是随使用量动态分配的（指定的容量为动态上限），因此对于这两种资源申请我们会较为宽松地考虑。对于容量特别大的资源请求，我们可能会要求你告知使用方式和使用时间，并在使用时间结束后回收这些资源，确保 Vlab 能够为每位同学提供尽可能好的服务质量。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">硬盘容量</p>
+<p>由于存储不是动态分配的（全额预留的容量），且调整较为复杂，因此如果你需要超过 64 GB 的总容量，我们建议你先看看<a href="https://git.ustc.edu.cn/">科大超算中心 GitLab</a> 和<a href="https://rec.ustc.edu.cn/">睿客网</a>是否能够满足你的存储需求，再考虑向我们申请额外的存储。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">端口映射</p>
 <p>若因实验需要将虚拟机内的网络端口开放到公网访问，且无法使用 <a href="https://zhuanlan.zhihu.com/p/148825449">SSH 端口转发</a>等更加安全的方式时，我们可以在网关上配置 NAT 端口映射，此时虚拟机内能直接得到外部访问的 IP 和端口。由于合规性要求，我们会严格处理端口映射的申请，并且不会映射低端口（0-1023）和一些敏感端口（如 6379、8080 等）。端口映射仅支持 TCP 和 UDP 协议，暂不支持 IPv6。</p>
+</div>
 
 
   
