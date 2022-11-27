@@ -1122,6 +1122,11 @@
 </div>
 <h2 id="web">从浏览器登录<a class="headerlink" href="#web" title="Permanent link">&para;</a></h2>
 <p>2022 年 4 月，我们添加了网页登录 SSH 的功能，在虚拟机管理页面直接点击「网页 SSH 登录」即可。</p>
+<div class="admonition question">
+<p class="admonition-title">用户名密码是什么？</p>
+<p><code>Vlab username</code> 是你的学号（或工号），在登录虚拟机管理页面后可以在右上角看到。</p>
+<p><code>Vlab password</code> 是 Vlab 平台的登录密码。<a href="../../web/#change-password">还没设置？</a></p>
+</div>
 <h3 id="web-username">登录用户与救援模式<a class="headerlink" href="#web-username" title="Permanent link">&para;</a></h3>
 <p>默认以 root 用户登录。URL 中可以配置以其他用户登录：在 URL 中添加 <code>unixusername</code> 参数即可，例如虚拟机 1234 默认的 URL 为：</p>
 <div class="highlight"><pre><span></span><code>https://vlab.ustc.edu.cn/ssh/?username=:1234
@@ -1173,7 +1178,7 @@
 <div class="admonition question">
 <p class="admonition-title">拥有多个虚拟机？</p>
 <p>如果你拥有多个虚拟机，我们建议<a href="#pubkey">使用公钥登录</a>。</p>
-<p>除了公钥登录之外，你也可以提示 Vlab username 时请输入 <code>学号:虚拟机编号</code> 的形式，例如 <code>PB17000000:1234</code>。</p>
+<p>除了公钥登录之外，你也可以在提示 Vlab username 时输入 <code>学号:虚拟机编号</code> 的形式，例如 <code>PB17000000:1234</code>。</p>
 </div>
 <div class="admonition question">
 <p class="admonition-title">用户名密码是什么？</p>
