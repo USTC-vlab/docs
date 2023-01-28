@@ -41,7 +41,8 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 
 | 镜像编号 | 系统版本 | 默认用户 | 桌面环境 |
 | :------: | :------: | :------: | :------: |
-| 01 | Ubuntu 20.04 | root/ubuntu | MATE |
+| 01 | Ubuntu 22.04 | root/ubuntu | MATE |
+| 02 | Ubuntu 20.04 | root/ubuntu | MATE |
 | 03 | Debian 10 | root/vlab | MATE |
 | 04 | Ubuntu 18.04 | root/ubuntu | Xfce4 |
 | 11 | Ubuntu 18.04 | root | 无 |

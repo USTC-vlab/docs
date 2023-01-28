@@ -33,6 +33,8 @@ theme:
     logo: fontawesome/solid/desktop
     repo: octicons/mark-github-16
   features:
+    - content.code.copy
+    - navigation.footer
     - navigation.sections
 
 # Customization
