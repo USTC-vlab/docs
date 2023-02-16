@@ -63,6 +63,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tilde
   - pymdownx.superfences
   - markdown.extensions.def_list
   - toc:

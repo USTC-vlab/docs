@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 import re
@@ -7,9 +8,18 @@ import requests
 def get_issues():
     repo = "USTC-vlab/notifications"
     url = f"https://api.github.com/repos/{repo}/issues?state=all"
-    r = requests.get(url)
+    headers = {}
+    if "GITHUB_TOKEN" in os.environ:
+        headers["Authorization"] = f"token {os.environ['GITHUB_TOKEN']}"
+    r = requests.get(url, headers=headers)
     r.raise_for_status()
     return r.json()
+
+
+def convert_time(s):
+    t = datetime.datetime.fromisoformat(s.rstrip("Z"))
+    t += datetime.timedelta(hours=8)
+    return t.strftime("%Y 年 %m 月 %d 日 %H:%M")
 
 
 def print_issue(f, issue, header="!!! abstract"):
@@ -17,6 +27,12 @@ def print_issue(f, issue, header="!!! abstract"):
     s = issue["body"].replace("\r", "")
     s = re.sub(r"\[(\d+)\]", r"[{}-\1]".format(issue["number"]), s)
     s = re.sub("^", "    ", s, flags=re.MULTILINE)
+    print(s, end="\n\n", file=f)
+    ctime = convert_time(issue["created_at"])
+    s = f"    **发布时间**：{ctime}"
+    if issue.get("closed_at"):
+        ctime = convert_time(issue["closed_at"])
+        s += f"  \n    **完成时间**：{ctime}"
     print(s, end="\n\n", file=f)
 
 
