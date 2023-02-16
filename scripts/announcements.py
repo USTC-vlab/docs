@@ -13,7 +13,7 @@ def get_issues():
 
 
 def print_issue(f, issue, header="!!! abstract"):
-    print(f'{header} "{issue["title"]}"\n', file=f)
+    print(f'{header} "{issue["title"]} [:material-github:]({issue["html_url"]})"\n', file=f)
     s = issue["body"].replace("\r", "")
     s = re.sub(r"\[(\d+)\]", r"[{}-\1]".format(issue["number"]), s)
     s = re.sub("^", "    ", s, flags=re.MULTILINE)
