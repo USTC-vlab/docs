@@ -10,7 +10,7 @@
 
     如果你对本平台有任何疑问，欢迎加入 QQ 群 <del>881039466</del>（一群，已满）1004525117（二群）讨论或邮件联系 vlab:fontawesome-solid-at:ustc.edu.cn。
 
-    我们会通过 QQ 群公告和 [GitHub Issue](https://github.com/USTC-vlab/notifications) 的方式发布有关平台动态的通知，**我们建议你至少关注一个通知渠道，以免错过平台更新或维护通知**。
+    我们会通过 QQ 群公告和 [GitHub Issue](https://github.com/USTC-vlab/notifications) 的方式发布有关平台动态的通知，你也可以在这里[查看所有的通知公告](announcements.md)。**我们建议你至少关注一个通知渠道，以免错过平台更新或维护通知**。
 
 ![Vlab in Browser](images/vlab-in-browser.jpg)
 
