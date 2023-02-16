@@ -3,3 +3,6 @@ env/
 venv/
 site/
 .env/
+
+# Generated from scripts
+/docs/announcements.md

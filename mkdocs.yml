@@ -86,6 +86,7 @@ nav:
     - RISC-V 工具链: apps/riscv.md
   - 其他:
     - 常见问题: faq.md
+    - 通知公告: announcements.md
     - 高级信息:
       - 系统资源: advanced/resources.md
       - 虚拟机镜像: advanced/images.md

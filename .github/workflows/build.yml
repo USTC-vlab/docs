@@ -15,6 +15,9 @@ jobs:
     - name: Install dependencies
       run: |
         pip3 install -r requirements.txt
+    - name: Fetch announcements
+      run: |
+        python3 scripts/announcements.py
     - name: Build docs
       run: |
         mkdocs -v build
