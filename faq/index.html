@@ -650,6 +650,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#s-ping-permission-denied" class="md-nav__link">
+    ping 命令无法在普通用户下使用
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -987,6 +994,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#s-ping-permission-denied" class="md-nav__link">
+    ping 命令无法在普通用户下使用
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1148,6 +1162,23 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <p>打开终端，输入 <code>sudo dpkg-reconfigure dash</code>。在弹出的 "Use dash as the default system shell (/bin/sh)?" 中选择 Yes。</p>
 </dd>
 </dl>
+<h3 id="s-ping-permission-denied"><code>ping</code> 命令无法在普通用户下使用<a class="headerlink" href="#s-ping-permission-denied" title="Permanent link">&para;</a></h3>
+<dl>
+<dt>表现症状</dt>
+<dd>
+<p>在终端中执行 <code>ping</code> 命令时提示以下错误信息：</p>
+<div class="highlight"><pre><span></span><code>ping: icmp open socket: Operation not permitted
+</code></pre></div>
+</dd>
+<dt>解决方法</dt>
+<dd>
+<p>打开终端，输入 <code>sudo setcap cap_net_raw+ep /bin/ping</code>。</p>
+</dd>
+</dl>
+<div class="admonition info">
+<p class="admonition-title">新虚拟机不会出现此问题</p>
+<p>在收到反馈后，我们已更新 01 号镜像。新创建的虚拟机不会出现此问题。</p>
+</div>
 <h2 id="limits">软件限制<a class="headerlink" href="#limits" title="Permanent link">&para;</a></h2>
 <p>由于虚拟化平台限制，Vlab 虚拟机无法使用 KVM 虚拟化。</p>
 <p>由于技术更迭，较早的虚拟机（编号在大约 1800 以前）默认未开启 Docker 容器支持，如果有需要，请联系我们开通。</p>
