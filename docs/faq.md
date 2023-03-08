@@ -50,7 +50,7 @@ SSH 连接提示 `sign_and_send_pubkey: no mutual signature supported`
 
 Ubuntu 18.04 更新软件包后无法连接桌面
 
-:   目前确认我们推送的 vlab-vnc 剪贴板相关更新会导致 VNC 启动失败。
+:   ~~目前确认我们推送的 vlab-vnc 剪贴板相关更新会导致 VNC 启动失败~~。最新版本的 vlab-vnc 包已经对 Ubuntu 18.04 的情况特殊处理，更新即可。
 
     需要编辑 /etc/vlab/vncserver-lightdm 文件，将 Xvnc 对应行中 SendPrimary 参数删去，保存文件后等待片刻即可重新连接。
 
