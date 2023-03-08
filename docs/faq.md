@@ -95,6 +95,24 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
 :    打开终端，输入 `sudo dpkg-reconfigure dash`。在弹出的 "Use dash as the default system shell (/bin/sh)?" 中选择 Yes。
 
+### `ping` 命令无法在普通用户下使用 {#s-ping-permission-denied}
+
+表现症状
+
+:   在终端中执行 `ping` 命令时提示以下错误信息：
+
+    ```text
+    ping: icmp open socket: Operation not permitted
+    ```
+
+解决方法
+
+:   打开终端，输入 `sudo setcap cap_net_raw+ep /bin/ping`。
+
+!!! info "新虚拟机不会出现此问题"
+
+    在收到反馈后，我们已更新 01 号镜像。新创建的虚拟机不会出现此问题。
+
 ## 软件限制 {#limits}
 
 由于虚拟化平台限制，Vlab 虚拟机无法使用 KVM 虚拟化。
