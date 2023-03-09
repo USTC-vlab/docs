@@ -16,7 +16,7 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 
 ??? example "虚拟机功能比较"
 
-    | 功能特性 | Linux LXC | Linux KVM | Windows KVM |
+    | 功能特性 | Linux LXC | Linux KVM<br>（暂未开通） | Windows KVM<br>（暂未开通） |
     | :------: | :------: | :------: | :------: |
     | [使用 VNC 登录](../login/vnc.md) | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-xmark:{: .orangered } | :fontawesome-solid-xmark:{: .orangered } |
     | [使用 SSH 登录](../login/ssh.md) | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-xmark:{: .orangered } |
