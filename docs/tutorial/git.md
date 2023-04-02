@@ -116,17 +116,17 @@ $ git commit -m "remove test.txt"
 
 - 第二步：在用户主目录下找到 `.ssh` 文件夹，打开里面的 `id_rsa.pub` 文件（可以用记事本打开），复制里面内容，以 `ssh-rsa` 开头的一行字
 
-  登陆 GitHub 或 GitLab，点击右上角头像，选择 Settings → SSH Keys 页面
+  登录 GitHub 或 GitLab，点击右上角头像，选择 Settings → SSH Keys 页面
 
   点 Add SSH Key，填上任意 Title（方便自己辨认），在 Key 文本框里粘贴 `id_rsa.pub` 文件的内容即可
 
   ![image](../images/github-add-ssh-key.png)
 
-确认 SSH 密钥添加成功：`ssh -T git@github.com`，如果看到你的用户名提示认证成功，那么这一步就配置完成了。
+确认 SSH 密钥添加成功：`ssh -T git@github.com`（这里和下面的内容都以 GitHub 为例子，如果使用其他服务，`github.com` 需要修改为对应的域名），如果看到你的用户名提示认证成功，那么这一步就配置完成了。
 
 ### 添加远程库
 
-登陆 GitHub，左上角 Repositories 处点击绿色的 New 按钮，仓库名填 `learngit`（也可以自己重新起，后面保持同步），其他默认，点击创建完成。
+登录 GitHub，左上角 Repositories 处点击绿色的 New 按钮，仓库名填 `learngit`（也可以自己重新起，后面保持同步），其他默认，点击创建完成。
 
 输入以下命令（`username` 换成你自己的用户名）：
 
