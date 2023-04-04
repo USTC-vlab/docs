@@ -131,6 +131,10 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
 关于开启额外功能的详情请参见[额外功能](advanced/resources.md)。
 
+### 在进行操作系统实验时无法使用 `mknod` 新建设备文件 {#s-mknod-permission-denied}
+
+需使用 `fakeroot`，详情可参考 [2020 年 OSH 实验讲义](https://osh-2020.github.io/lab-1/initrd/#fakeroot-initrd)。
+
 ## 虚拟机镜像选择 {#image-selection}
 
 请参考 [虚拟机镜像](advanced/images.md) 一页。
