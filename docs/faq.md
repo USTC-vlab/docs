@@ -63,8 +63,18 @@ Ubuntu 18.04 更新软件包后无法连接桌面
     此外，在最新的 22.04 的镜像中，我们包含了经过配置的 `earlyoom` 包，可以在系统内存不足时自动杀死占用内存较多的进程，并且在允许的情况下在终端和桌面上显示提示，预计可以有效地缓解此类问题。使用基于较早的镜像的虚拟机的用户可以安装 `vlab-earlyoom`：
 
     ```sh
+    sudo apt update
     sudo apt install vlab-earlyoom
     ```
+
+    !!! warning "Ubuntu 22.04 镜像的更新提示"
+
+        于 2023/04/10 我们发现目前发布的 22.04 的镜像中 `earlyoom` 的通知配置不正确。对于在该日期及之前创建容器的用户，需要升级以修复：
+
+        ```sh
+        sudo apt update
+        sudo apt install --only-upgrade vlab-earlyoom  # 或者执行 apt full-upgrade 进行完整升级
+        ```
 
 ## 软件问题 {#software}
 
