@@ -76,6 +76,10 @@ Ubuntu 18.04 更新软件包后无法连接桌面
         sudo apt install --only-upgrade vlab-earlyoom  # 或者执行 apt full-upgrade 进行完整升级
         ```
 
+        在更新后，界面显示效果类似如下：
+
+        ![earlyoom](images/earlyoom.png)
+
 ## 软件问题 {#software}
 
 ### Vivado 仿真报错 {#s-vivado-xsim-error}
