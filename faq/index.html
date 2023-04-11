@@ -1162,7 +1162,7 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">Ubuntu 22.04 镜像的更新提示</p>
-<p>于 2023/04/10 我们发现目前发布的 22.04 的镜像中 <code>earlyoom</code> 的通知配置不正确。对于在该日期及之前创建容器的用户，需要升级以修复：</p>
+<p>我们发现之前发布的 22.04 的镜像中 <code>earlyoom</code> 的通知配置不正确，并于 2023-04-10 修复。对于在该日期及之前创建虚拟机的用户，需要升级以修复：</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
 sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>--only-upgrade<span class="w"> </span>vlab-earlyoom<span class="w">  </span><span class="c1"># 或者执行 apt full-upgrade 进行完整升级</span>
 </code></pre></div>
