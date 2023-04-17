@@ -35,7 +35,7 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 
 名称中的 `ubuntu`, `debian`, `centos` 等表示该镜像构建时基于的 [Linux 发行版](https://zh.wikipedia.org/zh-hans/Linux%E5%8F%91%E8%A1%8C%E7%89%88)。如果你对 Linux 不熟悉的话，可以参考校 Linux 用户协会的 [Linux 101 课程讲义](https://101.lug.ustc.edu.cn/)或网上的其他教程。
 
-对于大多数同学来说，我们建议你选择默认的镜像（名称以 `vlab01` 开头，即编号为 01 的镜像），我们提供了计算机系本科学习实验所需要的必备软件（如 Xilinx Vivado），可以为你省去自己安装配置这些软件的负担，且这些软件不占用你的虚拟机存储空间。
+对于大多数同学来说，我们建议你选择默认的镜像（名称以 `vlab01` 开头，即编号为 01 的镜像），我们提供了计算机系本科学习实验所需要的必备软件（如 Xilinx Vivado），可以为你省去自己安装配置这些软件的负担，且这些软件不占用你的虚拟机存储空间。同时，**由于维护精力问题，目前只能保证 01 镜像活跃维护，使用其他镜像可能会遇到更多的问题，相关问题请联系我们以反馈**。
 
 ### 镜像一览 {#image-content}
 
@@ -47,6 +47,7 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 | 04 | Ubuntu 18.04 | root/ubuntu | Xfce4 |
 | 11 | Ubuntu 18.04 | root | 无 |
 | 12 | Debian 10 | root | 无 |
+| 13 | Debian 11 | root | 无 |
 | 99 | 测试版本，请勿使用 | root | 无 |
 
 对于 LXC 虚拟机，【Vlab 实验软件套装】包含了以下软件，并会随时增加或更新：
@@ -59,3 +60,5 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 - TeX Live 2020
 - [Logisim](http://www.cburch.com/logisim/)
 - Typora
+
+如果需要使用其他发行版（诸如 Fedora, CentOS）执行软件，建议使用 `docker`（`sudo apt install docker.io`）。
