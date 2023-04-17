@@ -923,20 +923,27 @@
 <p class="admonition-title">注意</p>
 <p>本节内容只适用于熟悉 Linux 操作系统的用户，否则建议使用已配置好的桌面环境。</p>
 </div>
-<p>Vlab 默认提供的桌面环境为 Xfce4，如果你想安装 MATE, LXDE 等其他桌面环境，可以按照如下指示操作。以下将以在 Debian 10 上安装 MATE 桌面环境为例。</p>
+<p>Vlab 默认提供的桌面环境为 Xfce4，如果你想安装 MATE, LXDE 等其他桌面环境，可以按照如下指示操作。以下将以在 Debian 11 上安装 MATE 桌面环境为例。</p>
 <h2 id="lightdm-vnc">安装 LightDM 和 VNC<a class="headerlink" href="#lightdm-vnc" title="Permanent link">&para;</a></h2>
-<p>为了与 Vlab 的 VNC 后端连接，需要安装我们提供的 vlab-vnc 软件包（限 Debian / Ubuntu，暂无 RPM 安装包）。</p>
-<p>先下载软件包</p>
-<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://vlab.ustc.edu.cn/repo/vlab-vnc.deb
+<p>如果使用的是不带桌面的镜像，为了与 Vlab 的 VNC 后端连接，需要安装我们提供的 vlab-vnc 软件包（限 Debian / Ubuntu，暂无 RPM 安装包）。</p>
+<p>先添加 Vlab 软件源。以 root 权限运行：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [trusted=yes] https://vlab.ustc.edu.cn/repo/ ./&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>/etc/apt/sources.list.d/vlab.list
 </code></pre></div>
 <p>安装 vlab-vnc</p>
 <div class="highlight"><pre><span></span><code>apt<span class="w"> </span>update
-apt<span class="w"> </span>install<span class="w"> </span>./vlab-vnc.deb
+apt<span class="w"> </span>install<span class="w"> </span>vlab-vnc
 </code></pre></div>
 <p>在安装过程中会询问键盘布局，选择 English (US) 即可。</p>
+<p>此外，Debian 镜像默认仅有设置了随机密码的 root。为了方便桌面使用（以 root 操作桌面不是一个好习惯），建议创建一个新用户。</p>
+<div class="highlight"><pre><span></span><code>adduser<span class="w"> </span>vlab
+</code></pre></div>
 <h2 id="_2">安装桌面环境<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>使用 tasksel 安装桌面环境。</p>
-<div class="highlight"><pre><span></span><code>tasksel
+<p>经过测试，以下操作可能导致 SSH 连接中断，因此建议在救援模式（<a href="../../login/ssh/#web-username">Web</a>, <a href="../../faq/#recovery-sshd">SSH</a>）中操作。使用 tasksel 安装桌面环境。</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 如果遇到安装问题，执行以下两行命令</span>
+apt-get<span class="w"> </span>install<span class="w"> </span>--reinstall<span class="w"> </span>debconf
+dpkg-reconfigure<span class="w"> </span>tasksel
+<span class="c1"># 启动 tasksel 配置菜单</span>
+tasksel
 </code></pre></div>
 <p>进入交互式页面，选择你需要的桌面环境后输入回车即可安装，这里以 MATE 为例。</p>
 <p><img alt="Tasksel" src="../../images/install-desktop-tasksel.png" /></p>
@@ -944,6 +951,14 @@ apt<span class="w"> </span>install<span class="w"> </span>./vlab-vnc.deb
 <div class="admonition info">
 <p class="admonition-title">注意</p>
 <p>必须使用 LightDM 桌面管理器。若安装桌面环境时自动安装了其他桌面管理器，请使用命令 <code>dpkg-reconfigure lightdm</code> 切换回 LightDM 桌面管理器。若安装了 <code>network-manager</code> 软件包请务必卸载，否则可能导致无法连接网络。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">更加精简的安装</p>
+<p>由于 Vlab 环境不需要诸如蓝牙、无线网络等配置，而 <code>tasksel</code> 默认安装的是完整环境，有经验的用户可以考虑自行使用 <code>apt</code> 安装桌面环境所需的包。此外，<code>--no-install-recommends</code> 选项可以更激进地避免安装不必要的包，推荐经验丰富的用户选择。</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">不兼容的软件包</p>
+<p>目前已知 <code>connman</code> 会导致网络连接问题，如果安装了 <code>connman</code> 请卸载。</p>
 </div>
 
 
