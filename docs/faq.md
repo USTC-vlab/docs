@@ -141,9 +141,87 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
 由于虚拟化平台限制，Vlab 虚拟机无法使用 KVM 虚拟化。
 
-由于技术更迭，较早的虚拟机（编号在大约 1800 以前）默认未开启 Docker 容器支持，如果有需要，请联系我们开通。
+由于技术更迭：
+
+- 较早的虚拟机（编号在大约 1800 以前）默认未开启 Docker 容器支持；
+- 2023 年 6 月 14 日前创建的虚拟机默认未开启 FUSE 支持。
+
+如果有需要，请联系我们开通。
 
 关于开启额外功能的详情请参见[额外功能](advanced/resources.md)。
+
+### 需要挂载镜像至回环设备 (loop)
+
+由于技术限制，我们无法在保证安全的前提下实现回环设备的共享。请根据文件系统的不同，考虑使用 FUSE 方案，或者使用基于 libguestfs 的 guestfish 进行文件操作。
+
+??? tip "一个使用 guestfish 的参考例子"
+
+    ```sh
+    # 安装下面的操作需要的软件包
+    $ sudo apt install --no-install-recommends libguestfs-tools
+    # guestfish 依赖于在虚拟机中运行 Linux 内核来实现文件系统支持，因此需要安装内核（即使容器本体根本用不到）
+    # 如果希望使用 KVM 加速 guestfish（需要 root），请查看下面一节。
+    $ sudo apt install --no-install-recommends linux-image-generic
+    # 可以使用 guestfish 创建一个 1G 的空白磁盘，并格式化为 GPT 分区表，创建一个分区，在 guestfish 中挂载为 /dev/sda1
+    # $ guestfish -N disk.img=fs:ext4:1G:gpt -m /dev/sda1
+    # 当然，这里我们展示更加传统的方案……
+    $ truncate -s 1G disk.img
+    $ parted disk.img mklabel gpt mkpart primary 0% 100%
+    # 使用 guestfish 挂载磁盘
+    $ guestfish -a disk.img
+
+    Welcome to guestfish, the guest filesystem shell for
+    editing virtual machine filesystems and disk images.
+
+    Type: ‘help’ for help on commands
+        ‘man’ to read the manual
+        ‘quit’ to quit the shell
+
+    ><fs> run
+    ><fs> list-partitions
+    /dev/sda1
+    ><fs> mke2fs /dev/sda1 fstype:ext4
+    ><fs> list-filesystems
+    /dev/sda1: ext4
+    ><fs> mount /dev/sda1 /
+    ><fs> ls /
+    lost+found
+    ><fs> touch /hello
+    ><fs> upload /etc/os-release /testfile
+    ><fs> cat /testfile
+    PRETTY_NAME="Debian GNU/Linux 11 (bullseye)"
+    NAME="Debian GNU/Linux"
+    VERSION_ID="11"
+    VERSION="11 (bullseye)"
+    VERSION_CODENAME=bullseye
+    ID=debian
+    HOME_URL="https://www.debian.org/"
+    SUPPORT_URL="https://www.debian.org/support"
+    BUG_REPORT_URL="https://bugs.debian.org/"
+    ><fs> download /testfile ./testfile2
+    ><fs> exit
+    $ cat testfile2
+    # 输出省略
+    ```
+
+### 使用 KVM 和 TUN 设备
+
+如果需要使用 `/dev/kvm` 或 `/dev/net/tun`，在启动后手动执行以下命令：
+
+```sh
+sudo /opt/vlab/.dev/enable-dev.sh
+```
+
+**生成的设备文件仅 root 可访问**。例如，如果需要使用 KVM 加速的 QEMU（例如操作系统实验），可以使用以下命令：
+
+```sh
+# 安装 qemu-system-x86
+sudo apt install qemu-system-x86
+# 创建磁盘等配置
+# ...
+# 执行 KVM 加速的 QEMU，需要 root 权限
+sudo qemu-system-x86_64 -cpu host -enable-kvm ...
+```
 
 ### 在进行操作系统实验时无法使用 `mknod` 新建设备文件 {#s-mknod-permission-denied}
 
