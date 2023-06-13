@@ -21,7 +21,7 @@
         <link rel="next" href="../announcements/">
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
@@ -29,10 +29,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -133,25 +133,31 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
+      
+        <form class="md-header__option" data-md-component="palette">
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="切换至深色模式"  type="radio" name="__palette" id="__palette_1">
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="切换至深色模式"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="切换至深色模式" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
           
-            <label class="md-header__button md-icon" title="切换至深色模式" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
-            </label>
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="light-blue"  aria-label="切换至浅色模式"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="切换至浅色模式" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
           
-        
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="light-blue"  aria-label="切换至浅色模式"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="切换至浅色模式" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
-            </label>
-          
-        
-      </form>
+        </form>
+      
     
     
     
@@ -671,6 +677,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop" class="md-nav__link">
+    需要挂载镜像至回环设备 (loop)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kvm-tun" class="md-nav__link">
+    使用 KVM 和 TUN 设备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#s-mknod-permission-denied" class="md-nav__link">
     在进行操作系统实验时无法使用 mknod 新建设备文件
   </a>
@@ -1028,6 +1048,20 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#loop" class="md-nav__link">
+    需要挂载镜像至回环设备 (loop)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kvm-tun" class="md-nav__link">
+    使用 KVM 和 TUN 设备
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#s-mknod-permission-denied" class="md-nav__link">
     在进行操作系统实验时无法使用 mknod 新建设备文件
   </a>
@@ -1224,8 +1258,76 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 </div>
 <h2 id="limits">软件限制<a class="headerlink" href="#limits" title="Permanent link">&para;</a></h2>
 <p>由于虚拟化平台限制，Vlab 虚拟机无法使用 KVM 虚拟化。</p>
-<p>由于技术更迭，较早的虚拟机（编号在大约 1800 以前）默认未开启 Docker 容器支持，如果有需要，请联系我们开通。</p>
+<p>由于技术更迭：</p>
+<ul>
+<li>较早的虚拟机（编号在大约 1800 以前）默认未开启 Docker 容器支持；</li>
+<li>2023 年 6 月 14 日前创建的虚拟机默认未开启 FUSE 支持。</li>
+</ul>
+<p>如果有需要，请联系我们开通。</p>
 <p>关于开启额外功能的详情请参见<a href="../advanced/resources/">额外功能</a>。</p>
+<h3 id="loop">需要挂载镜像至回环设备 (loop)<a class="headerlink" href="#loop" title="Permanent link">&para;</a></h3>
+<p>由于技术限制，我们无法在保证安全的前提下实现回环设备的共享。请根据文件系统的不同，考虑使用 FUSE 方案，或者使用基于 libguestfs 的 guestfish 进行文件操作。</p>
+<details class="tip">
+<summary>一个使用 guestfish 的参考例子</summary>
+<div class="highlight"><pre><span></span><code><span class="c1"># 安装下面的操作需要的软件包</span>
+$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>--no-install-recommends<span class="w"> </span>libguestfs-tools
+<span class="c1"># guestfish 依赖于在虚拟机中运行 Linux 内核来实现文件系统支持，因此需要安装内核（即使容器本体根本用不到）</span>
+<span class="c1"># 如果希望使用 KVM 加速 guestfish（需要 root），请查看下面一节。</span>
+$<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>--no-install-recommends<span class="w"> </span>linux-image-generic
+<span class="c1"># 可以使用 guestfish 创建一个 1G 的空白磁盘，并格式化为 GPT 分区表，创建一个分区，在 guestfish 中挂载为 /dev/sda1</span>
+<span class="c1"># $ guestfish -N disk.img=fs:ext4:1G:gpt -m /dev/sda1</span>
+<span class="c1"># 当然，这里我们展示更加传统的方案……</span>
+$<span class="w"> </span>truncate<span class="w"> </span>-s<span class="w"> </span>1G<span class="w"> </span>disk.img
+$<span class="w"> </span>parted<span class="w"> </span>disk.img<span class="w"> </span>mklabel<span class="w"> </span>gpt<span class="w"> </span>mkpart<span class="w"> </span>primary<span class="w"> </span><span class="m">0</span>%<span class="w"> </span><span class="m">100</span>%
+<span class="c1"># 使用 guestfish 挂载磁盘</span>
+$<span class="w"> </span>guestfish<span class="w"> </span>-a<span class="w"> </span>disk.img
+
+Welcome<span class="w"> </span>to<span class="w"> </span>guestfish,<span class="w"> </span>the<span class="w"> </span>guest<span class="w"> </span>filesystem<span class="w"> </span>shell<span class="w"> </span><span class="k">for</span>
+editing<span class="w"> </span>virtual<span class="w"> </span>machine<span class="w"> </span>filesystems<span class="w"> </span>and<span class="w"> </span>disk<span class="w"> </span>images.
+
+Type:<span class="w"> </span>‘help’<span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nb">help</span><span class="w"> </span>on<span class="w"> </span>commands
+<span class="w">    </span>‘man’<span class="w"> </span>to<span class="w"> </span><span class="nb">read</span><span class="w"> </span>the<span class="w"> </span>manual
+<span class="w">    </span>‘quit’<span class="w"> </span>to<span class="w"> </span>quit<span class="w"> </span>the<span class="w"> </span>shell
+
+&gt;&lt;fs&gt;<span class="w"> </span>run
+&gt;&lt;fs&gt;<span class="w"> </span>list-partitions
+/dev/sda1
+&gt;&lt;fs&gt;<span class="w"> </span>mke2fs<span class="w"> </span>/dev/sda1<span class="w"> </span>fstype:ext4
+&gt;&lt;fs&gt;<span class="w"> </span>list-filesystems
+/dev/sda1:<span class="w"> </span>ext4
+&gt;&lt;fs&gt;<span class="w"> </span>mount<span class="w"> </span>/dev/sda1<span class="w"> </span>/
+&gt;&lt;fs&gt;<span class="w"> </span>ls<span class="w"> </span>/
+lost+found
+&gt;&lt;fs&gt;<span class="w"> </span>touch<span class="w"> </span>/hello
+&gt;&lt;fs&gt;<span class="w"> </span>upload<span class="w"> </span>/etc/os-release<span class="w"> </span>/testfile
+&gt;&lt;fs&gt;<span class="w"> </span>cat<span class="w"> </span>/testfile
+<span class="nv">PRETTY_NAME</span><span class="o">=</span><span class="s2">&quot;Debian GNU/Linux 11 (bullseye)&quot;</span>
+<span class="nv">NAME</span><span class="o">=</span><span class="s2">&quot;Debian GNU/Linux&quot;</span>
+<span class="nv">VERSION_ID</span><span class="o">=</span><span class="s2">&quot;11&quot;</span>
+<span class="nv">VERSION</span><span class="o">=</span><span class="s2">&quot;11 (bullseye)&quot;</span>
+<span class="nv">VERSION_CODENAME</span><span class="o">=</span>bullseye
+<span class="nv">ID</span><span class="o">=</span>debian
+<span class="nv">HOME_URL</span><span class="o">=</span><span class="s2">&quot;https://www.debian.org/&quot;</span>
+<span class="nv">SUPPORT_URL</span><span class="o">=</span><span class="s2">&quot;https://www.debian.org/support&quot;</span>
+<span class="nv">BUG_REPORT_URL</span><span class="o">=</span><span class="s2">&quot;https://bugs.debian.org/&quot;</span>
+&gt;&lt;fs&gt;<span class="w"> </span>download<span class="w"> </span>/testfile<span class="w"> </span>./testfile2
+&gt;&lt;fs&gt;<span class="w"> </span><span class="nb">exit</span>
+$<span class="w"> </span>cat<span class="w"> </span>testfile2
+<span class="c1"># 输出省略</span>
+</code></pre></div>
+</details>
+<h3 id="kvm-tun">使用 KVM 和 TUN 设备<a class="headerlink" href="#kvm-tun" title="Permanent link">&para;</a></h3>
+<p>如果需要使用 <code>/dev/kvm</code> 或 <code>/dev/net/tun</code>，在启动后手动执行以下命令：</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>/opt/vlab/.dev/enable-dev.sh
+</code></pre></div>
+<p><strong>生成的设备文件仅 root 可访问</strong>。例如，如果需要使用 KVM 加速的 QEMU（例如操作系统实验），可以使用以下命令：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 安装 qemu-system-x86</span>
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>qemu-system-x86
+<span class="c1"># 创建磁盘等配置</span>
+<span class="c1"># ...</span>
+<span class="c1"># 执行 KVM 加速的 QEMU，需要 root 权限</span>
+sudo<span class="w"> </span>qemu-system-x86_64<span class="w"> </span>-cpu<span class="w"> </span>host<span class="w"> </span>-enable-kvm<span class="w"> </span>...
+</code></pre></div>
 <h3 id="s-mknod-permission-denied">在进行操作系统实验时无法使用 <code>mknod</code> 新建设备文件<a class="headerlink" href="#s-mknod-permission-denied" title="Permanent link">&para;</a></h3>
 <p>需使用 <code>fakeroot</code>，详情可参考 <a href="https://osh-2020.github.io/lab-1/initrd/#fakeroot-initrd">2020 年 OSH 实验讲义</a>。</p>
 <h2 id="image-selection">虚拟机镜像选择<a class="headerlink" href="#image-selection" title="Permanent link">&para;</a></h2>
@@ -1362,7 +1464,7 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
     <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.footer", "navigation.sections"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
       
     
   </body>
