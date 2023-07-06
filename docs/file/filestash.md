@@ -1,3 +1,7 @@
+---
+icon: material/folder-outline
+---
+
 # 使用浏览器进行文件传输
 
 Vlab 支持虚拟机与本机之间的文件传输，在 [vlab 主页](https://vlab.ustc.edu.cn/) 上可以看到有「文件传输」选项：

@@ -1,3 +1,7 @@
+---
+icon: material/file-document-alert
+---
+
 # 可接受的使用方式 (Acceptable Use Policy)
 
 ## 〇、总则 {#overview}

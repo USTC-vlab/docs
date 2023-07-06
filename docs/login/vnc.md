@@ -1,3 +1,7 @@
+---
+icon: material/television-play
+---
+
 # 通过 VNC 远程桌面登录虚拟机
 
 !!! example "支持的虚拟机和客户端"

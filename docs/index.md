@@ -1,3 +1,7 @@
+---
+icon: material/information
+---
+
 # 远程教学云桌面
 
 !!! success "开始使用"

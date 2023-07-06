@@ -1,3 +1,7 @@
+---
+icon: material/account-check
+---
+
 # 平台支持
 
 本平台由**[中国科学技术大学计算机科学与技术学院](https://cs.ustc.edu.cn/)**主办。另外，以下团体提供了非常重要的支持：

@@ -1,3 +1,7 @@
+---
+icon: material/play-circle-outline
+---
+
 # 快速开始
 
 本文档教你如果在 Vlab 上快速创建并使用一个虚拟机。

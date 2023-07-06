@@ -1,3 +1,7 @@
+---
+icon: material/account-plus
+---
+
 # 招贤纳士
 
 !!! success "创新小组期待您的加入，QQ 群：**484487202**"

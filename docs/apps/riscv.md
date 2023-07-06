@@ -1,3 +1,7 @@
+---
+icon: material/toolbox
+---
+
 # RISC-V 工具链
 
 Vlab 为虚拟机提供了 RISC-V 的 GCC 工具链和 [RARS 模拟器][rars]。

@@ -1,3 +1,7 @@
+---
+icon: material/microsoft-visual-studio-code
+---
+
 # 在线 Visual Studio Code
 
 Vlab 提供了可以直接在浏览器里使用的 Visual Studio Code。

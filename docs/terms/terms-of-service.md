@@ -1,3 +1,7 @@
+---
+icon: material/file-document-alert
+---
+
 # 服务条款 (Terms of Service)
 
 ## 〇、总则 {#overview}

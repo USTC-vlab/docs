@@ -1,3 +1,7 @@
+---
+icon: material/download
+---
+
 # 资源下载
 
 - Git for Windows 最新版本：[GitHub Releases](https://github.com/git-for-windows/git/releases/latest) / [清华大学 TUNA 镜像站](https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/)

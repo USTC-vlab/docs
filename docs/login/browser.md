@@ -1,3 +1,7 @@
+---
+icon: material/play-box-outline
+---
+
 # 使用浏览器登录虚拟机
 
 !!! info "注意"

@@ -1,3 +1,7 @@
+---
+icon: material/chat-question-outline
+---
+
 # 常见问题
 
 ## 连接问题 {#connection}

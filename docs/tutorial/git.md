@@ -1,3 +1,7 @@
+---
+icon: material/git
+---
+
 # Git 简明教程
 
 ## 安装

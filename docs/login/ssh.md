@@ -1,3 +1,7 @@
+---
+icon: octicons/terminal-16
+---
+
 # 通过 SSH 命令行登录虚拟机
 
 !!! example "支持的虚拟机和客户端"

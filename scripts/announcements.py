@@ -37,7 +37,7 @@ def print_issue(f, issue, header="!!! abstract"):
 
 
 def generate_md(f, data):
-    print("# 通知公告\n", file=f)
+    print("---\nicon: material/bell-alert\n---\n\n# 通知公告\n\n", file=f)
 
     i_open = [i for i in data if i["state"] == "open"]
     i_closed = [i for i in data if i["state"] == "closed"]

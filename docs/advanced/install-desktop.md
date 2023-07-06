@@ -1,3 +1,7 @@
+---
+icon: material/monitor-edit
+---
+
 # 手动安装桌面环境
 
 !!! warning "注意"

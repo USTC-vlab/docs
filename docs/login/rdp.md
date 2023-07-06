@@ -1,3 +1,7 @@
+---
+icon: material/microsoft-windows
+---
+
 # 通过 RDP 远程桌面登录虚拟机
 
 !!! failure "尚未完成"
