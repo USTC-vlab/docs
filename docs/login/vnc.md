@@ -16,6 +16,14 @@
 
 ## 使用 TigerVNC 登录（推荐） {#tigervnc}
 
+!!! warning "无法使用 TigerVNC 连接到虚拟机？"
+
+    如果你无法使用 TigerVNC 连接到虚拟机，请在连接界面选择 "Options..."，在 Security 下取消选择 RSA-AES，如图所示：
+
+    ![TigerVNC disable RSA-AES](../images/tigervnc-security.png)
+
+    连接到 vlab 的 VNC 流量会使用 TLS 加密，因此取消 RSA-AES 不会影响安全性。
+
 ??? tip "客户端下载"
 
     * Windows，macOS 和 Linux：[:fontawesome-brands-github: GitHub](https://github.com/TigerVNC/tigervnc/releases/latest)
