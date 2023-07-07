@@ -19,7 +19,7 @@ def get_issues():
 def convert_time(s):
     t = datetime.datetime.fromisoformat(s.rstrip("Z"))
     t += datetime.timedelta(hours=8)
-    return t.strftime("%Y 年 %m 月 %d 日 %H:%M")
+    return t.strftime("%Y 年 %-m 月 %-d 日 %H:%M")
 
 
 def print_issue(f, issue, header="!!! abstract"):
@@ -37,7 +37,7 @@ def print_issue(f, issue, header="!!! abstract"):
 
 
 def generate_md(f, data):
-    print("---\nicon: material/bell-alert\n---\n\n# 通知公告\n\n", file=f)
+    print("---\nicon: material/bell-alert\n---\n\n# 通知公告\n", file=f)
 
     i_open = [i for i in data if i["state"] == "open"]
     i_closed = [i for i in data if i["state"] == "closed"]
@@ -46,6 +46,8 @@ def generate_md(f, data):
         # no header required
         for issue in i_open:
             print_issue(f, issue)
+    else:
+        print("当前暂无新公告。\n", file=f)
 
     if i_closed:
         print("## 历史公告 {#previous}\n", file=f)
