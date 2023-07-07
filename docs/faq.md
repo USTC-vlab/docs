@@ -143,8 +143,6 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
 ## 软件限制 {#limits}
 
-由于虚拟化平台限制，Vlab 虚拟机无法使用 KVM 虚拟化。
-
 由于技术更迭：
 
 - 较早的虚拟机（编号在大约 1800 以前）默认未开启 Docker 容器支持；
@@ -208,7 +206,7 @@ Ubuntu 18.04 更新软件包后无法连接桌面
     # 输出省略
     ```
 
-### 使用 KVM 和 TUN 设备
+### 使用 KVM 和 TUN 设备 {#kvm-and-tun}
 
 如果需要使用 `/dev/kvm` 或 `/dev/net/tun`，在启动后手动执行以下命令：
 
@@ -216,7 +214,7 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 sudo /opt/vlab/.dev/enable-dev.sh
 ```
 
-**生成的设备文件仅 root 可访问**。例如，如果需要使用 KVM 加速的 QEMU（例如操作系统实验），可以使用以下命令：
+该命令会创建所需的设备文件，但默认情况下 `/dev/kvm` 仅限 root 用户可以访问。例如，如果需要使用 KVM 加速的 QEMU（例如操作系统实验），可以使用以下命令：
 
 ```sh
 # 安装 qemu-system-x86
@@ -226,6 +224,8 @@ sudo apt install qemu-system-x86
 # 执行 KVM 加速的 QEMU，需要 root 权限
 sudo qemu-system-x86_64 -cpu host -enable-kvm ...
 ```
+
+若要在普通用户下使用 KVM 加速的 QEMU，可以将普通用户加入 `kvm` 用户组（GID = 107）中。对于 Ubuntu 系统，可以使用 `usermod -aG kvm <username>` 命令。
 
 ### 在进行操作系统实验时无法使用 `mknod` 新建设备文件 {#s-mknod-permission-denied}
 
