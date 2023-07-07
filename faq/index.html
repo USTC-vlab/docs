@@ -822,7 +822,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#kvm-tun" class="md-nav__link">
+  <a href="#kvm-and-tun" class="md-nav__link">
     使用 KVM 和 TUN 设备
   </a>
   
@@ -1290,7 +1290,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#kvm-tun" class="md-nav__link">
+  <a href="#kvm-and-tun" class="md-nav__link">
     使用 KVM 和 TUN 设备
   </a>
   
@@ -1492,7 +1492,6 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <p>在收到反馈后，我们已更新 01 号镜像。新创建的虚拟机不会出现此问题。</p>
 </div>
 <h2 id="limits">软件限制<a class="headerlink" href="#limits" title="Permanent link">&para;</a></h2>
-<p>由于虚拟化平台限制，Vlab 虚拟机无法使用 KVM 虚拟化。</p>
 <p>由于技术更迭：</p>
 <ul>
 <li>较早的虚拟机（编号在大约 1800 以前）默认未开启 Docker 容器支持；</li>
@@ -1551,11 +1550,11 @@ $<span class="w"> </span>cat<span class="w"> </span>testfile2
 <span class="c1"># 输出省略</span>
 </code></pre></div>
 </details>
-<h3 id="kvm-tun">使用 KVM 和 TUN 设备<a class="headerlink" href="#kvm-tun" title="Permanent link">&para;</a></h3>
+<h3 id="kvm-and-tun">使用 KVM 和 TUN 设备<a class="headerlink" href="#kvm-and-tun" title="Permanent link">&para;</a></h3>
 <p>如果需要使用 <code>/dev/kvm</code> 或 <code>/dev/net/tun</code>，在启动后手动执行以下命令：</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>/opt/vlab/.dev/enable-dev.sh
 </code></pre></div>
-<p><strong>生成的设备文件仅 root 可访问</strong>。例如，如果需要使用 KVM 加速的 QEMU（例如操作系统实验），可以使用以下命令：</p>
+<p>该命令会创建所需的设备文件，但默认情况下 <code>/dev/kvm</code> 仅限 root 用户可以访问。例如，如果需要使用 KVM 加速的 QEMU（例如操作系统实验），可以使用以下命令：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># 安装 qemu-system-x86</span>
 sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>qemu-system-x86
 <span class="c1"># 创建磁盘等配置</span>
@@ -1563,6 +1562,7 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <span class="c1"># 执行 KVM 加速的 QEMU，需要 root 权限</span>
 sudo<span class="w"> </span>qemu-system-x86_64<span class="w"> </span>-cpu<span class="w"> </span>host<span class="w"> </span>-enable-kvm<span class="w"> </span>...
 </code></pre></div>
+<p>若要在普通用户下使用 KVM 加速的 QEMU，可以将普通用户加入 <code>kvm</code> 用户组（GID = 107）中。对于 Ubuntu 系统，可以使用 <code>usermod -aG kvm &lt;username&gt;</code> 命令。</p>
 <h3 id="s-mknod-permission-denied">在进行操作系统实验时无法使用 <code>mknod</code> 新建设备文件<a class="headerlink" href="#s-mknod-permission-denied" title="Permanent link">&para;</a></h3>
 <p>需使用 <code>fakeroot</code>，详情可参考 <a href="https://osh-2020.github.io/lab-1/initrd/#fakeroot-initrd">2020 年 OSH 实验讲义</a>。</p>
 <h2 id="image-selection">虚拟机镜像选择<a class="headerlink" href="#image-selection" title="Permanent link">&para;</a></h2>
