@@ -17,6 +17,8 @@ jobs:
       run: |
         pip3 install -r requirements.txt
     - name: Fetch announcements
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         python3 scripts/announcements.py
     - name: Build docs
