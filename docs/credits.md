@@ -1,5 +1,5 @@
 ---
-icon: material/account-check
+icon: material/check-all
 ---
 
 # 平台支持
