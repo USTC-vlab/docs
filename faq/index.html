@@ -853,19 +853,6 @@
     故障排除
   </a>
   
-    <nav class="md-nav" aria-label="故障排除">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#recovery-sshd" class="md-nav__link">
-    恢复模式 SSH
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1321,19 +1308,6 @@
     故障排除
   </a>
   
-    <nav class="md-nav" aria-label="故障排除">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#recovery-sshd" class="md-nav__link">
-    恢复模式 SSH
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1569,25 +1543,7 @@ sudo<span class="w"> </span>qemu-system-x86_64<span class="w"> </span>-cpu<span 
 <h2 id="image-selection">虚拟机镜像选择<a class="headerlink" href="#image-selection" title="Permanent link">&para;</a></h2>
 <p>请参考 <a href="../advanced/images/">虚拟机镜像</a> 一页。</p>
 <h2 id="troubleshooting">故障排除<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
-<p>如果你的虚拟机出现问题，你可以<a href="../login/ssh/">通过 SSH 命令行登录虚拟机</a>尝试进行错误排除。</p>
-<h3 id="recovery-sshd">恢复模式 SSH<a class="headerlink" href="#recovery-sshd" title="Permanent link">&para;</a></h3>
-<p>如果很不幸，你的虚拟机网络出现的故障导致 SSH 和 VNC 都无法连接，你仍然可以通过 SSH 使用以下登录方式尝试修复：</p>
-<dl>
-<dt>对于 Linux LXC 虚拟机：</dt>
-<dd>
-<ul>
-<li><code>ssh recovery@vlab.ustc.edu.cn</code> 可以提供虚拟机内的一个 root shell；</li>
-<li><code>ssh console@vlab.ustc.edu.cn</code> 可以连接至虚拟机的 tty0，此处可以看到虚拟机在开关机过程中的各种日志输出。</li>
-</ul>
-</dd>
-<dt>对于 Linux KVM 虚拟机：</dt>
-<dd>
-<ul>
-<li><code>ssh serial@vlab.ustc.edu.cn</code> 可以提供到虚拟机的串口（COM1）的连接。</li>
-</ul>
-</dd>
-</dl>
-<p>该功能由 SSH 统一登录接口提供，因此使用相同的认证方式，即已配置的虚拟机公钥（推荐）或 Vlab 平台用户名和密码。</p>
+<p>如果你的虚拟机出现问题，你可以<a href="../login/ssh/#recovery">通过 SSH 命令行以恢复模式登录虚拟机</a>尝试进行错误排除。</p>
 <h2 id="dist-upgrade">系统大版本升级<a class="headerlink" href="#dist-upgrade" title="Permanent link">&para;</a></h2>
 <p>我们不建议在 LXC 虚拟机（容器）中执行大版本升级操作（如从 20.04 升级至 22.04），如果真的需要升级，请注意：</p>
 <ul>

@@ -504,6 +504,19 @@
     登录用户名
   </a>
   
+    <nav class="md-nav" aria-label="登录用户名">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recovery" class="md-nav__link">
+    恢复模式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -516,7 +529,7 @@
         
           <li class="md-nav__item">
   <a href="#web-username" class="md-nav__link">
-    登录用户与救援模式
+    登录用户
   </a>
   
 </li>
@@ -1247,6 +1260,19 @@
     登录用户名
   </a>
   
+    <nav class="md-nav" aria-label="登录用户名">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recovery" class="md-nav__link">
+    恢复模式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1259,7 +1285,7 @@
         
           <li class="md-nav__item">
   <a href="#web-username" class="md-nav__link">
-    登录用户与救援模式
+    登录用户
   </a>
   
 </li>
@@ -1400,6 +1426,20 @@
 </div>
 <h2 id="username">登录用户名<a class="headerlink" href="#username" title="Permanent link">&para;</a></h2>
 <p>对于使用默认 vlab01 镜像的用户，请使用 <code>ubuntu</code> 用户登录。手动选择其他镜像的用户请参考<a href="../../advanced/images/#镜像一览-image-content">虚拟机镜像</a>。使用 <code>root</code> 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 <code>root</code> 用户登录。</p>
+<h3 id="recovery">恢复模式<a class="headerlink" href="#recovery" title="Permanent link">&para;</a></h3>
+<p>如果你的虚拟机出现故障导致 SSH 和 VNC 都无法正常连接，你仍然可以通过 SSH 使用以下登录方式尝试修复：</p>
+<dl>
+<dt>对于 Linux LXC 虚拟机：</dt>
+<dd>
+<p><code>ssh recovery@vlab.ustc.edu.cn</code> 可以提供虚拟机内的一个 root shell；</p>
+<p><code>ssh console@vlab.ustc.edu.cn</code> 可以连接至虚拟机的 tty0，此处可以看到虚拟机在开关机过程中的各种日志输出。</p>
+</dd>
+<dt>对于 Linux KVM 虚拟机：</dt>
+<dd>
+<p><code>ssh serial@vlab.ustc.edu.cn</code> 可以提供到虚拟机的串口（COM1）的连接。</p>
+</dd>
+</dl>
+<p>该功能由 SSH 统一登录接口提供，因此使用相同的认证方式，即已配置的虚拟机公钥（推荐）或 Vlab 平台用户名和密码。</p>
 <h2 id="web">从浏览器登录<a class="headerlink" href="#web" title="Permanent link">&para;</a></h2>
 <p>2022 年 4 月，我们添加了网页登录 SSH 的功能，在虚拟机管理页面直接点击「网页 SSH 登录」即可。</p>
 <div class="admonition question">
@@ -1407,14 +1447,14 @@
 <p><code>Vlab username</code> 是你的学号（或工号），在登录虚拟机管理页面后可以在右上角看到。</p>
 <p><code>Vlab password</code> 是 Vlab 平台的登录密码。<a href="../../web/#change-password">还没设置？</a></p>
 </div>
-<h3 id="web-username">登录用户与救援模式<a class="headerlink" href="#web-username" title="Permanent link">&para;</a></h3>
+<h3 id="web-username">登录用户<a class="headerlink" href="#web-username" title="Permanent link">&para;</a></h3>
 <p>默认以 root 用户登录。URL 中可以配置以其他用户登录：在 URL 中添加 <code>unixusername</code> 参数即可，例如虚拟机 1234 默认的 URL 为：</p>
 <div class="highlight"><pre><span></span><code>https://vlab.ustc.edu.cn/ssh/?username=:1234
 </code></pre></div>
 <p>如果需要以 <code>ubuntu</code> 用户登录，添加 <code>unixusername</code> 参数如下：</p>
 <div class="highlight"><pre><span></span><code>https://vlab.ustc.edu.cn/ssh/?username=:1234&amp;unixusername=ubuntu
 </code></pre></div>
-<p>此外，救援模式对应的用户名为 <code>recovery</code>，因此可以通过网页版进入救援模式：</p>
+<p>此外，你也可以填入恢复模式使用的用户名 <code>recovery</code>、<code>console</code> 和 <code>serial</code>，因此可以通过网页版 SSH 进入救援模式：</p>
 <div class="highlight"><pre><span></span><code>https://vlab.ustc.edu.cn/ssh/?username=:1234&amp;unixusername=recovery
 </code></pre></div>
 <h3 id="web-files">上传文件与下载文件<a class="headerlink" href="#web-files" title="Permanent link">&para;</a></h3>
