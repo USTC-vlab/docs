@@ -18,6 +18,22 @@ icon: octicons/terminal-16
 
 对于使用默认 vlab01 镜像的用户，请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](../advanced/images.md#镜像一览-image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
 
+### 恢复模式 {#recovery}
+
+如果你的虚拟机出现故障导致 SSH 和 VNC 都无法正常连接，你仍然可以通过 SSH 使用以下登录方式尝试修复：
+
+对于 Linux LXC 虚拟机：
+
+:   `ssh recovery@vlab.ustc.edu.cn` 可以提供虚拟机内的一个 root shell；
+
+    `ssh console@vlab.ustc.edu.cn` 可以连接至虚拟机的 tty0，此处可以看到虚拟机在开关机过程中的各种日志输出。
+
+对于 Linux KVM 虚拟机：
+
+:   `ssh serial@vlab.ustc.edu.cn` 可以提供到虚拟机的串口（COM1）的连接。
+
+该功能由 SSH 统一登录接口提供，因此使用相同的认证方式，即已配置的虚拟机公钥（推荐）或 Vlab 平台用户名和密码。
+
 ## 从浏览器登录 {#web}
 
 2022 年 4 月，我们添加了网页登录 SSH 的功能，在虚拟机管理页面直接点击「网页 SSH 登录」即可。
@@ -28,7 +44,7 @@ icon: octicons/terminal-16
 
     `Vlab password` 是 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
 
-### 登录用户与救援模式 {#web-username}
+### 登录用户 {#web-username}
 
 默认以 root 用户登录。URL 中可以配置以其他用户登录：在 URL 中添加 `unixusername` 参数即可，例如虚拟机 1234 默认的 URL 为：
 
@@ -42,7 +58,7 @@ https://vlab.ustc.edu.cn/ssh/?username=:1234
 https://vlab.ustc.edu.cn/ssh/?username=:1234&unixusername=ubuntu
 ```
 
-此外，救援模式对应的用户名为 `recovery`，因此可以通过网页版进入救援模式：
+此外，你也可以填入恢复模式使用的用户名 `recovery`、`console` 和 `serial`，因此可以通过网页版 SSH 进入救援模式：
 
 ```
 https://vlab.ustc.edu.cn/ssh/?username=:1234&unixusername=recovery

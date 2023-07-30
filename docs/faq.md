@@ -237,22 +237,7 @@ sudo qemu-system-x86_64 -cpu host -enable-kvm ...
 
 ## 故障排除 {#troubleshooting}
 
-如果你的虚拟机出现问题，你可以[通过 SSH 命令行登录虚拟机](login/ssh.md)尝试进行错误排除。
-
-### 恢复模式 SSH {#recovery-sshd}
-
-如果很不幸，你的虚拟机网络出现的故障导致 SSH 和 VNC 都无法连接，你仍然可以通过 SSH 使用以下登录方式尝试修复：
-
-对于 Linux LXC 虚拟机：
-
-:   - `ssh recovery@vlab.ustc.edu.cn` 可以提供虚拟机内的一个 root shell；
-    - `ssh console@vlab.ustc.edu.cn` 可以连接至虚拟机的 tty0，此处可以看到虚拟机在开关机过程中的各种日志输出。
-
-对于 Linux KVM 虚拟机：
-
-:   - `ssh serial@vlab.ustc.edu.cn` 可以提供到虚拟机的串口（COM1）的连接。
-
-该功能由 SSH 统一登录接口提供，因此使用相同的认证方式，即已配置的虚拟机公钥（推荐）或 Vlab 平台用户名和密码。
+如果你的虚拟机出现问题，你可以[通过 SSH 命令行以恢复模式登录虚拟机](login/ssh.md#recovery)尝试进行错误排除。
 
 ## 系统大版本升级 {#dist-upgrade}
 
