@@ -148,32 +148,32 @@ sz yrcamp.jpg
 
 由于技术限制，每个虚拟机的私钥都是独立的。若你删除并重新创建了虚拟机，你需要重新生成密钥对才能使用密钥登录新的虚拟机。
 
-将私钥移动至一个方便找到的地方，修改权限后即可用ssh登录。
+#### 配置 SSH 命令登录 {#ssh-command}
 
-Linux下操作：
+=== ":fontawesome-brands-apple: macOS 和 :fontawesome-brands-linux: Linux"
 
-例如私钥放在 `~/.ssh/vlab.pem`
+    根据约定俗成，一般将私钥放在 `~/.ssh` 目录中，例如 `~/.ssh/vlab.pem`：
 
-```shell
-chmod 600 ~/.ssh/vlab.pem
-ssh -i ~/.ssh/vlab.pem ubuntu@vlab.ustc.edu.cn
-```
+    ```shell
+    chmod 600 ~/.ssh/vlab.pem
+    ssh -i ~/.ssh/vlab.pem ubuntu@vlab.ustc.edu.cn
+    ```
 
-Windows下操作：
+=== ":fontawesome-brands-windows: Windows"
 
-例如私钥放在 `%HOMEPATH%/.ssh/vlab.pem`
+    根据约定俗成，一般将私钥放在 `%UserProfile%\.ssh` 目录中，例如 `%UserProfile%\.ssh\vlab.pem`
 
-Windows下修改权限需右击私钥文件，属性->安全，确保只有你一个账号有对私钥文件的权限。
+    在资源管理器中右键点击私钥文件，选择 **属性** → **安全**，确保只有你的账户有访问私钥文件的权限。详细步骤可以参考[这个链接](https://superuser.com/a/1296046/688600)。
 
-修改权限后可直接用ssh登录：
+    修改权限后，可以在 CMD 或 PowerShell 中使用 ssh 命令登录：
 
-```shell
-ssh -i %HOMEPATH%/.ssh/vlab.pem ubuntu@vlab.ustc.edu.cn
-```
+    ```bat
+    ssh -i %UserProfile%\.ssh\vlab.pem ubuntu@vlab.ustc.edu.cn
+    ```
 
 !!! tip "使用公钥"
 
-    与传统的 SSH 公钥不同，使用公钥登录 Vlab 平台时，用户名可以在 root、ubuntu 或 vlab 中任意选择。若你使用了其他用户名，则你还需要输入虚拟机内对应用户的密码。
+    与传统的 SSH 公钥不同，使用公钥登录 Vlab 平台时，用户名可以在 root、ubuntu 或 vlab 中任意选择。在较旧的虚拟机中，若你使用了其他用户名，则你还需要输入虚拟机内对应用户的密码。
 
 ## 使用 PuTTY 客户端登录 {#putty}
 
