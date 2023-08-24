@@ -20,7 +20,7 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 
 ??? example "虚拟机功能比较"
 
-    | 功能特性 | Linux LXC | Linux KVM<br>（暂未开通） | Windows KVM<br>（暂未开通） |
+    | 功能特性 | Linux LXC | Linux KVM | Windows KVM<br>（暂未开通） |
     | :------: | :------: | :------: | :------: |
     | [使用 VNC 登录](../login/vnc.md) | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-xmark:{: .orangered } | :fontawesome-solid-xmark:{: .orangered } |
     | [使用 SSH 登录](../login/ssh.md) | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-check:{: .limegreen } | :fontawesome-solid-xmark:{: .orangered } |
@@ -52,6 +52,8 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 | 11 | Ubuntu 18.04 | root | 无 |
 | 12 | Debian 10 | root | 无 |
 | 13 | Debian 11 | root | 无 |
+| 20 | Ubuntu 20.04 | root/ubuntu | MATE |
+| 21 | Ubuntu 22.04 | root/ubuntu | MATE |
 | 99 | 测试版本，请勿使用 | root | 无 |
 
 对于 LXC 虚拟机，【Vlab 实验软件套装】包含了以下软件，并会随时增加或更新：
@@ -64,5 +66,8 @@ Windows KVM 仅为有需要的用户提供，由于 Windows 的系统设计与 L
 - TeX Live 2020
 - [Logisim](http://www.cburch.com/logisim/)
 - Typora
+- Verilator 5.014
+- RISC-V GCC 工具链
+- RISC-V 64 GCC 工具链
 
 如果需要使用其他发行版（诸如 Fedora, CentOS）执行软件，建议使用 `docker`（`sudo apt install docker.io`）。
