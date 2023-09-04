@@ -1228,6 +1228,7 @@
 
 <h1 id="visual-studio-code">在线 Visual Studio Code<a class="headerlink" href="#visual-studio-code" title="Permanent link">&para;</a></h1>
 <p>Vlab 提供了可以直接在浏览器里使用的 Visual Studio Code。</p>
+<p>此网页版 VSCode 通过部署在虚拟机内的开源软件 <a href="https://github.com/coder/code-server">code-server</a> 实现，因此与独立的 VSCode 有一些不同之处，尤其在扩展支持方面。如果你想要使用 VSCode 的完整功能，请在你的电脑上安装 VSCode，并通过 <a href="https://code.visualstudio.com/docs/remote/ssh">Remote SSH</a> 扩展连接到 Vlab 虚拟机。</p>
 <h2 id="enable-server">启用 VSCode 服务<a class="headerlink" href="#enable-server" title="Permanent link">&para;</a></h2>
 <p>在使用前需要在你的虚拟机里激活 VSCode 的服务端程序。</p>
 <p>打开终端，输入 <code>vscode start</code> 即可，同时这会将 VSCode 服务设为开机自动启动，使得你下次可以直接使用 VSCode 而无需重新操作命令行。</p>
@@ -1245,7 +1246,7 @@
 <div class="admonition warning">
 <p class="admonition-title">如果正在使用无桌面的镜像</p>
 <p>此时可能会发现，断开 SSH 连接后 VSCode 服务也会关闭。该问题与 Systemd 处理用户服务的方式有关，解决方法为在 root 用户下执行：</p>
-<div class="highlight"><pre><span></span><code>loginctl enable-linger 用户名
+<div class="highlight"><pre><span></span><code>loginctl<span class="w"> </span>enable-linger<span class="w"> </span>用户名
 </code></pre></div>
 <p>以设置在 session 全部关闭的情况下仍然保留用户服务。</p>
 </div>
@@ -1265,10 +1266,10 @@
 <p>The '&lt;name&gt;' extension is not available in code-server for the Web. Click 'More Information' to learn more.</p>
 </div>
 <h3 id="vsix">自行安装 VSIX 扩展<a class="headerlink" href="#vsix" title="Permanent link">&para;</a></h3>
-<p>点击左侧 Extensions，在上方 "EXTENSIONS: MARKETPLACE" 右方有一横向三个点的图标，点击后选择 "Install from VSIX..."。</p>
+<p>点击左侧 Extensions，在小标题 "EXTENSIONS: MARKETPLACE" 的右侧有 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 12a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2Z"/></svg></span> 图标，点击后选择 "Install from VSIX..."。</p>
 <p>注意，这需要提前下载好扩展的 VSIX 文件到远程的虚拟机中。</p>
 <h3 id="pdf">PDF 阅读<a class="headerlink" href="#pdf" title="Permanent link">&para;</a></h3>
-<p>最流行的 PDF 阅读扩展 vscode-pdf 因为其代码设置原因不支持网页端 VSCode，我们提供了一份<a href="https://vlab.ustc.edu.cn/downloads/pdf-1.2.2.vsix">修改后的版本</a>。</p>
+<p>最流行的 PDF 阅读扩展 <a href="https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf">vscode-pdf</a> 因为其代码设置原因不支持网页端 VSCode，我们提供了一份<a href="https://vlab.ustc.edu.cn/downloads/pdf-1.2.2.vsix">修改后的版本</a>。</p>
 <p>可以使用以下命令下载，然后按照上文的步骤安装：</p>
 <div class="highlight"><pre><span></span><code># 回到家目录
 cd
