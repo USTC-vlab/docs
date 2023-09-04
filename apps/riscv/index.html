@@ -715,6 +715,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#verilator" class="md-nav__link">
+    使用 Verilator
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1140,6 +1147,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#verilator" class="md-nav__link">
+    使用 Verilator
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1161,16 +1175,22 @@
 <h1 id="risc-v">RISC-V 工具链<a class="headerlink" href="#risc-v" title="Permanent link">&para;</a></h1>
 <p>Vlab 为虚拟机提供了 RISC-V 的 GCC 工具链和 <a href="https://github.com/TheThirdOne/rars">RARS 模拟器</a>。</p>
 <h2 id="gcc">使用 GCC 工具链<a class="headerlink" href="#gcc" title="Permanent link">&para;</a></h2>
-<p>工具链位于 <code>/opt/vlab/riscv</code>，可以通过命令行直接使用，例如：</p>
+<p>32 位 GCC 工具链位于 <code>/opt/vlab/riscv</code>，可以通过命令行直接使用，例如：</p>
 <div class="highlight"><pre><span></span><code>/opt/vlab/riscv/bin/riscv32-unknown-elf-gcc<span class="w"> </span>main.c<span class="w"> </span>-o<span class="w"> </span>main
+</code></pre></div>
+<p>64 位 GCC 工具链位于 <code>/opt/vlab/riscv64</code>，可以通过命令行直接使用，例如：</p>
+<div class="highlight"><pre><span></span><code>/opt/vlab/riscv64/bin/riscv64-unknown-elf-gcc<span class="w"> </span>main.c<span class="w"> </span>-o<span class="w"> </span>main
 </code></pre></div>
 <div class="admonition question">
 <p class="admonition-title">找不到 /opt/vlab</p>
 <p>若你的虚拟机里没有 <code>/opt/vlab</code>，请联系我们以获得支持。</p>
 </div>
+<p>64 位 GCC 工具链本身的编译方式及配置参数可以在我们的<a href="https://github.com/USTC-vlab/vlab-software/blob/master/riscv/build.sh">编译脚本</a>中查看。</p>
 <h2 id="rars">使用 RARS<a class="headerlink" href="#rars" title="Permanent link">&para;</a></h2>
 <p>RARS 可以从桌面左上角的应用程序菜单中打开。</p>
 <p><img alt="Applications Menu" src="../../images/apps-menu-rars.png" /></p>
+<h2 id="verilator">使用 Verilator<a class="headerlink" href="#verilator" title="Permanent link">&para;</a></h2>
+<p>Verilator 位于 <code>/opt/vlab</code>，该路径默认位于 PATH 中，可以通过命令行直接使用。</p>
 
 
   
