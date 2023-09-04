@@ -57,7 +57,7 @@ VSCode 默认语言为英语，若要使用中文语言，请在左侧扩展市�
 
 ## 扩展 {#extension}
 
-网页端 VSCode (code-server) 不支持一部分的扩展，这些扩展在安装时会提示 "The '<name>' extension is not available in code-server for the Web. Click 'More Information' to learn more."。
+网页端 VSCode (code-server) 不支持一部分的扩展，这些扩展在安装时会提示 "The '扩展名字' extension is not available in code-server for the Web. Click 'More Information' to learn more."。
 
 ### 自行安装 VSIX 扩展 {#vsix}
 
