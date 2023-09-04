@@ -1254,7 +1254,7 @@
 <p>在启用 VSCode 服务后，在虚拟机管理页面点击对应虚拟机的 <strong>VSCode</strong> 按钮即可跳转进入使用，如图所示：</p>
 <p><img alt="Use VSCode for this VM" src="../../images/apps-vscode-entry.png" /></p>
 <h2 id="change-language">修改显示语言<a class="headerlink" href="#change-language" title="Permanent link">&para;</a></h2>
-<p>VSCode 默认语言为英语，若要使用中文语言，请在左侧扩展市场（Extension Market）搜索 Language，并安装中文语言包（ID 为 <code>ms-ceintl.vscode-language-pack-zh-hans</code>）</p>
+<p>VSCode 默认语言为英语，若要使用中文语言，请在左侧扩展市场（Extensions Marketplace）搜索 Language，并安装中文语言包（ID 为 <code>ms-ceintl.vscode-language-pack-zh-hans</code>）</p>
 <p><img alt="Change display language for VSCode" class="img-border" src="../../images/apps-vscode-locale.png" /></p>
 <p>然后，打开终端，向 <code>~/.config/Code/User/locale.json</code> 中写入 <code>{"locale":"zh-cn"}</code>，如图所示：</p>
 <p><img alt="Change display language for VSCode" class="img-border" src="../../images/apps-vscode-locale-2.png" /></p>
@@ -1266,14 +1266,14 @@
 <p>The '&lt;name&gt;' extension is not available in code-server for the Web. Click 'More Information' to learn more.</p>
 </div>
 <h3 id="vsix">自行安装 VSIX 扩展<a class="headerlink" href="#vsix" title="Permanent link">&para;</a></h3>
-<p>点击左侧 Extensions，在小标题 "EXTENSIONS: MARKETPLACE" 的右侧有 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 12a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2Z"/></svg></span> 图标，点击后选择 "Install from VSIX..."。</p>
-<p>注意，这需要提前下载好扩展的 VSIX 文件到远程的虚拟机中。</p>
+<p>点击左侧 Extensions，在小标题 "Extensions Marketplace" 的右侧有 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 12a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2Z"/></svg></span> 图标，点击后选择 "Install from VSIX..."。</p>
+<p>注意：你需要提前下载好扩展的 VSIX 文件到远程的虚拟机中。</p>
 <h3 id="pdf">PDF 阅读<a class="headerlink" href="#pdf" title="Permanent link">&para;</a></h3>
 <p>最流行的 PDF 阅读扩展 <a href="https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf">vscode-pdf</a> 因为其代码设置原因不支持网页端 VSCode，我们提供了一份<a href="https://vlab.ustc.edu.cn/downloads/pdf-1.2.2.vsix">修改后的版本</a>。</p>
 <p>可以使用以下命令下载，然后按照上文的步骤安装：</p>
-<div class="highlight"><pre><span></span><code># 回到家目录
-cd
-wget https://vlab.ustc.edu.cn/downloads/pdf-1.2.2.vsix
+<div class="highlight"><pre><span></span><code><span class="c1"># 回到家目录</span>
+<span class="nb">cd</span>
+wget<span class="w"> </span>https://vlab.ustc.edu.cn/downloads/pdf-1.2.2.vsix
 </code></pre></div>
 <p>请注意，LaTeX Workshop 也提供了一套 PDF 阅读器，但是其实现在网页端存在问题，导致显示包含中文的 LaTeX 编译的 PDF 时可能无法显示字符。
 如有需要，建议手动右键点击对应 PDF 文件，选择 "Open With" -&gt; "PDF Preview"，并忽略 LaTeX Workshop 显示的不兼容提示。
