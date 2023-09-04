@@ -54,3 +54,33 @@ VSCode 默认语言为英语，若要使用中文语言，请在左侧扩展市�
 刷新浏览器即可看到 VSCode 已切换至中文。
 
 若要换回英语，删除刚才创建的 `locale.json` 文件，再刷新即可。
+
+## 扩展 {#extension}
+
+网页端 VSCode (code-server) 不支持一部分的扩展，这些扩展在安装时会提示 "The '<name>' extension is not available in code-server for the Web. Click 'More Information' to learn more."。
+
+### 自行安装 VSIX 扩展 {#vsix}
+
+点击左侧 Extensions，在上方 "EXTENSIONS: MARKETPLACE" 右方有一横向三个点的图标，点击后选择 "Install from VSIX..."。
+
+注意，这需要提前下载好扩展的 VSIX 文件到远程的虚拟机中。
+
+### PDF 阅读 {#pdf}
+
+最流行的 PDF 阅读扩展 vscode-pdf 因为其代码设置原因不支持网页端 VSCode，我们提供了一份[修改后的版本](https://vlab.ustc.edu.cn/downloads/pdf-1.2.2.vsix)。
+
+可以使用以下命令下载，然后按照上文的步骤安装：
+
+```
+# 回到家目录
+cd
+wget https://vlab.ustc.edu.cn/downloads/pdf-1.2.2.vsix
+```
+
+请注意，LaTeX Workshop 也提供了一套 PDF 阅读器，但是其实现在网页端存在问题，导致显示包含中文的 LaTeX 编译的 PDF 时可能无法显示字符。
+如有需要，建议手动右键点击对应 PDF 文件，选择 "Open With" -> "PDF Preview"，并忽略 LaTeX Workshop 显示的不兼容提示。
+由于 [LaTeX Workshop 官方声明不对 code-server 提供支持](https://github.com/James-Yu/LaTeX-Workshop/wiki/FAQ#code-server-is-not-supported)，我们无法将对应的修复代码提交给上游扩展。
+
+??? tip "如果仍然希望使用 LaTeX Workshop 的 PDF 阅读器"
+
+    手动编辑 `~/.config/Code/extensions/james-yu.latex-workshop-9.13.4-universal/out/viewer/latexworkshop.js` 文件（该路径可能跟随该扩展版本更新变化），将 `cMapUrl: '/cmaps/',` 修改为 `cMapUrl: '../cmaps/',`。
