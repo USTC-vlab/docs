@@ -4,7 +4,7 @@ icon: material/folder-outline
 
 # 使用浏览器进行文件传输
 
-Vlab 支持虚拟机与本机之间的文件传输，在 [vlab 主页](https://vlab.ustc.edu.cn/) 上可以看到有「文件传输」选项：
+Vlab 支持虚拟机与本机之间的文件传输，在首页上可以看到有「文件传输」选项：
 
 ![Filestash entry 1](../images/filestash-entry1.png)
 
@@ -21,8 +21,8 @@ Vlab 支持虚拟机与本机之间的文件传输，在 [vlab 主页](https://v
 ![Filestash login (fast)](../images/filestash-login-fast.png)
 
 对于大部分用户，直接点击「连接」（CONNECT）即可登录。
-若您有多个虚拟机，需要额外输入虚拟机 ID；若您的 Linux 用户名不为 ubuntu，需要额外输入登录的用户名。
-默认情况下可以不输入 Linux 密码登录，如果测试无法登录，可以勾选对应选项输入 Linux 密码。
+若你有多个虚拟机，需要额外输入虚拟机 ID；若你的 Linux 用户名不为 ubuntu，需要额外输入登录的用户名。
+默认情况下可以不输入 Linux 密码登录，如果此方法无法登录，可以勾选对应选项输入 Linux 密码。
 
 如果未登录管理页面，可以选择使用传统登录方式：
 

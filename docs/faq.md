@@ -21,13 +21,13 @@ icon: material/chat-question-outline
 
 :   远程桌面连接方式使用 [Vlab 平台的登录密码](web.md#change-password)，而不是虚拟机内的密码。
 
-使用网络信息中心的 Web VPN 访问桌面登录页面 noVNC 时显示 noVNC encoutnered an error
+使用网络信息中心的 Web VPN 访问桌面登录页面 noVNC 时显示 noVNC encountered an error
 
 :   报错信息如下：
 
-    ```yaml
-    SyntaxError: import declarations may only appear at top level of a module
-    ```
+    !!! bug ""
+
+        SyntaxError: import declarations may only appear at top level of a module
 
     请直接访问 [vlab.ustc.edu.cn](https://vlab.ustc.edu.cn/)，网页版桌面登录不兼容 Web VPN。
 
@@ -56,7 +56,7 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
 :   ~~目前确认我们推送的 vlab-vnc 剪贴板相关更新会导致 VNC 启动失败~~。最新版本的 vlab-vnc 包已经对 Ubuntu 18.04 的情况特殊处理，更新即可。
 
-    需要编辑 /etc/vlab/vncserver-lightdm 文件，将 Xvnc 对应行中 SendPrimary 参数删去，保存文件后等待片刻即可重新连接。
+    需要编辑 `/etc/vlab/vncserver-lightdm` 文件，将 Xvnc 对应行中 SendPrimary 参数删去，保存文件后等待片刻即可重新连接。
 
     Ubuntu 18.04 即将在 2023 年结束支持，我们建议仍在使用 Ubuntu 18.04 用户备份数据后创建更新版本 Ubuntu 的虚拟机。
 
@@ -161,9 +161,11 @@ Ubuntu 18.04 更新软件包后无法连接桌面
     ```sh
     # 安装下面的操作需要的软件包
     $ sudo apt install --no-install-recommends libguestfs-tools
+
     # guestfish 依赖于在虚拟机中运行 Linux 内核来实现文件系统支持，因此需要安装内核（即使容器本体根本用不到）
     # 如果希望使用 KVM 加速 guestfish（需要 root），请查看下面一节。
     $ sudo apt install --no-install-recommends linux-image-generic
+    
     # 可以使用 guestfish 创建一个 1G 的空白磁盘，并格式化为 GPT 分区表，创建一个分区，在 guestfish 中挂载为 /dev/sda1
     # $ guestfish -N disk.img=fs:ext4:1G:gpt -m /dev/sda1
     # 当然，这里我们展示更加传统的方案……

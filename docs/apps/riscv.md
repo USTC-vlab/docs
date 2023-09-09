@@ -19,7 +19,7 @@ Vlab 为虚拟机提供了 RISC-V 的 GCC 工具链和 [RARS 模拟器][rars]。
 64 位 GCC 工具链位于 `/opt/vlab/riscv64`，可以通过命令行直接使用，例如：
 
 ```shell
-/opt/vlab/riscv64/bin/riscv64-unknown-elf-gcc main.c -o main
+/opt/vlab/riscv64/bin/riscv64-unknown-linux-gcc main.c -o main
 ```
 
 !!! question "找不到 /opt/vlab"
