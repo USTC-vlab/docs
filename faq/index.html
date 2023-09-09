@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.7">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.8">
     
     
       
@@ -1367,11 +1367,12 @@
 <dd>
 <p>远程桌面连接方式使用 <a href="../web/#change-password">Vlab 平台的登录密码</a>，而不是虚拟机内的密码。</p>
 </dd>
-<dt>使用网络信息中心的 Web VPN 访问桌面登录页面 noVNC 时显示 noVNC encoutnered an error</dt>
+<dt>使用网络信息中心的 Web VPN 访问桌面登录页面 noVNC 时显示 noVNC encountered an error</dt>
 <dd>
 <p>报错信息如下：</p>
-<div class="highlight"><pre><span></span><code><span class="nt">SyntaxError</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">import declarations may only appear at top level of a module</span>
-</code></pre></div>
+<div class="admonition bug">
+<p>SyntaxError: import declarations may only appear at top level of a module</p>
+</div>
 <p>请直接访问 <a href="https://vlab.ustc.edu.cn/">vlab.ustc.edu.cn</a>，网页版桌面登录不兼容 Web VPN。</p>
 </dd>
 <dt>希望关闭/重新打开 VNC 连接时显示的通知</dt>
@@ -1394,7 +1395,7 @@
 <dt>Ubuntu 18.04 更新软件包后无法连接桌面</dt>
 <dd>
 <p><del>目前确认我们推送的 vlab-vnc 剪贴板相关更新会导致 VNC 启动失败</del>。最新版本的 vlab-vnc 包已经对 Ubuntu 18.04 的情况特殊处理，更新即可。</p>
-<p>需要编辑 /etc/vlab/vncserver-lightdm 文件，将 Xvnc 对应行中 SendPrimary 参数删去，保存文件后等待片刻即可重新连接。</p>
+<p>需要编辑 <code>/etc/vlab/vncserver-lightdm</code> 文件，将 Xvnc 对应行中 SendPrimary 参数删去，保存文件后等待片刻即可重新连接。</p>
 <p>Ubuntu 18.04 即将在 2023 年结束支持，我们建议仍在使用 Ubuntu 18.04 用户备份数据后创建更新版本 Ubuntu 的虚拟机。</p>
 </dd>
 <dt>在运行需要大量使用内存的程序后无法连接</dt>
@@ -1480,9 +1481,11 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <summary>一个使用 guestfish 的参考例子</summary>
 <div class="highlight"><pre><span></span><code><span class="c1"># 安装下面的操作需要的软件包</span>
 $<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>--no-install-recommends<span class="w"> </span>libguestfs-tools
+
 <span class="c1"># guestfish 依赖于在虚拟机中运行 Linux 内核来实现文件系统支持，因此需要安装内核（即使容器本体根本用不到）</span>
 <span class="c1"># 如果希望使用 KVM 加速 guestfish（需要 root），请查看下面一节。</span>
 $<span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>--no-install-recommends<span class="w"> </span>linux-image-generic
+
 <span class="c1"># 可以使用 guestfish 创建一个 1G 的空白磁盘，并格式化为 GPT 分区表，创建一个分区，在 guestfish 中挂载为 /dev/sda1</span>
 <span class="c1"># $ guestfish -N disk.img=fs:ext4:1G:gpt -m /dev/sda1</span>
 <span class="c1"># 当然，这里我们展示更加传统的方案……</span>
