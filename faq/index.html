@@ -1440,8 +1440,9 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <dt>表现症状</dt>
 <dd>
 <p>尝试使用 Vivado 仿真时很快出现以下错误信息：</p>
-<div class="highlight"><pre><span></span><code>ERROR: [XSIM 43-3409] Failed to compile generated C file xsim.dir/test_behav/obj/xsim_1.c.
-</code></pre></div>
+<div class="admonition bug">
+<p>ERROR: [XSIM 43-3409] Failed to compile generated C file xsim.dir/test_behav/obj/xsim_1.c.</p>
+</div>
 </dd>
 <dt>解决方法</dt>
 <dd>
@@ -1460,8 +1461,9 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <dt>表现症状</dt>
 <dd>
 <p>在终端中执行 <code>vscode</code> 时提示以下错误信息：</p>
-<div class="highlight"><pre><span></span><code>/opt/vlab/bin/vscode: 行 4: UID：只读变量
-</code></pre></div>
+<div class="admonition bug">
+<p>/opt/vlab/bin/vscode: 行 4: UID：只读变量</p>
+</div>
 </dd>
 <dt>解决方法</dt>
 <dd>
@@ -1473,8 +1475,9 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <dt>表现症状</dt>
 <dd>
 <p>在终端中执行 <code>ping</code> 命令时提示以下错误信息：</p>
-<div class="highlight"><pre><span></span><code>ping: icmp open socket: Operation not permitted
-</code></pre></div>
+<div class="admonition bug">
+<p>ping: icmp open socket: Operation not permitted</p>
+</div>
 </dd>
 <dt>解决方法</dt>
 <dd>
@@ -1494,7 +1497,7 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 <p>如果有需要，请联系我们开通。</p>
 <p>关于开启额外功能的详情请参见<a href="../advanced/resources/">额外功能</a>。</p>
 <h3 id="loop">需要挂载镜像至回环设备 (loop)<a class="headerlink" href="#loop" title="Permanent link">&para;</a></h3>
-<p>由于技术限制，我们无法在保证安全的前提下实现回环设备的共享。请根据文件系统的不同，考虑使用 FUSE 方案，或者使用基于 libguestfs 的 guestfish 进行文件操作。</p>
+<p>由于技术限制，我们无法在保证安全的前提下实现回环设备的共享。请根据文件系统的不同，考虑使用 FUSE 方案，或者使用基于 libguestfs 的 guestfish 或 guestmount 进行文件操作。</p>
 <details class="tip">
 <summary>一个使用 guestfish 的参考例子</summary>
 <div class="highlight"><pre><span></span><code><span class="c1"># 安装下面的操作需要的软件包</span>
