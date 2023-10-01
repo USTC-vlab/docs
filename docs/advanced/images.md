@@ -56,6 +56,7 @@ Linux KVM 是完整的虚拟机，能够根据需要使用任意的 Linux 内核
 
 其中【Vlab 实验软件套装】包含了以下软件，并会随时增加或更新：
 
+- Xilinx Vivado 2023.1
 - Xilinx Vivado 2019.1
 - Xilinx Vivado 2016.3
 - MATLAB R2019a
@@ -65,6 +66,7 @@ Linux KVM 是完整的虚拟机，能够根据需要使用任意的 Linux 内核
 - [Logisim](http://www.cburch.com/logisim/)
 - Typora
 - Verilator 5.014
+- [RARS 模拟器](../apps/riscv.md)
 - RISC-V GCC 工具链
 - RISC-V 64 GCC 工具链
 
