@@ -92,9 +92,9 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
 :   尝试使用 Vivado 仿真时很快出现以下错误信息：
 
-    ```text
-    ERROR: [XSIM 43-3409] Failed to compile generated C file xsim.dir/test_behav/obj/xsim_1.c.
-    ```
+    !!! bug ""
+
+        ERROR: [XSIM 43-3409] Failed to compile generated C file xsim.dir/test_behav/obj/xsim_1.c.
 
 解决方法
 
@@ -115,9 +115,9 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
 :   在终端中执行 `vscode` 时提示以下错误信息：
 
-    ```text
-    /opt/vlab/bin/vscode: 行 4: UID：只读变量
-    ```
+    !!! bug ""
+
+        /opt/vlab/bin/vscode: 行 4: UID：只读变量
 
 解决方法
 
@@ -129,9 +129,9 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
 :   在终端中执行 `ping` 命令时提示以下错误信息：
 
-    ```text
-    ping: icmp open socket: Operation not permitted
-    ```
+    !!! bug ""
+
+        ping: icmp open socket: Operation not permitted
 
 解决方法
 
@@ -154,7 +154,7 @@ Ubuntu 18.04 更新软件包后无法连接桌面
 
 ### 需要挂载镜像至回环设备 (loop)
 
-由于技术限制，我们无法在保证安全的前提下实现回环设备的共享。请根据文件系统的不同，考虑使用 FUSE 方案，或者使用基于 libguestfs 的 guestfish 进行文件操作。
+由于技术限制，我们无法在保证安全的前提下实现回环设备的共享。请根据文件系统的不同，考虑使用 FUSE 方案，或者使用基于 libguestfs 的 guestfish 或 guestmount 进行文件操作。
 
 ??? tip "一个使用 guestfish 的参考例子"
 
