@@ -22,15 +22,15 @@ icon: octicons/terminal-16
 
 如果你的虚拟机出现故障导致 SSH 和 VNC 都无法正常连接，你仍然可以通过 SSH 使用以下登录方式尝试修复：
 
-对于 Linux LXC 虚拟机：
+??? info "对于 Linux LXC 虚拟机"
 
-:   `ssh recovery@vlab.ustc.edu.cn` 可以提供虚拟机内的一个 root shell；
+    `ssh recovery@vlab.ustc.edu.cn` 可以提供虚拟机内的一个 root shell；
 
     `ssh console@vlab.ustc.edu.cn` 可以连接至虚拟机的 tty0，此处可以看到虚拟机在开关机过程中的各种日志输出。
 
-对于 Linux KVM 虚拟机：
+??? info "对于 Linux KVM 虚拟机"
 
-:   `ssh serial@vlab.ustc.edu.cn` 可以提供到虚拟机的串口（COM1）的连接。
+    `ssh serial@vlab.ustc.edu.cn` 可以提供到虚拟机的串口（COM1）的连接。
 
 该功能由 SSH 统一登录接口提供，因此使用相同的认证方式，即已配置的虚拟机公钥（推荐）或 Vlab 平台用户名和密码。
 
@@ -150,7 +150,7 @@ sz yrcamp.jpg
 
 #### 配置 SSH 命令登录 {#ssh-command}
 
-=== ":fontawesome-brands-apple: macOS 和 :fontawesome-brands-linux: Linux"
+=== ":fontawesome-brands-apple: macOS，:fontawesome-brands-linux: Linux 和 :octicons-terminal-16: Termux"
 
     根据约定俗成，一般将私钥放在 `~/.ssh` 目录中，例如 `~/.ssh/vlab.pem`：
 
@@ -174,6 +174,19 @@ sz yrcamp.jpg
 !!! tip "使用公钥"
 
     与传统的 SSH 公钥不同，使用公钥登录 Vlab 平台时，用户名可以在 root、ubuntu 或 vlab 中任意选择。在较旧的虚拟机中，若你使用了其他用户名，则你还需要输入虚拟机内对应用户的密码。
+
+### 使用 SSH 配置文件 {#ssh-config}
+
+为了方便使用，你也可以将上述配置写入 SSH 配置文件中，例如：
+
+```shell title="~/.ssh/config"
+Host vlab
+    HostName vlab.ustc.edu.cn
+    User ubuntu
+    IdentityFile ~/.ssh/vlab.pem
+```
+
+如果你经常使用 VSCode 的 Remote SSH 功能的话，我们强烈推荐写好 SSH 配置文件并采用公钥登录的方式，避免每次登录都需要输入学号和 Vlab 平台密码的麻烦。
 
 ## 使用 PuTTY 客户端登录 {#putty}
 

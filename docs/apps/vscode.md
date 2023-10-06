@@ -6,7 +6,11 @@ icon: material/microsoft-visual-studio-code
 
 Vlab 提供了可以直接在浏览器里使用的 :material-microsoft-visual-studio-code: Visual Studio Code。
 
-此网页版 VSCode 通过部署在虚拟机内的开源软件 [code-server](https://github.com/coder/code-server) 实现，因此与独立的 VSCode 有一些不同之处，尤其在扩展支持方面。如果你想要使用 VSCode 的完整功能，我们推荐你在电脑上安装 VSCode，并通过 [Remote SSH][vscode-ssh] 扩展连接到 Vlab 虚拟机。
+!!! info "注意"
+
+    此网页版 VSCode 通过部署在虚拟机内的开源软件 [code-server](https://github.com/coder/code-server) 实现，因此与独立的 VSCode 有一些不同之处，尤其在扩展支持方面。
+
+    如果你想要使用 VSCode 的完整功能，**我们推荐你在电脑上安装 VSCode，并通过 [Remote SSH][vscode-ssh] 扩展连接到 Vlab 虚拟机**。
 
   [vscode-ssh]: https://code.visualstudio.com/docs/remote/ssh
 
