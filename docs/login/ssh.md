@@ -18,6 +18,19 @@ icon: octicons/terminal-16
 
 对于使用默认 vlab01 镜像的用户，请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](../advanced/images.md#镜像一览-image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
 
+例子：
+
+```console
+# 正确（使用默认镜像的情况）
+$ ssh ubuntu@vlab.ustc.edu.cn
+# 正确（使用其他部分镜像的情况）
+$ ssh vlab@vlab.ustc.edu.cn
+# 正确但不推荐
+$ ssh root@vlab.ustc.edu.cn
+# 错误（你的学号不是 SSH 的登录用户名）
+$ ssh SA21012345@vlab.ustc.edu.cn
+```
+
 ### 恢复模式 {#recovery}
 
 如果你的虚拟机出现故障导致 SSH 和 VNC 都无法正常连接，你仍然可以通过 SSH 使用以下登录方式尝试修复：
