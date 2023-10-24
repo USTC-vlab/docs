@@ -16,7 +16,7 @@ icon: octicons/terminal-16
 
 ## 登录用户名 {#username}
 
-对于使用默认 vlab01 镜像的用户，请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](../advanced/images.md#镜像一览-image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
+对于使用默认 vlab01 镜像的用户，请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](../advanced/images.md#image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
 
 例子：
 
