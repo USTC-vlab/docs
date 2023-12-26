@@ -41,7 +41,7 @@ Linux KVM 是完整的虚拟机，能够根据需要使用任意的 Linux 内核
 
 !!! info "支持期限"
 
-    Ubuntu LTS 版本每两年发布一个新版本，Ubuntu 官方对每个 LTS 提供了五年的支持期。对于已经不在支持期以内的镜像（如 18.04），我们仍然保留，但是不会对基于过期镜像新建的虚拟机提供任何有效的支持。
+    Ubuntu LTS 版本每两年发布一个新版本，Ubuntu 官方对每个 LTS 提供了五年的支持期限。对于已经超出支持期限以内的镜像（如 18.04），我们可能会保留一段时间，但是不会对运行过期系统版本的虚拟机提供任何有效的支持。
 
 ### LXC 镜像一览 {#image-content}
 
@@ -49,10 +49,6 @@ Linux KVM 是完整的虚拟机，能够根据需要使用任意的 Linux 内核
 | :------: | :------: | :------: | :------: |
 | 01 | Ubuntu 22.04 | root/ubuntu | MATE |
 | 02 | Ubuntu 20.04 | root/ubuntu | MATE |
-| 03 | Debian 10 | root/vlab | MATE |
-| 04 | Ubuntu 18.04 | root/ubuntu | Xfce4 |
-| 11 | Ubuntu 18.04 | root | 无 |
-| 12 | Debian 10 | root | 无 |
 | 13 | Debian 11 | root | 无 |
 | 20 | Ubuntu 20.04 | root/ubuntu | MATE |
 | 21 | Ubuntu 22.04 | root/ubuntu | MATE |
