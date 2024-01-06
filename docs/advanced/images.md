@@ -45,14 +45,14 @@ Linux KVM 是完整的虚拟机，能够根据需要使用任意的 Linux 内核
 
 ### LXC 镜像一览 {#image-content}
 
-| 镜像编号 | 系统版本 | 默认用户 | 桌面环境 |
-| :------: | :------: | :------: | :------: |
-| 01 | Ubuntu 22.04 | root/ubuntu | MATE |
-| 02 | Ubuntu 20.04 | root/ubuntu | MATE |
-| 13 | Debian 11 | root | 无 |
-| 20 | Ubuntu 20.04 | root/ubuntu | MATE |
-| 21 | Ubuntu 22.04 | root/ubuntu | MATE |
-| 99 | 测试版本，请勿使用 | root | 无 |
+| 镜像编号 | 系统版本 | 默认用户 | 桌面环境 | 备注 |
+| :------: | :------: | :------: | :------: | :------: |
+| 01 | Ubuntu 22.04 | root/ubuntu | MATE | |
+| 02 | Ubuntu 20.04 | root/ubuntu | MATE | |
+| 13 | Debian 12 | root/vlab | 无 | |
+| 20 | Ubuntu 20.04 | root/ubuntu | MATE | 「量化金融工程」课程专用 |
+| 21 | Ubuntu 22.04 | root/ubuntu | MATE | 「计算系统综合实验」课程专用 |
+| 9* | 测试版本，请勿使用 | root | 无 | |
 
 #### Vlab 实验软件 {#vlab-software}
 
