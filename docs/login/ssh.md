@@ -64,19 +64,19 @@ icon: octicons/terminal-16
 
 默认以 root 用户登录。URL 中可以配置以其他用户登录：在 URL 中添加 `unixusername` 参数即可，例如虚拟机 1234 默认的 URL 为：
 
-```
+```text
 https://vlab.ustc.edu.cn/ssh/?username=:1234
 ```
 
 如果需要以 `ubuntu` 用户登录，添加 `unixusername` 参数如下：
 
-```
+```text
 https://vlab.ustc.edu.cn/ssh/?username=:1234&unixusername=ubuntu
 ```
 
 此外，你也可以填入恢复模式使用的用户名 `recovery`、`console` 和 `serial`，因此可以通过网页版 SSH 进入救援模式：
 
-```
+```text
 https://vlab.ustc.edu.cn/ssh/?username=:1234&unixusername=recovery
 ```
 
@@ -84,13 +84,13 @@ https://vlab.ustc.edu.cn/ssh/?username=:1234&unixusername=recovery
 
 SSH 网页版支持文件拖动上传与文件下载。首先需要在虚拟机内安装 `lrzsz` 软件包：
 
-```
+```shell
 sudo apt install lrzsz
 ```
 
 安装后从本地拖动文件到浏览器窗口中即可上传。如需下载文件，使用 `sz` 命令。例如下载 `yrcamp.jpg` 文件：
 
-```
+```shell
 sz yrcamp.jpg
 ```
 
