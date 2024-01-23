@@ -20,19 +20,21 @@ icon: octicons/terminal-16
 
 !!! example "例子"
 
-    ```console
-    # 正确（使用默认镜像的情况）
-    $ ssh ubuntu@vlab.ustc.edu.cn
+    :material-check:{: .green } 正确（使用默认镜像的情况）
+    
+    :   ssh **ubuntu**@vlab.ustc.edu.cn
 
-    # 正确（使用其他部分镜像的情况）
-    $ ssh vlab@vlab.ustc.edu.cn
+    :material-check:{: .green } 正确（使用其他部分镜像的情况）
 
-    # 正确但不推荐
-    $ ssh root@vlab.ustc.edu.cn
+    :   ssh **vlab**@vlab.ustc.edu.cn
 
-    # 错误（你的学号不是 SSH 的登录用户名）
-    $ ssh SA21012345@vlab.ustc.edu.cn
-    ```
+    :material-exclamation:{: .orangered } 正确但不推荐
+
+    :   ssh **root**@vlab.ustc.edu.cn
+
+    :material-close:{: .orangered } 错误：你的学号不是 SSH 的登录用户名
+
+    :   ssh **PB17000001**@vlab.ustc.edu.cn
 
 ### 恢复模式 {#recovery}
 
