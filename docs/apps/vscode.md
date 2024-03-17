@@ -77,6 +77,11 @@ VSCode 默认语言为英语，若要使用中文语言，请在左侧扩展市�
 
 注意：你需要提前下载好扩展的 VSIX 文件到远程的虚拟机中。
 
+### Python {#python}
+
+[Pylance 扩展不支持非微软构建的 VSCode](https://github.com/microsoft/pylance-release/issues/135)，这包括了我们提供的网页端 VSCode。
+如果安装了 Pylance，可能会发现 Python 扩展功能异常。需要关闭 Pylance，切换为 Jedi 语言服务器。
+
 ### PDF 阅读 {#pdf}
 
 最流行的 PDF 阅读扩展 [vscode-pdf][vscode-pdf] 因为其代码设置原因不支持网页端 VSCode，我们提供了一份[修改后的版本](https://vlab.ustc.edu.cn/downloads/pdf-1.2.2.vsix)。
