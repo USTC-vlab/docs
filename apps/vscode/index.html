@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
     
     
       
@@ -751,6 +751,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#pdf" class="md-nav__link">
     <span class="md-ellipsis">
       PDF 阅读
@@ -1266,6 +1275,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#pdf" class="md-nav__link">
     <span class="md-ellipsis">
       PDF 阅读
@@ -1343,6 +1361,9 @@
 <h3 id="vsix">自行安装 VSIX 扩展<a class="headerlink" href="#vsix" title="Permanent link">&para;</a></h3>
 <p>点击左侧 Extensions，在小标题 "Extensions Marketplace" 的右侧有 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 12a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2m-6 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2Z"/></svg></span> 图标，点击后选择 "Install from VSIX..."。</p>
 <p>注意：你需要提前下载好扩展的 VSIX 文件到远程的虚拟机中。</p>
+<h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<p><a href="https://github.com/microsoft/pylance-release/issues/135">Pylance 扩展不支持非微软构建的 VSCode</a>，这包括了我们提供的网页端 VSCode。
+如果安装了 Pylance，可能会发现 Python 扩展功能异常。需要关闭 Pylance，切换为 Jedi 语言服务器。</p>
 <h3 id="pdf">PDF 阅读<a class="headerlink" href="#pdf" title="Permanent link">&para;</a></h3>
 <p>最流行的 PDF 阅读扩展 <a href="https://marketplace.visualstudio.com/items?itemName=tomoki1207.pdf">vscode-pdf</a> 因为其代码设置原因不支持网页端 VSCode，我们提供了一份<a href="https://vlab.ustc.edu.cn/downloads/pdf-1.2.2.vsix">修改后的版本</a>。</p>
 <p>可以使用以下命令下载，然后按照上文的步骤安装：</p>
