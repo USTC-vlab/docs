@@ -62,6 +62,10 @@ icon: octicons/terminal-16
 
     `Vlab password` 是 Vlab 平台的登录密码。[还没设置？](../web.md#change-password)
 
+### 复制与粘贴 {#web-copy-paste}
+
+与大多数的终端模拟器一致，可以使用 `Ctrl + Shift + C` 和 `Ctrl + Shift + V`（macOS 用户：`Command + C` 和 `Command + V`）来复制和粘贴文本。
+
 ### 登录用户 {#web-username}
 
 默认以 root 用户登录。URL 中可以配置以其他用户登录：在 URL 中添加 `unixusername` 参数即可，例如虚拟机 1234 默认的 URL 为：
