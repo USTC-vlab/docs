@@ -170,9 +170,13 @@ icon: material/television-play
 
 对于 Ubuntu 18.04 Xfce4 老镜像，如果你需要修改分辨率，可以在左上角找到 **设置 → 显示**，如图：
 
-![Set VNC resolution](../images/vnc-change-resolution.png)
+![Set VNC resolution (Xfce)](../images/vnc-change-resolution-xfce.png)
 
-对于 Ubuntu 20.04 及以上的 MATE 镜像，可以在菜单栏找到 **系统 → 硬件 → 显示器** 调整分辨率。调整分辨率后，如果托盘位置显示异常，请在对应位置点击右键，取消「锁定到面板」后再次右键，点击「移动」，将鼠标移动到最右侧后点击确认即可。
+对于 Ubuntu 20.04 及以上的 MATE 镜像，可以在菜单栏找到 **系统 → 硬件 → 显示器** 调整分辨率。
+
+![Set VNC resolution (MATE)](../images/vnc-change-resolution-mate.png)
+
+调整分辨率后，一部分较老创建的虚拟机可能会出现托盘位置显示异常的问题。请在对应位置点击右键，取消「锁定到面板」后再次右键，点击「移动」，将鼠标移动到最右侧后点击确认即可。
 
 ### 设置中文输入法 {#chinese-ime}
 
