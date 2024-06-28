@@ -47,7 +47,7 @@ extra:
       link: 'https://github.com/USTC-vlab'
   analytics:
     provider: google
-    property: 'UA-115907213-3'
+    property: G-F7H0WYZZTK
 
 extra_css:
   - assets/css/extra.css
