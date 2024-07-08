@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.27">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
@@ -891,6 +891,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#vm-interconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      虚拟机互联
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1179,6 +1188,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#vm-interconnect" class="md-nav__link">
+    <span class="md-ellipsis">
+      虚拟机互联
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1223,8 +1241,10 @@
 <div class="admonition info">
 <p class="admonition-title">端口映射</p>
 <p>若因实验需要将虚拟机内的网络端口开放到公网访问，且无法使用 <a href="https://zhuanlan.zhihu.com/p/148825449">SSH 端口转发</a>等更加安全的方式时，我们可以在网关上配置 NAT 端口映射，此时虚拟机内能直接得到外部访问的 IP 和端口。</p>
-<p>由于合规性要求，我们会严格处理端口映射的申请，并且不会映射低端口（0-1023）和一些敏感端口（如 6379、8080 等）。端口映射仅支持 TCP 和 UDP 协议，暂不支持 IPv6。</p>
+<p>由于合规性要求，我们会严格处理端口映射的申请，并且不会映射低端口（0-1023）和一些敏感端口（如 6379、8080 等）。</p>
 </div>
+<h2 id="vm-interconnect">虚拟机互联<a class="headerlink" href="#vm-interconnect" title="Permanent link">&para;</a></h2>
+<p>Vlab 的所有虚拟机位于同一个二层网络中，如果有组队合作的需求，多个虚拟机之间可以直接通过内网地址互联（即 172.31 开头的 IP 地址，或者 2001:da8:d800:4bfc 开头的 IPv6 地址）。出于安全原因，TCP 22、1024-1029、5900 端口不能用于互联（UDP 端口暂无限制）。</p>
 
 
 
@@ -1349,7 +1369,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.tooltips", "navigation.footer", "navigation.sections"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.ad660dcc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
