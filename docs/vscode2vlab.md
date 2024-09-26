@@ -191,12 +191,142 @@ ctags --version
 
 ![verilog](images/vscode12.png)
 
-!!! tip "提示"
+!!! info "提示"
     在用 VSCode 编写 Verilog 代码时，只有将文件保存后才会进行语法检查哦！
 
 ## 本地安装 SSH 环境 {#installssh}
 
-## 本地 SSH 远程连接 Vlab {#ssh2vlab}
+在 Windows 系统中，OpenSSH 客户端和 OpenSSH 服务器是可单独安装的组件:OpenSSH 客户端可以使用 ssh 命令连接到其他支持 SSH 的设备，而 OpenSSH 服务器允许其他设备通过 SSH 连接到你的电脑。
+Windows 用户应使用以下说明来安装和配置 OpenSSH。
+
+在命令行中输入 `ssh`，若输出以下信息则已经安装，可跳过安装步骤。
+
+![ssh](images/SSH1.png)
+
+!!! info "Windows 10 和 Windows 11"
+    Windows 10 和 Windows 11 版本的 OpenSSH 安装有所区别，请按对应的版本进行操作。
+
+在安装时，
+Windows 10 用户在 **设置->应用->应用和功能->可选功能->添加功能** 中搜索 **OpenSSH**;
+Windows 11 用户在 **设置->系统->可选功能->查看功能** 中搜索 **OpenSSH**，进行安装。
+
+!!! tip "说明"
+    我们只需安装 SSH 客户端便可远程连接虚拟机了，关于 SSH server 的配置这里不再细讲。如果要开启 SSH server 服务允许其他设备用 SSH 连接到你的电脑上，需要开启防火墙的 22 端口。
+
+然后我们就可以开始通过 SSH 远程连接 Vlab 了！
+
+##  SSH 通过命令行远程连接 Vlab {#ssh2vlab}
+
+### SSH 连接 Vlab
+
+对于使用默认 vlab01 镜像的用户(对于大多数同学来说，我们建议选择默认以 vlab01 开头，即编号为 01 的镜像)，请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](advanced/images.md#image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
+
+!!! example "例子"
+
+    :material-check:{: .green } 正确（使用默认镜像的情况）
+    
+    :   ssh **ubuntu**@vlab.ustc.edu.cn
+
+    :material-check:{: .green } 正确（使用其他部分镜像的情况）
+
+    :   ssh **vlab**@vlab.ustc.edu.cn
+
+    :material-exclamation:{: .orangered } 正确但不推荐
+
+    :   ssh **root**@vlab.ustc.edu.cn
+
+    :material-close:{: .orangered } 错误：你的学号不是 SSH 的登录用户名
+
+    :   ssh **PB17000001**@vlab.ustc.edu.cn
+
+我们以 ubuntu 用户为例，打开命令行，输入命令:
+
+```shell
+ssh ubuntu@vlab.ustc.edu.cn
+```
+如果遇到 Warning，请输入 yes，然后根据提示输入 Vlab 平台的用户名和密码，即可登录虚拟机。
+
+在断开与虚拟机的连接时输入 `exit` 即可。
+
+![ssh](images/SSH2.png)
+
+!!! question "用户名密码是什么？"
+
+    `Vlab username` 是你的学号（或工号），在登录虚拟机管理页面后可以在右上角看到。
+
+    `Vlab password` 是 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
+
+### 使用公钥登录虚拟机
+
+使用公钥登录虚拟机可以免除每次输入密码的麻烦，我们首先要生成密钥对并下载到本地。
+
+进入虚拟机管理界面，可以在自己虚拟机下方找到 SSH 密钥管理入口：
+
+![Vlab pubkey entry](images/web-pubkey-entrypoint.png)
+
+点击进入，即可通过点击 \[生成新的 SSH 密钥对\] 生成 SSH 密钥对：
+
+![Vlab pubkey generate](images/web-pubkey-generate.png)
+
+此时公钥已经存储到 Vlab 平台上，只需要下载私钥并做一些配置就能利用密钥对进行免密登录。
+
+点击 \[下载私钥\] 就能在下载文件中找到一个以 `.pem` 结尾的文件，这就是对应的 SSH 私钥。请妥善保管它，因为**任何获得这个文件的人都能够登录你的虚拟机**。
+
+由于技术限制，每个虚拟机的私钥都是独立的。若你删除并重新创建了虚拟机，你需要重新生成密钥对才能使用密钥登录新的虚拟机。
+
+我们将私钥放在 `%UserProfile%\.ssh` 目录中，例如 `%UserProfile%\.ssh\vlab.pem`。
+
+!!! info "注意"
+
+    本教程中该文件命名为 **vlab.pem**，如自行命名请在下面对应的步骤中修改相应配置。
+
+!!! info "建议"
+
+    为了和后面要讲的配置文件相适，这里建议放在 C 盘个人用户中的 **.ssh** 文件夹里，如 `C:\Users\Asus\.ssh`。
+
+要确保只有你的账户有访问私钥文件的权限，否则可能出现 "Permissions are too open" 报错。具体操作如下:
+
+右键单击 `.pem` 文件，进入**属性->安全->高级**，可以看到以下界面。
+
+![permission](images/SSH3.png)
+
+然后将所有者改为个人用户(如果已经是则不用改)，并且删除掉其他用户的权限(如果这里因为继承权限无法删除，则要先点击"禁用继承")。如果在权限条目中没有个人用户，则需手动添加:在点击"添加"后点击"选择主体"，然后指定对象类型为"用户"，点击"高级"，开始立即查找，便可找到个人用户。将其权限设置为"完全控制"，确定添加即可。
+
+![adduser](images/SSH4.png)
+
+![adduser](images/SSH5.png)
+
+最后设置完毕如下:
+
+![permission finish](images/SSH6.png)
+
+修改权限后，可以在 CMD 或 PowerShell 中使用 ssh 命令登录：
+
+```bat
+ssh -i %UserProfile%\.ssh\vlab.pem ubuntu@vlab.ustc.edu.cn
+```
+
+这样我们通过 SSH 登录虚拟机就不用输入用户名和密码了。
+
+!!! tip "使用公钥"
+
+    与传统的 SSH 公钥不同，使用公钥登录 Vlab 平台时，用户名可以在 root、ubuntu 或 vlab 中任意选择。在较旧的虚拟机中，若你使用了其他用户名，则你还需要输入虚拟机内对应用户的密码。
+
+### 使用配置文件登录虚拟机
+
+我们在 **C 盘个人用户**中的 **.ssh** 文件夹里新建文件 **config** (无后缀名)，用记事本打开后输入以下内容:
+
+```text
+Host vlab
+    HostName vlab.ustc.edu.cn
+    User ubuntu
+    IdentityFile %UserProfile%\.ssh\vlab.pem
+```
+ 
+!!! info "路径"
+    如果你在上一步中按照教程放置 `.pem` 文件的位置，这里 config 文件应与其在同一个文件夹下。
+
+此后我们在命令行中输入 `ssh vlab` 即可登录虚拟机，这样十分方便，而且支持了后面要讲的 VSCode 中使用 Remote SSH 功能。
 
 ## 本地 VSCode 和 SSH 环境是否需要关联 {#vscode-ssh}
 
