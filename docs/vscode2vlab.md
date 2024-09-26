@@ -20,7 +20,7 @@ icon: material/transit-connection-variant
 
 ![Next](images/vscode2vlab/vivado3.png)
 
-在这个界面，你可以设置工程文件的名称和路径:
+在这个界面，你可以设置工程文件的名称和路径：
 
 ![Name Path](images/vscode2vlab/vivado4.png)
 
@@ -34,7 +34,7 @@ icon: material/transit-connection-variant
 
 ![ChooseModel](images/vscode2vlab/vivado5.png)
 
-完成后，我们就成功新建了一个工程项目，可以看到如下界面:
+完成后，我们就成功新建了一个工程项目，可以看到如下界面：
 
 ![Finish](images/vscode2vlab/vivado6.png)
 
@@ -42,7 +42,7 @@ icon: material/transit-connection-variant
 
 新建工程项目后，里面还没有我们的设计文件，接下来我们要为工程项目新建自己的设计文件。
 
-在界面左侧可以找到 **Add Sources**，点击它:
+在界面左侧可以找到 **Add Sources**，点击它：
 
 ![Add Sources](images/vscode2vlab/vivado7.png)
 
@@ -60,7 +60,7 @@ icon: material/transit-connection-variant
 
     需要注意的是，这里的“加入”，并不是把原来的设计文件复制一份加入此工程，而是直接加入。也就是说当你在此工程中对该设计文件进行修改时，如果该设计文件也被包含在其他工程中，那么其他工程中的这个设计文件也会被修改。
 
-我们可以自行设置新建文件的名称:
+我们可以自行设置新建文件的名称：
 
 ![Filename](images/vscode2vlab/vivado10.png)
 
@@ -86,7 +86,7 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 ![Add to path](images/vscode2vlab/vscode1.png)
 
-在我们完成了 VSCode 的安装后，第一次打开时界面是纯英文，看起来不是很方便。对此我们可以找到左侧的 **Extensions** 点开，搜索 "Chinese"，安装第一个 “中文(简体)” 然后重启 VSCode 即可汉化 VSCode。
+在我们完成了 VSCode 的安装后，第一次打开时界面是纯英文，看起来不是很方便。对此我们可以找到左侧的 **Extensions** 点开，搜索 "Chinese"，安装第一个“中文 (简体)”然后重启 VSCode 即可汉化 VSCode。
 
 ![Chinese](images/vscode2vlab/vscode2.png)
 
@@ -96,20 +96,20 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 ![Verilog-HDL](images/vscode2vlab/vscode3.png)
 
-这个插件提供了 Verilog 开发的大多数基础功能，包括:
+这个插件提供了 Verilog 开发的大多数基础功能，包括：
 
 - 代码高亮
 - 简单语法补全提示
-- 静态语法检查(**需要自行配置linter**)
-- Ctags功能集成(**需要额外安装ctags组件**)
+- 静态语法检查 (**需要自行配置 linter**)
+- Ctags 功能集成 (**需要额外安装 ctags 组件**)
     - 自动补全
     - 文档符号大纲
     - 鼠标悬停显示代码声明
-    - CTRL鼠标点击跳转到代码声明
+    - CTRL 鼠标点击跳转到代码声明
 
 ### 3. 安装 iverilog 和 ctags
 
-目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 **iverilog(一种linter)** 和 **ctags**。
+目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 **iverilog(一种 linter)** 和 **ctags**。
 
 ??? tip "linter"
 
@@ -129,12 +129,12 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
     设置->系统->高级系统设置->环境变量->在上方的“用户变量”中找到 **Path** 一栏，双击进入，点击新建即可添加环境变量。
 
-然后在命令行中输入以下命令检查 iverilog 是否安装成功:
+然后在命令行中输入以下命令检查 iverilog 是否安装成功：
 
 ```shell
 iverilog -help
 ```
-出现以下信息说明安装成功:
+出现以下信息说明安装成功：
 
 ```
 Usage: iverilog [-EiSuvV] [-B base] [-c cmdfile|-f cmdfile]
@@ -147,7 +147,7 @@ Usage: iverilog [-EiSuvV] [-B base] [-c cmdfile|-f cmdfile]
 
 See the man page for details.
 ```
-再检查 gtkwave 是否安装成功:
+再检查 gtkwave 是否安装成功：
 
 ```shell
 gtkwave
@@ -163,13 +163,13 @@ gtkwave
 
 安装后同样将 ctags.exe 所在文件夹路径复制加入环境变量。
 
-检查 ctags 是否安装成功:
+检查 ctags 是否安装成功：
 
 ```shell
 ctags --version
 ```
 
-显示的ctags信息是universal ctags，说明安装正常。
+显示的 ctags 信息是 universal ctags，说明安装正常。
 
 ### 4. 配置 Verilog-HDL/SystemVerilog 插件
 
@@ -187,7 +187,7 @@ ctags --version
 
     由于在安装 ctags 时已经将其加入到了环境变量，所以这里只需填入 ctags 即可。关于 -i 参数，是因为在实例化模块时 iverilog 会报错 "Unknown module type"，添加 "-i" 参数可以避免这种不合理的报错。
 
-这样我们就可以在 vscode 中进行 verilog 的开发了！
+这样我们就可以在 VSCode 中进行 Verilog 的开发了！
 
 ![verilog](images/vscode2vlab/vscode12.png)
 
@@ -196,7 +196,7 @@ ctags --version
 
 ## 本地安装 SSH 环境 {#installssh}
 
-在 Windows 系统中，OpenSSH 客户端和 OpenSSH 服务器是可单独安装的组件:OpenSSH 客户端可以使用 ssh 命令连接到其他支持 SSH 的设备，而 OpenSSH 服务器允许其他设备通过 SSH 连接到你的电脑。
+在 Windows 系统中，OpenSSH 客户端和 OpenSSH 服务器是可单独安装的组件：OpenSSH 客户端可以使用 ssh 命令连接到其他支持 SSH 的设备，而 OpenSSH 服务器允许其他设备通过 SSH 连接到你的电脑。
 Windows 用户应使用以下说明来安装和配置 OpenSSH。
 
 在命令行中输入 `ssh`，若输出以下信息则已经安装，可跳过安装步骤。
@@ -219,7 +219,7 @@ Windows 11 用户在 **设置->系统->可选功能->查看功能** 中搜索 **
 
 ### SSH 连接 Vlab
 
-对于使用默认 vlab01 镜像的用户(对于大多数同学来说，我们建议选择默认以 vlab01 开头，即编号为 01 的镜像)，请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](advanced/images.md#image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
+对于使用默认 vlab01 镜像的用户 (对于大多数同学来说，我们建议选择默认以 vlab01 开头，即编号为 01 的镜像)，请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](advanced/images.md#image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
 
 !!! example "例子"
 
@@ -239,7 +239,7 @@ Windows 11 用户在 **设置->系统->可选功能->查看功能** 中搜索 **
 
     :   ssh **PB17000001**@vlab.ustc.edu.cn
 
-我们以 ubuntu 用户为例，打开命令行，输入命令:
+我们以 ubuntu 用户为例，打开命令行，输入命令：
 
 ```shell
 ssh ubuntu@vlab.ustc.edu.cn
@@ -284,19 +284,19 @@ ssh ubuntu@vlab.ustc.edu.cn
 
     为了和后面要讲的配置文件相适，这里建议放在 C 盘个人用户中的 **.ssh** 文件夹里，如 `C:\Users\Asus\.ssh`。
 
-要确保只有你的账户有访问私钥文件的权限，否则可能出现 "Permissions are too open" 报错。具体操作如下:
+要确保只有你的账户有访问私钥文件的权限，否则可能出现 "Permissions are too open" 报错。具体操作如下：
 
 右键单击 `.pem` 文件，进入**属性->安全->高级**，可以看到以下界面。
 
 ![permission](images/vscode2vlab/SSH3.png)
 
-然后将所有者改为个人用户(如果已经是则不用改)，并且删除掉其他用户的权限(如果这里因为继承权限无法删除，则要先点击"禁用继承")。如果在权限条目中没有个人用户，则需手动添加:在点击"添加"后点击"选择主体"，然后指定对象类型为"用户"，点击"高级"，开始立即查找，便可找到个人用户。将其权限设置为"完全控制"，确定添加即可。
+然后将所有者改为个人用户 (如果已经是则不用改)，并且删除掉其他用户的权限 (如果这里因为继承权限无法删除，则要先点击"禁用继承")。如果在权限条目中没有个人用户，则需手动添加：在点击"添加"后点击"选择主体"，然后指定对象类型为"用户"，点击"高级"，开始立即查找，便可找到个人用户。将其权限设置为"完全控制"，确定添加即可。
 
 ![adduser](images/vscode2vlab/SSH4.png)
 
 ![adduser](images/vscode2vlab/SSH5.png)
 
-最后设置完毕如下:
+最后设置完毕如下：
 
 ![permission finish](images/vscode2vlab/SSH6.png)
 
@@ -314,7 +314,7 @@ ssh -i %UserProfile%\.ssh\vlab.pem ubuntu@vlab.ustc.edu.cn
 
 ### 使用配置文件登录虚拟机
 
-我们在 **C 盘个人用户**中的 **.ssh** 文件夹里新建文件 **config** (无后缀名)，用记事本打开后输入以下内容:
+我们在 **C 盘个人用户**中的 **.ssh** 文件夹里新建文件 **config** (无后缀名)，用记事本打开后输入以下内容：
 
 ```text
 Host vlab
@@ -329,6 +329,8 @@ Host vlab
 此后我们在命令行中输入 `ssh vlab` 即可登录虚拟机，这样十分方便，而且支持了后面要讲的 VSCode 中使用 Remote SSH 功能。
 
 ## 本地 VSCode 和 SSH 环境是否需要关联 {#vscode-ssh}
+
+
 
 ## VSCode 是否需要指定具体访问 Vlab 哪个文件夹 {#vscode-vlabfile}
 
