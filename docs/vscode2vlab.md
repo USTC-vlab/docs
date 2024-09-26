@@ -127,7 +127,7 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 !!! question "如何添加环境变量"
 
-    设置->系统->高级系统设置->环境变量->在上方的“用户变量”中找到 **Path** 一栏，双击进入，点击新建即可添加环境变量。
+    设置 -> 系统 -> 系统信息 -> 高级系统设置 -> 环境变量 -> 在上方的“用户变量”中找到 **Path** 一栏，双击进入，点击新建即可添加环境变量。
 
 然后在命令行中输入以下命令检查 iverilog 是否安装成功：
 
@@ -147,7 +147,7 @@ Usage: iverilog [-EiSuvV] [-B base] [-c cmdfile|-f cmdfile]
 
 See the man page for details.
 ```
-再检查 gtkwave 是否安装成功：
+再输入以下命令检查 gtkwave 是否安装成功：
 
 ```shell
 gtkwave
@@ -171,7 +171,7 @@ ctags --version
 
 显示的 ctags 信息是 universal ctags，说明安装正常。
 
-### 4. 配置 Verilog-HDL/SystemVerilog 插件
+### 4. 配置 Verilog-HDL/SystemVerilog 插件 {#configExtention}
 
 在安装好 iverilog 和 ctags 后，我们要将其配置到到 Verilog-HDL/SystemVerilog 插件中。在已安装的插件中找到 Verilog-HDL/SystemVerilog，点击“管理”，打开“扩展设置”。
 
@@ -207,8 +207,8 @@ Windows 用户应使用以下说明来安装和配置 OpenSSH。
     Windows 10 和 Windows 11 版本的 OpenSSH 安装有所区别，请按对应的版本进行操作。
 
 在安装时，
-Windows 10 用户在 **设置->应用->应用和功能->可选功能->添加功能** 中搜索 **OpenSSH**;
-Windows 11 用户在 **设置->系统->可选功能->查看功能** 中搜索 **OpenSSH**，进行安装。
+Windows 10 用户在 **设置 -> 应用 -> 应用和功能 -> 可选功能 -> 添加功能** 中搜索 **OpenSSH**;
+Windows 11 用户在 **设置 -> 系统 -> 可选功能 -> 查看功能** 中搜索 **OpenSSH**，进行安装。
 
 !!! tip "说明"
     我们只需安装 SSH 客户端便可远程连接虚拟机了，关于 SSH server 的配置这里不再细讲。如果要开启 SSH server 服务允许其他设备用 SSH 连接到你的电脑上，需要开启防火墙的 22 端口。
@@ -217,7 +217,7 @@ Windows 11 用户在 **设置->系统->可选功能->查看功能** 中搜索 **
 
 ##  SSH 通过命令行远程连接 Vlab {#ssh2vlab}
 
-### SSH 连接 Vlab
+### 1. SSH 连接 Vlab
 
 对于使用默认 vlab01 镜像的用户 (对于大多数同学来说，我们建议选择默认以 vlab01 开头，即编号为 01 的镜像)，请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](advanced/images.md#image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
 
@@ -256,7 +256,7 @@ ssh ubuntu@vlab.ustc.edu.cn
 
     `Vlab password` 是 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
 
-### 使用公钥登录虚拟机
+### 2. 使用公钥登录虚拟机
 
 使用公钥登录虚拟机可以免除每次输入密码的麻烦，我们首先要生成密钥对并下载到本地。
 
@@ -286,7 +286,7 @@ ssh ubuntu@vlab.ustc.edu.cn
 
 要确保只有你的账户有访问私钥文件的权限，否则可能出现 "Permissions are too open" 报错。具体操作如下：
 
-右键单击 `.pem` 文件，进入**属性->安全->高级**，可以看到以下界面。
+右键单击 `.pem` 文件，进入**属性 -> 安全 -> 高级**，可以看到以下界面。
 
 ![permission](images/vscode2vlab/SSH3.png)
 
@@ -308,11 +308,7 @@ ssh -i %UserProfile%\.ssh\vlab.pem ubuntu@vlab.ustc.edu.cn
 
 这样我们通过 SSH 登录虚拟机就不用输入用户名和密码了。
 
-!!! tip "使用公钥"
-
-    与传统的 SSH 公钥不同，使用公钥登录 Vlab 平台时，用户名可以在 root、ubuntu 或 vlab 中任意选择。在较旧的虚拟机中，若你使用了其他用户名，则你还需要输入虚拟机内对应用户的密码。
-
-### 使用配置文件登录虚拟机
+### 3. 使用配置文件登录虚拟机
 
 我们在 **C 盘个人用户**中的 **.ssh** 文件夹里新建文件 **config** (无后缀名)，用记事本打开后输入以下内容：
 
@@ -328,9 +324,68 @@ Host vlab
 
 此后我们在命令行中输入 `ssh vlab` 即可登录虚拟机，这样十分方便，而且支持了后面要讲的 VSCode 中使用 Remote SSH 功能。
 
-## 本地 VSCode 和 SSH 环境是否需要关联 {#vscode-ssh}
+## 本地 VSCode 通过 SSH 登录 Vlab {#vscode-ssh}
 
+接下来我们在 VSCode 中通过 SSH 登录 Vlab。首先在 VSCode 中安装扩展 **Remote - SSH**。
 
+![VSCode Extension SSH](images/vscode2vlab/vs_vlab1.png)
 
-## VSCode 是否需要指定具体访问 Vlab 哪个文件夹 {#vscode-vlabfile}
+安装后在左侧会出现**远程资源管理器**。如果前面已经按照教程配置好了 SSH，可以看到我们的虚拟机 Vlab。
+
+!!! info "注意"
+    若还未配置好 SSH 请按照上面的教程进行 SSH 配置，实现公钥登录并完成配置文件。
+
+点击 **vlab** 右侧的图标，在现有的窗口/新窗口中连接 Vlab。在选择远程平台时选择 **linux**。
+
+![connect](images/vscode2vlab/vs_vlab2.png)
+
+首次连接时会显示“正在下载 VSCode 服务器”。这是正在 Vlab 虚拟机上安装 VSCode 服务器，时间可能比较长，请耐心等待。
+
+![wait](images/vscode2vlab/vs_vlab3.png)
+
+下载好后，左下角显示 **SSH:vlab** 即连接成功。
+
+![connection success](images/vscode2vlab/vs_vlab4.png)
+
+在上方的**文件->打开文件夹**即可选择要打开的 Vlab 上的文件夹，新建文件同理。
+
+![open file](images/vscode2vlab/vs_vlab5.png)
+
+我们也可以用快捷键 **Ctrl + `** 打开终端，此时的终端环境是 Vlab 的，可以通过命令行对 Vlab 进行操作。
+
+![Terminal](images/vscode2vlab/vs_vlab6.png)
+
+## 本地 VSCode 编辑 Vlab 的 Verilog 项目 {#Vlab-verilog}
+
+截至目前，我们已经能用本地 VSCode 远程编辑 Vlab 上的文件了。但当我们用 VSCode 打开 Vlab 中新建的 `.v` 文件时，却发现没有了语法高亮。这是因为 Verilog-HDL/SystemVerilog 扩展被定义为在远程扩展主机中运行，故在此工作区中被禁用。我们需要在本地已安装的扩展中找到 Verilog-HDL/SystemVerilog，点击**在 SSH:vlab 中安装**，来启用该扩展。
+
+![Vlab Extention](images/vscode2vlab/vs_vlab7.png)
+
+然后我们的 Verilog 代码就有了语法高亮。但当我们编写代码时，会发现前面配置好的 ctags 和 iverilog 失效了：鼠标悬停不显示代码声明，“CTRL 鼠标点击跳转到代码声明”的功能失效，代码的语法错误也不会报错。
+
+!!! question "为什么？"
+    这是因为此时的 Verilog-HDL/SystemVerilog 插件使用的是 Vlab 中安装的，所以需要对 SSH:vlab 中的该插件进行同本地的配置。
+
+我们要在 Vlab 中安装 ctags 和 iverilog(和 gtkwave)。在 **Vlab 虚拟机** 中打开终端，执行以下命令：
+
+```shell
+sudo apt-get update
+```
+```shell
+sudo apt-get install iverilog
+```
+```shell
+sudo apt-get install gtkwave
+```
+```shell
+sudo apt-get install universal-ctags
+```
+
+然后在 VSCode 已打开的远程连接 Vlab 中打开 Verilog-HDL/SystemVerilog 的扩展设置，将**远程 [SSH:vlab]**和**工作区**中同[本地配置](vscode2vlab.md#configExtention) (即“用户”一栏中的配置) 进行设置。
+
+![Config Extention](images/vscode2vlab/vs_vlab8.png)
+
+完成后，我们就可以在本地 VSCode 对 Vlab 中的 Vivado 设计文件进行编辑了！
+
+![finish](images/vscode2vlab/vs_vlab9.png)
 
