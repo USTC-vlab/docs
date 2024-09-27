@@ -219,7 +219,7 @@ Windows 11 用户在 **设置 -> 系统 -> 可选功能 -> 查看功能** 中搜
 
 ### 1. SSH 连接 Vlab
 
-我们以 ubuntu 用户为例，打开本地命令行，输入命令：
+我们以 Vlab 的 ubuntu 用户为例，打开本地命令行，输入命令：
 
 ```shell
 ssh ubuntu@vlab.ustc.edu.cn
@@ -232,7 +232,7 @@ ssh ubuntu@vlab.ustc.edu.cn
 
     `Vlab password` 是 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
 
-!!! question "关于登录用户？"
+!!! question "关于 Vlab 的登录用户？"
     这里请参考**虚拟机登录 -> SSH 命令行登录**页面的[登录用户名](login/ssh.md#username)章节。
 
 在断开与虚拟机的连接时输入 `exit` 即可。
