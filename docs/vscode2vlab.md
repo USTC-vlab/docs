@@ -219,36 +219,12 @@ Windows 11 用户在 **设置 -> 系统 -> 可选功能 -> 查看功能** 中搜
 
 ### 1. SSH 连接 Vlab
 
-对于使用默认 vlab01 镜像的用户（对于大多数同学来说，我们建议选择默认以 vlab01 开头，即编号为 01 的镜像），请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](advanced/images.md#image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
-
-!!! example "例子"
-
-    :material-check:{: .green } 正确（使用默认镜像的情况）
-    
-    :   ssh **ubuntu**@vlab.ustc.edu.cn
-
-    :material-check:{: .green } 正确（使用其他部分镜像的情况）
-
-    :   ssh **vlab**@vlab.ustc.edu.cn
-
-    :material-exclamation:{: .orangered } 正确但不推荐
-
-    :   ssh **root**@vlab.ustc.edu.cn
-
-    :material-close:{: .orangered } 错误：你的学号不是 SSH 的登录用户名
-
-    :   ssh **PB17000001**@vlab.ustc.edu.cn
-
-我们以 ubuntu 用户为例，打开命令行，输入命令：
+我们以 ubuntu 用户为例，打开本地命令行，输入命令：
 
 ```shell
 ssh ubuntu@vlab.ustc.edu.cn
 ```
 如果遇到 Warning，请输入 yes，然后根据提示输入 Vlab 平台的用户名和密码，即可登录虚拟机。
-
-在断开与虚拟机的连接时输入 `exit` 即可。
-
-![ssh](images/vscode2vlab/SSH2.png)
 
 !!! question "用户名密码是什么？"
 
@@ -256,23 +232,18 @@ ssh ubuntu@vlab.ustc.edu.cn
 
     `Vlab password` 是 Vlab 平台的登录密码。[还没设置？](web.md#change-password)
 
+!!! question "关于登录用户？"
+    这里请参考**虚拟机登录 -> SSH 命令行登录**页面的[登录用户名](login/ssh.md#username)章节。
+
+在断开与虚拟机的连接时输入 `exit` 即可。
+
+![ssh](images/vscode2vlab/SSH2.png)
+
 ### 2. 使用公钥登录虚拟机
 
 使用公钥登录虚拟机可以免除每次输入密码的麻烦，我们首先要生成密钥对并下载到本地。
 
-进入虚拟机管理界面，可以在自己虚拟机下方找到 SSH 密钥管理入口：
-
-![Vlab pubkey entry](images/web-pubkey-entrypoint.png)
-
-点击进入，即可通过点击 \[生成新的 SSH 密钥对\] 生成 SSH 密钥对：
-
-![Vlab pubkey generate](images/web-pubkey-generate.png)
-
-此时公钥已经存储到 Vlab 平台上，只需要下载私钥并做一些配置就能利用密钥对进行免密登录。
-
-点击 \[下载私钥\] 就能在下载文件中找到一个以 `.pem` 结尾的文件，这就是对应的 SSH 私钥。请妥善保管它，因为**任何获得这个文件的人都能够登录你的虚拟机**。
-
-由于技术限制，每个虚拟机的私钥都是独立的。若你删除并重新创建了虚拟机，你需要重新生成密钥对才能使用密钥登录新的虚拟机。
+这里下载密钥对的操作请参考**虚拟机登录 -> SSH 命令行登录**页面的[生成 SSH 密钥对并下载到本地](login/ssh.md#get-pubkey)章节。
 
 我们将私钥放在 `%UserProfile%\.ssh` 目录中，例如 `%UserProfile%\.ssh\vlab.pem`。
 
