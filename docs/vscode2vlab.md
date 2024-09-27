@@ -1,14 +1,14 @@
 ---
 icon: material/transit-connection-variant
 ---
+
 # 本地 VSCode 通过 Remote SSH 连接 Vlab
 
 ## 虚拟机 Vivado 新建工程和设计文件 {#vivado}
 
-
 ### 1. 新建工程
 
-在虚拟机的桌面上，最上面**应用程序**中的** Vlab 实验软件**里可找到预先安装的的 Vivado，点击进入 Vivado。这里请大家选择 2019.1 版本，不要选择 2016.3 的旧版本。2023.1 版本的 Vivado 虽然更便捷，但可能引起内存不足的警告，因此请大家酌情使用。
+在虚拟机的桌面上，最上面**应用程序**中的 **Vlab 实验软件**里可找到预先安装的的 Vivado，点击进入 Vivado。这里请大家选择 2019.1 版本，不要选择 2016.3 的旧版本。2023.1 版本的 Vivado 虽然更便捷，但可能引起内存不足的警告，因此请大家酌情使用。
 
 ![vlab experiment tools](images/vscode2vlab/vivado1.png)
 
@@ -78,7 +78,7 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 ### 1. 安装 VSCode
 
-进入 VSCode 的[官方网站](https://code.visualstudio.com/)，点击 Download for Windows 下载。下载完成后打开可执行文件。在**选择附加任务**时建议全部勾选，特别是**添加到 PATH **要勾选，否则后续还要自己将其添加到环境变量。
+进入 VSCode 的[官方网站](https://code.visualstudio.com/)，点击 Download for Windows 下载。下载完成后打开可执行文件。在**选择附加任务**时建议全部勾选，特别是**添加到 PATH** 要勾选，否则后续还要自己将其添加到环境变量。
 
 !!! info "注意"
 
@@ -86,7 +86,7 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 ![Add to path](images/vscode2vlab/vscode1.png)
 
-在我们完成了 VSCode 的安装后，第一次打开时界面是纯英文，看起来不是很方便。对此我们可以找到左侧的 **Extensions** 点开，搜索 "Chinese"，安装第一个“中文 (简体)”然后重启 VSCode 即可汉化 VSCode。
+在我们完成了 VSCode 的安装后，第一次打开时界面是纯英文，看起来不是很方便。对此我们可以找到左侧的 **Extensions** 点开，搜索 "Chinese"，安装第一个“中文（简体）”然后重启 VSCode 即可汉化 VSCode。
 
 ![Chinese](images/vscode2vlab/vscode2.png)
 
@@ -100,20 +100,20 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 - 代码高亮
 - 简单语法补全提示
-- 静态语法检查 (**需要自行配置 linter**)
-- Ctags 功能集成 (**需要额外安装 ctags 组件**)
+- 静态语法检查（**需要自行配置 linter**）
+- Ctags 功能集成（**需要额外安装 ctags 组件**）
     - 自动补全
     - 文档符号大纲
     - 鼠标悬停显示代码声明
-    - CTRL 鼠标点击跳转到代码声明
+    - Ctrl 鼠标点击跳转到代码声明
 
 ### 3. 安装 iverilog 和 ctags
 
-目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 **iverilog(一种 linter)** 和 **ctags**。
+目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 **iverilog（一种 linter）** 和 **ctags**。
 
 ??? tip "linter"
 
-    对于 verilog 的 linter 当然不止一种，本教程中使用的是 iverilog。除此之外还有 xvlog 和 Verilator，但 xvlog 来自于 **vivado**，你需要在电脑本地安装 vivado 才有 xvlog。而 Verilator 则是面向 linux 平台开发的，截至目前使用官网方法在 Windows 平台上编译的 Verilator 都无法配合 VSCode 完成代码检查，需要在子系统 **WSL** 中安装并运行 Verilator，这里不再介绍具体步骤。
+    对于 verilog 的 linter 当然不止一种，本教程中使用的是 iverilog。除此之外还有 xvlog 和 Verilator，但 xvlog 来自于 **vivado**，你需要在电脑本地安装 Vivado 才有 xvlog。而 Verilator 则是面向 Linux 平台开发的，截至目前使用官网方法在 Windows 平台上编译的 Verilator 都无法配合 VSCode 完成代码检查，需要在子系统 **WSL** 中安装并运行 Verilator，这里不再介绍具体步骤。
 
 我们进入 iverilog 的[下载网站](https://bleyer.org/icarus/)，在 Download 中下载最新版本即可。安装时在 Select Components 界面全部勾选，然后勾选可执行文件所在文件夹加入用户路径。
 
@@ -175,7 +175,7 @@ ctags --version
 
 在安装好 iverilog 和 ctags 后，我们要将其配置到到 Verilog-HDL/SystemVerilog 插件中。在已安装的插件中找到 Verilog-HDL/SystemVerilog，点击“管理”，打开“扩展设置”。
 
-按下面的设置配置 ctags，将 linter 选择为 iverilog，并在 Iverilog 的 Argument 一栏中加入 -i 参数。
+按下面的设置配置 ctags，将 linter 选择为 iverilog，并在 iverilog 的 Argument 一栏中加入 -i 参数。
 
 ![Extension Config](images/vscode2vlab/vscode9.png)
 
@@ -185,7 +185,7 @@ ctags --version
 
 !!! tip "关于配置的说明"
 
-    由于在安装 ctags 时已经将其加入到了环境变量，所以这里只需填入 ctags 即可。关于 -i 参数，是因为在实例化模块时 iverilog 会报错 "Unknown module type"，添加 "-i" 参数可以避免这种不合理的报错。
+    由于在安装 ctags 时已经将其加入到了环境变量，所以这里只需填入 ctags 即可。关于 -i 参数，是因为在实例化模块时 iverilog 会报错 "Unknown module type"，添加 `-i` 参数可以避免这种不合理的报错。
 
 这样我们就可以在 VSCode 中进行 Verilog 的开发了！
 
@@ -219,7 +219,7 @@ Windows 11 用户在 **设置 -> 系统 -> 可选功能 -> 查看功能** 中搜
 
 ### 1. SSH 连接 Vlab
 
-对于使用默认 vlab01 镜像的用户 (对于大多数同学来说，我们建议选择默认以 vlab01 开头，即编号为 01 的镜像)，请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](advanced/images.md#image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
+对于使用默认 vlab01 镜像的用户（对于大多数同学来说，我们建议选择默认以 vlab01 开头，即编号为 01 的镜像），请使用 `ubuntu` 用户登录。手动选择其他镜像的用户请参考[虚拟机镜像](advanced/images.md#image-content)。使用 `root` 用户进行日常操作不是一个好习惯，因此在可行的情况下，建议不使用 `root` 用户登录。
 
 !!! example "例子"
 
@@ -290,7 +290,7 @@ ssh ubuntu@vlab.ustc.edu.cn
 
 ![permission](images/vscode2vlab/SSH3.png)
 
-然后将所有者改为个人用户 (如果已经是则不用改)，并且删除掉其他用户的权限 (如果这里因为继承权限无法删除，则要先点击"禁用继承")。如果在权限条目中没有个人用户，则需手动添加：在点击"添加"后点击"选择主体"，然后指定对象类型为"用户"，点击"高级"，开始立即查找，便可找到个人用户。将其权限设置为"完全控制"，确定添加即可。
+然后将所有者改为个人用户（如果已经是则不用改），并且删除掉其他用户的权限（如果这里因为继承权限无法删除，则要先点击"禁用继承"）。如果在权限条目中没有个人用户，则需手动添加：在点击"添加"后点击"选择主体"，然后指定对象类型为"用户"，点击"高级"，开始立即查找，便可找到个人用户。将其权限设置为"完全控制"，确定添加即可。
 
 ![adduser](images/vscode2vlab/SSH4.png)
 
@@ -310,7 +310,7 @@ ssh -i %UserProfile%\.ssh\vlab.pem ubuntu@vlab.ustc.edu.cn
 
 ### 3. 使用配置文件登录虚拟机
 
-我们在 **C 盘个人用户**中的 **.ssh** 文件夹里新建文件 **config** (无后缀名)，用记事本打开后输入以下内容：
+我们在 **C 盘个人用户**中的 **.ssh** 文件夹里新建文件 **config**（无后缀名），用记事本打开后输入以下内容：
 
 ```text
 Host vlab
@@ -351,7 +351,7 @@ Host vlab
 
 ![open file](images/vscode2vlab/vs_vlab5.png)
 
-我们也可以用快捷键 **Ctrl + `** 打开终端，此时的终端环境是 Vlab 的，可以通过命令行对 Vlab 进行操作。
+我们也可以用快捷键 **Ctrl + \`** 打开终端，此时的终端环境是 Vlab 的，可以通过命令行对 Vlab 进行操作。
 
 ![Terminal](images/vscode2vlab/vs_vlab6.png)
 
@@ -366,22 +366,14 @@ Host vlab
 !!! question "为什么？"
     这是因为此时的 Verilog-HDL/SystemVerilog 插件使用的是 Vlab 中安装的，所以需要对 SSH:vlab 中的该插件进行同本地的配置。
 
-我们要在 Vlab 中安装 ctags 和 iverilog(和 gtkwave)。在 **Vlab 虚拟机** 中打开终端，执行以下命令：
+我们要在 Vlab 中安装 ctags 和 iverilog（和 gtkwave）。在 **Vlab 虚拟机** 中打开终端，执行以下命令：
 
 ```shell
-sudo apt-get update
-```
-```shell
-sudo apt-get install iverilog
-```
-```shell
-sudo apt-get install gtkwave
-```
-```shell
-sudo apt-get install universal-ctags
+sudo apt update
+sudo apt install iverilog gtkwave universal-ctags
 ```
 
-然后在 VSCode 已打开的远程连接 Vlab 中打开 Verilog-HDL/SystemVerilog 的扩展设置，将**远程 [SSH:vlab]**和**工作区**中同[本地配置](vscode2vlab.md#configExtention) (即“用户”一栏中的配置) 进行设置。
+然后在 VSCode 已打开的远程连接 Vlab 中打开 Verilog-HDL/SystemVerilog 的扩展设置，将**远程 [SSH:vlab]**和**工作区**中同[本地配置](#configExtention)（即“用户”一栏中的配置）进行设置。
 
 ![Config Extention](images/vscode2vlab/vs_vlab8.png)
 
