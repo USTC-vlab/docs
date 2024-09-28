@@ -102,14 +102,14 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 - 简单语法补全提示
 - 静态语法检查（需要自行配置 linter）
 - Ctags 功能集成（需要额外安装 ctags 组件）
-    - 自动补全
-    - 文档符号大纲
-    - 鼠标悬停显示代码声明
-    - Ctrl 鼠标点击跳转到代码声明
+  - 自动补全
+  - 文档符号大纲
+  - 鼠标悬停显示代码声明
+  - Ctrl 鼠标点击跳转到代码声明
 
 ### 3. 安装 iverilog 和 ctags
 
-目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 **iverilog**（一种 linter） 和 **ctags**。
+目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 **iverilog**（一种 linter）和 **ctags**。
 
 ??? tip "关于 linter"
 
@@ -134,9 +134,10 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 ```shell
 iverilog -help
 ```
+
 出现以下信息说明安装成功：
 
-```
+```text
 Usage: iverilog [-EiSuvV] [-B base] [-c cmdfile|-f cmdfile]
                 [-g1995|-g2001|-g2005|-g2005-sv|-g2009|-g2012] [-g<feature>]
                 [-D macro[=defn]] [-I includedir] [-L moduledir]
@@ -147,6 +148,7 @@ Usage: iverilog [-EiSuvV] [-B base] [-c cmdfile|-f cmdfile]
 
 See the man page for details.
 ```
+
 再输入以下命令检查 gtkwave 是否安装成功：
 
 ```shell
@@ -171,7 +173,7 @@ ctags --version
 
 显示的 ctags 信息是 universal ctags，说明安装正常。
 
-### 4. 配置 Verilog-HDL/SystemVerilog 插件 {#configExtention}
+### 4. 配置 Verilog-HDL/SystemVerilog 插件 {#config-extension}
 
 在安装好 iverilog 和 ctags 后，我们要将其配置到到 Verilog-HDL/SystemVerilog 插件中。在已安装的插件中找到 Verilog-HDL/SystemVerilog，点击“管理”，打开“扩展设置”。
 
@@ -217,7 +219,7 @@ Windows 11 用户在 **设置 -> 系统 -> 可选功能 -> 查看功能** 中搜
 
 然后我们就可以开始通过 SSH 远程连接 Vlab 了！
 
-##  SSH 通过命令行远程连接 Vlab {#ssh2vlab}
+## SSH 通过命令行远程连接 Vlab {#ssh2vlab}
 
 ### 1. SSH 连接 Vlab
 
@@ -226,6 +228,7 @@ Windows 11 用户在 **设置 -> 系统 -> 可选功能 -> 查看功能** 中搜
 ```shell
 ssh ubuntu@vlab.ustc.edu.cn
 ```
+
 如果遇到 Warning，请输入 yes，然后根据提示输入 Vlab 平台的用户名和密码，即可登录虚拟机。
 
 !!! question "用户名密码是什么？"
@@ -291,7 +294,7 @@ Host vlab
     User ubuntu
     IdentityFile %UserProfile%\.ssh\vlab.pem
 ```
- 
+
 !!! info "路径"
     如果你在上一步中按照教程放置 `.pem` 文件的位置，这里 `config` 文件应与其在同一个文件夹下。
 
@@ -346,7 +349,7 @@ sudo apt update
 sudo apt install iverilog gtkwave universal-ctags
 ```
 
-然后在 VSCode 已打开的远程连接 Vlab 中打开 Verilog-HDL/SystemVerilog 的扩展设置，将**远程 [SSH:vlab]**和**工作区**中同[本地配置](#configExtention)（即“用户”一栏中的配置）进行设置。
+然后在 VSCode 已打开的远程连接 Vlab 中打开 Verilog-HDL/SystemVerilog 的扩展设置，将**远程 [SSH:vlab]**和**工作区**中同[本地配置](#config-extension)（即“用户”一栏中的配置）进行设置。
 
 ![Config Extention](images/vscode2vlab/vs_vlab8.png)
 
