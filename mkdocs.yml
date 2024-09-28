@@ -73,6 +73,7 @@ markdown_extensions:
 nav:
   - 简介: index.md
   - 快速开始: quickstart.md
+  - 本地 VSCode 远程连接 Vlab: vscode2vlab.md
   - 虚拟机:
     - 虚拟机管理: web.md
     - 虚拟机登录:
