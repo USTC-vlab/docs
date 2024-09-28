@@ -55,12 +55,12 @@ extra_css:
 markdown_extensions:
   - admonition
   - attr_list
-  - codehilite
   - footnotes
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
   - pymdownx.mark
   - pymdownx.tabbed:
       alternate_style: true
@@ -73,7 +73,6 @@ markdown_extensions:
 nav:
   - 简介: index.md
   - 快速开始: quickstart.md
-  - 本地 VSCode 远程连接 Vlab: vscode2vlab.md
   - 虚拟机:
     - 虚拟机管理: web.md
     - 虚拟机登录:
@@ -87,6 +86,9 @@ nav:
   - 应用程序:
     - 在线 VSCode: apps/vscode.md
     - RISC-V 工具链: apps/riscv.md
+  - 教程:
+    - 本地 VSCode 远程连接 Vlab: tutorial/vscode2vlab.md
+    - Git 简明教程: tutorial/git.md
   - 其他:
     - 常见问题: faq.md
     - 通知公告: announcements.md
@@ -100,4 +102,3 @@ nav:
     - 资源下载: downloads.md
     - 致谢: credits.md
     - 招新: recruit.md
-    - Git 简明教程: tutorial/git.md
