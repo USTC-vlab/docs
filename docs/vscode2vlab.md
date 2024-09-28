@@ -253,7 +253,7 @@ ssh ubuntu@vlab.ustc.edu.cn
 
 !!! question "什么是 %UserProfile% "
 
-    `%UserProfile%` 是用户目录，即 `C:\Users\用户登陆名`。`vlab.pem` 文件的完整路径例如 `C:\Users\Asus\.ssh\vlab.pem`。
+    `%UserProfile%` 是用户目录，即 `C:\Users\用户登录名`。`vlab.pem` 文件的完整路径例如 `C:\Users\Asus\.ssh\vlab.pem`。
 
 要确保只有你的账户有访问私钥文件的权限，否则可能出现 "Permissions are too open" 报错。具体操作如下：
 
