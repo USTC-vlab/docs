@@ -12,11 +12,11 @@ icon: material/transit-connection-variant
 
 ![vlab experiment tools](images/vscode2vlab/vivado1.png)
 
-进入 Vivado 后，点击 **Create Project**:
+进入 Vivado 后，点击 Create Project:
 
 ![Create Project](images/vscode2vlab/vivado2.png)
 
-然后点击 **Next**:
+然后点击 Next:
 
 ![Next](images/vscode2vlab/vivado3.png)
 
@@ -24,7 +24,7 @@ icon: material/transit-connection-variant
 
 ![Name Path](images/vscode2vlab/vivado4.png)
 
-随后一路 Next，直到遇到“选择开发板型号”的界面。按照如下配置可以搜到我们使用的开发板，点击选择最下面的开发板。
+随后一路 Next，直到遇到“选择开发板型号”的界面。搜索我们使用的开发板，型号为 `xc7a100tcsg324-1`，点击选择最下面的开发板。
 
 !!! info "注意"
 
@@ -42,11 +42,11 @@ icon: material/transit-connection-variant
 
 新建工程项目后，里面还没有我们的设计文件，接下来我们要为工程项目新建自己的设计文件。
 
-在界面左侧可以找到 **Add Sources**，点击它：
+在界面左侧可以找到 Add Sources，点击它：
 
 ![Add Sources](images/vscode2vlab/vivado7.png)
 
-接下来我们开始新建设计文件，点击 Next，选择 **Create File**:
+接下来我们开始新建设计文件，点击 Next，选择 Create File:
 
 ![Next](images/vscode2vlab/vivado8.png)
 
@@ -56,7 +56,7 @@ icon: material/transit-connection-variant
 
     我们在开发时，可能有这种情况：其他位置已经写好了一份设计文件，可以用于此工程，如果在此工程中再新建一份此文件便浪费了时间和空间。我们可以按如下操作把别处的源代码加入此项目：
 
-    在新建设计文件时，点击 **Create File** 左边的 **Add Files**，便可将其他位置已经写好的设计文件添加到此工程中。点击 **Add Directories** 可将别处的文件夹中所有设计文件加入此工程。
+    在新建设计文件时，点击 Create File 左边的 **Add Files**，便可将其他位置已经写好的设计文件添加到此工程中。点击 **Add Directories** 可将别处的文件夹中所有设计文件加入此工程。
 
     需要注意的是，这里的“加入”，并不是把原来的设计文件复制一份加入此工程，而是直接加入。也就是说当你在此工程中对该设计文件进行修改时，如果该设计文件也被包含在其他工程中，那么其他工程中的这个设计文件也会被修改。
 
@@ -74,7 +74,7 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 !!! info "注意"
 
-    本文档主要用于**数字电路实验**教学，介绍了如何配置 VSCode 中 **Verilog** 相关环境。如需其他编程语言环境配置，请自行学习并操作。
+    本文档主要用于**数字电路实验**教学，介绍了如何配置 VSCode 中 Verilog 相关环境。如需其他编程语言环境配置，请自行学习并操作。
 
 ### 1. 安装 VSCode
 
@@ -86,7 +86,7 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 ![Add to path](images/vscode2vlab/vscode1.png)
 
-在我们完成了 VSCode 的安装后，第一次打开时界面是纯英文，看起来不是很方便。对此我们可以找到左侧的 **Extensions** 点开，搜索 "Chinese"，安装第一个“中文（简体）”然后重启 VSCode 即可汉化 VSCode。
+在我们完成了 VSCode 的安装后，第一次打开时界面是纯英文，看起来不是很方便。对此我们可以找到左侧的 **Extensions** 点开，搜索 Chinese，安装第一个“中文（简体）”然后重启 VSCode 即可汉化 VSCode。
 
 ![Chinese](images/vscode2vlab/vscode2.png)
 
@@ -100,8 +100,8 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 - 代码高亮
 - 简单语法补全提示
-- 静态语法检查（**需要自行配置 linter**）
-- Ctags 功能集成（**需要额外安装 ctags 组件**）
+- 静态语法检查（需要自行配置 linter）
+- Ctags 功能集成（需要额外安装 ctags 组件）
     - 自动补全
     - 文档符号大纲
     - 鼠标悬停显示代码声明
@@ -109,11 +109,11 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 ### 3. 安装 iverilog 和 ctags
 
-目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 **iverilog（一种 linter）** 和 **ctags**。
+目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 **iverilog**（一种 linter） 和 **ctags**。
 
 ??? tip "关于 linter"
 
-    **Linter** 是自动检查源代码中是否存在编程和样式错误的工具。对于 Verilog 的 linter 当然不止一种，本教程中使用的是 iverilog。除此之外还有 xvlog 和 Verilator，但 xvlog 来自于 **Vivado**，你需要在电脑本地安装 Vivado 才有 xvlog。而 Verilator 则是面向 Linux 平台开发的，截至目前使用官网方法在 Windows 平台上编译的 Verilator 都无法配合 VSCode 完成代码检查，需要在子系统 **WSL** 中安装并运行 Verilator，这里不再介绍具体步骤。
+    **Linter** 是自动检查源代码中是否存在编程和样式错误的工具。对于 Verilog 的 linter 当然不止一种，本教程中使用的是 iverilog。除此之外还有 xvlog 和 Verilator，但 xvlog 来自于 Vivado，你需要在电脑本地安装 Vivado 才有 xvlog。而 Verilator 则是面向 Linux 平台开发的，截至目前使用官网方法在 Windows 平台上编译的 Verilator 都无法配合 VSCode 完成代码检查，需要在子系统 WSL 中安装并运行 Verilator，这里不再介绍具体步骤。
 
 我们进入 iverilog 的[下载网站](https://bleyer.org/icarus/)，在 Download 中下载最新版本即可。安装时在 Select Components 界面全部勾选，然后勾选可执行文件所在文件夹加入用户路径。
 
@@ -185,13 +185,14 @@ ctags --version
 
 !!! tip "关于配置的说明"
 
-    由于在安装 ctags 时已经将其加入到了环境变量，所以这里只需填入 ctags 即可。关于 -i 参数，是因为在实例化模块时 iverilog 会报错 "Unknown module type"，添加 `-i` 参数可以避免这种不合理的报错。
+    由于在安装 ctags 时已经将其加入到了环境变量，所以这里只需填入 ctags 即可。关于 `-i` 参数，是因为在实例化模块时 iverilog 会报错 "Unknown module type"，添加 `-i` 参数可以避免这种不合理的报错。
 
 这样我们就可以在 VSCode 中进行 Verilog 的开发了！
 
 ![verilog](images/vscode2vlab/vscode12.png)
 
 !!! info "提示"
+
     在用 VSCode 编写 Verilog 代码时，只有将文件保存后才会进行语法检查哦！
 
 ## 本地安装 SSH 环境 {#installssh}
@@ -211,6 +212,7 @@ Windows 10 用户在 **设置 -> 应用 -> 应用和功能 -> 可选功能 -> �
 Windows 11 用户在 **设置 -> 系统 -> 可选功能 -> 查看功能** 中搜索 **OpenSSH**，进行安装。
 
 !!! tip "说明"
+
     我们只需安装 SSH 客户端便可远程连接虚拟机了，关于 SSH server 的配置这里不再细讲。如果要开启 SSH server 服务允许其他设备用 SSH 连接到你的电脑上，需要开启防火墙的 22 端口。
 
 然后我们就可以开始通过 SSH 远程连接 Vlab 了！
@@ -249,11 +251,11 @@ ssh ubuntu@vlab.ustc.edu.cn
 
 !!! info "注意"
 
-    本教程中该文件命名为 **vlab.pem**，如自行命名请在下面对应的步骤中修改相应配置。
+    本教程中该文件命名为 `vlab.pem`，如自行命名请在下面对应的步骤中修改相应配置。
 
 !!! question "什么是 %UserProfile% "
 
-    `%UserProfile%` 是用户目录，即 `C:\Users\用户登录名`。`vlab.pem` 文件的完整路径例如 `C:\Users\Asus\.ssh\vlab.pem`。
+    `%UserProfile%` 是用户目录，即 `C:\Users\用户名`。`vlab.pem` 文件的完整路径例如 `C:\Users\Asus\.ssh\vlab.pem`。
 
 要确保只有你的账户有访问私钥文件的权限，否则可能出现 "Permissions are too open" 报错。具体操作如下：
 
@@ -281,7 +283,7 @@ ssh -i %UserProfile%\.ssh\vlab.pem ubuntu@vlab.ustc.edu.cn
 
 ### 3. 使用配置文件登录虚拟机
 
-我们在 **C 盘个人用户**中的 **.ssh** 文件夹里新建文件 **config**（无后缀名），用记事本打开后输入以下内容：
+我们在 **C 盘个人用户**中的 **.ssh** 文件夹里新建文件 `config`（无后缀名），用记事本打开后输入以下内容：
 
 ```text
 Host vlab
@@ -291,7 +293,7 @@ Host vlab
 ```
  
 !!! info "路径"
-    如果你在上一步中按照教程放置 `.pem` 文件的位置，这里 config 文件应与其在同一个文件夹下。
+    如果你在上一步中按照教程放置 `.pem` 文件的位置，这里 `config` 文件应与其在同一个文件夹下。
 
 此后我们在命令行中输入 `ssh vlab` 即可登录虚拟机，这样十分方便，而且支持了后面要讲的 VSCode 中使用 Remote SSH 功能。
 
@@ -306,7 +308,7 @@ Host vlab
 !!! info "注意"
     若还未配置好 SSH 请按照上面的教程进行 SSH 配置，实现公钥登录并完成配置文件。
 
-点击 **vlab** 右侧的图标，在现有的窗口/新窗口中连接 Vlab。在选择远程平台时选择 **linux**。
+点击 **vlab** 右侧的图标，在现有的窗口/新窗口中连接 Vlab。在选择远程平台时选择 **Linux**。
 
 ![connect](images/vscode2vlab/vs_vlab2.png)
 
@@ -351,4 +353,3 @@ sudo apt install iverilog gtkwave universal-ctags
 完成后，我们就可以在本地 VSCode 对 Vlab 中的 Vivado 设计文件进行编辑了！
 
 ![finish](images/vscode2vlab/vs_vlab9.png)
-
