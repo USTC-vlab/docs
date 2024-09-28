@@ -37,7 +37,7 @@ adduser vlab
 
 ## 安装桌面环境
 
-经过测试，以下操作可能导致 SSH 连接中断，因此建议在救援模式（[Web](../login/ssh.md#web-username), [SSH](../faq.md#recovery-sshd)）中操作。使用 tasksel 安装桌面环境。
+经过测试，以下操作可能导致 SSH 连接中断，因此建议在救援模式（[Web](../login/ssh.md#web-username), [SSH](../login/ssh.md#recovery)）中操作。使用 tasksel 安装桌面环境。
 
 ```shell
 # 如果遇到安装问题，执行以下两行命令
