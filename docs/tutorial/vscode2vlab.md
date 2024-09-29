@@ -78,7 +78,7 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
 ### 1. 安装 VSCode
 
-进入 VSCode 的[官方网站](../https://code.visualstudio.com/)，点击 Download for Windows 下载。下载完成后打开可执行文件。在**选择附加任务**时建议全部勾选，特别是**添加到 PATH** 要勾选，否则后续还要自己将其添加到环境变量。
+进入 VSCode 的[官方网站](https://code.visualstudio.com/)，点击 Download for Windows 下载。下载完成后打开可执行文件。在**选择附加任务**时建议全部勾选，特别是**添加到 PATH** 要勾选，否则后续还要自己将其添加到环境变量。
 
 !!! info "注意"
 
@@ -115,7 +115,7 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
 
     **Linter** 是自动检查源代码中是否存在编程和样式错误的工具。对于 Verilog 的 linter 当然不止一种，本教程中使用的是 iverilog。除此之外还有 xvlog 和 Verilator，但 xvlog 来自于 Vivado，你需要在电脑本地安装 Vivado 才有 xvlog。而 Verilator 则是面向 Linux 平台开发的，截至目前使用官网方法在 Windows 平台上编译的 Verilator 都无法配合 VSCode 完成代码检查，需要在子系统 WSL 中安装并运行 Verilator，这里不再介绍具体步骤。
 
-我们进入 iverilog 的[下载网站](../https://bleyer.org/icarus/)，在 Download 中下载最新版本即可。安装时在 Select Components 界面全部勾选，然后勾选可执行文件所在文件夹加入用户路径。
+我们进入 iverilog 的[下载网站](https://bleyer.org/icarus/)，在 Download 中下载最新版本即可。安装时在 Select Components 界面全部勾选，然后勾选可执行文件所在文件夹加入用户路径。
 
 ![iverilog GTKWave](../images/vscode2vlab/vscode4.png)
 
@@ -159,7 +159,7 @@ gtkwave
 
 ![gtkwave](../images/vscode2vlab/vscode7.png)
 
-接下来我们进入[下载页面](../https://github.com/universal-ctags/ctags-win32/releases)安装 **ctags**，可选择最新版本进入下载。
+接下来我们进入[下载页面](https://github.com/universal-ctags/ctags-win32/releases)安装 **ctags**，可选择最新版本进入下载。
 
 ![ctags](../images/vscode2vlab/vscode8.png)
 
