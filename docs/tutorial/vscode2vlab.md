@@ -107,7 +107,7 @@ Visual Studio Code 是一款由微软开发的免费、轻量级且可扩展的�
     - 鼠标悬停显示代码声明
     - Ctrl 鼠标点击跳转到代码声明
 
-### 3. 安装 iverilog 和 ctags
+### 3. 安装 iverilog 和 ctags {#iverilog-and-ctags}
 
 目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 **iverilog**（一种 linter）和 **ctags**。
 
@@ -219,6 +219,10 @@ Windows 11 用户在 **设置 -> 系统 -> 可选功能 -> 查看功能** 中搜
     我们只需安装 SSH 客户端便可远程连接虚拟机了，关于 SSH server 的配置这里不再细讲。如果要开启 SSH server 服务允许其他设备用 SSH 连接到你的电脑上，需要开启防火墙的 22 端口。
 
 然后我们就可以开始通过 SSH 远程连接 Vlab 了！
+
+!!! note "说明"
+
+    在安装「OpenSSH 客户端」功能后，如果在命令行中输入 `ssh` 仍然提示无法找到命令，可以尝试将 `C:\Windows\System32\OpenSSH\` 加入环境变量，具体操作请参考上方配置 [iverilog 和 ctags](#iverilog-and-ctags) 的部分。
 
 ## SSH 通过命令行远程连接 Vlab {#ssh2vlab}
 
