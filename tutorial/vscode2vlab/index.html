@@ -859,7 +859,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-iverilog-ctags" class="md-nav__link">
+  <a href="#iverilog-and-ctags" class="md-nav__link">
     <span class="md-ellipsis">
       3. 安装 iverilog 和 ctags
     </span>
@@ -1444,7 +1444,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-iverilog-ctags" class="md-nav__link">
+  <a href="#iverilog-and-ctags" class="md-nav__link">
     <span class="md-ellipsis">
       3. 安装 iverilog 和 ctags
     </span>
@@ -1621,7 +1621,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="3-iverilog-ctags">3. 安装 iverilog 和 ctags<a class="headerlink" href="#3-iverilog-ctags" title="Permanent link">&para;</a></h3>
+<h3 id="iverilog-and-ctags">3. 安装 iverilog 和 ctags<a class="headerlink" href="#iverilog-and-ctags" title="Permanent link">&para;</a></h3>
 <p>目前我们已经安装了 Verilog-HDL/SystemVerilog 插件，但还需要安装 <strong>iverilog</strong>（一种 linter）和 <strong>ctags</strong>。</p>
 <details class="tip">
 <summary>关于 linter</summary>
@@ -1695,6 +1695,10 @@ Windows 11 用户在 <strong>设置 -&gt; 系统 -&gt; 可选功能 -&gt; 查看
 <p>我们只需安装 SSH 客户端便可远程连接虚拟机了，关于 SSH server 的配置这里不再细讲。如果要开启 SSH server 服务允许其他设备用 SSH 连接到你的电脑上，需要开启防火墙的 22 端口。</p>
 </div>
 <p>然后我们就可以开始通过 SSH 远程连接 Vlab 了！</p>
+<div class="admonition note">
+<p class="admonition-title">说明</p>
+<p>在安装「OpenSSH 客户端」功能后，如果在命令行中输入 <code>ssh</code> 仍然提示无法找到命令，可以尝试将 <code>C:\Windows\System32\OpenSSH\</code> 加入环境变量，具体操作请参考上方配置 <a href="#iverilog-and-ctags">iverilog 和 ctags</a> 的部分。</p>
+</div>
 <h2 id="ssh2vlab">SSH 通过命令行远程连接 Vlab<a class="headerlink" href="#ssh2vlab" title="Permanent link">&para;</a></h2>
 <h3 id="1-ssh-vlab">1. SSH 连接 Vlab<a class="headerlink" href="#1-ssh-vlab" title="Permanent link">&para;</a></h3>
 <p>我们以 Vlab 的 ubuntu 用户为例，打开本地命令行，输入命令：</p>
