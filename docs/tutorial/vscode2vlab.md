@@ -163,9 +163,9 @@ gtkwave
 
 ![ctags](../images/vscode2vlab/vscode8.png)
 
-安装后同样将 ctags.exe 所在文件夹路径复制加入环境变量。
+ctags 无需安装，解压后同样将 ctags.exe 所在文件夹路径复制加入环境变量即可。
 
-检查 ctags 是否安装成功：
+检查 ctags 是否能够运行：
 
 ```shell
 ctags --version
