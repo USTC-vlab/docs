@@ -1287,7 +1287,9 @@
 
 <h1 id="_1">虚拟机资源<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>目前创建的虚拟机配置统一为 2 核心 CPU、4 GB 内存与 16 GB 存储空间，该配置足够进行大部分计算机学院课程学习活动（如使用 Vivado 等）。对于 LXC 虚拟机，<a href="../images/#vlab-software">Vlab 实验软件</a>不占用虚拟机的存储空间。</p>
-<p>虚拟机直接接入 Vlab 内网，通过 NAT 访问科大校园网及互联网（教育网出口），因此虚拟机内无需（也禁止）使用网络通，虚拟机也无法直接从 Vlab 外部访问。</p>
+<p>虚拟机直接接入 Vlab 内网，通过 NAT 访问科大校园网及互联网（教育网出口），因此虚拟机内无需（也禁止）使用网络通，虚拟机也无法直接从 Vlab 外部访问。
+如果有实验需要访问运行在虚拟机中的端口的话，我们推荐你首先尝试 <a href="https://201.ustclug.org/dev/ssh/#port-forwarding">SSH 端口转发</a>。
+它比端口映射更加安全，并且绝大多数时候能够满足你的需求。</p>
 <h2 id="extra-resources">申请额外资源<a class="headerlink" href="#extra-resources" title="Permanent link">&para;</a></h2>
 <p>如果你对系统资源有额外的需求，如</p>
 <ul>
