@@ -7,6 +7,10 @@ icon: material/cart-plus
 目前创建的虚拟机配置统一为 2 核心 CPU、4 GB 内存与 16 GB 存储空间，该配置足够进行大部分计算机学院课程学习活动（如使用 Vivado 等）。对于 LXC 虚拟机，[Vlab 实验软件](images.md#vlab-software)不占用虚拟机的存储空间。
 
 虚拟机直接接入 Vlab 内网，通过 NAT 访问科大校园网及互联网（教育网出口），因此虚拟机内无需（也禁止）使用网络通，虚拟机也无法直接从 Vlab 外部访问。
+如果有实验需要访问运行在虚拟机中的端口的话，我们推荐你首先尝试 [SSH 端口转发][ssh-port-forwarding]。
+它比端口映射更加安全，并且绝大多数时候能够满足你的需求。
+
+  [ssh-port-forwarding]: https://201.ustclug.org/dev/ssh/#port-forwarding
 
 ## 申请额外资源 {#extra-resources}
 
@@ -35,8 +39,6 @@ icon: material/cart-plus
     若因实验需要将虚拟机内的网络端口开放到公网访问，且无法使用 [SSH 端口转发][ssh-port-forwarding]等更加安全的方式时，我们可以在网关上配置 NAT 端口映射，此时虚拟机内能直接得到外部访问的 IP 和端口。
 
     由于合规性要求，我们会严格处理端口映射的申请，并且不会映射低端口（0-1023）和一些敏感端口（如 6379、8080 等）。
-
-  [ssh-port-forwarding]: https://zhuanlan.zhihu.com/p/148825449
 
 ## 虚拟机互联 {#vm-interconnect}
 
