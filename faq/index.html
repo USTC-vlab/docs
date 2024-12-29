@@ -945,6 +945,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#s-apparmor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apparmor 限制导致的问题
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1428,6 +1437,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#s-apparmor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apparmor 限制导致的问题
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1671,6 +1689,13 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
 </li>
 <li>点击「连接」，测试是否可用，未来需要连接时，只需要在站点管理器中双击上面新建的站点即可。</li>
 </ol>
+<h3 id="s-apparmor">Apparmor 限制导致的问题<a class="headerlink" href="#s-apparmor" title="Permanent link">&para;</a></h3>
+<p>LXC 容器<strong>不</strong>支持 Apparmor，该包也不预装。如果在容器中安装了 <code>apparmor</code>，那么一部分程序运行可能会出现非预期的问题。已知可能会出现问题的程序有：</p>
+<ul>
+<li>tcpdump</li>
+<li>flatpak</li>
+</ul>
+<p>删除 <code>apparmor</code> 包后重启即可。</p>
 <h2 id="limits">软件限制<a class="headerlink" href="#limits" title="Permanent link">&para;</a></h2>
 <p>由于技术更迭：</p>
 <ul>
