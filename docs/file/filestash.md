@@ -12,6 +12,8 @@ Vlab 支持虚拟机与本机之间的文件传输，在首页上可以看到有
 
 ![Filestash entry 2](../images/filestash-entry2.png)
 
+也可以直接使用域名：<https://file.vlab.ustc.edu.cn> 访问文件传输页面。
+
 ## 登录
 
 新版浏览器文件传输登录时不再需要输入学号、vlab 平台密码、Linux 用户名以及 Linux 密码。
@@ -42,9 +44,15 @@ Vlab 支持虚拟机与本机之间的文件传输，在首页上可以看到有
 
 ![Filestash upload](../images/filestash-upload.png)
 
+也可以点击网页右下角的上传按钮，选择需要上传的文件。
+
 当需要下载文件到本机时，点击需要下载的文件，进入文件的编辑页面，点击右上角的「下载」图标完成文件下载：
 
 ![Filestash download](../images/filestash-download.png)
+
+如果需要下载多个文件或下载文件夹，点击文件左上角的选择框即可选择文件夹或多个文件，然后点击提示栏的「下载」（DOWNLOAD）即可：
+
+![Filestash download multiple](../images/filestash-batch-download.png)
 
 ## 文件编辑
 
