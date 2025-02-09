@@ -6,7 +6,7 @@ icon: material/download
 
 ## 外部链接
 
-- Git for Windows：[GitHub Releases](https://github.com/git-for-windows/git/releases/latest) / [清华大学 TUNA 镜像站](https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/)
+- Git for Windows：[GitHub Releases](https://github.com/git-for-windows/git/releases/latest) / [科大镜像站](https://mirrors.ustc.edu.cn/github-release/git-for-windows/git/LatestRelease/) / [清华大学 TUNA 镜像站](https://mirrors.tuna.tsinghua.edu.cn/github-release/git-for-windows/git/LatestRelease/)
 - Java 8 运行环境：[Oracle 官网](https://www.java.com/zh-CN/download/manual.jsp)
 - TigerVNC 客户端：[GitHub Releases](https://github.com/TigerVNC/tigervnc/releases/latest)
 - RealVNC 客户端：[RealVNC 官网](https://www.realvnc.com/en/connect/download/viewer/)
