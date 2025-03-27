@@ -160,6 +160,7 @@ LXC 容器**不**支持 Apparmor，该包也不预装。如果在容器中安装
 
 - tcpdump
 - flatpak
+- docker.io
 
 删除 `apparmor` 包后重启即可。
 
