@@ -49,7 +49,6 @@ Linux KVM 是完整的虚拟机，能够根据需要使用任意的 Linux 内核
 | :------: | :------: | :------: | :------: | :------: |
 | 01 | Ubuntu 24.04 | root/ubuntu | MATE | |
 | 02 | Ubuntu 22.04 | root/ubuntu | MATE | |
-| 03 | Ubuntu 20.04 | root/ubuntu | MATE | 将于 2025 年 4 月后停止维护与支持，并下架 |
 | 13 | Debian 12 | root/vlab | 无 | |
 | 20 | Ubuntu 20.04 | root/ubuntu | MATE | 「量化金融工程」课程专用 |
 | 21 | Ubuntu 22.04 | root/ubuntu | MATE | 「计算系统综合实验」课程专用 |
