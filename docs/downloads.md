@@ -22,10 +22,10 @@ icon: material/download
   [macOS 10.12+](https://vlab.ustc.edu.cn/downloads/logisim-macosx-2.7.1.tar.gz) /
   [Java JAR](https://vlab.ustc.edu.cn/downloads/logisim-generic-2.7.1.jar)
 
-- TigerVNC 客户端 (v1.13.1):
-  [Windows (64 位)](https://vlab.ustc.edu.cn/downloads/vncviewer64-1.13.1.exe) /
-  [macOS](https://vlab.ustc.edu.cn/downloads/TigerVNC-1.13.1.dmg) /
-  [Java JAR](https://vlab.ustc.edu.cn/downloads/VncViewer-1.13.1.jar)
+- TigerVNC 客户端 (v1.15.0):
+  [Windows (64 位)](https://vlab.ustc.edu.cn/downloads/vncviewer64-1.15.0.exe) /
+  [macOS](https://vlab.ustc.edu.cn/downloads/TigerVNC-1.15.0.dmg) /
+  [Java JAR](https://vlab.ustc.edu.cn/downloads/VncViewer-1.15.0.jar)
 
 - RealVNC 客户端 (v6.20.113):
   [Windows](https://vlab.ustc.edu.cn/downloads/VNC-Viewer-6.20.113-Windows.exe) /
