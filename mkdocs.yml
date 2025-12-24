@@ -72,6 +72,7 @@ markdown_extensions:
       permalink: true
 
 nav:
+  - 首页: /
   - 简介: index.md
   - 快速开始: quickstart.md
   - 虚拟机:
