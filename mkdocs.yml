@@ -52,6 +52,8 @@ extra:
 
 extra_css:
   - assets/css/extra.css
+  - https://vlab.ustc.edu.cn/static/roboto-fontface/css/roboto/roboto-fontface.css
+  - https://vlab.ustc.edu.cn/static/roboto-mono/latin.css
 
 markdown_extensions:
   - admonition
