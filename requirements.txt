@@ -1,4 +1,4 @@
-mkdocs
-mkdocs-material
+mkdocs~=1.6.1
+mkdocs-material>=9.7.3
 jieba
 requests
