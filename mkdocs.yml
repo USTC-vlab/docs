@@ -90,6 +90,7 @@ nav:
   - 应用程序:
     - 在线 VSCode: apps/vscode.md
     - RISC-V 工具链: apps/riscv.md
+    - gem5 模拟器: apps/gem5.md
   - 教程:
     - 本地 VSCode 远程连接 Vlab: tutorial/vscode2vlab.md
     - Git 简明教程: tutorial/git.md
