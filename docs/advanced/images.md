@@ -62,15 +62,16 @@ LXC 虚拟机可以使用通过 `/opt/vlab` 提供的以下实验软件，并会
 - Xilinx Vivado 2019.1
 - Xilinx Vivado 2016.3
 - MATLAB R2019a
-- Wolfram Mathematica 12.3
+- Wolfram Mathematica 14.1
 - [网页版 Visual Studio Code](../apps/vscode.md)
-- TeX Live 2020
+- TeX Live 2026
 - [Logisim](http://www.cburch.com/logisim/)
 - Typora
 - Verilator 5.014
 - [RARS 模拟器](../apps/riscv.md)
 - RISC-V GCC 工具链
 - RISC-V 64 GCC 工具链
+- [gem5](../apps/gem5.md)
 
 如果需要使用其他发行版（诸如 Fedora, CentOS）执行软件，建议使用 `docker`（`sudo apt install docker.io`）。
 
