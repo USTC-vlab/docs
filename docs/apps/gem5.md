@@ -17,6 +17,17 @@ Vlab 为虚拟机提供了 [gem5][gem5] 模拟器，位于 `/opt/vlab/gem5`。
 
 使用方式示例：
 
+#### 简易配置
+
+```shell
+# 安装依赖
+/opt/vlab/gem5/install.sh
+# 使用 X86 gem5
+gem5.opt your_script.py
+```
+
+#### 手工配置
+
 === "Ubuntu 24.04"
 
     ```shell title="安装依赖"
