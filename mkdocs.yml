@@ -101,6 +101,7 @@ nav:
       - 系统资源: advanced/resources.md
       - 虚拟机镜像: advanced/images.md
       - 手动安装桌面环境: advanced/install-desktop.md
+      - WireGuard 连接: advanced/wireguard.md
     - 条款:
       - 服务条款: terms/terms-of-service.md
       - 可接受的使用方式: terms/acceptable-use-policy.md
