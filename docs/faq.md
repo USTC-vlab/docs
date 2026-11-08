@@ -258,6 +258,10 @@ sudo qemu-system-x86_64 -cpu host -enable-kvm ...
 
 若要在普通用户下使用 KVM 加速的 QEMU，可以将普通用户加入 `kvm` 用户组（GID = 107）中。对于 Ubuntu 系统，可以使用 `usermod -aG kvm <username>` 命令。
 
+!!! warning "TUN 与安全性"
+
+    Vlab 的防火墙配置不保护通过 TUN 连接的网络的安全性。默认情况下，通过 TUN 连接的内网其他设备可以直接访问到你的设备。请自行配置防火墙。
+
 ### 在进行操作系统实验时无法使用 `mknod` 新建设备文件 {#s-mknod-permission-denied}
 
 需使用 `fakeroot`，详情可参考 [2020 年 OSH 实验讲义](https://osh-2020.github.io/lab-1/initrd/#fakeroot-initrd)。
